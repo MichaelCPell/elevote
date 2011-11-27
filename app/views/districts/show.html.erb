@@ -1,0 +1,17 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Zipcode:</b>
+  <%= @district.zipcode %>
+</p>
+
+
+<% @politicians.each do |politician| %>
+<p><%=  politician.firstname + " " + politician.lastname%></p>
+<% end %>
+
+
+<%= link_to 'Add Politician', politicians_path %>
+
+<%= link_to 'Edit', edit_district_path(@district) %>
+<%= link_to 'Back', districts_path %>

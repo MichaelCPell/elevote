@@ -1,0 +1,63 @@
+<%= form_for(@politician) do |f| %>
+  <% if @politician.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@politician.errors.count, "error") %> prohibited this politician from being saved:</h2>
+
+      <ul>
+      <% @politician.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :firstname %><br />
+    <%= f.text_field :firstname %>
+  </div>
+  <div class="field">
+    <%= f.label :lastname %><br />
+    <%= f.text_field :lastname %>
+  </div>
+
+  <div class="field">
+    <%= f.label :office_id %><br />
+    <%= f.select(:office_id, [['President', 1], ['US Senate',2], ['US House',3], ['Governor',4],['State Senate',5],
+    ['State House', 6]
+    ]) %>
+  </div>
+
+  <div class="field">
+    <%= f.label :state %><br />
+    <%= f.text_field :state %>
+
+  </div>
+
+  <div class="field">
+    <%= f.label :racename %><br />
+    <%= f.text_field :racename %>
+
+  </div>
+
+
+
+
+         <h1>General Questions</h1>
+    <%= f.fields_for :answers do |answer_builder| %>
+
+    <%# render :partial => @politician.questions, :locals => {:answer_builder => answer_builder }  %>
+
+       <div class="field">
+     <%= answer_builder.label :name, "Answer name" %>
+     <%= answer_builder.text_area :name, :rows => 3 %>
+      </div>
+
+    <% end %>
+
+
+
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Elevote</title>
+  <%= stylesheet_link_tag    "application" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+
+<div class="container">
+
+<div id="header" class="span-24">
+ <h1> Header </h1>
+</div>
+<div id="nav" class="span-24">
+Navigation
+
+<%= link_to "Precincts", precincts_path %>
+
+<%= link_to "Politicians", politicians_path %>
+
+
+</div>
+
+<div id="main" class="span-24">
+<%= yield %>
+</div>
+
+
+<div id="footer" class="span-24">
+
+  Footer
+</div>
+
+
+</div> <!--  container -->
+
+</body>
+</html>
