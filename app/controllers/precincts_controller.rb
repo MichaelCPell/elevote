@@ -3,7 +3,7 @@ class PrecinctsController < ApplicationController
   # GET /precincts.json
   def index
     @precincts = Precinct.all
-    @precinct = Precinct.find_or_create_by_name(params[:name])
+    @precinct = Precinct.new
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @precincts }
@@ -14,7 +14,8 @@ class PrecinctsController < ApplicationController
   # GET /precincts/1.json
   def show
     @precinct = Precinct.find(params[:id])
-
+    @districts = @precinct.districts
+    @politicians = @precinct.politicians
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @precinct }
@@ -40,7 +41,7 @@ class PrecinctsController < ApplicationController
   # POST /precincts
   # POST /precincts.json
   def create
-    @precinct = Precinct.new(params[:precinct])
+    @precinct = Precinct.find_or_create_by_name(params[:precinct])
 
     respond_to do |format|
       if @precinct.save

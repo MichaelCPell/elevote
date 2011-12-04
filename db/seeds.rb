@@ -31,6 +31,19 @@ OfficeQuestion.create(name: "President Question 4", office_id: 1)
 
 
 
+#Create Precincts
+Precinct.create(name: "West Boone")
+Precinct.create(name: "East Boone")
+
+#Create Districts
+District.create(tier: "State", category: "Senate", number: "24th" )
+
+#Create Politicians
+Politician.create(firstname: "Michael", lastname: "Pell", district_id: 1, office_id: 1)
 
 
-# Create District Questions
+# Add Districts to Precinct
+
+Precinct.find_by_name("West Boone").districts << District.all
+
+

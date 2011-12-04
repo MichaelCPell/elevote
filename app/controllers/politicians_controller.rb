@@ -14,7 +14,7 @@ class PoliticiansController < ApplicationController
   # GET /politicians/1.json
   def show
     @politician = Politician.find(params[:id])
-
+    @district = @politician.district
 
     respond_to do |format|
       format.html # show.html.erb

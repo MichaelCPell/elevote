@@ -20,44 +20,19 @@
     <%= f.text_field :lastname %>
   </div>
 
-  <div class="field">
-    <%= f.label :office_id %><br />
-    <%= f.select(:office_id, [['President', 1], ['US Senate',2], ['US House',3], ['Governor',4],['State Senate',5],
-    ['State House', 6]
-    ]) %>
+  <div class="select">
+    <%= f.label :office %>
+    <%= f.collection_select :office_id, Office.order(:name), :id, :name %>
   </div>
 
-  <div class="field">
-    <%= f.label :state %><br />
-    <%= f.text_field :state %>
-
+  <div class="select">
+    <%= f.label :district %>
+    <%= f.collection_select :district_id, District.order(:number), :id, :all_togethor %>
   </div>
 
-  <div class="field">
-    <%= f.label :racename %><br />
-    <%= f.text_field :racename %>
+    <div class="submit">
+      <%= f.label :submit %>
+      <%= f.submit "Create New Politician" %>
+    </div>
 
-  </div>
-
-
-
-
-         <h1>General Questions</h1>
-    <%= f.fields_for :answers do |answer_builder| %>
-
-    <%# render :partial => @politician.questions, :locals => {:answer_builder => answer_builder }  %>
-
-       <div class="field">
-     <%= answer_builder.label :name, "Answer name" %>
-     <%= answer_builder.text_area :name, :rows => 3 %>
-      </div>
-
-    <% end %>
-
-
-
-
-  <div class="actions">
-    <%= f.submit %>
-  </div>
-<% end %>
+ <% end %>

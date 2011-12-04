@@ -24,8 +24,18 @@ Navigation
 
 </div>
 
-<div id="main" class="span-24">
-<%= yield %>
+<div id="leftColumn" class="span-5">
+  <%= yield :leftColumn %>
+</div>
+
+
+<div id="middleColumn" class="span-14">
+<%= yield :middleColumn%>
+</div>
+
+<div id="rightColumn" class="span-5 last">
+<%= yield :rightColumn %>
+
 </div>
 
 

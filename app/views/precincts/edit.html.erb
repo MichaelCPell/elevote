@@ -1,6 +1,10 @@
-<h1>Editing precinct</h1>
 
-<%= render 'form' %>
+<% content_for :middleColumn do %>
+    <h1>Editing precinct</h1>
 
-<%= link_to 'Show', @precinct %> |
-<%= link_to 'Back', precincts_path %>
+    <%= render 'form' %>
+
+    <%= link_to 'Show', @precinct %> |
+    <%= link_to 'Back', precincts_path %>
+
+<% end %> %>

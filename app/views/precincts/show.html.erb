@@ -1,10 +1,43 @@
-<p id="notice"><%= notice %></p>
+<% content_for :leftColumn do %>
 
-<p>
-  <b>Name:</b>
-  <%= @precinct.name %>
-</p>
+    <p id="notice"><%= notice %></p>
+
+<% end %>
 
 
-<%= link_to 'Edit', edit_precinct_path(@precinct) %> |
-<%= link_to 'Back', precincts_path %>
+
+<% content_for :middleColumn do %>
+
+
+    <h1>Name:
+      <%= @precinct.name %>
+    <h1>
+
+
+    <h2>Politicians in this Precinct</h2>
+    <% for politician in @politicians %>
+    <%= politician.firstname %>
+    <%= politician.lastname %>,
+    <%= politician.office.name %>
+    <%= link_to politician.firstname, politician %>
+    <br>
+    <% end %>
+
+    <h2>Districts in this Precinct</h2>
+    <% for district in @districts %>
+    <%= district.tier %>
+    <%= district.number %>
+    <%= district.category %>
+    <% end %>
+
+
+
+
+
+<% end %>
+
+<% content_for :rightColumn do %>
+
+    <%= link_to 'Edit', edit_precinct_path(@precinct) %> |
+    <%= link_to 'Back', precincts_path %>
+<% end %>

@@ -14,7 +14,7 @@ class DistrictsController < ApplicationController
   # GET /districts/1.json
   def show
     @district = District.find(params[:id])
-
+    @politicians = @district.politicians
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @district }

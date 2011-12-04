@@ -23,15 +23,11 @@ ActiveRecord::Schema.define(:version => 20111127044030) do
   end
 
   create_table "districts", :force => true do |t|
-    t.string   "office"
+    t.string   "category"
     t.string   "number"
+    t.string   "tier"
     t.datetime "created_at"
     t.datetime "updated_at"
-  end
-
-  create_table "districts_politicians", :id => false, :force => true do |t|
-    t.integer "district_id"
-    t.integer "politician_id"
   end
 
   create_table "districts_precincts", :id => false, :force => true do |t|
@@ -58,6 +54,7 @@ ActiveRecord::Schema.define(:version => 20111127044030) do
     t.string   "state"
     t.string   "racename"
     t.integer  "office_id"
+    t.integer  "district_id"
     t.integer  "office_question_id"
     t.datetime "created_at"
     t.datetime "updated_at"

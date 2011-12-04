@@ -1,16 +1,21 @@
 class Politician < ActiveRecord::Base
+  has_many :answers
+  has_many :office_questions, :through => :answers
+
+
+
   #Scopes
 
 
   #Associations
-  has_many :questions, :through => :answers
-  has_many :answers
-  accepts_nested_attributes_for :answers
+
 
   belongs_to :district
   belongs_to :office
 
-  has_many :office_questions, :through => :answers
+
+
+  has_many :questions
 
 
 

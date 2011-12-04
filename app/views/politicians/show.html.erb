@@ -2,16 +2,16 @@
 <div class="container span-24">
 
 
-    <div id="leftColumn" class="span-5">
+    <% content_for :leftColumn do %>
         <div id="politicianPortrait" class="span-5">
           Portrait
         </div>
-    </div>
+    <% end %>
 
 
-      <!--Middle Column-->
 
-    <div id="middleColumn" class="span-14">
+
+    <% content_for :middleColumn do %>
 
         <h1 id="politicianName" class="span-14">
           <%= @politician.firstname %>
@@ -25,24 +25,29 @@
           <% if @politician.office %> <%= @politician.office.name %><% end  %>
         </p>
 
-        <% for question in @politician.questions %>
-            <p><%= question.name %></p>
-            <p><%= find_answer(question,@politician) %>
-        <% end %>
+       <p><b>District:</b> <%= @politician.district.tier %>  </p>
 
-        <% for question in @politician.office_questions %>
-            <p><%= question.name %></p>
-            <p><%= find_answer(question,@politician) %>
-        <% end %>
 
-    </div>
+        <%# for question in @politician.questions %>
+            <p><%#= question.name %></p>
+            <p><%#=# find_answer(question,@politician) %>
+        <%# end %>
 
-    <div id="rightColumn" class="span-5 last">
+        <%# for question in @politician.office_questions %>
+            <p><%#= question.name %></p>
+            <p><%#= find_answer(question,@politician) %>
+        <%# end %>
+
+
+
+    <% end %>
+
+    <% content_for :rightColumn do %>
        <% if notice %><p id="notice"><%= notice %></p><% end %>
 
         <%= link_to 'Edit', edit_politician_path(@politician) %> <br>
         <%= link_to 'Back', politicians_path %>
-    </div>
+    <% end %>
 
 <!--Container Div-->
 </div>

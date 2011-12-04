@@ -6,6 +6,7 @@ class CreatePoliticians < ActiveRecord::Migration
       t.string :state
       t.string :racename
       t.integer :office_id
+      t.integer :district_id
       t.integer :office_question_id
 
       t.timestamps
