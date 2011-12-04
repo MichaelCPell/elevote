@@ -1,6 +1,10 @@
 class PoliticiansController < ApplicationController
   # GET /politicians
   # GET /politicians.json
+
+  before_filter :authenticated?, :only => [:edit, :update]
+  before_filter :correct_politician, :only => [:edit, :update]
+
   def index
     @politicians = Politician.all
 
@@ -91,7 +95,18 @@ class PoliticiansController < ApplicationController
   end
 
 
+  private
 
+    def authenticated?
+      if current_politician.nil?
+        redirect_to(new_session_path)
+      end
+    end
+
+    def correct_politician
+      @politician = Politician.find(params[:id])
+      redirect_to(root_path) unless current_politician == @politician
+    end
 
 
 

@@ -30,6 +30,21 @@
     <%= f.collection_select :district_id, District.order(:number), :id, :all_togethor %>
   </div>
 
+  <div class="field">
+      <%= f.label :email %>
+      <%= f.text_field :email %>
+  </div>
+
+  <div class="field">
+    <%= f.label :password %>
+    <%= f.password_field :password %>
+  </div>
+
+  <div class="field">
+    <%= f.label :password_confirmation %>
+    <%= f.password_field :password_confirmation %>
+  </div>
+
     <div class="submit">
       <%= f.label :submit %>
       <%= f.submit "Create New Politician" %>

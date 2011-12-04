@@ -56,6 +56,8 @@ ActiveRecord::Schema.define(:version => 20111127044030) do
     t.integer  "office_id"
     t.integer  "district_id"
     t.integer  "office_question_id"
+    t.string   "email"
+    t.string   "password_digest"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

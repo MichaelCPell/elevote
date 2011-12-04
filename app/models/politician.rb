@@ -1,4 +1,11 @@
 class Politician < ActiveRecord::Base
+  has_secure_password
+  validates_presence_of :password, :on => :create
+  validates_presence_of :email
+
+
+
+
   has_many :answers
   has_many :office_questions, :through => :answers
 

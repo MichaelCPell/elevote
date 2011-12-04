@@ -8,6 +8,8 @@ class CreatePoliticians < ActiveRecord::Migration
       t.integer :office_id
       t.integer :district_id
       t.integer :office_question_id
+      t.string :email
+      t.string :password_digest
 
       t.timestamps
     end

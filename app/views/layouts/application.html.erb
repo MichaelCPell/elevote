@@ -2,19 +2,23 @@
 <html>
 <head>
   <title>Elevote</title>
-  <%= stylesheet_link_tag    "application" %>
+  <%= stylesheet_link_tag "application" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
-<body>
+<body id="bodycss">
 
 
 <div class="container">
 
 <div id="header" class="span-24">
- <h1> Header </h1>
+<div id="headerLogo" class="left">
+  <%= image_tag "gp1.png" %>
 </div>
-<div id="nav" class="span-24">
+
+
+</div>
+<div id="nav" class="span-24 hide">
 Navigation
 
 <%= link_to "Precincts", precincts_path %>

@@ -1,18 +1,24 @@
 
-<% content_for @middleColumn do %>
+
+<%= content_for :middleColumn do %>
 <h1>
   Sign In
 </h1>
 
 
-    <%= form_for(:session, :url=> sessions_path) do |f|  %>
+   <%= form_tag sessions_path do %>
+     <div class="field">
+       <%= label_tag :email %>
+       <%= text_field_tag :email, params[:email] %>
+     </div>
 
-        <%= f.label :email %>
-        <%= f.text_field :email %>
+     <div class="field">
+       <%= label_tag :password %>
+       <%= password_field_tag :password %>
+     </div>
 
-        <%= f.label :password %>
-        <%= f.password_field :password %>
+     <div class="actions"><%= submit_tag "Log in" %></div>
 
-    <% end %>
+   <% end  %>
 
 <% end %>
