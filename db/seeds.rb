@@ -40,6 +40,7 @@ District.create(tier: "State", category: "Senate", number: "24th" )
 
 #Create Politicians
 Politician.create(firstname: "Michael", lastname: "Pell", district_id: 1, office_id: 1)
+Politician.create(firstname: "Jimmy", lastname: "McMillan", district_id: 1, office_id: 1)
 
 
 # Add Districts to Precinct
