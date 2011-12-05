@@ -19,9 +19,9 @@ Office.create(name: "State House")
 
 
 #Create General Questions
-Question.create(name: "What are three goals that you hope to accomplish by the end of this term?")
+Question.create(name: "What are three goals you intend to accomplish this term?")
 Question.create(name: "Describe a time that you have successfully compromised:")
-Question.create(name: "Rank these 5 facets of society in order of importance to your candidacy and give a brief explanation:")
+Question.create(name: "Which 5 issues matter most to your candidacy")
 Question.create(name: "Tell us something about yourself that is humanizing and entertaining:")
 #Create Office Specific Questions
 OfficeQuestion.create(name: "President Question 1", office_id: 1)

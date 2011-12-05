@@ -11,6 +11,7 @@ $red: #800000;
 $yellow: #cb9012;
 $gray: #3f392d;
 $fontwhite: #f9f9f9;
+$blue: #183048;
 
 
 #bodycss {
@@ -85,6 +86,19 @@ $fontwhite: #f9f9f9;
 
 #politicianName{
 height: 50px;
+}
+
+.politicianAnswer{
+    padding-bottom: 10px;
+}
+
+.politicianAnswer:hover {
+    background-color: #f0f0f0;
+
+}
+
+.politicianQuestion{
+    border-bottom: 1px $red solid;
 }
 
 
