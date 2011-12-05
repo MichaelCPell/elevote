@@ -19,10 +19,10 @@ Office.create(name: "State House")
 
 
 #Create General Questions
-Question.create(name: "Question ID 1")
-Question.create(name: "Question ID 2")
-Question.create(name: "Question ID 3")
-Question.create(name: "Question ID 4")
+Question.create(name: "What are three goals that you hope to accomplish by the end of this term?")
+Question.create(name: "Describe a time that you have successfully compromised:")
+Question.create(name: "Rank these 5 facets of society in order of importance to your candidacy and give a brief explanation:")
+Question.create(name: "Tell us something about yourself that is humanizing and entertaining:")
 #Create Office Specific Questions
 OfficeQuestion.create(name: "President Question 1", office_id: 1)
 OfficeQuestion.create(name: "President Question 2", office_id: 1)
@@ -44,7 +44,5 @@ Politician.create(firstname: "Jimmy", lastname: "McMillan", district_id: 1, offi
 
 
 # Add Districts to Precinct
-
-Precinct.find_by_name("West Boone").districts << District.all
 
 

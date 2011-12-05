@@ -16,10 +16,9 @@
 
     <h2>Politicians in this Precinct</h2>
     <% for politician in @politicians %>
-    <%= politician.firstname %>
-    <%= politician.lastname %>,
-    <%= politician.office.name %>
-    <%= link_to politician.firstname, politician %>
+
+
+    <%= link_to politician.precinctsShowLink, politician %>
     <br>
     <% end %>
 

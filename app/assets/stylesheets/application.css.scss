@@ -37,6 +37,7 @@ $fontwhite: #f9f9f9;
     text-align: center;
     height: 50px;
     background-color: $gray;
+    border-bottom: 1px black solid;
 }
 
 
@@ -45,7 +46,7 @@ $fontwhite: #f9f9f9;
 
 }
 
-/*Politician Show Page*/
+
 
 /*Left Column*/
 #leftColumn{
@@ -54,10 +55,7 @@ $fontwhite: #f9f9f9;
     border-right: $gray 1px solid;
 }
 
-#politicianPortrait{
-    height: 190px;
-    background-color: #d3d3d3;
-}
+
 
 
 /*Middle Column*/
@@ -73,7 +71,38 @@ $fontwhite: #f9f9f9;
     border-top: $gray 1px solid;
 }
 
+/*Politician Show Page*/
+#politicianPortrait{
+    height: 210px;
+    margin-bottom: 10px;
+}
+
+#politicianSlogan{
+    height:50px;
+    text-align: right;
+
+}
+
+#politicianName{
+height: 50px;
+}
 
 
 /*New Classes*/
 
+.button {
+  border: 2px solid $gray;
+  background-color: $fontwhite;
+  width: 110px;
+  font-size: 14px;
+  text-align: center;
+  border-radius: 5px;
+  font-color: $gray;
+
+
+
+}
+
+.button:hover {
+    background-color: $yellow;
+}

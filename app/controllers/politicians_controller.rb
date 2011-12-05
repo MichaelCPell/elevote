@@ -2,8 +2,8 @@ class PoliticiansController < ApplicationController
   # GET /politicians
   # GET /politicians.json
 
-  before_filter :authenticated?, :only => [:edit, :update]
-  before_filter :correct_politician, :only => [:edit, :update]
+  #before_filter :authenticated?, :only => [:edit, :update]
+  #before_filter :correct_politician, :only => [:edit, :update]
 
   def index
     @politicians = Politician.all
@@ -48,9 +48,8 @@ class PoliticiansController < ApplicationController
   def create
     @politician = Politician.new(params[:politician])
 
-    @politician.questions << Question.all
-    @politician.office_questions << @politician.office.office_questions.all
 
+    @politician.create_answers
 
 
 

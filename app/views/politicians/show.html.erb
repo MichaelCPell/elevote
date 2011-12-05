@@ -6,6 +6,23 @@
         <div id="politicianPortrait" class="span-5">
           <%= image_tag "JimmyCropped.jpg" %>
         </div>
+
+      <div id="donateButton" class="button span-3 push-1">
+        Donate
+      </div>
+
+      <div id="volunteerButton" class="button span-3 push-1">
+        Volunteer
+      </div>
+
+      <div id="socialMediaButton" class="button span-3 push-1">
+        Social Media
+      </div>
+
+      <div id="socialMediaButton" class="button span-3 push-1">
+        E-mail
+      </div>
+
     <% end %>
 
 
@@ -13,30 +30,33 @@
 
     <% content_for :middleColumn do %>
 
-        <h1 id="politicianName" class="span-14">
+        <h1 id="politicianName" class="span-14 last">
           <%= @politician.firstname %>
           <%= @politician.lastname %>
 
         </h1>
 
-
-        <p>
-          <b>Office:</b>
-          <% if @politician.office %> <%= @politician.office.name %><% end  %>
-        </p>
-
-       <p><b>District:</b> <%= @politician.district.tier %>  </p>
+      <h3 id="politicianSlogan" class="span-14 last">
+        "The Rent Is Too Damn High"
+      </h3>
 
 
-        <%# for question in @politician.questions %>
-            <p><%#= question.name %></p>
-            <p><%#=# find_answer(question,@politician) %>
-        <%# end %>
 
-        <%# for question in @politician.office_questions %>
-            <p><%#= question.name %></p>
-            <p><%#= find_answer(question,@politician) %>
-        <%# end %>
+     <% for answer in @politician.answers do %>
+
+     <div class="politicianQuestion span-14">
+        <h2><%= answer.question.name %></h2>
+     </div>
+
+     <div class="politicianAnswer span-14">
+       <%= answer.name %>
+     </div>
+
+
+
+      <% end %>
+
+
 
 
 

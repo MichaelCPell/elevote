@@ -7,7 +7,10 @@ class Politician < ActiveRecord::Base
 
 
   has_many :answers
+  accepts_nested_attributes_for :answers
+
   has_many :office_questions, :through => :answers
+  has_many :questions, :through => :answers
 
 
 
@@ -32,6 +35,19 @@ class Politician < ActiveRecord::Base
     self.questions + self.district_questions + self.office_questions
   end
 
+  #Used in the Precinct show
+  def precinctsShowLink
+    "#{firstname} #{lastname}, #{office.name}"
+  end
+
+  def create_answers
+
+    1.upto(4) {|i|
+    self.answers << Answer.new(question_id: i, name: "This Question Has Not Been Answered")
+    }
+
+
+  end
 
   #validations
 
