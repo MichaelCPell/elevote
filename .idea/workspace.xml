@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="01a9f816-fa55-4a7a-9bd6-92e6ceb55c0d" name="Default" comment="Finished for the night: 12-4-11&#10;">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/politicians.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/answers/_answerTabs.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/initializers/quiet_assets.rb" />
-      <change type="DELETED" beforePath="C:\Users\Michael\rails_projects\Elevote\app\assets\javascripts\politicians.js.coffee" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\rails_projects\Elevote\.ssh\known_hosts" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\Michael\rails_projects\Elevote\will-pagiante\bin\erubis" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\Michael\rails_projects\Elevote\will-pagiante\bin\erubis.bat" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\Michael\rails_projects\Elevote\will-pagiante\bin\rackup" afterPath="" />
@@ -4283,32 +4280,7 @@
       <change type="DELETED" beforePath="C:\Users\Michael\rails_projects\Elevote\will-pagiante\specifications\turn-0.8.3.gemspec" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\Michael\rails_projects\Elevote\will-pagiante\specifications\tzinfo-0.3.30.gemspec" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\Michael\rails_projects\Elevote\will-pagiante\specifications\uglifier-1.0.3.gemspec" afterPath="" />
-      <change type="MOVED" beforePath="C:\Users\Michael\rails_projects\Elevote\will-pagiante\gems\arel-2.2.1\.gemtest" afterPath="$PROJECT_DIR$/app/views/sessions/destroy.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.generators" afterPath="$PROJECT_DIR$/.idea/.generators" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Elevote.iml" afterPath="$PROJECT_DIR$/.idea/Elevote.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log.xlsx" afterPath="$PROJECT_DIR$/log.xlsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/application.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/application.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.css.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/politicians_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/politicians_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/precincts_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/precincts_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/sessions_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/sessions_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/politician.rb" afterPath="$PROJECT_DIR$/app/models/politician.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/districts/index.html.erb" afterPath="$PROJECT_DIR$/app/views/districts/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/politicians/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/politicians/edit.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/politicians/show.html.erb" afterPath="$PROJECT_DIR$/app/views/politicians/show.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/precincts/show.html.erb" afterPath="$PROJECT_DIR$/app/views/precincts/show.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/sessions/new.html.erb" afterPath="$PROJECT_DIR$/app/views/sessions/new.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/development.rb" afterPath="$PROJECT_DIR$/config/environments/development.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20111017010356_create_politicians.rb" afterPath="$PROJECT_DIR$/db/migrate/20111017010356_create_politicians.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/seeds.rb" afterPath="$PROJECT_DIR$/db/seeds.rb" />
     </list>
     <ignored path="Elevote.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -4347,7 +4319,7 @@
       <file leaf-file-name=".gitignore" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="110" selection-start="62" selection-end="62" vertical-scroll-proportion="0.16398714">
+            <state line="6" column="68" selection-start="62" selection-end="62" vertical-scroll-proportion="0.16398714">
               <folding />
             </state>
           </provider>
@@ -4384,15 +4356,6 @@
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state line="9" column="13" selection-start="359" selection-end="366" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="jquery-ui-1.8.16.custom.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/jquery-ui-1.8.16.custom.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="438" column="86" selection-start="25622" selection-end="25622" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -4493,7 +4456,53 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="mini_magick" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Elevote" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Elevote" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mini_magick" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cache" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Elevote" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Elevote" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="db" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Elevote" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Elevote" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -4900,6 +4909,7 @@
     <frame x="-1928" y="-320" width="1936" height="1096" extended-state="6" />
     <editor active="false" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32988626" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32885212" sideWeight="0.0" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -4913,7 +4923,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32988626" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -4944,7 +4953,7 @@
     <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
     <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished for the night: 12-4-11&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fuqua Retarded" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -4962,6 +4971,7 @@
     <MESSAGE value="After Some CSS" />
     <MESSAGE value="No More SSL&#10;" />
     <MESSAGE value="Finished for the night: 12-4-11&#10;" />
+    <MESSAGE value="Fuqua Retarded" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -4990,13 +5000,6 @@
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
         <state line="26" column="18" selection-start="448" selection-end="448" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/uploaders/image_uploader.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="2" selection-start="731" selection-end="731" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -5041,13 +5044,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/jquery-ui-1.8.16.custom.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="438" column="86" selection-start="25622" selection-end="25622" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/politicians.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="31" column="33" selection-start="571" selection-end="571" vertical-scroll-proportion="0.0">
@@ -5064,7 +5060,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="110" selection-start="62" selection-end="62" vertical-scroll-proportion="0.16398714">
+        <state line="6" column="68" selection-start="62" selection-end="62" vertical-scroll-proportion="0.16398714">
           <folding />
         </state>
       </provider>
