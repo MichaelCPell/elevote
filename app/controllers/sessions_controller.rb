@@ -9,17 +9,17 @@ class SessionsController < ApplicationController
 
     if politician && politician.authenticate(params[:password])
       session[:politician_id] = politician.id
-      redirect_to root_url, :notice => "Logged in!"
+      redirect_to politician, :notice => "Logged in!"
 
     else
-      flash.now.alert = "Invalid email or password"
-      render "new"
+
+       redirect_to new_session_path, :notice => "Invalid email or password"
     end
   end
 
   def destroy
     session[:politician_id] = nil
-    redirect_to :root_url, :notice => "Logged out!"
+    redirect_to root_url, :notice => "Logged out!"
   end
 
 end

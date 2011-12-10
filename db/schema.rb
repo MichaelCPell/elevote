@@ -58,6 +58,9 @@ ActiveRecord::Schema.define(:version => 20111127044030) do
     t.integer  "office_question_id"
     t.string   "email"
     t.string   "password_digest"
+    t.string   "portrait"
+    t.string   "image1"
+    t.string   "image2"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

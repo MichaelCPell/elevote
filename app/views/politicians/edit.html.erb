@@ -4,7 +4,7 @@
 
 <% content_for :middleColumn do %>
 
-    <%= form_for @politician do |f| %>
+      <%= form_for @politician, :html => {:multipart => true } do |f| %>
 
 
         <%= f.fields_for :answers do |answer_fields| %>
@@ -19,7 +19,11 @@
         <%= f.label :email %>
         <%= f.text_field :email %>
 
+        <%= f.file_field :portrait %>
+
         <%= f.submit %>
+
+
 
     <% end %>
 

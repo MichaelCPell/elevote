@@ -20,11 +20,27 @@
   <%= image_tag "gp1.png" %>
 </div>
 
-<div id="Politician Sign-Up Button" class="push-11 span-6 button last">
+
+<% if current_politician %>
+  <div id="Politician Sign-out Button" class="push-11 span-6 button last">
+    <%= link_to "Sign-out", signout_path %>
+  </div>
+<% end %>
+
+
+<% if current_politician.nil? %>
+<div id="Politician Log-in  Button" class="push-5 span-6 button">
+  <%= link_to "Politician Log-in", new_session_path %>
+</div>
+<% end %>
+
+
+
+<% if current_politician.nil? %>
+<div id="Politician Sign-Up Button" class="push-6 span-6 button last">
   <%= link_to "Politician Sign-up", new_politician_path %>
 </div>
-
-
+<% end %>
 
 
 </div>
@@ -38,9 +54,11 @@ Navigation
 <%= link_to "Politicians", politicians_path %>
 
 
+
+
 </div>
 
-    <div data-pjax-container>
+
         <div id="leftColumn" class="span-5">
             <%= yield :leftColumn %>
         </div>
@@ -53,7 +71,7 @@ Navigation
         <div id="rightColumn" class="span-5 last">
             <%= yield :rightColumn %>
         </div>
-    </div>
+
 
 <div id="footer" class="span-24">
 

@@ -63,6 +63,7 @@ $blue: #183048;
 
 #middleColumn {
     height: 400px;
+    margin-left: -5px;
 
 }
 
@@ -119,4 +120,8 @@ height: 50px;
 
 .button:hover {
     background-color: $yellow;
+}
+
+.questionsPanel {
+  height: 260px;
 }

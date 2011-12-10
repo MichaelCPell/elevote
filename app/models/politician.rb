@@ -3,6 +3,8 @@ class Politician < ActiveRecord::Base
   validates_presence_of :password, :on => :create
   validates_presence_of :email
 
+  mount_uploader :portrait, ImageUploader
+
 
 
 

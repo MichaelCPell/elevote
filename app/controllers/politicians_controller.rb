@@ -2,8 +2,8 @@ class PoliticiansController < ApplicationController
   # GET /politicians
   # GET /politicians.json
 
-  #before_filter :authenticated?, :only => [:edit, :update]
-  #before_filter :correct_politician, :only => [:edit, :update]
+  before_filter :authenticated?, :only => [:edit, :update]
+  before_filter :correct_politician, :only => [:edit, :update]
 
   def index
     @politicians = Politician.all
@@ -19,6 +19,7 @@ class PoliticiansController < ApplicationController
   def show
     @politician = Politician.find(params[:id])
     @district = @politician.district
+
 
     respond_to do |format|
       format.html # show.html.erb

@@ -4,7 +4,7 @@
 
     <% content_for :leftColumn do %>
         <div id="politicianPortrait" class="span-5">
-          <%= image_tag "JimmyCropped.jpg" %>
+          <%= image_tag @politician.portrait_url.to_s %>
         </div>
 
       <div id="donateButton" class="button span-3 push-1">
@@ -42,21 +42,26 @@
 
 
 
-     <% for answer in @politician.answers do %>
-
-     <div class="politicianQuestion span-14">
-        <h3><%= answer.question.name %></h3>
-     </div>
-
-     <div class="politicianAnswer span-14">
-       <%= answer.name %>
-     </div>
+    <%= render :partial => "/answers/answerTabs" %>
 
 
 
+    <div id="dialogDonate" title="Thank You For Your Contribution">
+
+      <%= form_tag do %>
+      <%= text_field_tag(:q)  %>
+      <%= submit_tag "Contribute!", :disabled => :true %>
+          <% end %>
+    </div>
+
+
+    <div id="dialogVolunteer" title="Submit Your E-mail Address to Our List">
+
+      <%= form_tag do %>
+          <%= text_field_tag(:q)  %>
+          <%= submit_tag "Submit!", :disabled => :true %>
       <% end %>
-
-
+    </div>
 
 
 

@@ -10,6 +10,9 @@ class CreatePoliticians < ActiveRecord::Migration
       t.integer :office_question_id
       t.string :email
       t.string :password_digest
+      t.string :portrait
+      t.string :image1
+      t.string :image2
 
       t.timestamps
     end

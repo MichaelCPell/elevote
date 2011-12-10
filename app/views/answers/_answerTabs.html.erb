@@ -1,0 +1,33 @@
+<div id="tabs" class="span-14">
+         <ul>
+           <li ><%= link_to("Primary Questions", "#primaryQuestions") %></li>
+           <li><%= link_to("Office Questions", "#officeQuestions") %></li>
+           <li><%= link_to("Values Questions", "#valuesQuestions") %></li>
+           <li><%= link_to("Other Questions", "#otherQuestions") %></li>
+         </ul>
+
+         <div id="primaryQuestions" class="questionsPanel span-14 last">
+             <% for answer in @politician.answers do %>
+
+             <div class="politicianQuestion span-14 last">
+                <h3 ><%= answer.question.name %></h3>
+             </div>
+
+             <div class="politicianAnswer span-14 last">
+               <%= answer.name %>
+             </div>
+        <% end %>
+         </div>
+
+        <div id="officeQuestions" class="span-14">
+
+        </div>
+
+       <div id="valuesQuestions" class="span-14">
+
+        </div>
+       <div id="otherQuestions" class="span-14">
+
+        </div>
+
+    </div> <!-- end tabs -->

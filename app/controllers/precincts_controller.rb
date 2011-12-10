@@ -25,7 +25,7 @@ class PrecinctsController < ApplicationController
   # GET /precincts/new
   # GET /precincts/new.json
   def new
-    @precinct = Precinct.new
+    @precinct = Precinct.find(params[:id])
 
     respond_to do |format|
       format.html # new.html.erb
@@ -41,7 +41,7 @@ class PrecinctsController < ApplicationController
   # POST /precincts
   # POST /precincts.json
   def create
-    @precinct = Precinct.find_or_create_by_name(params[:precinct])
+    @precinct = Precinct.find(params[:precinct][:id])
 
     respond_to do |format|
       if @precinct.save
