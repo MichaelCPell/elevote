@@ -4,137 +4,8 @@
     <bookmark url="file://$PROJECT_DIR$/app/views/officials/show.html.erb" line="52" mnemonic="9" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="01a9f816-fa55-4a7a-9bd6-92e6ceb55c0d" name="Default" comment="Still Working&#10;">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gem/specs/gems.github.com%80/prerelease_specs.4.8" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gem/specs/gems.github.com%80/specs.4.8" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gem/specs/gems.rubyonrails.org%80/specs.4.8" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gem/specs/rubygems.org%80/prerelease_specs.4.8" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gem/specs/rubygems.org%80/specs.4.8" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/background.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/images/intellivote.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/intellivote.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/mainstparade.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/thomas-jefferson-statue.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/uploads/Jimmy.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gem/specs/rubygems.org%80/quick/Marshal.4.8/actionmailer-3.1.0.gemspec" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gem/specs/rubygems.org%80/quick/Marshal.4.8/actionpack-3.1.0.gemspec" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gem/specs/rubygems.org%80/quick/Marshal.4.8/activemodel-3.1.0.gemspec" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gem/specs/rubygems.org%80/quick/Marshal.4.8/activerecord-3.1.0.gemspec" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gem/specs/rubygems.org%80/quick/Marshal.4.8/activeresource-3.1.0.gemspec" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gem/specs/rubygems.org%80/quick/Marshal.4.8/activesupport-3.1.0.gemspec" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gem/specs/rubygems.org%80/quick/Marshal.4.8/ansi-1.3.0.gemspec" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gem/specs/rubygems.org%80/quick/Marshal.4.8/arel-2.2.1.gemspec" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gem/specs/rubygems.org%80/quick/Marshal.4.8/bcrypt-ruby-3.0.1-java.gemspec" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gem/specs/rubygems.org%80/quick/Marshal.4.8/bcrypt-ruby-3.0.1-x86-mingw32.gemspec" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gem/specs/rubygems.org%80/quick/Marshal.4.8/bcrypt-ruby-3.0.1-x86-mswin32-60.gemspec" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gem/specs/rubygems.org%80/quick/Marshal.4.8/bcrypt-ruby-3.0.1.gemspec" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gem/specs/rubygems.org%80/quick/Marshal.4.8/builder-3.0.0.gemspec" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gem/specs/rubygems.org%80/quick/Marshal.4.8/carrierwave-0.5.8.gemspec" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gem/specs/rubygems.org%80/quick/Marshal.4.8/coffee-rails-3.1.1.gemspec" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gem/specs/rubygems.org%80/quick/Marshal.4.8/coffee-script-2.2.0.gemspec" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gem/specs/rubygems.org%80/quick/Marshal.4.8/coffee-script-source-1.1.2.gemspec" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gem/specs/rubygems.org%80/quick/Marshal.4.8/erubis-2.7.0.gemspec" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gem/specs/rubygems.org%80/quick/Marshal.4.8/execjs-1.2.9.gemspec" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gem/specs/rubygems.org%80/quick/Marshal.4.8/formtastic-2.0.2.gemspec" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gem/specs/rubygems.org%80/quick/Marshal.4.8/hike-1.2.1.gemspec" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gem/specs/rubygems.org%80/quick/Marshal.4.8/i18n-0.6.0.gemspec" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gem/specs/rubygems.org%80/quick/Marshal.4.8/jquery-rails-1.0.16.gemspec" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gem/specs/rubygems.org%80/quick/Marshal.4.8/json-1.6.1-java.gemspec" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gem/specs/rubygems.org%80/quick/Marshal.4.8/json-1.6.1.gemspec" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gem/specs/rubygems.org%80/quick/Marshal.4.8/mail-2.3.0.gemspec" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gem/specs/rubygems.org%80/quick/Marshal.4.8/mime-types-1.16.gemspec" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gem/specs/rubygems.org%80/quick/Marshal.4.8/multi_json-1.0.3.gemspec" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gem/specs/rubygems.org%80/quick/Marshal.4.8/pg-0.11.0-x86-mingw32.gemspec" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gem/specs/rubygems.org%80/quick/Marshal.4.8/pg-0.11.0-x86-mswin32.gemspec" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gem/specs/rubygems.org%80/quick/Marshal.4.8/pg-0.11.0.gemspec" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gem/specs/rubygems.org%80/quick/Marshal.4.8/pjax_rails-0.1.10.gemspec" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gem/specs/rubygems.org%80/quick/Marshal.4.8/polyglot-0.3.2.gemspec" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gem/specs/rubygems.org%80/quick/Marshal.4.8/rack-1.3.4.gemspec" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gem/specs/rubygems.org%80/quick/Marshal.4.8/rack-cache-1.0.3.gemspec" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gem/specs/rubygems.org%80/quick/Marshal.4.8/rack-mount-0.8.3.gemspec" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gem/specs/rubygems.org%80/quick/Marshal.4.8/rack-ssl-1.3.2.gemspec" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gem/specs/rubygems.org%80/quick/Marshal.4.8/rack-test-0.6.1.gemspec" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gem/specs/rubygems.org%80/quick/Marshal.4.8/rails-3.1.0.gemspec" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gem/specs/rubygems.org%80/quick/Marshal.4.8/railties-3.1.0.gemspec" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gem/specs/rubygems.org%80/quick/Marshal.4.8/rake-0.9.2.gemspec" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gem/specs/rubygems.org%80/quick/Marshal.4.8/rdoc-3.10.gemspec" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gem/specs/rubygems.org%80/quick/Marshal.4.8/rmagick-2.13.1.gemspec" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gem/specs/rubygems.org%80/quick/Marshal.4.8/sass-3.1.10.gemspec" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gem/specs/rubygems.org%80/quick/Marshal.4.8/sass-rails-3.1.4.gemspec" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gem/specs/rubygems.org%80/quick/Marshal.4.8/sprockets-2.0.2.gemspec" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gem/specs/rubygems.org%80/quick/Marshal.4.8/sqlite3-1.3.4-x86-mingw32.gemspec" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gem/specs/rubygems.org%80/quick/Marshal.4.8/sqlite3-1.3.4-x86-mswin32-60.gemspec" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gem/specs/rubygems.org%80/quick/Marshal.4.8/sqlite3-1.3.4.gemspec" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gem/specs/rubygems.org%80/quick/Marshal.4.8/thor-0.14.6.gemspec" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gem/specs/rubygems.org%80/quick/Marshal.4.8/tilt-1.3.3.gemspec" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gem/specs/rubygems.org%80/quick/Marshal.4.8/treetop-1.4.10.gemspec" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gem/specs/rubygems.org%80/quick/Marshal.4.8/turn-0.8.3.gemspec" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gem/specs/rubygems.org%80/quick/Marshal.4.8/tzinfo-0.3.30.gemspec" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gem/specs/rubygems.org%80/quick/Marshal.4.8/uglifier-1.0.3.gemspec" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/counties.js.coffee" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/stylesheets/counties.css.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/counties_controller.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/officials_controller.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/helpers/counties_helper.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/helpers/officials_helper.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/county.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/counties/_form.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/counties/edit.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/counties/index.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/counties/new.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/counties/show.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/officials/_form.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/officials/index.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20111218200029_create_counties.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/fixtures/counties.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/functional/counties_controller_test.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/unit/county_test.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/unit/helpers/counties_helper_test.rb" />
-      <change type="DELETED" beforePath="C:\Users\Michael\rails_projects\Elevote\app\controllers\politicians_controller.rb" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Michael\rails_projects\Elevote\app\helpers\politicians_helper.rb" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Michael\rails_projects\Elevote\app\views\politicians\_form.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Michael\rails_projects\Elevote\app\views\politicians\index.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Michael\rails_projects\Elevote\public\uploads\politician\portrait\1\libertybell.png" afterPath="" />
-      <change type="MOVED" beforePath="C:\Users\Michael\rails_projects\Elevote\app\assets\javascripts\politicians.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/officials.js" />
-      <change type="MOVED" beforePath="C:\Users\Michael\rails_projects\Elevote\app\assets\stylesheets\application.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.css.scss.erb" />
-      <change type="MOVED" beforePath="C:\Users\Michael\rails_projects\Elevote\app\assets\stylesheets\politicians.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/officials.css.scss" />
-      <change type="MOVED" beforePath="C:\Users\Michael\rails_projects\Elevote\app\models\politician.rb" afterPath="$PROJECT_DIR$/app/models/official.rb" />
-      <change type="MOVED" beforePath="C:\Users\Michael\rails_projects\Elevote\app\views\politicians\edit.html.erb" afterPath="$PROJECT_DIR$/app/views/officials/edit.html.erb" />
-      <change type="MOVED" beforePath="C:\Users\Michael\rails_projects\Elevote\app\views\politicians\new.html.erb" afterPath="$PROJECT_DIR$/app/views/officials/new.html.erb" />
-      <change type="MOVED" beforePath="C:\Users\Michael\rails_projects\Elevote\app\views\politicians\show.html.erb" afterPath="$PROJECT_DIR$/app/views/officials/show.html.erb" />
-      <change type="MOVED" beforePath="C:\Users\Michael\rails_projects\Elevote\db\migrate\20111017010356_create_politicians.rb" afterPath="$PROJECT_DIR$/db/migrate/20111017010356_create_officials.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Elevote.iml" afterPath="$PROJECT_DIR$/.idea/Elevote.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/gp1.png" afterPath="$PROJECT_DIR$/app/assets/images/gp1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/precincts.js.coffee" afterPath="$PROJECT_DIR$/app/assets/javascripts/precincts.js.coffee" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/screen.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/screen.css.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/districts_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/districts_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/precincts_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/precincts_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/sessions_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/sessions_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/answer.rb" afterPath="$PROJECT_DIR$/app/models/answer.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/district.rb" afterPath="$PROJECT_DIR$/app/models/district.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/office.rb" afterPath="$PROJECT_DIR$/app/models/office.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/office_question.rb" afterPath="$PROJECT_DIR$/app/models/office_question.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/precinct.rb" afterPath="$PROJECT_DIR$/app/models/precinct.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/question.rb" afterPath="$PROJECT_DIR$/app/models/question.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/answers/_answerTabs.html.erb" afterPath="$PROJECT_DIR$/app/views/answers/_answerTabs.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/districts/show.html.erb" afterPath="$PROJECT_DIR$/app/views/districts/show.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/precincts/index.html.erb" afterPath="$PROJECT_DIR$/app/views/precincts/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/precincts/show.html.erb" afterPath="$PROJECT_DIR$/app/views/precincts/show.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/questions/_question.erb" afterPath="$PROJECT_DIR$/app/views/questions/_question.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/questions/show.html.erb" afterPath="$PROJECT_DIR$/app/views/questions/show.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20111024011448_create_answers.rb" afterPath="$PROJECT_DIR$/db/migrate/20111024011448_create_answers.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20111127000646_create_precincts.rb" afterPath="$PROJECT_DIR$/db/migrate/20111127000646_create_precincts.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/seeds.rb" afterPath="$PROJECT_DIR$/db/seeds.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/functional/politicians_controller_test.rb" afterPath="$PROJECT_DIR$/test/functional/politicians_controller_test.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/unit/helpers/politicians_helper_test.rb" afterPath="$PROJECT_DIR$/test/unit/helpers/politicians_helper_test.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/unit/politician_test.rb" afterPath="$PROJECT_DIR$/test/unit/politician_test.rb" />
+    <list default="true" id="01a9f816-fa55-4a7a-9bd6-92e6ceb55c0d" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gem/specs/rubygems.org%80/specs.4.8" afterPath="$PROJECT_DIR$/.gem/specs/rubygems.org%80/specs.4.8" />
     </list>
     <ignored path="Elevote.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -170,10 +41,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/precincts/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="37" selection-start="768" selection-end="768" vertical-scroll-proportion="1.280654">
+            <state line="38" column="37" selection-start="768" selection-end="768" vertical-scroll-proportion="-18.076923">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="20111127000646_create_precincts.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/db/migrate/20111127000646_create_precincts.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="18" selection-start="181" selection-end="181" vertical-scroll-proportion="0.25585285">
               <folding />
             </state>
           </provider>
@@ -293,6 +173,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="db" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Elevote" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Elevote" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="db" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="migrate" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -795,12 +693,13 @@
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <editor active="false" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32988626" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.328" sideWeight="0.0" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.328" sideWeight="0.0" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24973656" sideWeight="0.32678387" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3328279" sideWeight="0.672" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3328279" sideWeight="0.672" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2688" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885212" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -808,7 +707,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32988626" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -839,7 +737,7 @@
     <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
     <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Still Working&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="End of Night 12-18-11" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -859,6 +757,7 @@
     <MESSAGE value="Finished for the night: 12-4-11&#10;" />
     <MESSAGE value="Fuqua Retarded" />
     <MESSAGE value="Still Working&#10;" />
+    <MESSAGE value="End of Night 12-18-11" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -914,13 +813,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20111127000646_create_precincts.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="18" selection-start="181" selection-end="181" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/county.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="145" selection-start="61" selection-end="61" vertical-scroll-proportion="0.0">
@@ -965,7 +857,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/precincts/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="37" selection-start="768" selection-end="768" vertical-scroll-proportion="1.280654">
+        <state line="38" column="37" selection-start="768" selection-end="768" vertical-scroll-proportion="-18.076923">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20111127000646_create_precincts.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="18" selection-start="181" selection-end="181" vertical-scroll-proportion="0.25585285">
           <folding />
         </state>
       </provider>
