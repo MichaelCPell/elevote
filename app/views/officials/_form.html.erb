@@ -1,0 +1,42 @@
+<%= semantic_form_for(@official) do |f| %>
+  <% if @official.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@official.errors.count, "error") %> prohibited this Official from being saved:</h2>
+
+      <ul>
+      <% @official.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+
+    <%= f.inputs do %>
+        <%= f.inputs :firstname %>
+        <%= f.inputs :lastname %>
+        <%= f.inputs :office, :as => :select %>
+
+
+        <%#= f.inputs :district, :as => :select, :collection => District.order(:number)%>
+        <div class="select">
+          <%= f.label :district %>
+          <%= f.collection_select :district_id, District.order(:number), :id, :all_togethor %>
+        </div>
+
+        <%= f.inputs :email %>
+        <%= f.inputs :password %>
+        <%= f.inputs :password_confirmation %>
+        <%= f.submit %>
+
+    <% end %>
+
+
+
+
+
+
+
+
+
+ <% end %>

@@ -15,7 +15,7 @@ class PrecinctsController < ApplicationController
   def show
     @precinct = Precinct.find(params[:id])
     @districts = @precinct.districts
-    @politicians = @precinct.politicians
+    @officials = @precinct.officials
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @precinct }

@@ -1,0 +1,135 @@
+/*
+ * This is a manifest file that'll automatically include all the stylesheets available in this directory
+ * and any sub-directories. You're free to add application-wide styles to this file and they'll appear at
+ * the top of the compiled file, but it's generally better to create a new file per style scope.
+ *= require_self
+ *= require formtastic
+
+ *= require_tree . 
+*/
+
+
+$red: #800000;
+$yellow: #cb9012;
+$gray: #d1d1d3;
+$fontwhite: #f9f9f9;
+$blue: #012646;
+
+
+
+#bodycss {
+    background: image_url("background.jpg");
+
+}
+
+#nav {
+    float: left;
+    background-color: #e9eae4;
+
+}
+
+
+
+
+#main {
+    float: left;
+}
+
+#header {
+    padding-top: 0;
+    text-align: center;
+    height: 125px;
+    background-color: $gray;
+    border-bottom: $red solid 5px;
+
+}
+
+
+#headerMiddle {
+
+    float: left;
+
+}
+
+#footer {
+    border: $gray 1px solid;
+
+}
+
+
+
+/*Left Column*/
+#leftColumn{
+    height: 460px;
+    border-right: $blue 4px solid;
+}
+
+
+
+
+/*Middle Column*/
+
+#middleColumn {
+    height: 460px;
+    margin-left: -10px;
+
+}
+
+#rightColumn {
+    height: 460px;
+    border-left: $blue 4px solid;
+
+}
+
+/*official Show Page*/
+#officialPortrait{
+    height: 210px;
+    margin-bottom: 10px;
+}
+
+#officialSlogan{
+    height:50px;
+    text-align: right;
+
+}
+
+#officialName{
+height: 50px;
+}
+
+.officialAnswer{
+    padding-bottom: 10px;
+}
+
+.officialAnswer:hover {
+    background-color: #f0f0f0;
+
+}
+
+.officialQuestion{
+    border-bottom: 1px $red solid;
+}
+
+
+/*New Classes*/
+
+.button {
+  border: 2px solid $gray;
+  background-color: $fontwhite;
+  width: 110px;
+  font-size: 14px;
+  text-align: center;
+  border-radius: 5px;
+  font-color: $gray;
+
+
+
+}
+
+.button:hover {
+    background-color: $yellow;
+}
+
+.questionsPanel {
+  height: 260px;
+}

@@ -6,9 +6,9 @@ class ApplicationController < ActionController::Base
 
   private
 
-  def current_politician
-    @current_politician ||= Politician.find(session[:politician_id]) if session[:politician_id]
+  def current_official
+    @current_official ||= Official.find(session[:official_id]) if session[:official_id]
   end
 
-  helper_method :current_politician
+  helper_method :current_official
 end

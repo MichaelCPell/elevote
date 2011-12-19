@@ -1,18 +1,27 @@
 <% content_for :leftColumn do %>
+
+    <%= image_tag "thomas-jefferson-statue.jpg" %>
 <% end %>
 
 
 <% content_for :middleColumn do %>
 
 
-<h1>Select Your Precinct</h1>
+<h1>Find Your Precinct</h1>
 
 
   <%= form_for @precinct do |f| %>
 
+        <div class="field">
+          <%= f.label :county %>
+          <%= f.collection_select :county_id, County.order(:name), :id, :name, :prompt => ' Select County' %>
+        </div>
+
+
+
         <div class="actions">
         <%= f.label :precinct_id %><br>
-        <%= f.collection_select :id, Precinct.order(:name), :id, :name %>
+        <%= f.grouped_collection_select  :id, County.order(:name), :precincts, :name, :id, :name %>
         <%= f.submit "Select Precinct by Name" %>
         </div>
 
@@ -26,5 +35,8 @@
 
 
 <div id="rightColumn" class="span-5 last">
-<%= link_to 'New Precinct', new_precinct_path %>
+<% content_for :rightColumn do %>
+  <%= image_tag "mainstparade.jpg" %>
+
+  <% end %>
 </div>

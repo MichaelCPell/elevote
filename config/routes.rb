@@ -1,4 +1,6 @@
 Elevote::Application.routes.draw do
+  resources :counties
+
   resources :races
 
   resources :precincts
@@ -9,7 +11,7 @@ Elevote::Application.routes.draw do
 
   resources :offices
 
-  resources :politicians
+  resources :officials
 
   resources :districts
 

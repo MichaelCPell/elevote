@@ -11,13 +11,19 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111127044030) do
+ActiveRecord::Schema.define(:version => 20111218200029) do
 
   create_table "answers", :force => true do |t|
     t.string   "name"
-    t.integer  "politician_id"
+    t.integer  "official_id"
     t.integer  "question_id"
     t.integer  "office_question_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "counties", :force => true do |t|
+    t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -48,7 +54,7 @@ ActiveRecord::Schema.define(:version => 20111127044030) do
     t.datetime "updated_at"
   end
 
-  create_table "politicians", :force => true do |t|
+  create_table "officials", :force => true do |t|
     t.string   "firstname"
     t.string   "lastname"
     t.string   "state"
@@ -67,6 +73,7 @@ ActiveRecord::Schema.define(:version => 20111127044030) do
 
   create_table "precincts", :force => true do |t|
     t.string   "name"
+    t.integer  "county_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

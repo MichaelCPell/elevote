@@ -13,8 +13,9 @@ end
 group :production do
 gem 'pg'
 gem 'pjax_rails'
-
 end
+
+
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -25,9 +26,11 @@ group :assets do
 end
 
 gem 'jquery-rails'
+
 gem 'rmagick'
-#gem "mini_magick"
 gem "carrierwave"
+
+gem 'formtastic'
 
 # Use unicorn as the web server
 # gem 'unicorn'

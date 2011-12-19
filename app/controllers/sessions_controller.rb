@@ -5,11 +5,11 @@ class SessionsController < ApplicationController
   end
 
   def create
-    politician = Politician.find_by_email(params[:email])
+    official = Official.find_by_email(params[:email])
 
-    if politician && politician.authenticate(params[:password])
-      session[:politician_id] = politician.id
-      redirect_to politician, :notice => "Logged in!"
+    if official && official.authenticate(params[:password])
+      session[:official_id] = official.id
+      redirect_to official, :notice => "Logged in!"
 
     else
 
@@ -18,7 +18,7 @@ class SessionsController < ApplicationController
   end
 
   def destroy
-    session[:politician_id] = nil
+    session[:official_id] = nil
     redirect_to root_url, :notice => "Logged out!"
   end
 

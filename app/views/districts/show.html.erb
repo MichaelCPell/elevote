@@ -2,12 +2,12 @@
 
 
 
-<% @politicians.each do |politician| %>
-<p><%=  politician.firstname + " " + politician.lastname%></p>
+<% @officials.each do |official| %>
+<p><%=  official.firstname + " " + official.lastname%></p>
 <% end %>
 
 
-<%= link_to 'Add Politician', politicians_path %>
+<%= link_to 'Add official', officials_path %>
 
 <%= link_to 'Edit', edit_district_path(@district) %>
 <%= link_to 'Back', districts_path %>

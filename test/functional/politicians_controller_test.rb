@@ -1,14 +1,14 @@
 require 'test_helper'
 
-class PoliticiansControllerTest < ActionController::TestCase
+class OfficialsControllerTest < ActionController::TestCase
   setup do
-    @politician = politicians(:one)
+    @official = officials(:one)
   end
 
   test "should get index" do
     get :index
     assert_response :success
-    assert_not_nil assigns(:politicians)
+    assert_not_nil assigns(:officials)
   end
 
   test "should get new" do
@@ -16,34 +16,34 @@ class PoliticiansControllerTest < ActionController::TestCase
     assert_response :success
   end
 
-  test "should create politician" do
-    assert_difference('Politician.count') do
-      post :create, politician: @politician.attributes
+  test "should create official" do
+    assert_difference('official.count') do
+      post :create, official: @official.attributes
     end
 
-    assert_redirected_to politician_path(assigns(:politician))
+    assert_redirected_to official_path(assigns(:official))
   end
 
-  test "should show politician" do
-    get :show, id: @politician.to_param
+  test "should show official" do
+    get :show, id: @official.to_param
     assert_response :success
   end
 
   test "should get edit" do
-    get :edit, id: @politician.to_param
+    get :edit, id: @official.to_param
     assert_response :success
   end
 
-  test "should update politician" do
-    put :update, id: @politician.to_param, politician: @politician.attributes
-    assert_redirected_to politician_path(assigns(:politician))
+  test "should update official" do
+    put :update, id: @official.to_param, official: @official.attributes
+    assert_redirected_to official_path(assigns(:official))
   end
 
-  test "should destroy politician" do
-    assert_difference('Politician.count', -1) do
-      delete :destroy, id: @politician.to_param
+  test "should destroy official" do
+    assert_difference('official.count', -1) do
+      delete :destroy, id: @official.to_param
     end
 
-    assert_redirected_to politicians_path
+    assert_redirected_to officials_path
   end
 end

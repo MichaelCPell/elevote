@@ -1,4 +1,4 @@
 require 'test_helper'
 
-class PoliticiansHelperTest < ActionView::TestCase
+class OfficialsHelperTest < ActionView::TestCase
 end

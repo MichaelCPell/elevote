@@ -9,54 +9,52 @@
 <body id="bodycss">
 
 
-
-
-
 <div class="container">
 
 
 <div id="header" class="span-24">
-<div id="headerLogo" class="span-6">
-  <%= image_tag "gp1.png" %>
+<div id="headerLeft" class="span-5">
+  <%= link_to (image_tag "gp1.png"), root_url %>
+
+  <%=  %>
 </div>
 
 
-<% if current_politician %>
-  <div id="Politician Sign-out Button" class="push-11 span-6 button last">
+<div id="headerMiddle" class="span-14">
+  <%= link_to (image_tag "intellivote.jpg") %>
+
+  <%=  %>
+</div>
+
+
+
+<div id="headerRight" class="span-5 last">
+<% if current_official %>
+  <div id="Official Sign-out Button" class="button last">
     <%= link_to "Sign-out", signout_path %>
   </div>
 <% end %>
 
 
-<% if current_politician.nil? %>
-<div id="Politician Log-in  Button" class="push-5 span-6 button">
-  <%= link_to "Politician Log-in", new_session_path %>
+<% if current_official.nil? %>
+<div id="official Log-in  Button" class=" button">
+  <%= link_to "Official Log-in", new_session_path %>
 </div>
 <% end %>
 
 
 
-<% if current_politician.nil? %>
-<div id="Politician Sign-Up Button" class="push-6 span-6 button last">
-  <%= link_to "Politician Sign-up", new_politician_path %>
+
+<% if current_official.nil? %>
+<div id="official Sign-Up Button" class="button last">
+  <%= link_to "Official Sign-up", new_official_path %>
 </div>
 <% end %>
+</div>
 
 
 </div>
 
-
-<div id="nav" class="span-24 hide">
-Navigation
-
-<%= link_to "Precincts", precincts_path %>
-
-<%= link_to "Politicians", politicians_path %>
-
-
-
-
-</div>
 
 
         <div id="leftColumn" class="span-5">
