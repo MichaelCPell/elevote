@@ -7,19 +7,23 @@
           <%= image_tag @official.portrait_url.to_s %>
         </div>
 
-      <div id="donateButton" class="button span-3 push-1">
+      <div id="donateButton" class="button span-5">
         Donate
       </div>
 
-      <div id="volunteerButton" class="button span-3 push-1">
+      <div id="merchButton" class="button span-5">
+        Merchandise
+      </div>
+
+      <div id="volunteerButton" class="button span-5">
         Volunteer
       </div>
 
-      <div id="socialMediaButton" class="button span-3 push-1">
+      <div id="socialMediaButton" class="button span-5">
         Social Media
       </div>
 
-      <div id="socialMediaButton" class="button span-3 push-1">
+      <div id="socialMediaButton" class="button span-5">
         E-mail
       </div>
 
@@ -72,6 +76,27 @@
 
         <%= link_to 'Answer Questions', edit_official_path(@official) %> <br>
         <%= link_to 'Back', officials_path %>
+
+
+
+      <div id="scrollingMarquee">
+          <marquee behavior="scroll" direction="up" loop="1000" scrolldelay="1000">
+
+               <h2>Calendar</h2>
+               <h2>Event 1</h2>
+               <h2>Event 2</h2>
+
+          </marquee>
+
+      </div>
+
+
+
+      <div id="messageBoard">
+        <h2>Message Board</h2>
+      </div>
+
+
     <% end %>
 
 <!--Container Div-->

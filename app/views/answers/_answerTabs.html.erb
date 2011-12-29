@@ -1,9 +1,10 @@
 <div id="tabs" class="span-14">
          <ul>
-           <li ><%= link_to("Primary Questions", "#primaryQuestions") %></li>
-           <li><%= link_to("Office Questions", "#officeQuestions") %></li>
-           <li><%= link_to("Values Questions", "#valuesQuestions") %></li>
-           <li><%= link_to("Other Questions", "#otherQuestions") %></li>
+           <li ><%= link_to("Positions", "#primaryQuestions") %></li>
+           <li><%= link_to("Goals", "#officeQuestions") %></li>
+           <li><%= link_to("Pictures", "#pictures") %></li>
+           <li><%= link_to("FAQ", "#frequentlyAskedQuestions") %></li>
+           <li><%= link_to("About Me", "#frequentlyAskedQuestions") %></li>
          </ul>
 
          <div id="primaryQuestions" class="questionsPanel span-14 last">
@@ -23,11 +24,18 @@
 
         </div>
 
-       <div id="valuesQuestions" class="span-14">
+       <div id="pictures" class="span-14">
+
+         <h3>Politician Photos</h3>
+         <%= image_tag @official.portrait_url.to_s %>
+         <%= image_tag @official.portrait_url.to_s %>
+
+
+
 
         </div>
-       <div id="otherQuestions" class="span-14">
-
+       <div id="frequentlyAskedQuestions" class="span-14">
+           <h2>What is the air speed velocity of an unlaiden swallow?</h2>
         </div>
 
     </div> <!-- end tabs -->

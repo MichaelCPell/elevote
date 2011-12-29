@@ -35,7 +35,9 @@ County.create(name: "Alamance")
 County.create(name: "Durham")
 
 #Create Precincts
-Precinct.create(name: "BURLINGTON 10", county_id: 1)
+
+#Alamance
+Precinct.create(name: "BURLINGTON 10", county_id: 1)        #1
 Precinct.create(name: "BURLINGTON 4", county_id: 1)
 Precinct.create(name: "BURLINGTON 5", county_id: 1)
 Precinct.create(name: "BURLINGTON 7", county_id: 1)
@@ -71,15 +73,92 @@ Precinct.create(name: "SOUTH BOONE", county_id: 1)
 Precinct.create(name: "SOUTH GRAHAM", county_id: 1)
 Precinct.create(name: "SOUTH NEWLIN", county_id: 1)
 Precinct.create(name: "SOUTH THOMPSON", county_id: 1)
-Precinct.create(name: "WEST BOONE", county_id: 1)
+Precinct.create(name: "WEST BOONE", county_id: 1)           #26
+
+#Durham
+Precinct.create(name:"01", county_id: 2)                   #37
+Precinct.create(name:"02", county_id: 2)
+Precinct.create(name:"03", county_id: 2)
+Precinct.create(name:"04", county_id: 2)
+Precinct.create(name:"05", county_id: 2)
+Precinct.create(name:"06", county_id: 2)
+Precinct.create(name:"07", county_id: 2)
+Precinct.create(name:"08", county_id: 2)
+Precinct.create(name:"09", county_id: 2)
+Precinct.create(name:"10", county_id: 2)
+Precinct.create(name:"12", county_id: 2)
+Precinct.create(name:"13", county_id: 2)
+Precinct.create(name:"14", county_id: 2)
+Precinct.create(name:"15", county_id: 2)
+Precinct.create(name:"16", county_id: 2)
+Precinct.create(name:"17", county_id: 2)
+Precinct.create(name:"18", county_id: 2)
+Precinct.create(name:"19", county_id: 2)
+Precinct.create(name:"20", county_id: 2)
+Precinct.create(name:"21", county_id: 2)
+Precinct.create(name:"22", county_id: 2)
+Precinct.create(name:"23", county_id: 2)
+Precinct.create(name:"24", county_id: 2)
+Precinct.create(name:"25", county_id: 2)
+Precinct.create(name:"26", county_id: 2)
+Precinct.create(name:"27", county_id: 2)
+Precinct.create(name:"28", county_id: 2)
+Precinct.create(name:"29", county_id: 2)
+Precinct.create(name:"30-1", county_id: 2)
+Precinct.create(name:"30-2", county_id: 2)
+Precinct.create(name:"31", county_id: 2)
+Precinct.create(name:"32", county_id: 2)
+Precinct.create(name:"33", county_id: 2)
+Precinct.create(name:"34-1", county_id: 2)
+Precinct.create(name:"34-2", county_id: 2)
+Precinct.create(name:"35.3", county_id: 2)
+Precinct.create(name:"36", county_id: 2)
+Precinct.create(name:"37", county_id: 2)
+Precinct.create(name:"38", county_id: 2)
+Precinct.create(name:"39", county_id: 2)
+Precinct.create(name:"40", county_id: 2)
+Precinct.create(name:"41", county_id: 2)
+Precinct.create(name:"42", county_id: 2)
+Precinct.create(name:"43", county_id: 2)
+Precinct.create(name:"44", county_id: 2)
+Precinct.create(name:"45", county_id: 2)
+Precinct.create(name:"46", county_id: 2)
+Precinct.create(name:"47", county_id: 2)
+Precinct.create(name:"48", county_id: 2)
+Precinct.create(name:"50", county_id: 2)
+Precinct.create(name:"51", county_id: 2)
+Precinct.create(name:"52", county_id: 2)
+Precinct.create(name:"53-1", county_id: 2)
+Precinct.create(name:"53-2", county_id: 2)
+Precinct.create(name:"54", county_id: 2)
+Precinct.create(name:"55-11", county_id: 2)
+Precinct.create(name:"55-49", county_id: 2)           #93
+
+
+
 
 
 #Create Districts
-District.create(tier: "State", category: "Senate", number: "24" )
 
+#Alamance Districts      #Accurate for 2011
+District.create(tier: "State", category: "Senate", number: "24" )
 District.create(tier: "State", category: "House", number: "63")
 District.create(tier: "State", category: "House", number: "64")
 District.create(tier: "Federal", category: "Congressional", number: "6")
+
+
+#Durham Districts  #Made up
+District.create(tier: "State", category: "Senate", number: "18" )
+District.create(tier: "State", category: "Senate", number: "30" )
+District.create(tier: "State", category: "House", number: "29")
+District.create(tier: "State", category: "House", number: "30")
+District.create(tier: "State", category: "House", number: "31")
+District.create(tier: "State", category: "House", number: "55")
+District.create(tier: "Federal", category: "Congressional", number: "6")
+District.create(tier: "State", category: "Prosecutorial", number: "14A")
+District.create(tier: "State", category: "Superior Court", number: "6")
+District.create(tier: "State", category: "Judicial", number: "14")
+
 
 #Create Officials
 Official.create(firstname: "Michael", lastname: "Pell", district_id: 1, office_id: 1)
@@ -87,6 +166,8 @@ Official.create(firstname: "Jimmy", lastname: "McMillan", district_id: 1, office
 
 # Add Districts to Precinct
 
+
+#Alamance   I think these are accurate
  1.upto(36) {|i|
    District.find(1).precincts << Precinct.find(i)
    District.find(4).precincts << Precinct.find(i)
@@ -99,6 +180,32 @@ Official.create(firstname: "Jimmy", lastname: "McMillan", district_id: 1, office
  17.upto(36) {|i|
    District.find(3).precincts << Precinct.find(i)
  }
+
+
+
+#Durham, I completely made this up
+
+37.upto(65){ |i|
+  District.find(5).precincts << Precinct.find(i)
+  District.find(7).precincts << Precinct.find(i)
+}
+
+66.upto(93){ |i|
+  District.find(6).precincts << Precinct.find(i)
+  District.find(8).precincts << Precinct.find(i)
+}
+
+
+37.upto(93){ |i|
+  District.find(11).precincts << Precinct.find(i)
+  District.find(12).precincts << Precinct.find(i)
+  District.find(13).precincts << Precinct.find(i)
+  District.find(14).precincts << Precinct.find(i)
+
+}
+
+#end Adding Districts to Precincts
+
 
 
 
