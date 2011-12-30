@@ -152,23 +152,20 @@ District.create(tier: "State", category: "Senate", number: "18" )
 District.create(tier: "State", category: "Senate", number: "30" )
 District.create(tier: "State", category: "House", number: "29")
 District.create(tier: "State", category: "House", number: "30")
-District.create(tier: "State", category: "House", number: "31")
+District.create(tier: "State", category: "House", number: "31")  #five
 District.create(tier: "State", category: "House", number: "55")
 District.create(tier: "Federal", category: "Congressional", number: "6")
 District.create(tier: "State", category: "Prosecutorial", number: "14A")
 District.create(tier: "State", category: "Superior Court", number: "6")
-District.create(tier: "State", category: "Judicial", number: "14")
+District.create(tier: "State", category: "Judicial", number: "14")   #ten
+District.create(tier: "State", category: "Governor", number: "1")
 
-
-#Create Officials
-Official.create(firstname: "Michael", lastname: "Pell", district_id: 1, office_id: 1)
-Official.create(firstname: "Jimmy", lastname: "McMillan", district_id: 1, office_id: 1)
 
 # Add Districts to Precinct
 
 
 #Alamance   I think these are accurate
- 1.upto(36) {|i|
+ 1.upto(37) {|i|
    District.find(1).precincts << Precinct.find(i)
    District.find(4).precincts << Precinct.find(i)
  }
@@ -177,7 +174,7 @@ Official.create(firstname: "Jimmy", lastname: "McMillan", district_id: 1, office
    District.find(2).precincts << Precinct.find(i)
  }
 
- 17.upto(36) {|i|
+ 17.upto(37) {|i|
    District.find(3).precincts << Precinct.find(i)
  }
 
@@ -185,7 +182,7 @@ Official.create(firstname: "Jimmy", lastname: "McMillan", district_id: 1, office
 
 #Durham, I completely made this up
 
-37.upto(65){ |i|
+38.upto(65){ |i|
   District.find(5).precincts << Precinct.find(i)
   District.find(7).precincts << Precinct.find(i)
 }
@@ -196,7 +193,7 @@ Official.create(firstname: "Jimmy", lastname: "McMillan", district_id: 1, office
 }
 
 
-37.upto(93){ |i|
+38.upto(93){ |i|
   District.find(11).precincts << Precinct.find(i)
   District.find(12).precincts << Precinct.find(i)
   District.find(13).precincts << Precinct.find(i)
@@ -204,8 +201,26 @@ Official.create(firstname: "Jimmy", lastname: "McMillan", district_id: 1, office
 
 }
 
+#Adding Statewide Governor District
+
+for precinct in Precinct.all
+  precinct.districts << District.find(11)
+end
+
+
 #end Adding Districts to Precincts
 
 
+#Create Officials
+Official.create(firstname: "Michael", lastname: "Pell", district_id: 1, office_id: 1, email: "Michael",
+                password: "Pell")
+Official.create(firstname: "Jimmy", lastname: "McMillan", district_id: 1, office_id: 1, email: "Michael", password: "Pell")
 
+
+
+bevpur = Official.create(firstname: "Bev", lastname: "Purdue", district_id: 11, office_id: 4, email: "Michael", password: "Pell")
+bevpur.portrait.store!(File.open(File.join(Rails.root, 'app/assets/images/official_photos/bev_purdue/portrait.jpg')))
+bevpur.image1.store!(File.open(File.join(Rails.root, 'app/assets/images/official_photos/bev_purdue/withchildren.jpg')))
+bevpur.image2.store!(File.open(File.join(Rails.root, 'app/assets/images/official_photos/bev_purdue/withconstituent.jpg')))
+bevpur.save!
 

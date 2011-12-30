@@ -13,6 +13,7 @@ end
 group :production do
 gem 'pg'
 gem 'pjax_rails'
+
 end
 
 
@@ -29,6 +30,9 @@ gem 'jquery-rails'
 
 gem 'rmagick'
 gem "carrierwave"
+
+#gem 'aws-s3'
+
 
 gem 'formtastic'
 

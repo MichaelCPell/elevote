@@ -4,6 +4,8 @@ class Official < ActiveRecord::Base
   validates_presence_of :email
 
   mount_uploader :portrait, ImageUploader
+  mount_uploader :image1, ImageUploader
+  mount_uploader :image2, ImageUploader
 
 
 
