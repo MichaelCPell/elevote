@@ -20,15 +20,19 @@
 # Registers:
 
 # File marks:
-'0  13  18  ~\.git\COMMIT_EDITMSG
+'0  14  0  ~\.git\COMMIT_EDITMSG
+'1  13  18  ~\.git\COMMIT_EDITMSG
 
 # Jumplist (newest first):
--'  13  18  ~\.git\COMMIT_EDITMSG
+-'  14  0  ~\.git\COMMIT_EDITMSG
 -'  1  0  ~\.git\COMMIT_EDITMSG
+-'  13  18  ~\.git\COMMIT_EDITMSG
 
 # History of marks within files (newest to oldest):
 
 > ~\.git\COMMIT_EDITMSG
-	"	13	18
+	"	14	0
+	.	13	36
+	+	13	36
 	l	16	0
 	n	16	0
