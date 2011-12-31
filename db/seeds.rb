@@ -219,8 +219,8 @@ Official.create(firstname: "Jimmy", lastname: "McMillan", district_id: 1, office
 
 
 bevpur = Official.create(firstname: "Bev", lastname: "Purdue", district_id: 11, office_id: 4, email: "Michael", password: "Pell")
-bevpur.portrait.store!(File.open(File.join(Rails.root, 'app/assets/images/official_photos/bev_purdue/portrait.jpg')))
-bevpur.image1.store!(File.open(File.join(Rails.root, 'app/assets/images/official_photos/bev_purdue/withchildren.jpg')))
-bevpur.image2.store!(File.open(File.join(Rails.root, 'app/assets/images/official_photos/bev_purdue/withconstituent.jpg')))
+bevpur.portrait.store!(File.open(File.join(Rails.root, 'assets/images/official_photos/bev_purdue/portrait.jpg')))
+bevpur.image1.store!(File.open(File.join(Rails.root, 'assets/images/official_photos/bev_purdue/withchildren.jpg')))
+bevpur.image2.store!(File.open(File.join(Rails.root, 'assets/images/official_photos/bev_purdue/withconstituent.jpg')))
 bevpur.save!
 
