@@ -13,6 +13,7 @@ class CreateOfficials < ActiveRecord::Migration
       t.string :portrait
       t.string :image1
       t.string :image2
+      t.string :campaignSlogan
 
       t.timestamps
     end

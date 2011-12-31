@@ -3,4 +3,7 @@ class Precinct < ActiveRecord::Base
   has_and_belongs_to_many :districts
   belongs_to :county
 
+
+
+
 end

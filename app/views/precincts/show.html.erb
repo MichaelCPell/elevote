@@ -14,10 +14,37 @@
     <h1>
 
 
-    <h2>officials in this Precinct</h2>
-    <% for official in @officials %>
+    <h2>President</h2>
+    <% for official in @officials.presidents %>
 
 
+    <%= link_to official.precinctsShowLink, official %>
+    <br>
+    <% end %>
+
+    <h2>US Senators</h2>
+    <% for official in @officials.usSenate %>
+    <%= link_to official.precinctsShowLink, official %>
+    <br>
+    <% end %>
+
+    <h2>US House</h2>
+    <% for official in @officials.usSenate %>
+    <%= link_to official.precinctsShowLink, official %>
+    <br>
+    <% end %>
+
+
+      <h2>US Senators</h2>
+    <% for official in @officials.usSenate %>
+    <%= link_to official.precinctsShowLink, official %>
+    <br>
+    <% end %>
+
+
+
+       <h2>US Senators</h2>
+    <% for official in @officials.usSenate %>
     <%= link_to official.precinctsShowLink, official %>
     <br>
     <% end %>
@@ -25,7 +52,7 @@
 
 
    <% for district in @districts %>
-      <%= district.tier %>
+      <%= district.gpe %>
           <%= district.number %>
       <%= district.category %>
           <br>

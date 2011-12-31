@@ -141,24 +141,24 @@ Precinct.create(name:"55-49", county_id: 2)           #93
 #Create Districts
 
 #Alamance Districts      #Accurate for 2011
-District.create(tier: "State", category: "Senate", number: "24" )
-District.create(tier: "State", category: "House", number: "63")
-District.create(tier: "State", category: "House", number: "64")
-District.create(tier: "Federal", category: "Congressional", number: "6")
+District.create(gpe: "State", category: "Senate", number: "24" )
+District.create(gpe: "State", category: "House", number: "63")
+District.create(gpe: "State", category: "House", number: "64")
+District.create(gpe: "Federal", category: "Congressional", number: "6")
 
 
 #Durham Districts  #Made up
-District.create(tier: "State", category: "Senate", number: "18" )
-District.create(tier: "State", category: "Senate", number: "30" )
-District.create(tier: "State", category: "House", number: "29")
-District.create(tier: "State", category: "House", number: "30")
-District.create(tier: "State", category: "House", number: "31")  #five
-District.create(tier: "State", category: "House", number: "55")
-District.create(tier: "Federal", category: "Congressional", number: "6")
-District.create(tier: "State", category: "Prosecutorial", number: "14A")
-District.create(tier: "State", category: "Superior Court", number: "6")
-District.create(tier: "State", category: "Judicial", number: "14")   #ten
-District.create(tier: "State", category: "Governor", number: "1")
+District.create(gpe: "State", category: "Senate", number: "18" )
+District.create(gpe: "State", category: "Senate", number: "30" )
+District.create(gpe: "State", category: "House", number: "29")
+District.create(gpe: "State", category: "House", number: "30")
+District.create(gpe: "State", category: "House", number: "31")  #five
+District.create(gpe: "State", category: "House", number: "55")
+District.create(gpe: "Federal", category: "Congressional", number: "6")
+District.create(gpe: "State", category: "Prosecutorial", number: "14A")
+District.create(gpe: "State", category: "Superior Court", number: "6")
+District.create(gpe: "State", category: "Judicial", number: "14")   #ten
+District.create(gpe: "State", category: "Governor", number: "1")
 
 
 # Add Districts to Precinct
@@ -212,13 +212,13 @@ end
 
 
 #Create Officials
-#Official.create(firstname: "Michael", lastname: "Pell", district_id: 1, office_id: 1, email: "Michael",
-#                password: "Pell")
-#Official.create(firstname: "Jimmy", lastname: "McMillan", district_id: 1, office_id: 1, email: "Michael", password: "Pell")
+Official.create(firstname: "Michael", lastname: "Pell", district_id: 1, office_id: 1, email: "Michael",
+                password: "Pell")
+Official.create(firstname: "Jimmy", lastname: "McMillan", district_id: 1, office_id: 1, email: "Michael", password: "Pell")
 #
 #
 #
-#bevpur = Official.create(firstname: "Bev", lastname: "Purdue", district_id: 11, office_id: 4, email: "Michael", password: "Pell")
+bevpur = Official.create(firstname: "Bev", lastname: "Purdue", district_id: 11, office_id: 4, email: "Michael", password: "Pell")
 #bevpur.portrait.store!(File.open(File.join(Rails.root, 'assets/images/official_photos/bev_purdue/portrait.jpg')))
 #bevpur.image1.store!(File.open(File.join(Rails.root, 'assets/images/official_photos/bev_purdue/withchildren.jpg')))
 #bevpur.image2.store!(File.open(File.join(Rails.root, 'assets/images/official_photos/bev_purdue/withconstituent.jpg')))

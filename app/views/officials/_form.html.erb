@@ -15,14 +15,25 @@
     <%= f.inputs do %>
         <%= f.inputs :firstname %>
         <%= f.inputs :lastname %>
-        <%= f.inputs :office, :as => :select %>
+        <%#= f.inputs :office, :as => :select %>
 
 
         <%#= f.inputs :district, :as => :select, :collection => District.order(:number)%>
         <div class="select">
-          <%= f.label :district %>
-          <%= f.collection_select :district_id, District.order(:number), :id, :all_togethor %>
+          <%= f.label :office %>
+          <%= f.collection_select :office_id, Office.order(:name), :id, :name %>
         </div>
+
+
+
+        <div class="actions">
+        <%= f.label :district %><br>
+        <%= f.grouped_collection_select  :id, District.order(:name), :precincts, :name, :id, :name %>
+        <%= f.submit "Select Precinct by Name" %>
+        </div>
+
+
+
 
         <%= f.inputs :email %>
         <%= f.inputs :password %>

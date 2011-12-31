@@ -7,18 +7,15 @@ class Official < ActiveRecord::Base
   mount_uploader :image1, ImageUploader
   mount_uploader :image2, ImageUploader
 
-
-
-
-  has_many :answers
-  accepts_nested_attributes_for :answers
-
-  has_many :office_questions, :through => :answers
-  has_many :questions, :through => :answers
-
-
-
   #Scopes
+
+  scope :presidents, where(:office_id => 1)
+  scope :usSenate, where(:office_id => 2)
+  scope :usHouse, where(:office_id => 3)
+  scope :Governor, where(:office_id => 4)
+  scope :stateSenate, where(:office_id => 5)
+  scope :stateHouse, where(:office_id => 6)
+
 
 
   #Associations
@@ -26,7 +23,11 @@ class Official < ActiveRecord::Base
 
   belongs_to :district
   belongs_to :office
+  has_many :answers
+  accepts_nested_attributes_for :answers
 
+  has_many :office_questions, :through => :answers
+  has_many :questions, :through => :answers
 
 
   has_many :questions

@@ -31,7 +31,8 @@ ActiveRecord::Schema.define(:version => 20111218200029) do
   create_table "districts", :force => true do |t|
     t.string   "category"
     t.string   "number"
-    t.string   "tier"
+    t.string   "gpe"
+    t.integer  "office_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -67,6 +68,7 @@ ActiveRecord::Schema.define(:version => 20111218200029) do
     t.string   "portrait"
     t.string   "image1"
     t.string   "image2"
+    t.string   "campaignSlogan"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

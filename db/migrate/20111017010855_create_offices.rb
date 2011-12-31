@@ -3,6 +3,7 @@ class CreateOffices < ActiveRecord::Migration
     create_table :offices do |t|
       t.string :name
 
+
       t.timestamps
     end
   end

@@ -1,4 +1,6 @@
 Elevote::Application.routes.draw do
+  resources :states
+
   resources :counties
 
   resources :races
