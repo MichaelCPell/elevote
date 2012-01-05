@@ -25,16 +25,6 @@
         </div>
 
 
-
-        <div class="actions">
-        <%= f.label :district %><br>
-        <%= f.grouped_collection_select  :id, District.order(:name), :precincts, :name, :id, :name %>
-        <%= f.submit "Select Precinct by Name" %>
-        </div>
-
-
-
-
         <%= f.inputs :email %>
         <%= f.inputs :password %>
         <%= f.inputs :password_confirmation %>

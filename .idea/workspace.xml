@@ -5,37 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="01a9f816-fa55-4a7a-9bd6-92e6ceb55c0d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/states.js.coffee" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/stylesheets/states.css.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/states_controller.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/helpers/states_helper.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/state.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/states/_form.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/states/edit.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/states/index.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/states/new.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/states/show.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/fixtures/states.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/functional/states_controller_test.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/unit/helpers/states_helper_test.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/unit/state_test.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gem/specs/rubygems.org%80/prerelease_specs.4.8" afterPath="$PROJECT_DIR$/.gem/specs/rubygems.org%80/prerelease_specs.4.8" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gem/specs/rubygems.org%80/specs.4.8" afterPath="$PROJECT_DIR$/.gem/specs/rubygems.org%80/specs.4.8" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Elevote.iml" afterPath="$PROJECT_DIR$/.idea/Elevote.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/precincts_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/precincts_helper.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/district.rb" afterPath="$PROJECT_DIR$/app/models/district.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/office.rb" afterPath="$PROJECT_DIR$/app/models/office.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/official.rb" afterPath="$PROJECT_DIR$/app/models/official.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/precinct.rb" afterPath="$PROJECT_DIR$/app/models/precinct.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/officials/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/officials/_form.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/precincts/show.html.erb" afterPath="$PROJECT_DIR$/app/views/precincts/show.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20111017010356_create_officials.rb" afterPath="$PROJECT_DIR$/db/migrate/20111017010356_create_officials.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20111017010855_create_offices.rb" afterPath="$PROJECT_DIR$/db/migrate/20111017010855_create_offices.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20111127035427_create_districts.rb" afterPath="$PROJECT_DIR$/db/migrate/20111127035427_create_districts.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/seeds.rb" afterPath="$PROJECT_DIR$/db/seeds.rb" />
     </list>
     <ignored path="Elevote.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -71,10 +46,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="show.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/precincts/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="52" column="103" selection-start="938" selection-end="938" vertical-scroll-proportion="0.7616823">
+            <state line="53" column="46" selection-start="1006" selection-end="1006" vertical-scroll-proportion="-8.461538">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="new.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/officials/new.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_form.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/officials/_form.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="0" selection-start="758" selection-end="758" vertical-scroll-proportion="0.65993786">
               <folding />
             </state>
           </provider>
@@ -83,7 +76,7 @@
       <file leaf-file-name="seeds.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/db/seeds.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="64" selection-start="504" selection-end="504" vertical-scroll-proportion="-5.1">
+            <state line="15" column="64" selection-start="504" selection-end="504" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -108,7 +101,6 @@
         <option value="$PROJECT_DIR$/app/views/answers/_answerTabs.html.erb" />
         <option value="$PROJECT_DIR$/db/migrate/20111017010356_create_officials.rb" />
         <option value="$PROJECT_DIR$/app/views/precincts/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/officials/_form.html.erb" />
         <option value="$PROJECT_DIR$/app/models/state.rb" />
         <option value="$PROJECT_DIR$/app/models/district.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20111127035427_create_districts.rb" />
@@ -119,6 +111,7 @@
         <option value="$PROJECT_DIR$/app/models/official.rb" />
         <option value="$PROJECT_DIR$/db/seeds.rb" />
         <option value="$PROJECT_DIR$/app/views/precincts/show.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/officials/_form.html.erb" />
       </list>
     </option>
   </component>
@@ -155,7 +148,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="RailsProjectView">
         <subPane>
           <PATH>
@@ -199,6 +191,7 @@
         </subPane>
       </pane>
       <pane id="Favorites" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -284,6 +277,28 @@
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="officials" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Elevote" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Elevote" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -299,7 +314,7 @@
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
   </component>
-  <component name="RunManager" selected="Rake.db:seed">
+  <component name="RunManager" selected="Rails.Development: Elevote">
     <configuration default="false" name="db:migrate" type="RakeRunConfigurationType" factoryName="Rake" temporary="true">
       <module name="Elevote" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
@@ -696,13 +711,13 @@
     <editor active="false" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2812823" sideWeight="0.0" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27921405" sideWeight="0.0" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15323012" sideWeight="0.19958635" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15483183" sideWeight="0.7187177" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.112653494" sideWeight="0.7207859" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19958635" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2254395" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.100310236" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -739,7 +754,7 @@
     <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
     <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="no more seeds" />
+    <option name="LAST_COMMIT_MESSAGE" value="With Scopes" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -763,21 +778,12 @@
     <MESSAGE value="End of Night 12-29-11" />
     <MESSAGE value="Semi-done with Bev Purdue" />
     <MESSAGE value="no more seeds" />
+    <MESSAGE value="With Scopes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/models/office_question.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/district.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="21" selection-start="112" selection-end="112" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20111127035427_create_districts.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="38" selection-start="229" selection-end="229" vertical-scroll-proportion="0.27309236" />
@@ -810,9 +816,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/precincts_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/helpers/precincts_helper.rb">
@@ -822,42 +826,46 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/precinct.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="2" selection-start="148" selection-end="148" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="6" column="2" selection-start="148" selection-end="148" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/officials_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/helpers/officials_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/official.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="57" selection-start="533" selection-end="533" vertical-scroll-proportion="0.0">
+        <state line="18" column="57" selection-start="533" selection-end="533" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/precincts/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="46" selection-start="1006" selection-end="1006" vertical-scroll-proportion="-8.461538">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db/seeds.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="64" selection-start="504" selection-end="504" vertical-scroll-proportion="-5.1">
+        <state line="15" column="64" selection-start="504" selection-end="504" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/officials/new.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/precincts/show.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/officials/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="103" selection-start="938" selection-end="938" vertical-scroll-proportion="0.7616823">
+        <state line="25" column="0" selection-start="758" selection-end="758" vertical-scroll-proportion="0.65993786">
           <folding />
         </state>
       </provider>
