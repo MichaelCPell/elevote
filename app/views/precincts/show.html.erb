@@ -29,14 +29,14 @@
     <% end %>
 
     <h2>US House</h2>
-    <% for official in @officials.usSenate %>
+    <% for official in @officials.usHouse %>
     <%= link_to official.precinctsShowLink, official %>
     <br>
     <% end %>
 
 
       <h2>North Carolina House</h2>
-    <% for official in @officials.usSenate %>
+    <% for official in @officials.stateHouse %>
     <%= link_to official.precinctsShowLink, official %>
     <br>
     <% end %>
@@ -44,7 +44,7 @@
 
 
        <h2>North Carolina Senate</h2>
-    <% for official in @officials.usSenate %>
+    <% for official in @officials.stateHouse %>
     <%= link_to official.precinctsShowLink, official %>
     <br>
     <% end %>

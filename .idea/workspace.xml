@@ -5,11 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="01a9f816-fa55-4a7a-9bd6-92e6ceb55c0d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gem/specs/rubygems.org%80/prerelease_specs.4.8" afterPath="$PROJECT_DIR$/.gem/specs/rubygems.org%80/prerelease_specs.4.8" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gem/specs/rubygems.org%80/specs.4.8" afterPath="$PROJECT_DIR$/.gem/specs/rubygems.org%80/specs.4.8" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Elevote.iml" afterPath="$PROJECT_DIR$/.idea/Elevote.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/officials/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/officials/_form.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/precincts/show.html.erb" afterPath="$PROJECT_DIR$/app/views/precincts/show.html.erb" />
     </list>
     <ignored path="Elevote.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -45,10 +41,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="show.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/precincts/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="46" selection-start="1006" selection-end="1006" vertical-scroll-proportion="-8.461538">
+            <state line="50" column="62" selection-start="958" selection-end="958" vertical-scroll-proportion="0.63505745">
               <folding />
             </state>
           </provider>
@@ -81,10 +77,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_form.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="_form.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/officials/_form.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="92" selection-start="1072" selection-end="1072" vertical-scroll-proportion="0.6106322">
+            <state line="35" column="92" selection-start="1072" selection-end="1072" vertical-scroll-proportion="-16.346153">
               <folding />
             </state>
           </provider>
@@ -126,9 +122,9 @@
         <option value="$PROJECT_DIR$/app/models/precinct.rb" />
         <option value="$PROJECT_DIR$/app/models/official.rb" />
         <option value="$PROJECT_DIR$/db/seeds.rb" />
-        <option value="$PROJECT_DIR$/app/views/precincts/show.html.erb" />
         <option value="$PROJECT_DIR$/db/migrate/20111127035427_create_districts.rb" />
         <option value="$PROJECT_DIR$/app/views/officials/_form.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/precincts/show.html.erb" />
       </list>
     </option>
   </component>
@@ -929,9 +925,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/precincts/show.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/officials/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="46" selection-start="1006" selection-end="1006" vertical-scroll-proportion="-8.461538">
+        <state line="35" column="92" selection-start="1072" selection-end="1072" vertical-scroll-proportion="-16.346153">
           <folding />
         </state>
       </provider>
@@ -941,9 +937,9 @@
         <state line="18" column="57" selection-start="533" selection-end="533" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/officials/_form.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/precincts/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="92" selection-start="1072" selection-end="1072" vertical-scroll-proportion="0.6106322">
+        <state line="50" column="62" selection-start="958" selection-end="958" vertical-scroll-proportion="0.63505745">
           <folding />
         </state>
       </provider>
