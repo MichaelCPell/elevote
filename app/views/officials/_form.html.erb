@@ -24,6 +24,11 @@
           <%= f.collection_select :office_id, Office.order(:name), :id, :name %>
         </div>
 
+        <div class="select">
+          <%= f.label :district %>
+          <%= f.collection_select :district_id, District.order(:category), :id, :all_togethor %>
+        </div>
+
 
         <%= f.inputs :email %>
         <%= f.inputs :password %>
