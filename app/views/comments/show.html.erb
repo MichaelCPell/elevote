@@ -1,0 +1,49 @@
+<%= content_for :middleColumn do %>
+
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Author:</b>
+  <%= @comment.authorable_id %>
+</p>
+
+<p>
+  <b>Content:</b>
+  <%= @comment.content %>
+</p>
+
+<p>
+  <b>Target:</b>
+  <%= @comment.commentable_id %>
+</p>
+
+
+
+
+    <% for child in @comment.children do %>
+      <div id ="comment">
+
+        <% if child != @comment.children.last %>
+        <%= child.content %>
+        <%= link_to "thread", child %>
+        <% end %>
+
+      </div>
+
+    <% end %>
+
+
+
+    <%= form_for @newcomment do |f| %>
+        <%= f.label :content %>
+        <%= f.text_field :content %>
+
+        <%= f.hidden_field :parent_id, :value => @comment.id %>
+
+        <%= f.submit %>
+    <% end %>
+
+<%#= link_to 'Edit', edit_comment_path(@comment) %>
+<%#= link_to 'Back', comments_path %>
+
+<% end %>

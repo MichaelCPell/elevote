@@ -1,0 +1,23 @@
+<h1>Listing constituents</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @constituents.each do |constituent| %>
+  <tr>
+    <td><%= constituent.name %></td>
+    <td><%= link_to 'Show', constituent %></td>
+    <td><%= link_to 'Edit', edit_constituent_path(constituent) %></td>
+    <td><%= link_to 'Destroy', constituent, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Constituent', new_constituent_path %>

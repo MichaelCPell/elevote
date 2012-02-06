@@ -5,6 +5,9 @@ gem 'rails', '3.1.0'
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 
+gem 'acts_as_tree_rails3'
+gem 'omniauth'
+gem 'omniauth-facebook'
 
 group :development do
 gem 'sqlite3'

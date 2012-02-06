@@ -1,4 +1,15 @@
 Elevote::Application.routes.draw do
+  resources :opinions
+
+  resources :constituents
+
+  resources :comments do
+  end
+
+  resources :legislations do
+    resources :comments
+  end
+
   resources :states
 
   resources :counties
@@ -13,13 +24,19 @@ Elevote::Application.routes.draw do
 
   resources :offices
 
-  resources :officials
+  resources :officials do
+    resources :comments
+  end
 
   resources :districts
 
   resources :sessions, :only => [:new, :create, :destroy]
 
   match '/signout', :to => 'sessions#destroy'
+
+  match '/auth/:facebook/callback', :to => 'sessions#create'
+
+  match '/auth/failure', :to => 'legislations#failure'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
@@ -70,7 +87,7 @@ Elevote::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-   root :to => 'precincts#index'
+   root :to => 'legislations#index'
 
   # See how all your routes lay out with "rake routes"
 

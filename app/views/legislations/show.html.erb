@@ -1,0 +1,91 @@
+<% content_for :leftColumn do %>
+
+    <% if current_official %>
+        <% unless current_official.opinions.exists?(:legislation_id => @legislation.id) %>
+            <%= form_for (Opinion.new) do |f| %>
+               <%= f.hidden_field :status, :value => "support"  %>
+               <%= f.hidden_field :official_id, :value => current_official.id %>
+               <%= f.hidden_field :legislation_id, :value => @legislation.id %>
+               <%= f.submit "Support This Legislation"  %>
+            <% end %>
+        <% end %>
+    <% end %>
+
+    <div class="officialOpinion span-3">
+        <% for opinion in @legislation.opinions.support %>
+            <div class="officialOpinionThumb span-2"><%= Official.find_by_id(opinion.official_id).firstname %></div>
+        <% end %>
+    </div>
+<% end %>
+
+
+
+
+<% content_for :middleColumn do %>
+<p id="notice"><%= notice %></p>
+
+    <p>
+      <b>String:</b>
+      <%= @legislation.name %>
+    </p>
+
+    <p>
+      <b>Content:</b>
+      <%= @legislation.content %>
+    </p>
+
+
+    <% for comment in @legislation.comments do %>
+      <div id ="comment">
+        <%= comment.content %>
+        <%= link_to "Thread", legislation_comment_path(@legislation) %>
+
+      </div>
+
+    <% end %>
+
+
+
+
+
+       <%= form_for [@legislation, @comment] do |c| %>
+         <%= c.label :content %>
+         <%= c.text_field :content %>
+         <%#= f.hidden_field(:commentable_id, :value => @legislation.id) %>
+         <%#= f.hidden_field(:authorable_id, :value => current_official.id) %>
+           <%= c.submit  %>
+       <% end %>
+
+
+
+
+
+<br>
+
+<%= link_to 'Edit', edit_legislation_path(@legislation) %> |
+<%= link_to 'Back', legislations_path %>
+<% end %>
+
+
+
+<% content_for :rightColumn do %>
+
+    <% if current_official %>
+
+    <% unless current_official.opinions.exists?(:legislation_id => @legislation.id) %>
+        <%= form_for (Opinion.new) do |f| %>
+           <%= f.hidden_field :status, :value => "oppose"  %>
+           <%= f.hidden_field :official_id, :value => current_official.id %>
+           <%= f.hidden_field :legislation_id, :value => @legislation.id %>
+           <%= f.submit "Oppose This Legislation"  %>
+        <% end %>
+    <% end %>
+
+    <% end %>
+
+    <div class="officialOpinion span-3">
+        <% for opinion in @legislation.opinions.oppose %>
+              <div class="officialOpinionThumb span-2"><%= Official.find_by_id(opinion.official_id).firstname %></div>
+        <% end %>
+    </div>
+<% end %>

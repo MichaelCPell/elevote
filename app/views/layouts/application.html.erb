@@ -31,12 +31,13 @@
 <div id="headerRight" class="span-5 last">
 <% if current_official %>
   <div id="Official Sign-out Button" class="button last">
+
+
     <%= link_to "Sign-out", signout_path %>
   </div>
-<% end %>
 
-
-<% if current_official.nil? %>
+     <%= link_to current_official.firstname, current_official %>
+<% else %>
 <div id="official Log-in  Button" class=" button">
   <%= link_to "Official Log-in", new_session_path %>
 </div>

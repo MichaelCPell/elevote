@@ -11,13 +11,30 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111218200029) do
+ActiveRecord::Schema.define(:version => 20120205224151) do
 
   create_table "answers", :force => true do |t|
     t.string   "name"
     t.integer  "official_id"
     t.integer  "question_id"
     t.integer  "office_question_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "comments", :force => true do |t|
+    t.integer  "parent_id"
+    t.text     "content"
+    t.integer  "commentable_id"
+    t.string   "commentable_type"
+    t.integer  "authorable_id"
+    t.string   "authorable_type"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "constituents", :force => true do |t|
+    t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -31,8 +48,8 @@ ActiveRecord::Schema.define(:version => 20111218200029) do
   create_table "districts", :force => true do |t|
     t.string   "category"
     t.string   "number"
-    t.string   "gpe"
     t.integer  "office_id"
+    t.string   "gpe"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -40,6 +57,13 @@ ActiveRecord::Schema.define(:version => 20111218200029) do
   create_table "districts_precincts", :id => false, :force => true do |t|
     t.integer "district_id"
     t.integer "precinct_id"
+  end
+
+  create_table "legislations", :force => true do |t|
+    t.string   "name"
+    t.text     "content"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "office_questions", :force => true do |t|
@@ -69,6 +93,14 @@ ActiveRecord::Schema.define(:version => 20111218200029) do
     t.string   "image1"
     t.string   "image2"
     t.string   "campaignSlogan"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "opinions", :force => true do |t|
+    t.string   "status"
+    t.integer  "official_id"
+    t.integer  "legislation_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

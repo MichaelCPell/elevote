@@ -7,6 +7,13 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 
+# Legislation
+Legislation.create(name: "Amendment 1", content: "This is the first amendment!")
+Official.create(firstname: "Michael", lastname: "Pell", district_id: 1, office_id: 1, email: "Michael",
+                password: "Pell")
+
+
+
 
 
 # Begin Creating the Office
@@ -28,6 +35,13 @@ OfficeQuestion.create(name: "President Question 1", office_id: 1)
 OfficeQuestion.create(name: "President Question 2", office_id: 1)
 OfficeQuestion.create(name: "President Question 3", office_id: 1)
 OfficeQuestion.create(name: "President Question 4", office_id: 1)
+
+
+
+
+
+
+
 
 
 #Create Counties
@@ -212,13 +226,16 @@ end
 
 
 #Create Officials
-Official.create(firstname: "Michael", lastname: "Pell", district_id: 1, office_id: 1, email: "Michael",
-                password: "Pell")
+
 Official.create(firstname: "Jimmy", lastname: "McMillan", district_id: 1, office_id: 1, email: "Michael", password: "Pell")
 #
 #
 #
 bevpur = Official.create(firstname: "Bev", lastname: "Purdue", district_id: 11, office_id: 4, email: "Michael", password: "Pell")
+
+
+
+
 #bevpur.portrait.store!(File.open(File.join(Rails.root, 'assets/images/official_photos/bev_purdue/portrait.jpg')))
 #bevpur.image1.store!(File.open(File.join(Rails.root, 'assets/images/official_photos/bev_purdue/withchildren.jpg')))
 #bevpur.image2.store!(File.open(File.join(Rails.root, 'assets/images/official_photos/bev_purdue/withconstituent.jpg')))

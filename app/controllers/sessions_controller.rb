@@ -5,20 +5,30 @@ class SessionsController < ApplicationController
   end
 
   def create
-    official = Official.find_by_email(params[:email])
 
-    if official && official.authenticate(params[:password])
-      session[:official_id] = official.id
-      redirect_to official, :notice => "Logged in!"
+    if params[:email]
+      official = Official.find_by_email(params[:email])
+
+      if official && official.authenticate(params[:password])
+        session[:official] = official
+        redirect_to legislations_path, :notice => "Logged in!"
+
+      else
+
+         redirect_to new_session_path, :notice => "Invalid email or password"
+      end
 
     else
 
-       redirect_to new_session_path, :notice => "Invalid email or password"
+    raise request.env["omniauth.auth"].to_yaml
+
+
+
     end
   end
 
   def destroy
-    session[:official_id] = nil
+    session[:official] = nil
     redirect_to root_url, :notice => "Logged out!"
   end
 

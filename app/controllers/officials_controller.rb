@@ -19,6 +19,7 @@ class OfficialsController < ApplicationController
   def show
     @official = Official.find(params[:id])
     @district = @official.district
+    @comment = @official.comments.build
 
 
     respond_to do |format|
@@ -47,23 +48,14 @@ class OfficialsController < ApplicationController
   # POST /officials
   # POST /officials.json
   def create
-    @official = Official.new(params[:official])
-
-
-    @official.create_answers
+    @official = Official.create(params[:official])
 
 
 
+      session[:official] = @official
+      redirect_to legislations_path, :notice => "Logged in!"
 
-    respond_to do |format|
-      if @official.save
-        format.html { redirect_to @official, notice: 'official was successfully created.' }
-        format.json { render json: @official, status: :created, location: @official }
-      else
-        format.html { render action: "new" }
-        format.json { render json: @official.errors, status: :unprocessable_entity }
-      end
-    end
+
   end
 
   # PUT /officials/1
