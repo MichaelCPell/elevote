@@ -144,6 +144,7 @@ DEPENDENCIES
   coffee-rails (~> 3.1.0)
   formtastic
   jquery-rails
+  oauth2
   omniauth
   omniauth-facebook
   pg

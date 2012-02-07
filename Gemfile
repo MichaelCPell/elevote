@@ -8,6 +8,7 @@ gem 'rails', '3.1.0'
 gem 'acts_as_tree_rails3'
 gem 'omniauth'
 gem 'omniauth-facebook'
+gem 'oauth2'
 
 group :development do
 gem 'sqlite3'
