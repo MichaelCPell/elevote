@@ -1,6 +1,9 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery
+  http_basic_authenticate_with :name => "roll", :password => "tide"
+
   helper_method :current_official, :current_facebooker, :current_facebooker_email, :current_url
+
 
 
   def current_url
