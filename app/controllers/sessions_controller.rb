@@ -2,9 +2,14 @@ class SessionsController < ApplicationController
 
   def new
 
+
   end
 
   def create
+
+
+
+
 
     if params[:email]
       official = Official.find_by_email(params[:email])
@@ -20,7 +25,7 @@ class SessionsController < ApplicationController
 
     else
 
-    raise request.env["omniauth.auth"].to_yaml
+
 
 
 

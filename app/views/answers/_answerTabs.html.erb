@@ -1,40 +1,14 @@
 <div id="tabs" class="span-14">
-
-
-
-
          <ul>
-           <li><%= link_to("Comments", "#comments")%></li>
+           <li><%= link_to("About Me", "#aboutMe") %></li>
            <li><%= link_to("Positions", "#positions") %></li>
            <li><%= link_to("Goals", "#goals") %></li>
-           <li><%= link_to("Pictures", "#pictures") %></li>
-           <li><%= link_to("FAQ", "#frequentlyAskedQuestions") %></li>
-           <li><%= link_to("About Me", "#aboutMe") %></li>
-           <li><%= link_to("Campaign Speech", "#campaignSpeech") %></li>
+           <li><%= link_to("Official Comments", "#electedOfficialComments") %></li>
+           <li><%= link_to("Public Comments", "#publicComments") %></li>
          </ul>
 
-  <div id="comments" class="questionsPanel span-14 last">
-
-    <% for comment in @official.comments do %>
-         <div id ="comment">
-            <%= comment.content %>
-            <%= link_to "Thread", official_comment_path(@official) %>
-         </div>
-    <% end %>
-
-
-    <%= form_for [@official, @comment] do |c| %>
-         <%= c.label :content %>
-         <%= c.text_field :content %>
-         <%#= f.hidden_field(:commentable_id, :value => @legislation.id) %>
-         <%#= f.hidden_field(:authorable_id, :value => current_official.id) %>
-         <%= c.submit  %>
-    <% end %>
-
+  <div id="aboutMe" class="span-14">
   </div>
-
-
-
          <div id="positions" class="questionsPanel span-14 last">
 
 
@@ -60,34 +34,33 @@
               </ul>
         </div>
 
-       <div id="pictures" class="span-14">
 
-         <h3>Politician Photos</h3>
-         <%= image_tag @official.image1_url %>
-         <%= image_tag @official.image2_url.to_s %>
+    <div id="electedOfficialComments" class="questionsPanel span-14 last">
+
+    <% for comment in @official.comments do %>
+                <div id ="comment">
+                    <% if comment.id %>
+                        <%= link_to comment.content, legislation_comment_path(@official) %>
+                    <% end %>
+                </div>
+    <% end %>
+
+    <% if current_official %>
+    <%= form_for [@official, @comment] do |c| %>
+         <%= c.label :content %>
+         <%= c.text_field :content %>
+         <%= c.submit  %>
+    <% end %>
+    <% end %>
 
 
+  </div>
+
+    <div id="publicComments" class="span-14">
+         <fb:comments href="<%= current_url %>" num_posts="10" width="550"></fb:comments>
+    </div>
 
 
-        </div>
-
-       <div id="frequentlyAskedQuestions" class="span-14">
-           <h2>What is the air speed velocity of an unlaiden swallow?</h2>
-        </div>
-
-    <div id="aboutMe" class="span-14">
-           Bev Perdue’s life story isn’t so different from that of the state of North Carolina. They both exemplify the fact that with hard work and a solid education, anything is possible.
-
-The daughter of parents who never finished high school, Perdue was taught as a young girl that if she stayed focused and worked hard she could achieve anything.  She became a teacher, went on to earn a PhD, and was inspired to run for public office. She was elected to serve in the State Legislature and, later, as Lieutenant Governor.
-
-As Lt. Governor, Perdue successfully led our state's efforts to prevent closure of North Carolina's military bases, which contribute more than $23 billion annually to our state’s economy and provide jobs for more than 400,000 North Carolinians. Building on that success, Perdue launched the NC Military Foundation to attract 21st century defense, aerospace and homeland security jobs to North Carolina.
-
-In 2008, Bev Perdue was elected North Carolina’s 73rd Governor.  She took over as Governor during one of the worst recessions in American history.  And while North Carolina, like the rest of the country, still faces challenges ahead, every day in office she has held true to her values and fought to create economic and educational opportunities for all of our citizens.
-        </div>
-
-    <div id="campaignSpeech" class="span-14">
-         <iframe width="420" height="315" src="http://www.youtube.com/embed/dSCZUQT1aX8" frameborder="0" allowfullscreen></iframe>
-        </div>
 
 
     </div> <!-- end tabs -->

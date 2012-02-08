@@ -73,30 +73,6 @@
 
     <% content_for :rightColumn do %>
        <% if notice %><p id="notice"><%= notice %></p><% end %>
-
-        <%= link_to 'Answer Questions', edit_official_path(@official) %> <br>
-        <%= link_to 'Back', officials_path %>
-
-
-
-      <div id="scrollingMarquee">
-          <marquee behavior="scroll" direction="up" loop="1000" scrolldelay="1000">
-
-               <h2>Calendar</h2>
-               <h2>Event 1</h2>
-               <h2>Event 2</h2>
-
-          </marquee>
-
-      </div>
-
-
-
-      <div id="messageBoard">
-        <h2>Message Board</h2>
-      </div>
-
-
     <% end %>
 
 <!--Container Div-->

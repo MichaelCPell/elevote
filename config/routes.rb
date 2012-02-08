@@ -34,7 +34,7 @@ Elevote::Application.routes.draw do
 
   match '/signout', :to => 'sessions#destroy'
 
-  match '/auth/:facebook/callback', :to => 'sessions#create'
+  match '/auth/:facebook/callback', :to => 'legislations#index'
 
   match '/auth/failure', :to => 'legislations#failure'
 

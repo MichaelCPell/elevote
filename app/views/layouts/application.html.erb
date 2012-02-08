@@ -9,6 +9,28 @@
 <body id="bodycss">
 
 
+<div id="fb-root"></div>
+      <script>
+        window.fbAsyncInit = function() {
+              FB.init({
+            appId      : '205528859544975',
+            channelUrl : '//localhost:3000/channel.html',
+            status     : true,
+            cookie     : true,
+            xfbml      : true,
+            oauth      : true,
+          });
+        };
+        (function(d){
+           var js, id = 'facebook-jssdk'; if (d.getElementById(id)) {return;}
+           js = d.createElement('script'); js.id = id; js.async = true;
+           js.src = "//connect.facebook.net/en_US/all.js";
+           d.getElementsByTagName('head')[0].appendChild(js);
+         }(document));
+      </script>
+
+
+
 <div class="container">
 
 
@@ -28,30 +50,50 @@
 
 
 
-<div id="headerRight" class="span-5 last">
-<% if current_official %>
-  <div id="Official Sign-out Button" class="button last">
+  <div id="headerRight" class="span-5 last">
+    <% if current_official %>
+      <%= link_to current_official.firstname, current_official %>
+      <div id="Official Sign-out Button" class="button last">
+        <%= link_to "Sign-out", signout_path %>
+      </div>
 
 
-    <%= link_to "Sign-out", signout_path %>
+
+    <% elsif unless current_facebooker %>
+
+        <div id="facebook log-in button" class="button">
+        <%= link_to 'Facebook Login', '/auth/facebook/' %>
+        </div>
+
+        <div id="official Log-in  Button" class=" button">
+          <%= link_to "Official Log-in", new_session_path %>
+        </div>
+         <div id="official Sign-Up Button" class="button last">
+          <%= link_to "Official Sign-up", new_official_path %>
+        </div>
+    <% end %>
+    <% else %>
+        <div id="official Log-in  Button" class=" button">
+          <%= link_to "Official Log-in", new_session_path %>
+        </div>
+
+        <div id="official Sign-Up Button" class="button last">
+          <%= link_to "Official Sign-up", new_official_path %>
+        </div>
+    <% end %>
+
+
+
+    <div class="fb-like" data-href="<%= current_url %>" data-send="false" data-layout="button_count"
+         data-width="450" data-show-faces="true" data-font="lucida grande"></div>
+
   </div>
 
-     <%= link_to current_official.firstname, current_official %>
-<% else %>
-<div id="official Log-in  Button" class=" button">
-  <%= link_to "Official Log-in", new_session_path %>
-</div>
-<% end %>
 
 
 
 
-<% if current_official.nil? %>
-<div id="official Sign-Up Button" class="button last">
-  <%= link_to "Official Sign-up", new_official_path %>
-</div>
-<% end %>
-</div>
+
 
 
 </div>
@@ -60,37 +102,21 @@
 
         <div id="leftColumn" class="span-5">
 
-          <div id="fb-root"></div>
-      <script>
-        window.fbAsyncInit = function() {
-          FB.init({
-            appId      : '205528859544975',
-            status     : true,
-            cookie     : true,
-            xfbml      : true,
-            oauth      : true,
-          });
-        };
-        (function(d){
-           var js, id = 'facebook-jssdk'; if (d.getElementById(id)) {return;}
-           js = d.createElement('script'); js.id = id; js.async = true;
-           js.src = "//connect.facebook.net/en_US/all.js";
-           d.getElementsByTagName('head')[0].appendChild(js);
-         }(document));
-      </script>
-      <div class="fb-login-button">Login with Facebook</div>
-
-          <%= yield :leftColumn %>
-        </div>
 
 
-        <div id="middleColumn" class="span-14">
+
+
+      <%= yield :leftColumn %>
+      </div>
+
+
+      <div id="middleColumn" class="span-14">
             <%= yield :middleColumn%>
-        </div>
+      </div>
 
-        <div id="rightColumn" class="span-5 last">
+      <div id="rightColumn" class="span-5 last">
             <%= yield :rightColumn %>
-        </div>
+      </div>
 
 
 <div id="footer" class="span-24">

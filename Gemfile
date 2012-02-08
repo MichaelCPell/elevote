@@ -6,9 +6,10 @@ gem 'rails', '3.1.0'
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 
 gem 'acts_as_tree_rails3'
-gem 'omniauth'
+gem 'koala'
+
 gem 'omniauth-facebook'
-gem 'oauth2'
+
 
 group :development do
 gem 'sqlite3'

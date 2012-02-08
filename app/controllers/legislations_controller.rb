@@ -1,7 +1,19 @@
 class LegislationsController < ApplicationController
+  before_filter :parse_facebook_cookies
+
+  def parse_facebook_cookies
+      @facebook_cookies ||= Koala::Facebook::OAuth.new('205528859544975','6a0d3bedf7d1674f20b8678fcd629a87').get_user_info_from_cookie(cookies)
+  end
+
+
+
   # GET /legislations
   # GET /legislations.json
   def index
+
+
+
+
     @legislations = Legislation.all
 
     respond_to do |format|

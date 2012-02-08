@@ -15,34 +15,10 @@
     <%= f.inputs do %>
         <%= f.inputs :firstname %>
         <%= f.inputs :lastname %>
-        <%#= f.inputs :office, :as => :select %>
-
-
-        <%#= f.inputs :district, :as => :select, :collection => District.order(:number)%>
-        <div class="select">
-          <%= f.label :office %>
-          <%= f.collection_select :office_id, Office.order(:name), :id, :name %>
-        </div>
-
-        <div class="select">
-          <%= f.label :district %>
-          <%= f.collection_select :district_id, District.order(:category), :id, :all_togethor %>
-        </div>
-
-
         <%= f.inputs :email %>
         <%= f.inputs :password %>
         <%= f.inputs :password_confirmation %>
         <%= f.submit %>
 
     <% end %>
-
-
-
-
-
-
-
-
-
  <% end %>

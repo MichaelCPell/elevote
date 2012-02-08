@@ -1,5 +1,7 @@
 <% content_for :leftColumn do %>
 
+    <h1>Support</h1>
+
     <% if current_official %>
         <% unless current_official.opinions.exists?(:legislation_id => @legislation.id) %>
             <%= form_for (Opinion.new) do |f| %>
@@ -13,7 +15,7 @@
 
     <div class="officialOpinion span-3">
         <% for opinion in @legislation.opinions.support %>
-            <div class="officialOpinionThumb span-2"><%= Official.find_by_id(opinion.official_id).firstname %></div>
+            <div class="officialOpinionThumb span-2"><%= link_to Official.find_by_id(opinion.official_id).firstname, Official.find_by_id(opinion.official_id) %></div>
         <% end %>
     </div>
 <% end %>
@@ -22,53 +24,52 @@
 
 
 <% content_for :middleColumn do %>
-<p id="notice"><%= notice %></p>
 
-    <p>
-      <b>String:</b>
-      <%= @legislation.name %>
-    </p>
+         <h1><%= @legislation.name %></h1>
+           <br>
+    <div id="tabs" class="span-14">
+         <ul>
+           <li><%= link_to("Legislation Info", "#legislationInfo")%></li>
+           <li><%= link_to("Public Discussion", "#publicDiscussion") %></li>
+           <li><%= link_to("Elected Official Discussion", "#electedOfficialDiscussion") %></li>
+         </ul>
 
-    <p>
-      <b>Content:</b>
-      <%= @legislation.content %>
-    </p>
+        <div id="legislationInfo" class="questionsPanel span-14 last">
+            <%= @legislation.content %>
+        </div>
 
+        <div id="publicDiscussion" class="questionsPanel span-14 last">
+             <fb:comments href="<%= current_url %>" num_posts="10" width="550"></fb:comments>
+        </div>
 
-    <% for comment in @legislation.comments do %>
-      <div id ="comment">
-        <%= comment.content %>
-        <%= link_to "Thread", legislation_comment_path(@legislation) %>
+        <div id="electedOfficialDiscussion" class="questionsPanel span-14 last">
+            <% for comment in @legislation.comments do %>
+                <div id ="comment">
+                    <% if comment.id %>
+                        <%= link_to comment.content, legislation_comment_path(@legislation) %>
+                    <% end %>
+                </div>
+            <% end %>
 
-      </div>
+            <% if current_official %>
+                <%= form_for [@legislation, @comment] do |c| %>
+                    <%= c.label :content %>
+                        <%= c.text_field :content %>
+                    <%= c.submit  %>
+                <% end %>
+            <% end %>
 
-    <% end %>
+        </div>
 
-
-
-
-
-       <%= form_for [@legislation, @comment] do |c| %>
-         <%= c.label :content %>
-         <%= c.text_field :content %>
-         <%#= f.hidden_field(:commentable_id, :value => @legislation.id) %>
-         <%#= f.hidden_field(:authorable_id, :value => current_official.id) %>
-           <%= c.submit  %>
-       <% end %>
-
-
-
-
-
-<br>
-
-<%= link_to 'Edit', edit_legislation_path(@legislation) %> |
-<%= link_to 'Back', legislations_path %>
+    </div> <!-- end tabs -->
 <% end %>
 
 
 
 <% content_for :rightColumn do %>
+    <h1>Oppose</h1>
+
+
 
     <% if current_official %>
 
