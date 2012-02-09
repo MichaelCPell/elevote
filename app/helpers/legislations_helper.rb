@@ -11,7 +11,12 @@ module LegislationsHelper
      for opinion in @opposers
           Official.find_by_id(opinion.official_id).firstname
      end
-   end
+  end
+
+
+  def officials_full_name(official)
+    full_name = official.firstname + " " + official.lastname
+  end
 
 
 end

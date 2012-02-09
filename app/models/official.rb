@@ -23,12 +23,9 @@ class Official < ActiveRecord::Base
 
   belongs_to :district
 
-  belongs_to :office
 
   has_many :answers
   accepts_nested_attributes_for :answers
-
-  has_many :office_questions, :through => :answers
 
   has_many :questions, :through => :answers
 

@@ -1,5 +1,5 @@
 <% content_for :leftColumn do %>
-<h1>Edit Page</h1>
+
 <% end %>
 
 <% content_for :middleColumn do %>
@@ -7,20 +7,28 @@
       <%= form_for @official, :html => {:multipart => true } do |f| %>
 
 
-        <%= f.fields_for :answers do |answer_fields| %>
-
-            <%= answer_fields.object.question.name %>
-            <br>
-            <%= answer_fields.label :answer %>
-            <%= answer_fields.text_field :name %>
-            <br>
-        <% end %>
 
         <%= f.label :email %>
         <%= f.text_field :email %>
-
+       <br>
+        <%= f.label :portrait %>
         <%= f.file_field :portrait %>
-
+        <br>
+         <%= f.label "About Me" %>
+        <%= f.text_field :aboutMe %>
+        <br>
+          <%= f.label "Positions" %>
+        <%= f.text_field :positions %>
+        <br>
+          <%= f.label "Goals" %>
+        <%= f.text_field :goals %>
+        <br>
+        <%= f.label "Campaign Slogan" %>
+        <%= f.text_field :campaignSlogan %>
+        <br>
+        <%= f.label "Office" %>
+        <%= f.text_field :office %>
+        <br>
         <%= f.submit %>
 
 

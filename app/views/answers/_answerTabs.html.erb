@@ -8,30 +8,18 @@
          </ul>
 
   <div id="aboutMe" class="span-14">
+    <%= @official.aboutMe %>
   </div>
-         <div id="positions" class="questionsPanel span-14 last">
 
 
-           <% for answer in @official.answers do %>
-             <% if answer.question %>
-             <div class="officialQuestion span-14 last">
-                <h3 ><%= answer.question.name %></h3>
-             </div>
 
-             <div class="officialAnswer span-14 last">
-               <%= answer.name %>
-             </div>
-             <% end %>
-           <% end %>
+    <div id="positions" class="questionsPanel span-14 last">
 
+           <%= @official.positions %>
          </div>
 
         <div id="goals" class="span-14">
-              <ul>
-                <li>More Jobs</li>
-                <li>More Services</li>
-                <li>Less Spending</li>
-              </ul>
+             <%= @official.goals %>
         </div>
 
 

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Elevote</title>
+  <title>DigiCivic</title>
   <%= stylesheet_link_tag "application" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
@@ -35,24 +35,20 @@
 
 
 <div id="header" class="span-24">
-<div id="headerLeft" class="span-5">
-  <%= link_to (image_tag "gp1.png"), root_url %>
-
-  <%=  %>
-</div>
 
 
-<div id="headerMiddle" class="span-14">
-  <%= link_to (image_tag "intellivote.jpg") %>
-
-  <%=  %>
-</div>
-
-
-
-  <div id="headerRight" class="span-5 last">
+  <div id="headerRight" class="push-19 span-5 last">
     <% if current_official %>
+
+      <div id="currentOfficial" class="button">
       <%= link_to current_official.firstname, current_official %>
+      </div>
+
+      <div id="Official Edit Button" class="button last">
+        <%= link_to "Edit my Profile", edit_official_path(current_official) %>
+      </div>
+
+
       <div id="Official Sign-out Button" class="button last">
         <%= link_to "Sign-out", signout_path %>
       </div>
@@ -96,6 +92,21 @@
 
 
 
+</div>
+
+<div id="navigation" class="span-24">
+
+  <div id="navElectedOfficials" class="span-8">
+      <h3><%= link_to 'Elected Officials', officials_path %></h3>
+  </div>
+
+  <div id="navLegislations" class="span-8">
+     <h3><%= link_to 'Legislations', legislations_path %></h3>
+  </div>
+
+  <div id="navConstituentPage" class="span-8 last">
+     <h3><%= link_to 'My Dashboard', constituents_path(current_constituent) %></h3>
+  </div>
 </div>
 
 

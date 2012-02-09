@@ -1,8 +1,8 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery
-  http_basic_authenticate_with :name => "roll", :password => "tide"
+  #http_basic_authenticate_with :name => "roll", :password => "tide"
 
-  helper_method :current_official, :current_facebooker, :current_facebooker_email, :current_url
+  helper_method :current_official, :current_facebooker, :current_facebooker_email, :current_url, :current_constituent
 
 
 
@@ -34,6 +34,10 @@ class ApplicationController < ActionController::Base
 
   def facebook_logout_url
 
+  end
+
+  def current_constituent
+    current_facebooker
   end
 
 

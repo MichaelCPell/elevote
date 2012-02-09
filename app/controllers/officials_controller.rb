@@ -53,7 +53,7 @@ class OfficialsController < ApplicationController
 
 
       session[:official] = @official
-      redirect_to legislations_path, :notice => "Logged in!"
+      redirect_to @official, :notice => "Logged in!"
 
 
   end

@@ -4,7 +4,11 @@
 
     <% content_for :leftColumn do %>
         <div id="officialPortrait" class="span-5">
-          <%= image_tag @official.portrait_url.to_s %>
+          <% if @official.portrait_url %>
+              <%= image_tag @official.portrait_url.to_s %>
+          <% else %>
+              <%= image_tag 'gp-logo-med.png' %>
+          <% end %>
         </div>
 
       <div id="donateButton" class="button span-5">
@@ -39,9 +43,9 @@
           <%= @official.lastname %>
 
         </h1>
-
-      <h3 id="officialSlogan" class="span-14 last">
-        "The Rent Is Too Damn High"
+      <h2 class="span-4"><%= @official.office %></h2>
+      <h3 id="officialSlogan" class="span-10 last">
+        <%= @official.campaignSlogan %>
       </h3>
 
 

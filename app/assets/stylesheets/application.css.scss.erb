@@ -10,8 +10,8 @@
 
 
 $red: #800000;
-$yellow: #cb9012;
-$gray: #d1d1d3;
+$yellow: #d3a63c;
+$gray: #2d2d2c;
 $fontwhite: #f9f9f9;
 $blue: #012646;
 
@@ -22,10 +22,12 @@ $blue: #012646;
 
 }
 
-#nav {
+#navigation {
     float: left;
-    background-color: #e9eae4;
-
+    background-color: white;
+    border-bottom: $blue solid 5px;
+    padding-bottom: 3px;
+    text-align: center;
 }
 
 
@@ -39,6 +41,7 @@ $blue: #012646;
     padding-top: 0;
     text-align: center;
     height: 125px;
+    background: image_url("images/header.png");
     background-color: $gray;
     border-bottom: $red solid 5px;
 
@@ -61,7 +64,7 @@ $blue: #012646;
 /*Left Column*/
 #leftColumn{
     height: 460px;
-    border-right: $blue 4px solid;
+    border-right: $gray 4px solid;
 }
 
 
@@ -77,8 +80,8 @@ $blue: #012646;
 
 #rightColumn {
     height: 460px;
-    border-left: $blue 4px solid;
-
+    border-left: $gray 4px solid;
+    padding-left: 4px;
 }
 
 /*official Show Page*/
@@ -115,7 +118,7 @@ height: 50px;
 
 .button {
   border: 2px solid $gray;
-  background-color: $fontwhite;
+  background-color: white;
   font-size: 14px;
   text-align: center;
   border-radius: 5px;

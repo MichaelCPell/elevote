@@ -15,7 +15,7 @@
 
     <div class="officialOpinion span-3">
         <% for opinion in @legislation.opinions.support %>
-            <div class="officialOpinionThumb span-2"><%= link_to Official.find_by_id(opinion.official_id).firstname, Official.find_by_id(opinion.official_id) %></div>
+            <div class="officialOpinionThumb span-2"><%= link_to officials_full_name(Official.find_by_id(opinion.official_id)), Official.find_by_id(opinion.official_id) %></div>
         <% end %>
     </div>
 <% end %>
@@ -45,6 +45,7 @@
         <div id="electedOfficialDiscussion" class="questionsPanel span-14 last">
             <% for comment in @legislation.comments do %>
                 <div id ="comment">
+                  <roll></roll>
                     <% if comment.id %>
                         <%= link_to comment.content, legislation_comment_path(@legislation) %>
                     <% end %>

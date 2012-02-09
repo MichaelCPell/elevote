@@ -1,26 +1,22 @@
 
 <% content_for :middleColumn do %>
-<h1>Listing officials</h1>
+<h1>Your Elected Officials</h1>
 
 <table>
   <tr>
-    <th>Firstname</th>
-    <th>Lastname</th>
+    <th>Name</th>
     <th>Office</th>
-    <th></th>
-    <th></th>
+
+    <th>Slogan</th>
     <th></th>
   </tr>
 
 <% @officials.each do |official| %>
   <tr>
 
-    <td><%= official.firstname %></td>
-    <td><%= official.lastname %></td>
-    <td><% if official.office %><%= official.office.name %><% end %></td>
-    <td><%= link_to 'Show', official %></td>
-    <td><%= link_to 'Edit', edit_official_path(official) %></td>
-    <td><%= link_to 'Destroy', official, confirm: 'Are you sure?', method: :delete %></td>
+    <td><%= link_to officials_full_name(official), official %></td>
+    <td><% if official.office %><%= official.office %><% end %></td>
+    <td><%= official.campaignSlogan %></td>
   </tr>
 <% end %>
 </table>
@@ -31,6 +27,6 @@
 
 <% content_for :rightColumn do %>
 
-<%= link_to 'New official', new_official_path %>
+
 
 <% end %>

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120207013520) do
+ActiveRecord::Schema.define(:version => 20120205224151) do
 
   create_table "answers", :force => true do |t|
     t.string   "name"
@@ -82,17 +82,21 @@ ActiveRecord::Schema.define(:version => 20120207013520) do
   create_table "officials", :force => true do |t|
     t.string   "firstname"
     t.string   "lastname"
+    t.string   "email"
+    t.string   "password_digest"
+    t.string   "portrait"
+    t.string   "campaignSlogan"
+    t.text     "aboutMe"
+    t.text     "positions"
+    t.text     "goals"
+    t.string   "office"
     t.string   "state"
     t.string   "racename"
     t.integer  "office_id"
     t.integer  "district_id"
     t.integer  "office_question_id"
-    t.string   "email"
-    t.string   "password_digest"
-    t.string   "portrait"
     t.string   "image1"
     t.string   "image2"
-    t.string   "campaignSlogan"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -120,11 +124,6 @@ ActiveRecord::Schema.define(:version => 20120207013520) do
 
   create_table "races", :force => true do |t|
     t.string   "name"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "users", :force => true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
   end
