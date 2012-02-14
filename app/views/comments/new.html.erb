@@ -1,5 +1,40 @@
+<%= content_for :middleColumn do %>
 <h1>New comment</h1>
 
-<%= render 'form' %>
+<%#= render 'form' %>
 
-<%= link_to 'Back', comments_path %>
+
+      <% if @commentParent %>
+
+                <%= form_for @comment do |c| %>
+
+                    <%= c.label :title %>
+                    <%= c.text_field :title %>
+
+                    <%= c.label :content %>
+                    <%= c.text_area :content %>
+
+
+                <%= c.hidden_field :direction, :value => params[:direction] %>
+                    <%= c.hidden_field :parent_id, :value => @commentParent.id %>
+                    <%= c.submit  %>
+                <% end %>
+
+      <% end %>
+
+
+     <% if @commentable %>
+
+                <%= form_for [@commentable,@comment] do |c| %>
+                    <%= c.label :content %>
+                        <%= c.text_field :content %>
+
+
+
+                    <%= c.hidden_field :direction, :value => params[:direction] %>
+                    <%= c.submit  %>
+                <% end %>
+
+      <% end %>
+
+<% end  %>

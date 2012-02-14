@@ -4,7 +4,18 @@
 
 
 <% @legislations.each do |legislation| %>
-    <h2><%= link_to legislation.name, legislation %></h2>
+
+
+
+    <div class="span-4">
+
+        <%= pluralize legislation.votes.count, 'vote', 'votes' %>
+    </div>
+
+    <div class="span-10 last">
+        <%= link_to legislation.name, legislation %>
+    </div>
+
 <% end %>
 
 

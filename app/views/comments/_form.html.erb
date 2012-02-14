@@ -1,3 +1,4 @@
+<%= content_for :middleColumn do %>
 <%= form_for(@comment) do |f| %>
   <% if @comment.errors.any? %>
     <div id="error_explanation">
@@ -11,19 +12,20 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :author_id %><br />
-    <%= f.number_field :author_id %>
-  </div>
+
   <div class="field">
     <%= f.label :content %><br />
     <%= f.text_area :content %>
   </div>
+
+  <%= @commentable_id %>
   <div class="field">
-    <%= f.label :commentable %><br />
-    <%= f.number_field :commentable_id %>
+    <%= f.label "Support or Oppose" %><br />
+    <%= select(:comment, :direction, [['Support','support'],['Oppose','oppose']])  %>
   </div>
+
   <div class="actions">
     <%= f.submit %>
   </div>
+<% end %>
 <% end %>

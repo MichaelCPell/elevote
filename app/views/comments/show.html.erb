@@ -2,46 +2,85 @@
 
 <p id="notice"><%= notice %></p>
 
-<p>
-  <b>Author:</b>
-  <%= @comment.authorable_id %>
-</p>
+  <%= link_to "Vote for This", vote_comment_path(@comment), :method => :post %>
 
-<p>
-  <b>Content:</b>
-  <%= @comment.content %>
-</p>
+<div id="tabs" class="span-14">
 
-<p>
-  <b>Target:</b>
-  <%= @comment.commentable_id %>
-</p>
+  <ul>
+    <li class="span-5"><%= link_to("Info", "#info")%></li>
+    <li class="span-4"><%= link_to("Support", "#support")%></li>
+       <li class="span-4 last"><%= link_to("Oppose", "#oppose") %></li>
+  </ul>
+
+  <div id="info">
+
+    <%= @comment.content %>
+  </div>
+
+  <div id="support" class="span-14">
+     <% for child in @comment.children do %>
+
+
+        <% if child.direction == "support" %>
 
 
 
 
-    <% for child in @comment.children do %>
-      <div id ="comment">
+            <div id ="comment" class="span-14 last">
 
-        <% if child != @comment.children.last %>
-        <%= child.content %>
-        <%= link_to "thread", child %>
+            <% if child != @support.last %>
+            <div class="span-4">
+              <%= pluralize child.votes.count, 'vote', 'votes' %>
+            </div>
+
+            <div class="span-10 last">
+            <%= link_to child.title, child %>
+            </div>
+
+            <% end %>
+           </div>
+
+
+
         <% end %>
+     <% end %>
+   <br>
+   <div class="span-4">
+   <%= link_to 'Add a Comment', new_comment_path(:parent_id => @comment.id, :direction => "support") %>
+   </div>
+  </div>
 
-      </div>
-
-    <% end %>
-
+  <div id="oppose">
+       <% for child in @comment.children do %>
 
 
-    <%= form_for @newcomment do |f| %>
-        <%= f.label :content %>
-        <%= f.text_field :content %>
+        <% if child.direction == "oppose" %>
+            <div id ="comment">
+                <% if child != @support.last %>
+                    <%= link_to child.title, child %>
+                    <%= child.content %>
+                <% end %>
+            </div>
 
-        <%= f.hidden_field :parent_id, :value => @comment.id %>
+            <div id="commentVotes">
+                <%= comment.vote_count %>
+            </div>
 
-        <%= f.submit %>
-    <% end %>
+        <% end %>
+     <% end %>
+
+   <%= link_to 'Add a Comment', new_comment_path(:parent_id => @comment.id, :direction => "oppose") %>
+
+  </div>
+
+</div>
+
+
+
+
+
+
+
 
 <%#= link_to 'Edit', edit_comment_path(@comment) %>
 <%#= link_to 'Back', comments_path %>

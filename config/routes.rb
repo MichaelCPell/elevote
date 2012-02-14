@@ -1,13 +1,21 @@
 Elevote::Application.routes.draw do
+  resources :votes
+
   resources :opinions
 
   resources :constituents
 
   resources :comments do
+    member do
+      post 'vote'
+    end
   end
 
   resources :legislations do
     resources :comments
+    member do
+      post 'vote'
+    end
   end
 
   resources :states

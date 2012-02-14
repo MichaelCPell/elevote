@@ -16,6 +16,10 @@ class CommentsController < ApplicationController
     @comment = Comment.find(params[:id])
     @newcomment = @comment.children.build
 
+    for child in @comment.children do
+      @support = Array.new
+      @support.push(child) if child.direction == "support"
+    end
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @comment }
@@ -25,8 +29,21 @@ class CommentsController < ApplicationController
   # GET /comments/new
   # GET /comments/new.json
   def new
+    if params[:legislation_id]
+      @commentable = Legislation.find(params[:legislation_id])
+    end
+
+    if params[:parent_id]
+      @commentParent = Comment.find(params[:parent_id])
+    end
+
+
     @comment = Comment.new
 
+
+    if params[:legislation_id]
+      @commentable_id = params[:legislation_id]
+    end
     respond_to do |format|
       format.html # new.html.erb
       format.json { render json: @comment }
@@ -96,4 +113,13 @@ class CommentsController < ApplicationController
       format.json { head :ok }
     end
   end
+
+  def vote
+    @comment = Comment.find(params[:id])
+    Vote.create(:constituent_id => current_constituent_id, :voteable_id => @comment.id, :voteable_type => "Comment")
+    redirect_to :back
+  end
+
+
+
 end

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120205224151) do
+ActiveRecord::Schema.define(:version => 20120211235156) do
 
   create_table "answers", :force => true do |t|
     t.string   "name"
@@ -25,10 +25,14 @@ ActiveRecord::Schema.define(:version => 20120205224151) do
   create_table "comments", :force => true do |t|
     t.integer  "parent_id"
     t.text     "content"
+    t.text     "title"
     t.integer  "commentable_id"
     t.string   "commentable_type"
     t.integer  "authorable_id"
     t.string   "authorable_type"
+    t.integer  "view_count"
+    t.integer  "votes_count"
+    t.string   "direction"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -62,6 +66,7 @@ ActiveRecord::Schema.define(:version => 20120205224151) do
   create_table "legislations", :force => true do |t|
     t.string   "name"
     t.text     "content"
+    t.integer  "votes_count"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -104,7 +109,9 @@ ActiveRecord::Schema.define(:version => 20120205224151) do
   create_table "opinions", :force => true do |t|
     t.string   "status"
     t.integer  "official_id"
+    t.integer  "constituent_id"
     t.integer  "legislation_id"
+    t.integer  "comment_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -124,6 +131,14 @@ ActiveRecord::Schema.define(:version => 20120205224151) do
 
   create_table "races", :force => true do |t|
     t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "votes", :force => true do |t|
+    t.integer  "voteable_id"
+    t.string   "voteable_type"
+    t.integer  "constituent_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

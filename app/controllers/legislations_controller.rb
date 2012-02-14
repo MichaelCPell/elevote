@@ -14,7 +14,8 @@ class LegislationsController < ApplicationController
 
 
 
-    @legislations = Legislation.all
+    @legislations = Legislation.all(:order => 'votes_count DESC')
+
 
     respond_to do |format|
       format.html # index.html.erb
@@ -99,6 +100,11 @@ class LegislationsController < ApplicationController
     end
   end
 
+  def vote
+    @legislation = Legislation.find(params[:id])
+    Vote.create({:constituent_id => current_constituent_id, :voteable_id => @legislation.id, :voteable_type => "Legislation"})
+    redirect_to :back
+  end
 
   def failure
      redirect_to new_session_path, :flash => {:error => "Could not log you in. #{params[:message]}"}

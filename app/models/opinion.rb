@@ -6,4 +6,6 @@ class Opinion < ActiveRecord::Base
   scope :support, where(:status => "support")
   scope :oppose, where(:status => "oppose")
 
+
+
 end
