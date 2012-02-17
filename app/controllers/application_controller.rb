@@ -2,8 +2,7 @@ class ApplicationController < ActionController::Base
   protect_from_forgery
   #http_basic_authenticate_with :name => "roll", :password => "tide"
 
-  helper_method :current_official, :current_facebooker, :current_facebooker_email, :current_url, :current_constituent,
-      :current_constituent_id
+  helper_method :current_official, :current_url, :current_constituent
 
 
 
@@ -22,29 +21,8 @@ class ApplicationController < ActionController::Base
   end
 
 
-  def current_facebooker
-     @auth_hash = request.env['omniauth.auth']
-  end
-
-  def current_facebooker_email
-    auth = request.env['omniauth.auth']
-    @current_facebooker_email = auth["info"]["name"]
-
-  end
-
-
-  def facebook_logout_url
-
-  end
-
-  def current_constituent_id
-   # current_facebooker
-    1
-  end
-
-    def current_constituent
-    current_facebooker
-
+  def current_constituent
+    @current_constituent ||= Constituent.find_by_id(session[:constituent])
   end
 
 

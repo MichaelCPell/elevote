@@ -1,0 +1,7 @@
+development:
+  api_key: 181378665303836
+  secret: 7eacd91d4cab9b97fbfc77ab7adde328
+
+production:
+  api_key: 205528859544975
+  secret: 6a0d3bedf7d1674f20b8678fcd629a87

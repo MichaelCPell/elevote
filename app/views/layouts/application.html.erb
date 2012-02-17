@@ -35,9 +35,17 @@
 
 
 <div id="header" class="span-24">
+  
+  <div id="headerFacebook" class="push-14 span-4">
+     <% if current_constituent %>
+         <%= image_tag(current_constituent.image_url) %>
+         <%=  current_constituent.name %>
+     <% end %>
+
+  </div>
 
 
-  <div id="headerRight" class="push-19 span-5 last">
+  <div id="headerRight" class="push-15 span-5 last">
     <% if current_official %>
 
       <div id="currentOfficial" class="button">
@@ -55,7 +63,7 @@
 
 
 
-    <% elsif unless current_facebooker %>
+    <% elsif unless current_constituent %>
 
         <div id="facebook log-in button" class="button">
         <%= link_to 'Facebook Login', '/auth/facebook/' %>
@@ -105,7 +113,7 @@
   </div>
 
   <div id="navConstituentPage" class="span-8 last">
-     <h3><%= link_to 'My Dashboard', constituents_path(current_constituent) %></h3>
+     <h3><%= link_to 'My Dashboard', constituent_path(current_constituent) %></h3>
   </div>
 </div>
 

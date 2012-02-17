@@ -5,8 +5,21 @@ class SessionsController < ApplicationController
 
   end
 
+
   def create
 
+
+
+    auth = request.env["omniauth.auth"]
+    @auth = auth
+    if auth
+     constituent = Constituent.find_or_create_by_email_and_name_and_image_url(auth["info"]["email"],auth["info"]["name"],
+                                                                              auth["info"]["image"] )
+
+     session[:constituent] = constituent
+
+
+    end
 
 
 
@@ -23,7 +36,7 @@ class SessionsController < ApplicationController
          redirect_to new_session_path, :notice => "Invalid email or password"
       end
 
-    else
+
 
 
 
@@ -33,7 +46,7 @@ class SessionsController < ApplicationController
   end
 
   def destroy
-    session[:official] = nil
+    reset_session
     redirect_to root_url, :notice => "Logged out!"
   end
 

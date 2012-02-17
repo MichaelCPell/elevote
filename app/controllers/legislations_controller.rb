@@ -14,6 +14,7 @@ class LegislationsController < ApplicationController
 
 
 
+
     @legislations = Legislation.all(:order => 'votes_count DESC')
 
 
@@ -102,7 +103,7 @@ class LegislationsController < ApplicationController
 
   def vote
     @legislation = Legislation.find(params[:id])
-    Vote.create({:constituent_id => current_constituent_id, :voteable_id => @legislation.id, :voteable_type => "Legislation"})
+    Vote.create({:constituent_id => current_constituent.id, :voteable_id => @legislation.id, :voteable_type => "Legislation"})
     redirect_to :back
   end
 

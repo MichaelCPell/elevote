@@ -18,8 +18,8 @@ ActiveRecord::Schema.define(:version => 20120211235156) do
     t.integer  "official_id"
     t.integer  "question_id"
     t.integer  "office_question_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at",         :null => false
+    t.datetime "updated_at",         :null => false
   end
 
   create_table "comments", :force => true do |t|
@@ -33,20 +33,22 @@ ActiveRecord::Schema.define(:version => 20120211235156) do
     t.integer  "view_count"
     t.integer  "votes_count"
     t.string   "direction"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at",       :null => false
+    t.datetime "updated_at",       :null => false
   end
 
   create_table "constituents", :force => true do |t|
     t.string   "name"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.string   "email"
+    t.string   "image_url"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "counties", :force => true do |t|
     t.string   "name"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "districts", :force => true do |t|
@@ -54,8 +56,8 @@ ActiveRecord::Schema.define(:version => 20120211235156) do
     t.string   "number"
     t.integer  "office_id"
     t.string   "gpe"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "districts_precincts", :id => false, :force => true do |t|
@@ -67,21 +69,21 @@ ActiveRecord::Schema.define(:version => 20120211235156) do
     t.string   "name"
     t.text     "content"
     t.integer  "votes_count"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
   end
 
   create_table "office_questions", :force => true do |t|
     t.string   "name"
     t.integer  "office_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "offices", :force => true do |t|
     t.string   "name"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "officials", :force => true do |t|
@@ -102,8 +104,8 @@ ActiveRecord::Schema.define(:version => 20120211235156) do
     t.integer  "office_question_id"
     t.string   "image1"
     t.string   "image2"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at",         :null => false
+    t.datetime "updated_at",         :null => false
   end
 
   create_table "opinions", :force => true do |t|
@@ -112,35 +114,35 @@ ActiveRecord::Schema.define(:version => 20120211235156) do
     t.integer  "constituent_id"
     t.integer  "legislation_id"
     t.integer  "comment_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at",     :null => false
+    t.datetime "updated_at",     :null => false
   end
 
   create_table "precincts", :force => true do |t|
     t.string   "name"
     t.integer  "county_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "questions", :force => true do |t|
     t.string   "name"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "races", :force => true do |t|
     t.string   "name"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "votes", :force => true do |t|
     t.integer  "voteable_id"
     t.string   "voteable_type"
     t.integer  "constituent_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at",     :null => false
+    t.datetime "updated_at",     :null => false
   end
 
 end

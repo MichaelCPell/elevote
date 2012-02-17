@@ -1,10 +1,9 @@
-<p id="notice"><%= notice %></p>
+<%= content_for :middleColumn do %>
 
-<p>
-  <b>Name:</b>
-  <%= @constituent.name %>
-</p>
+<h1><%=  current_constituent.name %></h1>
+<h2><%=  current_constituent.email %></h2>
+<%= image_tag(current_constituent.image_url) %>
+    <%= debug request.env["omniauth.auth"] %>
 
-
-<%= link_to 'Edit', edit_constituent_path(@constituent) %> |
-<%= link_to 'Back', constituents_path %>
+    
+<% end %>
