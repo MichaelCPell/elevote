@@ -3,7 +3,7 @@
 <h1><%=  current_constituent.name %></h1>
 <h2><%=  current_constituent.email %></h2>
 <%= image_tag(current_constituent.image_url) %>
-    <%= debug request.env["omniauth.auth"] %>
+    <%#= debug request.env["omniauth.auth"] %>
 
     
 <% end %>
