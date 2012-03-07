@@ -287,7 +287,7 @@
 .ui-widget-shadow { margin: 8px 0 0 8px; padding: 10px; background: #ba9217 url(images/ui-bg_flat_75_ba9217_40x100.png) 50% 50% repeat-x; opacity: .20;filter:Alpha(Opacity=20); -moz-border-radius: 5px; -khtml-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; }
 
 
-* jQuery UI Tabs 1.8.18
+/* jQuery UI Tabs 1.8.18
 *
  * Copyright 2011, AUTHORS.txt (http://jqueryui.com/about)
 * Dual licensed under the MIT or GPL Version 2 licenses.
