@@ -1,6 +1,6 @@
 <% content_for :middleColumn do %>
 
-<h1>Legislations</h1>
+<h1>Outcomes</h1>
 
 
 <% @legislations.each do |legislation| %>
@@ -9,7 +9,7 @@
 
     <div class="span-4">
 
-        <%= pluralize legislation.votes.count, 'vote', 'votes' %>
+        <%= pluralize legislation.endorsements.count, 'endorsement', 'endorsements' %>
     </div>
 
     <div class="span-10 last">
@@ -30,6 +30,6 @@
 
     
     <div class="button">
-         <%= link_to 'Make New Legislation', new_legislation_path %>
+         <%= link_to 'Make New Outcome', new_legislation_path %>
     </div>
 <% end  %>

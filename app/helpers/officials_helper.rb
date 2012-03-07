@@ -15,6 +15,12 @@ module OfficialsHelper
   end
 
 
+  def officials_full_name(official)
+    full_name = official.firstname + " " + official.lastname
+  end
+
+
+
 
 
 

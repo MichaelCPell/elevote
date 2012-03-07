@@ -2,7 +2,7 @@
 
 <p id="notice"><%= notice %></p>
 
-  <%= link_to "Vote for This", vote_comment_path(@comment), :method => :post %>
+  <%= link_to "Endorsement for This", endorsement_comment_path(@comment), :method => :post %>
 
 <div id="tabs" class="span-14">
 
@@ -30,7 +30,7 @@
 
             <% if child != @support.last %>
             <div class="span-4">
-              <%= pluralize child.votes.count, 'vote', 'votes' %>
+              <%= pluralize child.endorsements.count, 'endorsement', 'endorsements' %>
             </div>
 
             <div class="span-10 last">
@@ -63,7 +63,7 @@
             </div>
 
             <div id="commentVotes">
-                <%= comment.vote_count %>
+                <%= comment.endorsement.counts %>
             </div>
 
         <% end %>

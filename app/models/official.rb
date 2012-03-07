@@ -9,29 +9,22 @@ class Official < ActiveRecord::Base
 
   #Scopes
 
-  scope :presidents, where(:office_id => 1)
-  scope :usSenate, where(:office_id => 2)
-  scope :usHouse, where(:office_id => 3)
-  scope :Governor, where(:office_id => 4)
-  scope :stateSenate, where(:office_id => 5)
-  scope :stateHouse, where(:office_id => 6)
-
-
 
   #Associations
 
 
-  belongs_to :district
 
+  #Comments Relationships
+    has_many :comments, :as => :authorable
+    has_many :comments, :as => :commentable
+    accepts_nested_attributes_for :comments
 
-  has_many :answers
-  accepts_nested_attributes_for :answers
+    has_many :updates, :class_name => "Comment", :as => :authorable
 
-  has_many :questions, :through => :answers
-
-  has_many :comments, :as => :authorable
-  has_many :comments, :as => :commentable
-  accepts_nested_attributes_for :comments
+  #Endorsements Relationships
+    has_many :given_endorsements, :class_name => "Endorsement", :as => :endorsementer
+    has_many :received_endorsements, :class_name => "Endorsement", :as => :endorsementable
+    accepts_nested_attributes_for :comments
 
   has_many :questions
 

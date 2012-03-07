@@ -10,6 +10,7 @@ class CreateOfficials < ActiveRecord::Migration
       t.text :aboutMe
       t.text :positions
       t.text :goals
+      t.text :achievements
       t.string :office
 
 

@@ -33,8 +33,6 @@ class LegislationsController < ApplicationController
       @comment = @legislation.comments.build
 
 
-      @opposers = @legislation.opinions.oppose
-
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @legislation }
@@ -101,9 +99,9 @@ class LegislationsController < ApplicationController
     end
   end
 
-  def vote
+  def endorse
     @legislation = Legislation.find(params[:id])
-    Vote.create({:constituent_id => current_constituent.id, :voteable_id => @legislation.id, :voteable_type => "Legislation"})
+    Endorsement.create({:endorsementer_id => current_constituent.id, :endorsementer_type => "Constituent", :endorsementable_id => @legislation.id, :endorsementable_type => "Legislation"})
     redirect_to :back
   end
 

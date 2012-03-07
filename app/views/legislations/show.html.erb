@@ -1,23 +1,32 @@
 <% content_for :leftColumn do %>
 
-    <h1>Support</h1>
+    <h1>Official Endorsements</h1>
 
     <% if current_official %>
-        <% unless current_official.opinions.exists?(:legislation_id => @legislation.id) %>
-            <%= form_for (Opinion.new) do |f| %>
-               <%= f.hidden_field :status, :value => "support"  %>
-               <%= f.hidden_field :official_id, :value => current_official.id %>
-               <%= f.hidden_field :legislation_id, :value => @legislation.id %>
-               <%= f.submit "Support This Legislation"  %>
+        <% unless current_official.given_endorsements.exists?(:endorsementable_type => "Legislation",
+                                                        :endorsementable_id => @legislation.id) %>
+            <%= form_for (Endorsement.new) do |f| %>
+
+               <%= f.hidden_field :endorsementer_id, :value => current_official.id %>
+                <%= f.hidden_field :endorsementer_type, :value => "Official" %>
+
+                <%= f.hidden_field :endorsementable_id, :value => @legislation.id %>
+                <%= f.hidden_field :endorsementable_type, :value => "Legislation" %>
+
+               <%= f.submit "Support This Outcome"  %>
             <% end %>
         <% end %>
     <% end %>
 
     <div class="officialOpinion span-3">
-        <% for opinion in @legislation.opinions.support %>
-            <div class="officialOpinionThumb span-2"><%= link_to officials_full_name(Official.find_by_id(opinion.official_id)), Official.find_by_id(opinion.official_id) %></div>
+        <% for endorsement in @legislation.endorsements.where(:endorsementer_type => "Official") %>
+          <div class="officialOpinionThumb span-2"><%= link_to officials_full_name(Official.find_by_id(endorsement.endorsementer_id)), Official.find_by_id(endorsement.endorsementer_id) %></div>
         <% end %>
     </div>
+    
+    <h1>Group Endorsements</h1>
+    <h1>Constituent Endorsements</h1>
+    <%= @legislation.endorsements.where(:endorsementer_type == "Constituent").count %>
 <% end %>
 
 
@@ -26,7 +35,7 @@
 <% content_for :middleColumn do %>
 
          <h1><%= @legislation.name %></h1>
-        <%= link_to "Vote for This", vote_legislation_path(@legislation), :method => :post %>
+        <%= link_to "Endorsement for This", endorse_legislation_path(@legislation), :method => :post %>
 
            <br>
     <div id="tabs" class="span-14">
@@ -46,7 +55,7 @@
                 <% if comment.direction == "support" %>
 
                      <div id="commentVotes" class="span-4">
-                         <%= pluralize comment.votes.count, 'vote', 'votes' %>
+                         <%= pluralize comment.endorsements.count, 'endorsement', 'endorsements' %>
                     </div>
 
                   <div id ="comment" class="span-10 last">
@@ -70,7 +79,7 @@
         <% for comment in @legislation.comments do %>
             <% if comment.direction == "oppose" %>
                 <div id="commentVotes" class="span-4">
-                    <%= pluralize comment.votes.count, 'vote', 'votes' %>
+                    <%= pluralize comment.votes.count, 'vote', 'endorsements' %>
                 </div>
 
                 <div id ="comment" class="span-10 last">
@@ -91,26 +100,5 @@
 
 
 <% content_for :rightColumn do %>
-    <h1>Oppose</h1>
 
-
-
-    <% if current_official %>
-
-    <% unless current_official.opinions.exists?(:legislation_id => @legislation.id) %>
-        <%= form_for (Opinion.new) do |f| %>
-           <%= f.hidden_field :status, :value => "oppose"  %>
-           <%= f.hidden_field :official_id, :value => current_official.id %>
-           <%= f.hidden_field :legislation_id, :value => @legislation.id %>
-           <%= f.submit "Oppose This Legislation"  %>
-        <% end %>
-    <% end %>
-
-    <% end %>
-
-    <div class="officialOpinion span-3">
-        <% for opinion in @legislation.opinions.oppose %>
-              <div class="officialOpinionThumb span-2"><%= Official.find_by_id(opinion.official_id).firstname %></div>
-        <% end %>
-    </div>
 <% end %>

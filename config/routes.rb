@@ -1,5 +1,9 @@
 Elevote::Application.routes.draw do
-  resources :votes
+  resources :groups
+
+  resources :endorsements do
+    resources :comments
+  end
 
   resources :opinions
 
@@ -7,36 +11,20 @@ Elevote::Application.routes.draw do
 
   resources :comments do
     member do
-      post 'vote'
+      post 'endorse'
     end
   end
 
   resources :legislations do
     resources :comments
     member do
-      post 'vote'
+      post 'endorse'
     end
   end
-
-  resources :states
-
-  resources :counties
-
-  resources :races
-
-  resources :precincts
-
-  resources :answers
-
-  resources :questions
-
-  resources :offices
 
   resources :officials do
     resources :comments
   end
-
-  resources :districts
 
   resources :sessions, :only => [:new, :create, :destroy]
 

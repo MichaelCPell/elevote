@@ -1,0 +1,21 @@
+<%= form_for(@endorsement) do |f| %>
+  <% if @endorsement.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@endorsement.errors.count, "error") %> prohibited this endorsement from being saved:</h2>
+
+      <ul>
+      <% @endorsement.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :endorsementable_id %><br />
+    <%= f.number_field :endorsementable_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

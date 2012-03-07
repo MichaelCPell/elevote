@@ -5,7 +5,7 @@
  *= require_self
  *= require formtastic
 
- *= require_tree . 
+ *= require_tree .
 */
 
 
@@ -40,8 +40,8 @@ $blue: #012646;
 #header {
     padding-top: 0;
     text-align: center;
-    height: 125px;
-    background: image_url("images/header.png");
+    /*height: 125px;*/
+    /*background: image_url("images/header.png");*/
     background-color: $gray;
     border-bottom: $red solid 5px;
 
@@ -74,7 +74,7 @@ $blue: #012646;
 
 #middleColumn {
     height: 460px;
-    margin-left: -10px;
+
 
 }
 
@@ -82,22 +82,32 @@ $blue: #012646;
     height: 460px;
     border-left: $gray 4px solid;
     padding-left: 4px;
+    margin-right: -10px;
 }
 
 /*official Show Page*/
+
+
 #officialPortrait{
     height: 210px;
     margin-bottom: 10px;
 }
 
+#bodyHeader{
+
+text-align: left;
+}
+
+
 #officialSlogan{
-    height:50px;
-    text-align: right;
+
+    text-align: center;
 
 }
 
 #officialName{
 height: 50px;
+
 }
 
 .officialAnswer{
@@ -111,6 +121,11 @@ height: 50px;
 
 .officialQuestion{
     border-bottom: 1px $red solid;
+}
+
+.newsPost{
+  border: $gray 1px solid;
+  margin-bottom: 2px;
 }
 
 

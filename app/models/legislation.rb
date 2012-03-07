@@ -1,11 +1,12 @@
 class Legislation < ActiveRecord::Base
-  has_many :opinions
 
   has_many :comments, :as => :commentable
-  has_many :votes, :as => :voteable
-
   accepts_nested_attributes_for :comments
-  accepts_nested_attributes_for :votes
+
+  has_many :endorsements, :as => :endorsementable
+  accepts_nested_attributes_for :endorsements
+
+
 
 
 

@@ -116,7 +116,7 @@ class CommentsController < ApplicationController
 
   def vote
     @comment = Comment.find(params[:id])
-    Vote.create(:constituent_id => current_constituent_id, :voteable_id => @comment.id, :voteable_type => "Comment")
+    Endorsement.create(:constituent_id => current_constituent_id, :voteable_id => @comment.id, :voteable_type => "Comment")
     redirect_to :back
   end
 

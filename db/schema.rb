@@ -11,16 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120211235156) do
-
-  create_table "answers", :force => true do |t|
-    t.string   "name"
-    t.integer  "official_id"
-    t.integer  "question_id"
-    t.integer  "office_question_id"
-    t.datetime "created_at",         :null => false
-    t.datetime "updated_at",         :null => false
-  end
+ActiveRecord::Schema.define(:version => 20120225161604) do
 
   create_table "comments", :force => true do |t|
     t.integer  "parent_id"
@@ -45,24 +36,20 @@ ActiveRecord::Schema.define(:version => 20120211235156) do
     t.datetime "updated_at", :null => false
   end
 
-  create_table "counties", :force => true do |t|
+  create_table "endorsements", :force => true do |t|
+    t.integer  "endorsementable_id"
+    t.string   "endorsementable_type"
+    t.integer  "endorsementer_id"
+    t.string   "endorsementer_type"
+    t.datetime "created_at",           :null => false
+    t.datetime "updated_at",           :null => false
+  end
+
+  create_table "groups", :force => true do |t|
     t.string   "name"
+    t.integer  "owner_id"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
-  end
-
-  create_table "districts", :force => true do |t|
-    t.string   "category"
-    t.string   "number"
-    t.integer  "office_id"
-    t.string   "gpe"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
-  end
-
-  create_table "districts_precincts", :id => false, :force => true do |t|
-    t.integer "district_id"
-    t.integer "precinct_id"
   end
 
   create_table "legislations", :force => true do |t|
@@ -71,19 +58,6 @@ ActiveRecord::Schema.define(:version => 20120211235156) do
     t.integer  "votes_count"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
-  end
-
-  create_table "office_questions", :force => true do |t|
-    t.string   "name"
-    t.integer  "office_id"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
-  end
-
-  create_table "offices", :force => true do |t|
-    t.string   "name"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
   end
 
   create_table "officials", :force => true do |t|
@@ -96,6 +70,7 @@ ActiveRecord::Schema.define(:version => 20120211235156) do
     t.text     "aboutMe"
     t.text     "positions"
     t.text     "goals"
+    t.text     "achievements"
     t.string   "office"
     t.string   "state"
     t.string   "racename"
@@ -114,33 +89,6 @@ ActiveRecord::Schema.define(:version => 20120211235156) do
     t.integer  "constituent_id"
     t.integer  "legislation_id"
     t.integer  "comment_id"
-    t.datetime "created_at",     :null => false
-    t.datetime "updated_at",     :null => false
-  end
-
-  create_table "precincts", :force => true do |t|
-    t.string   "name"
-    t.integer  "county_id"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
-  end
-
-  create_table "questions", :force => true do |t|
-    t.string   "name"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
-  end
-
-  create_table "races", :force => true do |t|
-    t.string   "name"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
-  end
-
-  create_table "votes", :force => true do |t|
-    t.integer  "voteable_id"
-    t.string   "voteable_type"
-    t.integer  "constituent_id"
     t.datetime "created_at",     :null => false
     t.datetime "updated_at",     :null => false
   end

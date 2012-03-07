@@ -18,9 +18,9 @@ class OfficialsController < ApplicationController
   # GET /officials/1.json
   def show
     @official = Official.find(params[:id])
-    @district = @official.district
-    @comment = @official.comments.build
 
+    @comment = @official.comments.build
+    @updates = @official.updates
 
     respond_to do |format|
       format.html # show.html.erb
