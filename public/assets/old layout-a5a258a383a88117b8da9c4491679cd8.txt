@@ -1,0 +1,216 @@
+/*
+ * This is a manifest file that'll automatically include all the stylesheets available in this directory
+ * and any sub-directories. You're free to add application-wide styles to this file and they'll appear at
+ * the top of the compiled file, but it's generally better to create a new file per style scope.
+ *= require_self
+ *= require formtastic
+
+ *= require_tree .
+*/
+
+
+$red: #800000;
+$yellow: #d3a63c;
+$gray: #2d2d2c;
+$fontwhite: #f9f9f9;
+$blue: #012646;
+
+
+
+#bodycss {
+    background: image_url("background.jpg");
+
+}
+
+#navigation {
+    float: left;
+    background-color: white;
+    border-bottom: $blue solid 5px;
+    padding-bottom: 3px;
+    text-align: center;
+}
+
+
+
+
+#main {
+    float: left;
+}
+
+#header {
+    padding-top: 0;
+    text-align: center;
+    /*height: 125px;*/
+    /*background: image_url("images/header.png");*/
+    background-color: $gray;
+    border-bottom: $red solid 5px;
+    height: 5em;
+
+}
+
+
+#headerMiddle {
+
+    float: left;
+
+}
+
+#footer {
+    border: $gray 1px solid;
+
+}
+
+
+
+/*Left Column*/
+#leftColumn{
+    height: 60px;
+    border-right: $gray 4px solid;
+}
+
+
+
+
+/*Middle Column*/
+
+#middleColumn {
+    height: 600px;
+
+
+}
+
+#rightColumn {
+    height: 600px;
+    border-left: $gray 4px solid;
+    padding-left: 4px;
+    margin-right: -10px;
+}
+
+/*official Show Page*/
+
+
+#officialPortrait{
+    height: 210px;
+    margin-bottom: 10px;
+}
+
+#bodyHeader{
+
+text-align: left;
+}
+
+
+#officialSlogan{
+
+    text-align: center;
+
+}
+
+#officialName{
+height: 50px;
+
+}
+
+.officialAnswer{
+    padding-bottom: 10px;
+}
+
+.officialAnswer:hover {
+    background-color: #f0f0f0;
+
+}
+
+.officialQuestion{
+    border-bottom: 1px $red solid;
+}
+
+.newsPost{
+  border: $gray 1px solid;
+  margin-bottom: 2px;
+}
+
+
+/*New Classes*/
+
+.button {
+  border: 2px solid $gray;
+  background-color: white;
+  font-size: 14px;
+  text-align: center;
+  border-radius: 5px;
+  font-color: $gray;
+  margin-left: -4px;
+  margin-bottom: 5px;
+  width: 30px;
+
+
+
+}
+
+.button:hover {
+    background-color: $yellow;
+}
+
+.questionsPanel {
+  height: 260px;
+}
+
+
+.center {
+text-align: center;
+}
+
+
+/*Races Code*/
+
+.candidate {
+ border: 2px solid $gray;
+ height: 550px;
+}
+
+/* Pagination */
+.pagination {
+    background: white;
+    cursor: default;
+    height: 22px;
+    a, span, em {
+        padding: 0.2em 0.5em;
+        display: block;
+        float: left;
+        margin-right: 1px;
+    }
+    .disabled {
+        color: #999999;
+        border: 1px solid #dddddd;
+    }
+    .current {
+        font-style: normal;
+        font-weight: bold;
+        background: #2e6ab1;
+        color: white;
+        border: 1px solid #2e6ab1;
+    }
+    a {
+        text-decoration: none;
+        color: #105cb6;
+        border: 1px solid #9aafe5;
+        &:hover, &:focus {
+            color: #000033;
+            border-color: #000033;
+        }
+    }
+    .page_info {
+        background: #2e6ab1;
+        color: white;
+        padding: 0.4em 0.6em;
+        width: 22em;
+        margin-bottom: 0.3em;
+        text-align: center;
+        b {
+            color: #000033;
+            background: #2e6ab1 + 60;
+            padding: 0.1em 0.25em;
+        }
+    }
+}
+
