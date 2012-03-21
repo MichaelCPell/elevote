@@ -8,6 +8,7 @@ gem 'rails', '3.2.0'
 
 gem 'acts_as_tree_rails3'
 gem 'koala'
+gem 'will_paginate'
 
 gem 'omniauth-facebook'
 gem 'bcrypt-ruby'

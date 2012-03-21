@@ -1,10 +1,74 @@
-<p id="notice"><%= notice %></p>
+<% content_for :leftColumn do %>
 
-<p>
-  <b>Name:</b>
-  <%= @race.name %>
-</p>
+    <% for race in @races %>
+        <div class="button span-4"><%= link_to race.name, race %></div>
+    <% end %>
+
+<% end %>
 
 
-<%= link_to 'Edit', edit_race_path(@race) %> |
-<%= link_to 'Back', races_path %>
+<% content_for :middleColumn do %>
+
+
+
+    <h1 class="center"><%= @race.name %></h1>
+
+          <div class="span-2 candidate navButton">
+
+                <%= link_to "<", params.merge(page: @candidates.previous_page) %>
+
+          </div>
+          <% for candidate in @candidates %>
+
+
+                <div class="span-5 candidate">
+               <h3 class="center"> <%= candidate.firstname %>
+                  <%= candidate.lastname %> </h3>
+                  <h5 class="center">Email Address: <%= candidate.email %></h5>
+                  <h5>Website: </h5>
+
+
+                  <div class="span-5 center">
+                    <% if candidate.portrait_url %>
+                        <%= image_tag candidate.portrait_url.to_s %>
+                    <% else %>
+                        <%= image_tag 'gp1.png' %>
+                    <% end %>
+                  </div>
+
+                  <h2 class="center">
+                  Goals
+                  </h2>
+                  
+                  <% for goal in candidate.short_goals %> 
+                  <%=  goal.content %>
+                      <br>
+                  <% end %>
+
+                  <h2 class="center">
+                    Acheievements
+                  </h2>
+
+                  <% for goal in candidate.short_achievements %>
+                      <%=  goal.content %>
+                      <br>
+                  <% end %>
+
+
+
+                </div>
+
+
+
+          <% end %>
+    <div class="span-2 candidate navButton last">
+      <% if @candidates.next_page %>
+          <%= link_to ">", params.merge(page: @candidates.next_page) %>
+      <% end %>
+    </div>
+
+<% end %>
+
+
+<% content_for :leftColumn do %>
+<% end %>

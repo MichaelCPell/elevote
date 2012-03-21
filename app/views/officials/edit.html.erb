@@ -14,6 +14,30 @@
         <%= f.label :portrait %>
         <%= f.file_field :portrait %>
         <br>
+
+
+            <% mycounter = 0 %>
+        
+            <%= f.fields_for :short_goals do |goal| %>
+            <% mycounter += 1 %>
+            <%=  goal.label "Goal " + mycounter.to_s %>
+                <%=  goal.text_field :content %>
+                <br>
+            <% end %>
+            
+
+
+
+            <% mycounter = 0 %>
+            <%= f.fields_for :short_achievements do |goal| %>
+                <% mycounter += 1 %>
+                <%=  goal.label "Achievement " + mycounter.to_s  %>
+                <%=  goal.text_field :content %>
+                <br>
+            <% end %>
+
+            
+        <br>
          <%= f.label "About Me" %>
         <%= f.text_area :aboutMe %>
         <br>

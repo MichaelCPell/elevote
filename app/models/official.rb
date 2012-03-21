@@ -12,25 +12,32 @@ class Official < ActiveRecord::Base
 
   #Associations
 
+  belongs_to :race
+
+
 
 
   #Comments Relationships
     has_many :comments, :as => :authorable
     has_many :comments, :as => :commentable
-    accepts_nested_attributes_for :comments
+
 
     has_many :updates, :class_name => "Comment", :as => :authorable
+
+    has_many :short_goals
+    has_many :short_achievements
+
 
   #Endorsements Relationships
     has_many :given_endorsements, :class_name => "Endorsement", :as => :endorsementer
     has_many :received_endorsements, :class_name => "Endorsement", :as => :endorsementable
-    accepts_nested_attributes_for :comments
+
 
   has_many :questions
 
   has_many :opinions
 
-
+  accepts_nested_attributes_for :comments, :short_goals, :short_achievements
 
   #methods
 

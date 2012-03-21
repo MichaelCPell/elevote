@@ -43,6 +43,23 @@ class OfficialsController < ApplicationController
   # GET /officials/1/edit
   def edit
     @official = Official.find(params[:id])
+
+
+    if @official.short_goals.count == 0
+      3.times do
+        @official.short_goals.build
+
+      end
+    end
+
+    if @official.short_achievements.count == 0
+      3.times do
+        @official.short_achievements.build
+
+      end
+    end
+
+
   end
 
   # POST /officials
@@ -62,6 +79,9 @@ class OfficialsController < ApplicationController
   # PUT /officials/1.json
   def update
     @official = Official.find(params[:id])
+
+
+
 
     respond_to do |format|
       if @official.update_attributes(params[:official])

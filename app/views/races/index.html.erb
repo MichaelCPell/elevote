@@ -1,23 +1,15 @@
-<h1>Listing races</h1>
-
-<table>
-  <tr>
-    <th>Name</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-
-<% @races.each do |race| %>
-  <tr>
-    <td><%= race.name %></td>
-    <td><%= link_to 'Show', race %></td>
-    <td><%= link_to 'Edit', edit_race_path(race) %></td>
-    <td><%= link_to 'Destroy', race, confirm: 'Are you sure?', method: :delete %></td>
-  </tr>
+<% content_for :leftColumn do %>
+    <% for race in @races %>
+        <div class="button span-4"><%= link_to race.name, race %></div>
+    <% end %>
 <% end %>
-</table>
 
-<br />
 
-<%= link_to 'New Race', new_race_path %>
+<% content_for :middleColumn do %>
+    <h1>Welcome to Durham Votes</h1>
+    <h3>Pick the contest that you would like to learn about above.</h3>
+<% end %>
+
+
+<% content_for :leftColumn do %>
+<% end %>

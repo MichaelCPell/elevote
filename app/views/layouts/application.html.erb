@@ -34,11 +34,22 @@
 <div class="container">
 
 
+  <div id="header">
+    <%= image_tag "durhamlogo.jpg"%>
+    <div class="span-2 button" style="float:right;">
+       <%= link_to "Info for Candidates",'/info/forcandidates' %>
+    </div>
+
+    <div class="span-2 button" style="float:right;">
+      <%= link_to "Home", root_url %>
+    </div>
+  
+  
+  </div>
 
 
 
-
-  <div id="leftColumn" class="span-5">
+  <div id="leftColumn" class="span-29 last">
 
 
 
@@ -48,18 +59,18 @@
       </div>
 
 
-      <div id="middleColumn" class="span-14">
+      <div id="middleColumn" class="span-29">
             <%= yield :middleColumn%>
       </div>
 
-      <div id="rightColumn" class="span-5 last">
-            <%= yield :rightColumn %>
-      </div>
+      <!--<div id="rightColumn" class="span-5 last">-->
+            <!--<#%= yield :rightColumn %>-->
+      <!--</div>-->
 
 
 <div id="footer" class="span-24">
 
-  Footer  Copyright Digital Politics, LLC.  2012.
+  Copyright General Politics, LLC.  2012.
 </div>
 
 

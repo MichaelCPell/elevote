@@ -12,8 +12,7 @@ class CreateOfficials < ActiveRecord::Migration
       t.text :goals
       t.text :achievements
       t.string :office
-
-
+      t.integer :race_id
 
       t.string :state
       t.string :racename

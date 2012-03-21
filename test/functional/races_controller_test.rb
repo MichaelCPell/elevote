@@ -25,23 +25,23 @@ class RacesControllerTest < ActionController::TestCase
   end
 
   test "should show race" do
-    get :show, id: @race.to_param
+    get :show, id: @race
     assert_response :success
   end
 
   test "should get edit" do
-    get :edit, id: @race.to_param
+    get :edit, id: @race
     assert_response :success
   end
 
   test "should update race" do
-    put :update, id: @race.to_param, race: @race.attributes
+    put :update, id: @race, race: @race.attributes
     assert_redirected_to race_path(assigns(:race))
   end
 
   test "should destroy race" do
     assert_difference('Race.count', -1) do
-      delete :destroy, id: @race.to_param
+      delete :destroy, id: @race
     end
 
     assert_redirected_to races_path

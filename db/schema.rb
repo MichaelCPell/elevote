@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120225161604) do
+ActiveRecord::Schema.define(:version => 20120319001518) do
 
   create_table "comments", :force => true do |t|
     t.integer  "parent_id"
@@ -72,6 +72,7 @@ ActiveRecord::Schema.define(:version => 20120225161604) do
     t.text     "goals"
     t.text     "achievements"
     t.string   "office"
+    t.integer  "race_id"
     t.string   "state"
     t.string   "racename"
     t.integer  "office_id"
@@ -91,6 +92,26 @@ ActiveRecord::Schema.define(:version => 20120225161604) do
     t.integer  "comment_id"
     t.datetime "created_at",     :null => false
     t.datetime "updated_at",     :null => false
+  end
+
+  create_table "races", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "short_achievements", :force => true do |t|
+    t.integer  "official_id"
+    t.string   "content"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
+
+  create_table "short_goals", :force => true do |t|
+    t.integer  "official_id"
+    t.string   "content"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
   end
 
 end
