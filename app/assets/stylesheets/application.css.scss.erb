@@ -18,17 +18,9 @@ $blue: #012646;
 
 
 #bodycss {
-    background: image_url("background.jpg");
+    /*background: image_url("background.jpg");*/
+                                         }
 
-}
-
-#navigation {
-    float: left;
-    background-color: white;
-    border-bottom: $blue solid 5px;
-    padding-bottom: 3px;
-    text-align: center;
-}
 
 
 
@@ -48,34 +40,17 @@ $blue: #012646;
 
 }
 
-
-#headerMiddle {
-
-    float: left;
-
-}
-
-#footer {
-    border: $gray 1px solid;
-
-}
-
-
-
 /*Left Column*/
 #leftColumn{
-
+    border-bottom: 6px black solid;
+    float: left;
+    font-size: 18px;
+    font-weight: bolder;
 }
-
-
-
-
 /*Middle Column*/
 
 #middleColumn {
     height: 600px;
-
-
 }
 
 /*#rightColumn {*/
@@ -136,7 +111,7 @@ height: 50px;
   background-color: white;
   font-size: 14px;
   text-align: center;
-  border-radius: 5px;
+  /*border-radius: 5px;*/
   font-color: $gray;
   margin-left: -4px;
   margin-bottom: 5px;
@@ -160,18 +135,39 @@ text-align: center;
 }
 
 .navButton {
-height: 100%;
+height: 600px;
 font-size: 100px;
 font-weight: bolder;
+display: table;
+
+ a{
+   display: table-cell;
+    text-decoration: none;
+     vertical-align: middle;
+ }
+
+
 }
 
 
 /*Races Code*/
 
 .candidate {
- border: 2px solid $gray;
- height: 550px;
+ border-right: 5px solid $gray;
+ height: 500px;
+
+ &.last{
+    border-right: none;
+ }
 }
+
+
+/* Footer*/
+
+#footer {
+    border: $gray 0px solid;
+}
+
 
 /* Pagination */
 .pagination {

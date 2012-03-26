@@ -1,8 +1,9 @@
 <% content_for :leftColumn do %>
 
-    <% for race in @races %>
-        <div class="button span-4"><%= link_to race.name, race %></div>
-    <% end %>
+        <% for race in @races %>
+            <div class="span-6"><%= link_to race.name, race %></div>
+        <% end %>
+
 
 <% end %>
 
@@ -13,15 +14,21 @@
 
     <h1 class="center"><%= @race.name %></h1>
 
-          <div class="span-2 candidate navButton">
+          <div class="span-2 navButton">
 
-                <%= link_to "<", params.merge(page: @candidates.previous_page) %>
+               <%= link_to "<", params.merge(page: @candidates.previous_page) %>
 
           </div>
+
           <% for candidate in @candidates %>
 
-
-                <div class="span-5 candidate">
+                <% if candidate == @candidates.last %>
+                    <div class="span-5 candidate last">
+                <% else %>
+                    <div class="span-5 candidate">
+                <% end %>
+ 
+ 
                <h3 class="center"> <%= candidate.firstname %>
                   <%= candidate.lastname %> </h3>
                   <h5 class="center">Email Address: <%= candidate.email %></h5>
@@ -61,14 +68,13 @@
 
 
           <% end %>
-    <div class="span-2 candidate navButton last">
+
+
+
+    <div class="span-2 navButton last">
       <% if @candidates.next_page %>
           <%= link_to ">", params.merge(page: @candidates.next_page) %>
       <% end %>
     </div>
 
-<% end %>
-
-
-<% content_for :leftColumn do %>
 <% end %>
