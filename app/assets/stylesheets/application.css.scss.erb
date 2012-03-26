@@ -10,7 +10,7 @@
 
 
 $red: #800000;
-$yellow: #d3a63c;
+$yellow: #d2a63d;
 $gray: #2d2d2c;
 $fontwhite: #f9f9f9;
 $blue: #012646;
@@ -23,7 +23,11 @@ $blue: #012646;
 
 
 
-
+.container{
+    -moz-box-shadow: 0px 15px 30px 30px #888;
+    -webkit-box-shadow: 0px 15px 30px 30px #888;
+    box-shadow: 0px 15px 30px 30px #888;
+}
 
 #main {
     float: left;
@@ -37,6 +41,7 @@ $blue: #012646;
 
     border-bottom: $red solid 5px;
     height: 130px;
+    float: left;
 
 }
 
@@ -66,11 +71,6 @@ $blue: #012646;
 #officialPortrait{
     height: 210px;
     margin-bottom: 10px;
-}
-
-#bodyHeader{
-
-text-align: left;
 }
 
 
@@ -107,15 +107,16 @@ height: 50px;
 /*New Classes*/
 
 .button {
-  border: 2px solid $gray;
+  border-bottom: 2px solid $gray;
   background-color: white;
   font-size: 14px;
   text-align: center;
   /*border-radius: 5px;*/
   font-color: $gray;
-  margin-left: -4px;
-  margin-bottom: 5px;
-  width: 30px;
+  float: right;
+  width: 110px;
+
+
 
 
 
@@ -144,6 +145,7 @@ display: table;
    display: table-cell;
     text-decoration: none;
      vertical-align: middle;
+   color: $yellow;
  }
 
 
