@@ -6,8 +6,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="01a9f816-fa55-4a7a-9bd6-92e6ceb55c0d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/stylesheets/code holder" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/goodseeds" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/answers.js.coffee" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/counties.js.coffee" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/districts.js.coffee" afterPath="" />
@@ -81,6 +79,9 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/states/index.html.erb" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/states/new.html.erb" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/states/show.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db/seeds.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/Demo Page-808586ffca86f21e57ca06a7a121ed02.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/Demo Page.png" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/JimmyCropped-66455d5c9dc59ec8980ce5d72f4858f3.jpg" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/JimmyCropped.jpg" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/Official_Photos/Bev_Purdue/Portrait-35b99ea0edd2aab74da6b9e7635e543d.JPG" afterPath="" />
@@ -89,8 +90,8 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/Official_Photos/Bev_Purdue/withChildren.JPG" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/Official_Photos/Bev_Purdue/withConstituent-5aa4b0374ac348d3302c5d125967c42e.JPG" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/Official_Photos/Bev_Purdue/withConstituent.JPG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-9e74601c2f9f50032f5211c13979e62c.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-9e74601c2f9f50032f5211c13979e62c.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-36d93f469434e143d4b729949ae21c21.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-36d93f469434e143d4b729949ae21c21.css.gz" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-d1ec1015fe97b1f25add8f4173fafda1.js" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-d1ec1015fe97b1f25add8f4173fafda1.js.gz" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application.css" afterPath="" />
@@ -99,6 +100,7 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application.js.gz" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/background-a40123a554aba972f1167e97b214d4fc.jpg" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/background.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/code holder" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/durhamlogo-7ee4c552f326bfebb1d106c82fb946ed.jpg" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/durhamlogo-ef23ffa691a82421a2dbca4ef9558527.png" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/durhamlogo.jpg" afterPath="" />
@@ -205,14 +207,10 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/test/unit/precinct_test.rb" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/test/unit/question_test.rb" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/test/unit/state_test.rb" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/db/goodseeds" afterPath="$PROJECT_DIR$/db/seeds.db" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.css.scss.erb" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.css.scss.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/officials/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/officials/edit.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/races/index.html.erb" afterPath="$PROJECT_DIR$/app/views/races/index.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/races/show.html.erb" afterPath="$PROJECT_DIR$/app/views/races/show.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/seeds.rb" afterPath="$PROJECT_DIR$/db/seeds.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/favicon.ico" afterPath="$PROJECT_DIR$/public/favicon.ico" />
     </list>
     <ignored path="Elevote.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -234,9 +232,7 @@
     <groupTables value="false" />
   </component>
   <component name="FavoritesManager">
-    <favorites_list name="Elevote">
-      <favorite_root url="file://$PROJECT_DIR$/db/seeds.rb" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-    </favorites_list>
+    <favorites_list name="Elevote" />
   </component>
   <component name="FileEditorManager">
     <leaf>
@@ -249,10 +245,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="show.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/races/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="0" selection-start="673" selection-end="673" vertical-scroll-proportion="0.7894737">
+            <state line="82" column="81" selection-start="2444" selection-end="2444" vertical-scroll-proportion="-7.181818">
               <folding />
             </state>
           </provider>
@@ -276,10 +272,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.css.scss.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="application.css.scss.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css.scss.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="181" column="14" selection-start="2522" selection-end="2522" vertical-scroll-proportion="0.0">
+            <state line="180" column="11" selection-start="2503" selection-end="2503" vertical-scroll-proportion="0.8125">
               <folding />
             </state>
           </provider>
@@ -321,8 +317,8 @@
         <option value="$PROJECT_DIR$/app/views/officials/edit.html.erb" />
         <option value="$PROJECT_DIR$/app/views/races/index.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/code holder" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css.scss.erb" />
         <option value="$PROJECT_DIR$/app/views/races/show.html.erb" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css.scss.erb" />
       </list>
     </option>
   </component>
@@ -404,6 +400,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Elevote" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="elevote50" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="db" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1069,19 +1079,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/seeds.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="157" column="8" selection-start="4439" selection-end="4439" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/goodseeds">
+    <entry file="file://$PROJECT_DIR$/db/seeds.db">
       <provider selected="true" editor-type-id="text-editor">
         <state line="134" column="0" selection-start="3639" selection-end="3639" vertical-scroll-proportion="0.0" />
       </provider>
@@ -1131,13 +1134,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css.scss.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="181" column="14" selection-start="2522" selection-end="2522" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/favicon.ico">
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="30" selection-start="1962" selection-end="1962" vertical-scroll-proportion="0.738758">
@@ -1147,7 +1143,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/races/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="0" selection-start="673" selection-end="673" vertical-scroll-proportion="0.7894737">
+        <state line="82" column="81" selection-start="2444" selection-end="2444" vertical-scroll-proportion="-7.181818">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css.scss.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="180" column="11" selection-start="2503" selection-end="2503" vertical-scroll-proportion="0.8125">
           <folding />
         </state>
       </provider>
