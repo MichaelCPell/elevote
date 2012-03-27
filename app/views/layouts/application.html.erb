@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>DigiCivic</title>
+  <title>Durham Votes!</title>
   <%= stylesheet_link_tag "application" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
@@ -10,24 +10,13 @@
 
 
 <div id="fb-root"></div>
-      <script>
-        window.fbAsyncInit = function() {
-              FB.init({
-            appId      : '205528859544975',
-            channelUrl : '//elevote50.herokuapp.com/channel.html',
-            status     : true,
-            cookie     : true,
-            xfbml      : true,
-            oauth      : true,
-          });
-        };
-        (function(d){
-           var js, id = 'facebook-jssdk'; if (d.getElementById(id)) {return;}
-           js = d.createElement('script'); js.id = id; js.async = true;
-           js.src = "//connect.facebook.net/en_US/all.js";
-           d.getElementsByTagName('head')[0].appendChild(js);
-         }(document));
-      </script>
+<script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=205528859544975";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 
 
 
@@ -45,7 +34,9 @@
     <div class="headerbutton">
       <%= link_to "Info for Candidates",'/info/forcandidates' %>
     </div>
-  
+
+    <div class="fb-like headerbutton" data-href="http://www.durhamvotes.org" data-send="true" data-layout="button_count"
+         data-width="450" data-show-faces="true" data-font="segoe ui"></div>
   
   </div>
 
