@@ -79,7 +79,6 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/states/index.html.erb" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/states/new.html.erb" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/states/show.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/db/seeds.rb" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/Demo Page-808586ffca86f21e57ca06a7a121ed02.png" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/Demo Page.png" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/JimmyCropped-66455d5c9dc59ec8980ce5d72f4858f3.jpg" afterPath="" />
@@ -90,8 +89,8 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/Official_Photos/Bev_Purdue/withChildren.JPG" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/Official_Photos/Bev_Purdue/withConstituent-5aa4b0374ac348d3302c5d125967c42e.JPG" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/Official_Photos/Bev_Purdue/withConstituent.JPG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-36d93f469434e143d4b729949ae21c21.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-36d93f469434e143d4b729949ae21c21.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-c62f02a4ea8a515b13f224e238470ee2.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-c62f02a4ea8a515b13f224e238470ee2.css.gz" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-d1ec1015fe97b1f25add8f4173fafda1.js" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-d1ec1015fe97b1f25add8f4173fafda1.js.gz" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application.css" afterPath="" />
@@ -207,9 +206,6 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/test/unit/precinct_test.rb" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/test/unit/question_test.rb" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/test/unit/state_test.rb" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/db/goodseeds" afterPath="$PROJECT_DIR$/db/seeds.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.css.scss.erb" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.css.scss.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/races/show.html.erb" afterPath="$PROJECT_DIR$/app/views/races/show.html.erb" />
     </list>
     <ignored path="Elevote.iws" />
@@ -245,10 +241,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="show.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/races/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="82" column="81" selection-start="2444" selection-end="2444" vertical-scroll-proportion="-7.181818">
+            <state line="69" column="15" selection-start="1939" selection-end="1939" vertical-scroll-proportion="0.47058824">
               <folding />
             </state>
           </provider>
@@ -272,10 +268,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.css.scss.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="application.css.scss.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css.scss.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="180" column="11" selection-start="2503" selection-end="2503" vertical-scroll-proportion="0.8125">
+            <state line="163" column="101" selection-start="2317" selection-end="2317" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -317,8 +313,8 @@
         <option value="$PROJECT_DIR$/app/views/officials/edit.html.erb" />
         <option value="$PROJECT_DIR$/app/views/races/index.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/code holder" />
-        <option value="$PROJECT_DIR$/app/views/races/show.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css.scss.erb" />
+        <option value="$PROJECT_DIR$/app/views/races/show.html.erb" />
       </list>
     </option>
   </component>
@@ -973,13 +969,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="-5" width="1362" height="774" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32994652" sideWeight="0.8404908" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32704404" sideWeight="0.0" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15323012" sideWeight="0.19958635" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24503817" sideWeight="0.8302181" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24503817" sideWeight="0.8302181" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -1141,16 +1137,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/races/show.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css.scss.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="82" column="81" selection-start="2444" selection-end="2444" vertical-scroll-proportion="-7.181818">
+        <state line="163" column="101" selection-start="2317" selection-end="2317" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css.scss.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/races/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="180" column="11" selection-start="2503" selection-end="2503" vertical-scroll-proportion="0.8125">
+        <state line="69" column="15" selection-start="1939" selection-end="1939" vertical-scroll-proportion="0.47058824">
           <folding />
         </state>
       </provider>
