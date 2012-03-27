@@ -1,0 +1,56 @@
+        This is the code for Races#Show that actually functions.  I replaced it with vanilla html to make coding faster
+
+           <h2 class="center">
+                  Goals
+                  </h2>
+
+                  <% myCounter = 0 %>
+                  <% for goal in candidate.short_goals %>
+                      <% myCounter += 1 %>
+                      <%=  myCounter.to_s + ".  " + goal.content %>
+                      <br>
+                  <% end %>
+
+                  <h2 class="center">
+                    Achievements
+                  </h2>
+
+                  <% myCounter = 0 %>
+                  <% for goal in candidate.short_achievements %>
+                         <% myCounter += 1 %>
+                         <%=  myCounter.to_s + ".  " + goal.content %>
+                         <br>
+                  <% end %>
+
+
+
+                </div>
+
+
+
+
+  <h2 class="center">
+          Goals
+        </h2>
+
+        1.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse.
+        <br>
+        2.  Praesent volutpat mi in massa placerat eget lacinia felis mattis. Done
+        <br>
+        3.  Morbi quis nibh purus, eu tincidunt mi. Integer tortor purus, interdum
+        <br>
+
+        <h2 class="center">
+          Achievements
+        </h2>
+
+        1.  Mauris metus urna, sollicitudin eget ultrices suscipit, dignissim vel
+        <br>
+        2.  Fusce blandit luctus est vitae suscipit. Praesent eget lectus id est s
+        <br>
+        3.  Sed sed metus urna, id rutrum nibh. Nulla eget nisl sapien, non conseq
+        <br>
+
+
+
+        </div>

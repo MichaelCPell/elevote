@@ -1,7 +1,7 @@
 <% content_for :leftColumn do %>
 
         <% for race in @races %>
-            <div class="span-6"><%= link_to race.name, race %></div>
+            <div class="span-6 padding-left-20"><%= link_to race.name, race %></div>
         <% end %>
 
 
@@ -20,6 +20,7 @@
 
           </div>
 
+
           <% for candidate in @candidates %>
 
                 <% if candidate == @candidates.last %>
@@ -27,12 +28,12 @@
                 <% else %>
                     <div class="span-5 candidate">
                 <% end %>
- 
+
  
                <h3 class="center"> <%= candidate.firstname %>
                   <%= candidate.lastname %> </h3>
-                  <h5 class="center">Email Address: <%= candidate.email %></h5>
-                  <h5>Website: </h5>
+                  <h5 >Email Address: <%= candidate.email %></h5>
+                  <h5>Website: www.DurhamVotes.org</h5>
 
 
                   <div class="span-5 center">
@@ -43,31 +44,59 @@
                     <% end %>
                   </div>
 
-                  <h2 class="center">
-                  Goals
-                  </h2>
-                  
-                  <% for goal in candidate.short_goals %> 
-                  <%=  goal.content %>
-                      <br>
-                  <% end %>
-
-                  <h2 class="center">
-                    Acheievements
-                  </h2>
-
-                  <% for goal in candidate.short_achievements %>
-                      <%=  goal.content %>
-                      <br>
-                  <% end %>
 
 
+        <h2 class="center">
+          Goals
+        </h2>
 
-                </div>
+        <% myCounter = 0 %>
+          <% if candidate.short_goals.count == 3 %>
+            <% for goal in candidate.short_goals %>
+                <% myCounter += 1 %>
+                <%=  myCounter.to_s + ".  " + goal.content %>
+                <br>
+            <% end %>
+        <% else %>
+            1.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse.
+            <br>
+            2.  Praesent volutpat mi in massa placerat eget lacinia felis mattis. Done
+            <br>
+            3.  Morbi quis nibh purus, eu tincidunt mi. Integer tortor purus, interdum
+            <br>
+        <% end %>
+
+        <h2 class="center">
+          Achievements
+        </h2>
+
+        <% myCounter = 0 %>
+        <% if candidate.short_goals.count == 3 %>
+            <% for goal in candidate.short_achievements %>
+                <% myCounter += 1 %>
+                <%=  myCounter.to_s + ".  " + goal.content %>
+                <br>
+            <% end %>
+        <% else %>
+            1.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse.
+            <br>
+            2.  Praesent volutpat mi in massa placerat eget lacinia felis mattis. Done
+            <br>
+            3.  Morbi quis nibh purus, eu tincidunt mi. Integer tortor purus, interdum
+            <br>
+        <% end %>
 
 
 
-          <% end %>
+        </div>
+
+
+
+
+
+
+
+    <% end %>
 
 
 

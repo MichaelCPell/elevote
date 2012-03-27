@@ -1,14 +1,18 @@
 <% content_for :leftColumn do %>
 
     <% for race in @races %>
-        <div class="span-6"><%= link_to race.name, race %></div>
+        <div class="span-6 padding-left-20"><%= link_to race.name, race %></div>
     <% end %>
 
 <% end %>
 
 
 <% content_for :middleColumn do %>
-    <h1>Welcome to Durham Votes</h1>
-    <h3>Pick the contest that you would like to learn about above.</h3>
+
+    <div class="padding-left-20" style="padding-top: 5px;">
+        <%= image_tag "Demo Page.png" %>
+    </div>
+      
+
 <% end %>
 

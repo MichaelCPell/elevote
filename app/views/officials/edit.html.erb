@@ -21,7 +21,7 @@
             <%= f.fields_for :short_goals do |goal| %>
             <% mycounter += 1 %>
             <%=  goal.label "Goal " + mycounter.to_s %>
-                <%=  goal.text_field :content %>
+                <%=  goal.text_field :content, :maxlength => 70  %>
                 <br>
             <% end %>
             
@@ -32,7 +32,7 @@
             <%= f.fields_for :short_achievements do |goal| %>
                 <% mycounter += 1 %>
                 <%=  goal.label "Achievement " + mycounter.to_s  %>
-                <%=  goal.text_field :content %>
+                <%=  goal.text_field :content, :maxlength => 70 %>
                 <br>
             <% end %>
 

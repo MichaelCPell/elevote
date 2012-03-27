@@ -123,37 +123,6 @@ Official.create(firstname: "Pat",
                 race_id: 3)
 
 
-#Race: President
-
-Official.create(firstname: "George",
-                lastname: "Washington",
-                email: "George@gmail.com",
-                password: "Washington",
-                race_id: 4)
-
-Official.create(firstname: "John",
-                lastname: "Adams",
-                email: "John@gmail.com",
-                password: "Adams",
-                race_id: 4)
-
-Official.create(firstname: "Thomas",
-                lastname: "Jefferson",
-                email: "Thomas@gmail.com",
-                password: "Jefferson",
-                race_id: 4)
-
-Official.create(firstname: "James",
-                lastname: "Madison",
-                email: "James@gmail.com",
-                password: "Monroe",
-                race_id: 4)
-
-Official.create(firstname: "James",
-                lastname: "Monroe",
-                email: "Jim@gmail.com",
-                password: "Monroe",
-                race_id: 4)
 
 
 
@@ -162,5 +131,4 @@ Official.create(firstname: "James",
 Race.create(name:"County Commissioner")
 Race.create(name:"School Board (At Large)")
 Race.create(name:"Governor")
-Race.create(name: "President")
 
