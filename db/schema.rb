@@ -73,6 +73,7 @@ ActiveRecord::Schema.define(:version => 20120319001518) do
     t.text     "achievements"
     t.string   "office"
     t.integer  "race_id"
+    t.string   "website"
     t.string   "state"
     t.string   "racename"
     t.integer  "office_id"

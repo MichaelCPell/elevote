@@ -38,7 +38,7 @@ gem 'jquery-rails'
 gem 'rmagick'
 gem "carrierwave"
 
-#gem 'aws-s3'
+gem "fog"
 
 
 gem 'formtastic'
