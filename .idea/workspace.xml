@@ -108,12 +108,7 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/test/unit/precinct_test.rb" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/test/unit/question_test.rb" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/test/unit/state_test.rb" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/application-c62f02a4ea8a515b13f224e238470ee2.css.gz" afterPath="$PROJECT_DIR$/public/assets/application-c62f02a4ea8a515b13f224e238470ee2.css.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/application-d1ec1015fe97b1f25add8f4173fafda1.js.gz" afterPath="$PROJECT_DIR$/public/assets/application-d1ec1015fe97b1f25add8f4173fafda1.js.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/application.css.gz" afterPath="$PROJECT_DIR$/public/assets/application.css.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/application.js.gz" afterPath="$PROJECT_DIR$/public/assets/application.js.gz" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/races_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/races_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/races/show.html.erb" afterPath="$PROJECT_DIR$/app/views/races/show.html.erb" />
     </list>
@@ -144,7 +139,16 @@
       <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/races/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="28" selection-start="983" selection-end="983" vertical-scroll-proportion="23.666666">
+            <state line="29" column="86" selection-start="672" selection-end="672" vertical-scroll-proportion="-10.625">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="race.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/race.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="30" selection-start="61" selection-end="61" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -153,7 +157,7 @@
       <file leaf-file-name="races_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/races_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="63" selection-start="310" selection-end="310" vertical-scroll-proportion="0.41709843">
+            <state line="20" column="77" selection-start="326" selection-end="326" vertical-scroll-proportion="0.77720207">
               <folding />
             </state>
           </provider>
@@ -203,8 +207,8 @@
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/app/uploaders/image_uploader.rb" />
         <option value="$PROJECT_DIR$/config/initializers/carrierwave.rb" />
-        <option value="$PROJECT_DIR$/app/views/races/show.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/races/show.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/races_controller.rb" />
       </list>
     </option>
@@ -283,6 +287,38 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="elevote50" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Elevote" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="elevote50" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Elevote" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="elevote50" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -889,11 +925,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css.scss.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="163" column="101" selection-start="2317" selection-end="2317" vertical-scroll-proportion="0.029469548" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/screen.css.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state line="31" column="31" selection-start="1424" selection-end="1424" vertical-scroll-proportion="0.030241935" />
@@ -965,14 +996,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/races/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="28" selection-start="983" selection-end="983" vertical-scroll-proportion="23.666666">
+        <state line="29" column="86" selection-start="672" selection-end="672" vertical-scroll-proportion="-10.625">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/race.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="30" selection-start="61" selection-end="61" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/races_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="63" selection-start="310" selection-end="310" vertical-scroll-proportion="0.41709843">
+        <state line="20" column="77" selection-start="326" selection-end="326" vertical-scroll-proportion="0.77720207">
           <folding />
         </state>
       </provider>

@@ -16,9 +16,9 @@ class RacesController < ApplicationController
     @race = Race.find(params[:id])
 
 
-    list_of_candidates = Rails.cache.fetch('list_of_candidates') { Official.order('random()')}
 
-    @candidates = list_of_candidates.scoped_by_race_id(@race.id).page(params[:page]).per_page(5)
+
+    @candidates = Official.scoped_by_race_id(@race.id).order('updated_at DESC').page(params[:page]).per_page(5)
 
   end
 
