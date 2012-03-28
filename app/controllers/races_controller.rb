@@ -1,6 +1,8 @@
 class RacesController < ApplicationController
   # GET /opinions
   # GET /opinions.json
+
+
   def index
     @races = Race.all
 
@@ -13,7 +15,10 @@ class RacesController < ApplicationController
     @races = Race.all
     @race = Race.find(params[:id])
 
-    @candidates = Official.scoped_by_race_id(@race.id).page(params[:page]).per_page(5)
+
+    list_of_candidates = Rails.cache.fetch('list_of_candidates') { Official.order('random()')}
+
+    @candidates = list_of_candidates.scoped_by_race_id(@race.id).page(params[:page]).per_page(5)
 
   end
 
@@ -46,4 +51,9 @@ class RacesController < ApplicationController
 
 
   end
+
+
+
 end
+
+
