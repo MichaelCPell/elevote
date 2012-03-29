@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120319001518) do
+ActiveRecord::Schema.define(:version => 20120329172301) do
 
   create_table "comments", :force => true do |t|
     t.integer  "parent_id"
@@ -83,6 +83,7 @@ ActiveRecord::Schema.define(:version => 20120319001518) do
     t.string   "image2"
     t.datetime "created_at",         :null => false
     t.datetime "updated_at",         :null => false
+    t.integer  "tier"
   end
 
   create_table "opinions", :force => true do |t|

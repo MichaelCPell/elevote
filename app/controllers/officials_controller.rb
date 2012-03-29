@@ -85,13 +85,15 @@ class OfficialsController < ApplicationController
 
     respond_to do |format|
       if @official.update_attributes(params[:official])
-        format.html { redirect_to @official, notice: 'official was successfully updated.' }
+        format.html { redirect_to race_path(@official.race_id), notice: 'official was successfully updated.' }
         format.json { head :ok }
       else
         format.html { render action: "edit" }
         format.json { render json: @official.errors, status: :unprocessable_entity }
       end
     end
+
+
   end
 
   # DELETE /officials/1

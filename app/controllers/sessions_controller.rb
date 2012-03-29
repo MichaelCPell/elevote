@@ -32,7 +32,7 @@ class SessionsController < ApplicationController
 
       if official && official.authenticate(params[:password])
         session[:official] = official
-        redirect_to legislations_path, :notice => "Logged in!"
+        redirect_to edit_official_path(official.id)
 
       else
 

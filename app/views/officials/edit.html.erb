@@ -11,13 +11,23 @@
         <%= f.label :email %>
         <%= f.text_field :email %>
         <br>
+        <%= f.label :password %>
+        <%= f.password_field :password %>
+        <br>
+        <%= f.label :password_confirmation %>
+        <%= f.password_field :password_confirmation %>
+        
+        <br>
         <%= f.label :website %>
         <%= f.text_field :website %>
-       <br>
+
+        <% if @official.tier == 1 %>
+        <br>
         <%= f.label :portrait %>
         <%= f.file_field :portrait %>
-        <br>
 
+        <% end %>
+        <br>
 
             <% mycounter = 0 %>
         
@@ -39,7 +49,7 @@
                 <br>
             <% end %>
 
-            
+      <% if @official.tier == 2 %>
         <br>
          <%= f.label "About Me" %>
         <%= f.text_area :aboutMe %>
@@ -59,6 +69,9 @@
         <%= f.label "Office" %>
         <%= f.text_field :office %>
         <br>
+
+      <% end %>
+
         <%= f.submit %>
 
 
