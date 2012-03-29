@@ -55,7 +55,7 @@
 
     <% if @race.nil? %>
     <% else %>
-    <div class="headerbutton">
+    <div class="printbutton">
       <%= link_to "Printable Version", race_path(@race, format: "pdf") %>
     </div>
     <% end %>
