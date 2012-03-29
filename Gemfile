@@ -39,6 +39,8 @@ gem 'rmagick'
 gem "carrierwave"
 
 gem "fog"
+gem 'prawn'
+
 
 
 gem 'formtastic'

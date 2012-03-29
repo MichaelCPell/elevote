@@ -52,6 +52,13 @@
 
     <div class="fb-like headerbutton" data-href="http://www.durhamvotes.org" data-send="true" data-layout="button_count"
          data-width="10000" data-show-faces="true" data-font="segoe ui"></div>
+
+    <% if @race.nil? %>
+    <% else %>
+    <div class="headerbutton">
+      <%= link_to "Printable Version", race_path(@race, format: "pdf") %>
+    </div>
+    <% end %>
   
   </div>
 
