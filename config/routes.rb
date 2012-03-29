@@ -1,4 +1,6 @@
 Elevote::Application.routes.draw do
+  resources :user_emails
+
   resources :races
 
   resources :groups

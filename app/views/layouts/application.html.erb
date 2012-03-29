@@ -39,21 +39,37 @@
 
 
   <div id="header"  class="span-29">
-    <div id="logoImage" class="span-25"> <%= image_tag "durhamlogo.png"%> </div>
+    <div id="logoImage" class="span-22"> <%= image_tag "durhamlogo.png"%>
+
+      
 
 
-    <div class="headerbutton">
-      <%= link_to "Home", root_url %>
     </div>
 
-    <div class="headerbutton">
+    <div class="span-4" style="float:right">
+    <div class="headerbutton" style="" >
+      <%= link_to "Home", root_url %>
+    </div>
+    <br>
+    <div class="headerbutton" style="">
       <%= link_to "Info for Candidates",'/info/forcandidates' %>
     </div>
 
     <div class="fb-like headerbutton" data-href="http://www.durhamvotes.org" data-send="true" data-layout="button_count"
          data-width="10000" data-show-faces="true" data-font="segoe ui"></div>
+    </div>
 
+
+    <br>
     <% if @race.nil? %>
+        <div id="email list signup" class="span-7 last" style="float:right;color: white; text-align: center; ">
+          <%= form_for UserEmail.new do |f| %>
+              <%= "Receive Election Guide One-Week Before Elections" %><Br>
+              <%= f.text_field :email, :size => 15, :value => "Enter E-mail Address" %>
+              <%= f.submit :submit %>
+          <% end %>
+        </div>
+
     <% else %>
     <div class="printbutton">
       <%= link_to "Printable Version", race_path(@race, format: "pdf") %>
