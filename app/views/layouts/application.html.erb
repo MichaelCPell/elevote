@@ -64,7 +64,7 @@
     <% if @race.nil? %>
         <div id="email list signup" class="span-7 last" style="float:right;color: white; text-align: center; ">
           <%= form_for UserEmail.new do |f| %>
-              <%= "Receive Election Guide One-Week Before Elections" %><Br>
+              <%= "Receive Election Guide One-Week Before Elections" %>
               <%= f.text_field :email, :size => 15, :value => "Enter E-mail Address" %>
               <%= f.submit :submit %>
           <% end %>
