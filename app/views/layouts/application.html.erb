@@ -1,10 +1,21 @@
 <!DOCTYPE html>
-<html>
+<% if @official == nil %>
+    <html>
+<% else %>
+    <html xmlns="http://www.w3.org/1999/xhtml"
+          xmlns:og="http://ogp.me/ns#"
+          xmlns:fb="http://www.facebook.com/2008/fbml">
+<% end %>
+
+
 <head>
-  <title>Durham Votes!</title>
+
   <%= stylesheet_link_tag "application" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
+
+
+
 
 
   <script type="text/javascript">
@@ -20,18 +31,51 @@
       })();
 
   </script>
+
+
+  <div id="fb-root">
+    <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=205528859544975";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+  </div>
+
+
+  
+  
+  
+  
+  <% if @official == nil %>
+  <% else %>
+     
+   
+        <title><%= @official.firstname + " " + @official.lastname %></title>
+
+        <meta property="og:title" content='<%= @official.firstname + " " + @official.lastname %>'  />
+        <meta property="og:type" content="Candidate"/>
+        <meta property="og:url" content='<%= official_path(@official)%>'   />
+        <meta property="og:image" content="http://ia.media-imdb.com/rock.jpg"/>
+        <meta property="og:site_name" content="Durham Votes"/>
+        <meta property="fb:admins" content="USER_ID"/>
+        <meta property="og:description"
+              content="A candidate running for election."/>
+
+   <% end %>
+  
+  
+  
+  
+  
+  
+  
+
 </head>
 <body id="bodycss">
 
 
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=205528859544975";
-    fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
 
 
 
@@ -39,39 +83,23 @@
 
 
   <div id="header"  class="span-29">
-    <div id="logoImage" class="span-22"> <%= image_tag "durhamlogo.png"%>
+    <div id="logoImage" class="span-22"> <%= link_to image_tag("durhamlogoNOCITYLOGO.png"), root_url %>
 
       
 
 
     </div>
 
-    <div class="span-4" style="float:right">
-    <div class="headerbutton" style="" >
-      <%= link_to "Home", root_url %>
-    </div>
-    <br>
-    <div class="headerbutton" style="">
-      <%= link_to "Info for Candidates",'/info/forcandidates' %>
-    </div>
-
-    <div class="fb-like headerbutton" data-href="http://www.durhamvotes.org" data-send="true" data-layout="button_count"
-         data-width="10000" data-show-faces="true" data-font="segoe ui"></div>
-    </div>
 
 
     <br>
     <% if @race.nil? %>
-        <div id="email list signup" class="span-7 last" style="float:right;color: white; text-align: center; ">
-          <%= form_for UserEmail.new do |f| %>
-              <%= "Receive Election Guide One-Week Before Elections" %>
-              <%= f.text_field :email, :size => 15, :value => "Enter E-mail Address" %>
-              <%= f.submit :submit %>
-          <% end %>
-        </div>
+
+        <div class="fb-like" style="float:right;" data-href="http://www.durhamvotes.org" data-send="false" data-width="150"
+             data-show-faces="true" data-font="trebuchet ms" data-colorscheme="dark"></div>
 
     <% else %>
-    <div class="printbutton">
+    <div class="attention_button printbutton">
       <%= link_to "Printable Version", race_path(@race, format: "pdf") %>
     </div>
     <% end %>
@@ -81,7 +109,50 @@
 
 
   <div id="leftColumn" class="span-29">
-      <%= yield :leftColumn %>
+
+    <div id="main_navigation" style="float: left;">
+
+      <ul class="menu" style= "">
+        <li id="top_level_Contests" class="attention_button">
+          <%= link_to "Electoral Contests", Race.first, :onmouseover => "showlayer('sm_1')", :style => "color: white; " %>
+          <ul class="submenu" id="sm_1" >
+            <% for race in Race.all %>
+                <li><%= link_to race.name, race %></li>
+            <% end %>
+          </ul>
+        </li>
+
+
+        <li id="For Citizens">
+          <%= link_to "Info for Citizens",'/info/for_citizens', :onmouseover => "showlayer('sm_2')" %>
+          <ul class="submenu" id="sm_2" >
+
+          </ul>
+
+
+        </li>
+
+
+        <li id="For Candidates">
+          <%= link_to "Info for Candidates",'/info/for_candidates', :onmouseover => "showlayer('sm_3')" %>
+          <ul class="submenu" id="sm_3" >
+
+          </ul>
+        </li>
+
+
+      </ul>
+
+    </div>
+    
+    <div style="float:right; font-size: 16px; text-align: center;"> Sign-up To Receive A Final E-mail Report <br> One Week Before The Elections!
+        <%= form_for UserEmail.new do |f| %>
+        <%= f.text_field :email, :value => "Enter Email and Submit!" %>
+        <%= f.submit "Submit" %>
+        <% end %>
+    </div>
+    
+    
   </div>
 
 

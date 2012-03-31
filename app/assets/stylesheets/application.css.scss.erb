@@ -48,6 +48,101 @@ $blue: #012646;
 
 }
 
+/* Navigation Stuff */
+
+ul, li{margin:0; border:0; padding:0; list-style:none;}
+#main_navigation{
+    font-size:18px;
+
+
+    font-weight:bold;
+    padding:4px;
+    height:30px;
+    padding-top: 10px;
+
+
+
+    .menu li {
+
+        height:30px;
+        float:left;
+        margin-right:10px;
+        width: 225px;
+
+
+        a{
+
+            text-decoration:none;
+
+            height:30px;
+            line-height:30px;
+            display:block;
+
+            padding:0 26px 0 40px;
+
+
+
+        }
+
+        a:hover{
+            color:#666666;
+        }
+
+
+    }
+
+
+    ul .submenu {
+        border:solid 1px $gray;
+        border-top:none;
+        background:#FFFFFF;
+        position:relative;
+
+        padding:0px 0;
+        clear:both;
+        z-index:2;
+        display:none;
+
+
+        li{
+            background:none;
+            display:block;
+            float:none;
+            margin:0 0px;
+            border:0;
+            height:auto;
+            line-height:normal;
+            border-top:solid 1px #DEDEDE;
+            width:225px;
+
+            a{
+                background:none;
+                display:block;
+                float:none;
+                padding:6px 6px;
+                margin:0;
+                border:0;
+                color:#105cbe;
+                line-height:normal;
+
+            }
+
+            a:hover{
+                background:#e3edef;
+
+            }
+
+        }
+
+    }
+
+}
+
+
+
+
+
+
 /*Left Column*/
 #leftColumn{
     border-bottom: 6px black solid;
@@ -61,6 +156,7 @@ $blue: #012646;
 
 #middleColumn {
     height: 650px;
+    margin-left: 25px;
 }
 
 /*#rightColumn {*/
@@ -117,18 +213,12 @@ height: 50px;
     font-size: 16px;
     width: 200px;
     float: right;
-
-
-/*border-radius: 5px;*/
     font-color: $gray;
-
-
     a {
         text-align: right;
         color: white;
         text-decoration: none;
     }
-
     a:hover{
       color: $yellow;
     }
@@ -137,22 +227,32 @@ height: 50px;
 .printbutton {
 
 
-    font-size: 18px;
     text-align: center;
-    border-radius: 5px;
-    background-color: $yellow;
     float: right;
     width: 250px;
+    height: 40px;
+    padding-top: 10px;
+    margin-top: 50px;
 
 
-
-    a {
-        font-color: $gray;
-        text-decoration: none;
-    }
 
     a:hover{
+        color: $yellow;
+    }
+}
+
+
+.attention_button {
+    background-color: #0f5a92;
+    border: 5px dotted #de2a17;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-size:18px;
+    font-weight:bold;
+
+   a{
         color: white;
+        text-decoration: none;
     }
 }
 

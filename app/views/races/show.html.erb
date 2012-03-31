@@ -1,12 +1,3 @@
-<% content_for :leftColumn do %>
-
-        <% for race in @races %>
-            <div class="span-6 padding-left-20"><%= link_to race.name, race %></div>
-        <% end %>
-
-
-<% end %>
-
 
 <% content_for :middleColumn do %>
 
@@ -24,9 +15,9 @@
           <% for candidate in @candidates %>
 
                 <% if candidate == @candidates.last %>
-                    <div class="span-5 candidate last">
+                    <div class="span-6 candidate last">
                 <% else %>
-                    <div class="span-5 candidate">
+                    <div class="span-6 candidate">
                 <% end %>
 
  
@@ -37,7 +28,14 @@
                   <h5><%= link_to "Candidate Website", candidate.website, :target => "_blank" %></h5>
 
 
-                  <div class="span-5 center">
+
+                    <div class="fb-like" style="float:right; height:80px;" data-href="<%= official_url(candidate) %>" data-send="false"
+                         data-width="150" data-show-faces="true" data-font="trebuchet ms">
+                         </div>
+
+
+
+                  <div class="span-6 center">
                     <% if candidate.portrait_url %>
                         <%= image_tag candidate.portrait_url.to_s %>
                     <% else %>

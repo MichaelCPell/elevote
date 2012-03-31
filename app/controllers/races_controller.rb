@@ -15,7 +15,7 @@ class RacesController < ApplicationController
     @races = Race.all
     @race = Race.find(params[:id])
 
-    @candidates = Official.scoped_by_race_id(@race.id).order('updated_at DESC').page(params[:page]).per_page(5)
+    @candidates = Official.scoped_by_race_id(@race.id).order('updated_at DESC').page(params[:page]).per_page(4)
 
 
 

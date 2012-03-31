@@ -1,6 +1,10 @@
 class InfoController < ApplicationController
 
-  def infoforcandidates
+  def for_candidates
+
+  end
+
+  def for_citizens
 
   end
 

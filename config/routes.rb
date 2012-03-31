@@ -42,7 +42,8 @@ Elevote::Application.routes.draw do
 
   match '/auth/failure', :to => 'legislations#failure'
 
-  match '/info/forcandidates', :to => 'info#forcandidates'
+  match '/info/for_candidates', :to => 'info#for_candidates'
+  match '/info/for_citizens', :to => 'info#for_citizens'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
