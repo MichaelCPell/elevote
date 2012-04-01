@@ -49,6 +49,8 @@
   
   
   <% if @official == nil %>
+
+  <title>Durham Votes!</title>
   <% else %>
      
    
@@ -57,8 +59,8 @@
         <meta property="og:title" content='<%= @official.firstname + " " + @official.lastname %>'  />
         <meta property="og:type" content="Candidate"/>
         <meta property="og:url" content='<%= official_path(@official)%>'   />
-        <meta property="og:image" content="http://ia.media-imdb.com/rock.jpg"/>
-        <meta property="og:site_name" content="Durham Votes"/>
+        <meta property="og:image" content=""/>
+        <meta property="og:site_name" content="Durham Votes!"/>
         <meta property="fb:admins" content="USER_ID"/>
         <meta property="og:description"
               content="A candidate running for election."/>
