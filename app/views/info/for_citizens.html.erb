@@ -1,20 +1,11 @@
 <%= content_for :middleColumn do %>
     <br>
-    <h3>
-      This non-partisan project's goal is to improve the democratic process in Durham.  The project is owned and operated by
-      a Durham resident and constituent.  For information, questions, comments, or feedback please e-mail
+    <h3 class="span-29 last">
+      This non-partisan project's goal is to improve the democratic process in Durham.<br><br>  The project is owned and operated by
+      a Durham resident and constituent.<br><br>  For information, questions, comments, or feedback please e-mail
       Michael@GeneralPolitics.org.  </h3>
 
     <br>
-
-    <div id="email list signup" class="span-7 last" style="float:right;color: white; text-align: center; ">
-      <%= form_for UserEmail.new do |f| %>
-          <%= "Receive Election Guide One-Week Before Elections" %>
-          <%= f.text_field :email, :size => 15, :value => "Enter E-mail Address" %>
-          <%= f.submit :submit %>
-      <% end %>
-    </div>
-
 
 
 <% end %>

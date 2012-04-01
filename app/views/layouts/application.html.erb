@@ -147,9 +147,9 @@
 
     </div>
     
-    <div style="float:right; font-size: 16px; text-align: center;"> Sign-up To Receive A Final E-mail Report <br> One Week Before The Elections!
+    <div style="float:right; font-size: 14px; text-align: center;"> Sign-up To Receive A Final E-mail Report <br> One Week Before The Elections!
         <%= form_for UserEmail.new do |f| %>
-        <%= f.text_field :email, :value => "Enter Email and Submit!" %>
+        <%= f.text_field :email, :value => "Enter Email!", :style => "width: 125px" %>
         <%= f.submit "Submit" %>
         <% end %>
     </div>
