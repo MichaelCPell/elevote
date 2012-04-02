@@ -25,7 +25,8 @@
                   <%= candidate.firstname %>
                   <%= candidate.lastname %> </h3>
                   <h5 >Email Address: <%= candidate.email %></h5>
-                  <h5><%= link_to "Candidate Website", candidate.website, :target => "_blank" %></h5>
+                  <h5><%= link_to "#{candidate.full_name}'s Profile", official_path(candidate), :target => "_blank" %></h5>
+                  <h5><%= link_to "#{candidate.full_name}'s  Website", candidate.website, :target => "_blank" %></h5>
 
 
 
