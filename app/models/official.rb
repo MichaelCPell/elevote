@@ -1,11 +1,15 @@
 class Official < ActiveRecord::Base
+  extend FriendlyId
+
   has_secure_password
   validates_presence_of :password, :on => :create
   validates_presence_of :email
 
   mount_uploader :portrait, ImageUploader
-  mount_uploader :image1, ImageUploader
-  mount_uploader :image2, ImageUploader
+
+
+  friendly_id :full_name, :use => :slugged
+
 
   #Scopes
 
@@ -57,6 +61,11 @@ class Official < ActiveRecord::Base
     }
 
 
+  end
+
+
+  def full_name
+    "#{firstname} #{lastname}"
   end
 
   #validations

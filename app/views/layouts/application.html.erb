@@ -44,27 +44,17 @@
   </div>
 
 
-  
-  
-  
-  
-  <% if @official == nil %>
+  <% case %>
+  <% when @race %>
+      <title><%= @race.name %> Election for Durham, North Carolina</title>
+      <meta name="description" content="Everything you need to know about candidates in the <%= @race.name%> election in Durham, North Carolina.">
 
-  <title>Durham Votes!</title>
+  <% when @official %>
+      <title><%= @official.full_name %>'s Candidate Profile</title>
+      <meta name="description" content="<%= @official.full_name %>'s Positions, Values, Accomplishments, Goals and Pictures for the Upcoming Election">
   <% else %>
-     
-   
-        <title><%= @official.firstname + " " + @official.lastname %></title>
-
-        <meta property="og:title" content='<%= @official.firstname + " " + @official.lastname %>'  />
-        <meta property="og:type" content="Candidate"/>
-        <meta property="og:url" content='<%= official_path(@official)%>'   />
-        <meta property="og:image" content=""/>
-        <meta property="og:site_name" content="Durham Votes!"/>
-        <meta property="fb:admins" content="USER_ID"/>
-        <meta property="og:description"
-              content="A candidate running for election."/>
-
+      <title>Election Information for Durham, North Carolina</title>
+      <meta name="description" content="Durham, NC's Candidate Positions, Values, Accomplishments, Goals and Pictures for the Upcoming Election">
    <% end %>
   
   

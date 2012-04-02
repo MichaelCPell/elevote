@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120329223933) do
+ActiveRecord::Schema.define(:version => 20120402160058) do
 
   create_table "comments", :force => true do |t|
     t.integer  "parent_id"
@@ -84,7 +84,10 @@ ActiveRecord::Schema.define(:version => 20120329223933) do
     t.datetime "created_at",         :null => false
     t.datetime "updated_at",         :null => false
     t.integer  "tier"
+    t.string   "slug"
   end
+
+  add_index "officials", ["slug"], :name => "index_officials_on_slug"
 
   create_table "opinions", :force => true do |t|
     t.string   "status"
@@ -100,7 +103,10 @@ ActiveRecord::Schema.define(:version => 20120329223933) do
     t.string   "name"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+    t.string   "slug"
   end
+
+  add_index "races", ["slug"], :name => "index_races_on_slug"
 
   create_table "short_achievements", :force => true do |t|
     t.integer  "official_id"

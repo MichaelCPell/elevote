@@ -10,6 +10,9 @@ gem 'acts_as_tree_rails3'
 gem 'koala'
 gem 'will_paginate'
 
+
+gem 'friendly_id'
+
 gem 'omniauth-facebook'
 gem 'bcrypt-ruby'
 
