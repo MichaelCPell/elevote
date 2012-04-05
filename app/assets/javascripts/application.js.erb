@@ -25,3 +25,27 @@ function showlayer(layer) {
         myLayer.style.display="none";
     }
 }
+
+$(document).ready(function(){
+    $(".lightbox_trigger").click(function(e) {
+        e.preventDefault();
+        $("#lightbox").show();
+    });
+
+    $("#lightbox_close").on("click", function(event){
+        event.preventDefault();
+        $("#lightbox").hide();
+    });
+
+    $("#lightbox_background").on("click", function(event){
+        event.preventDefault();
+        $("#lightbox").hide();
+    });
+
+
+});
+
+
+
+
+

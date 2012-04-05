@@ -1,7 +1,7 @@
 class RacesController < ApplicationController
   # GET /opinions
   # GET /opinions.json
-
+   respond_to :html, :js
 
   def index
     @races = Race.all

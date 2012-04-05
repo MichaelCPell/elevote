@@ -24,8 +24,10 @@
                <h3 class="center">
                   <%= candidate.firstname %>
                   <%= candidate.lastname %> </h3>
-                  <h5 >Email Address: <%= candidate.email %></h5>
-                  <h5><%= link_to "#{candidate.full_name}'s Profile", official_path(candidate), :target => "_blank" %></h5>
+
+
+        
+                  <h5><%= link_to "#{candidate.full_name}'s Profile", official_path(candidate), :class => "lightbox_trigger", :remote => true %></h5>
                   <h5><%= link_to "#{candidate.full_name}'s  Website", candidate.website, :target => "_blank" %></h5>
 
 
@@ -86,13 +88,19 @@
             <br>
         <% end %>
 
+        <h5 >Email Address: <%= candidate.email %></h5>
+
 
 
         </div>
 
-
-
-
+        <div id="lightbox">
+          <div id="lightbox_background"> 
+          <a href="#" id="lightbox_close">Click Anywhere Outside to Close </a>
+          </div> 
+          <div id="lightbox_box" class="span-24">
+          </div> 
+        </div>
 
 
 

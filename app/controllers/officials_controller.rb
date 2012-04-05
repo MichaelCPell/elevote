@@ -5,12 +5,14 @@ class OfficialsController < ApplicationController
   before_filter :authenticated?, :only => [:edit, :update]
   before_filter :correct_official, :only => [:edit, :update]
 
+
   def index
     @officials = Official.all
 
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @officials }
+      format.js
     end
   end
 
@@ -23,9 +25,10 @@ class OfficialsController < ApplicationController
     @updates = @official.updates
 
     respond_to do |format|
-      format.html # show.html.erb
-      format.json { render json: @official }
+      format.html
+      format.js
     end
+
   end
 
   # GET /officials/new

@@ -1,0 +1,116 @@
+
+<!--Begin Modal-->
+  <div id="modal">
+
+    <h1 id="officialName" class="span-8">
+      <%= @official.firstname %>
+      <%= @official.lastname %>
+    </h1>
+
+    <h3 id="officialSlogan" class="span-8 last">
+      <%= @official.campaignSlogan %>
+    </h3>
+
+    <
+
+
+
+
+    <!--MIDDLE COLUMN NAV BAR-->
+    <div id="tabs" class="span-14">
+      <ul>
+        <li class="span-3"><%= link_to("News", "#news")%></li>
+        <li class="span-3"><%= link_to("About Me", "#aboutMe") %></li>
+        <li class="span-3"><%= link_to("Positions", "#positions") %></li>
+        <li class="span-2"><%= link_to("Goals", "#goals")%></li>
+        <li class="span-3"><%= link_to("Achievements", "#achievements") %></li>
+        <li class="span-3"><%= link_to("Written Endorsements", "#written_endorsements") %></li>
+        <li class="span-3"><%= link_to("Video Endorsements", "#video_endorsements") %></li>
+
+      </ul>
+
+      <!--END MIDDLE COLUMN NAV BAR-->
+
+
+      <div id="news">
+        <% if current_official %>
+            <!--Eventually this line needs to verify which official is signed in-->
+            <%=  form_for Comment.new do |f| %>
+                <%= f.label "New Post" %>
+                <%= f.text_field :content %>
+                <%= f.hidden_field :authorable_id, :value => current_official.id %>
+                <%= f.hidden_field :authorable_type, :value => "Official" %>
+                <%=  f.submit :post %>
+
+            <% end %>
+
+        <% end %>
+
+        <% for update in @updates %>
+
+            <div class="newsPost">
+              <%= update.content %>  <br>
+              Posted at: <%= l update.created_at, :format => :short %>
+            </div>
+
+        <% end %>
+
+      </div>
+
+      <div id="aboutMe">
+        <p><%= @official.aboutMe %></p>
+      </div>
+
+
+      <div id="positions">
+        <p><%= @official.positions %></p>
+      </div>
+
+      <div id="goals">
+        <p><%= @official.goals %></p>
+      </div>
+
+      <div id="achievements">
+        <p><%= @official.achievements %></p>
+      </div>
+
+      <div id="written_endorsements">
+        <p>Written Endorsements Go Here</p>
+      </div>
+
+      <div id="video_endorsements">
+        <p>Videos Go Here</p>
+      </div>
+
+
+
+    </div>
+
+
+
+
+    <!--END MIDDLE COLUMN SECTIONS-->
+
+
+
+
+    <div id="dialogDonate" title="Thank You For Your Contribution">
+
+      <%= form_tag do %>
+          <%= text_field_tag(:q)  %>
+          <%= submit_tag "Contribute!", :disabled => :true %>
+      <% end %>
+    </div>
+
+
+    <div id="dialogVolunteer" title="Submit Your E-mail Address to Our List">
+
+      <%= form_tag do %>
+          <%= text_field_tag(:q)  %>
+          <%= submit_tag "Submit!", :disabled => :true %>
+      <% end %>
+    </div>
+
+
+
+  </div>
