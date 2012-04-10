@@ -45,7 +45,7 @@ $yellow: #d3a414;
   height: 900px;
   background: white;
   padding-left: 10px;
-  width: 220px;
+  width: 225px;
   float: left;
   margin-right: 10px;
   font-family: 'Yanone Kaffeesatz', sans-serif;
@@ -85,17 +85,18 @@ $yellow: #d3a414;
 
 
 .candidate_goals {
-  height: 230px;
+  height: 240px;
 }
 
 .candidate_about {
-  height: 230px;
+  height: 240px;
 }
 
 
 .candidate_statement {
   border-bottom: 2px solid #d3d3d3;
   font-family: 'Lusitana', serif;
+  height: 60px;
 }
 
 .fb-like{

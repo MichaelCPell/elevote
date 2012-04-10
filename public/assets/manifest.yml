@@ -32,5 +32,6 @@ images/ui-icons_c02669_256x240.png: images/ui-icons_c02669_256x240-370dcd19d6f05
 images/ui-icons_d3a63c_256x240.png: images/ui-icons_d3a63c_256x240-febfc1c419c1c4a8a2afa07467e6c134.png
 images/ui-icons_fbdb93_256x240.png: images/ui-icons_fbdb93_256x240-fbe9172213cabe82807faa94aa738cb5.png
 logo.png: logo-73572abb7d0f615dba6afef182b268fb.png
-application.js: application-0fdb7c3a8379ddaecfbf4bb93183faa0.js
-application.css: application-09329e4863606f355260b06b95898486.css
+missing_portrait.png: missing_portrait-47e736e6b9a14f94d970919c134a3ac4.png
+application.js: application-8ec5cf4a6e2ac8ced684ede4eb617199.js
+application.css: application-ceb1732efee5906457101468e4646592.css

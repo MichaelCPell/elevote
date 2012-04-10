@@ -8,6 +8,7 @@
 <div id="left_column" class="span-7 last">
   <p class="modal_candidate_name prepend-1">
     <%= @official.firstname %>
+    <br>
     <%= @official.lastname %>
   </p>
 
@@ -20,7 +21,7 @@
     <% if @official.portrait_url %>
         <%= image_tag @official.portrait_url.to_s %>
     <% else %>
-        <%= image_tag 'gp1.png' %>
+        <%= image_tag 'missing_portrait.png' %>
     <% end %>
   </div>
 
@@ -79,10 +80,9 @@
 
     <!--MIDDLE COLUMN NAV BAR-->
 
-      <!--END MIDDLE COLUMN NAV BAR-->
-
-
+    <div id="hide_it_all" style="display: none">
       <div id="news">
+        <p class="subtitle">News</p>
         <% if current_official %>
             <!--Eventually this line needs to verify which official is signed in-->
             <%=  form_for Comment.new do |f| %>
@@ -142,14 +142,6 @@
 
     </div>
 
-
-
-
-    <!--END MIDDLE COLUMN SECTIONS-->
-
-
-
-
     <div id="dialogDonate" title="Thank You For Your Contribution">
 
       <%= form_tag do %>
@@ -166,6 +158,6 @@
           <%= submit_tag "Submit!", :disabled => :true %>
       <% end %>
     </div>
-
+    </div>
 
 </div>
