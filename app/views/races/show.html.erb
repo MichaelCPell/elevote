@@ -2,9 +2,12 @@
 <% content_for :middleColumn do %>
 
 
-    <div id="contest_name" class="prepend-2" xmlns="http://www.w3.org/1999/html">
+    <div id="contest_title" class="prepend-2" xmlns="http://www.w3.org/1999/html">
 
         <p><%= @race.name %></p>
+      
+      
+        <div id="print_button"><%=  link_to "Download Printable Version (PDF)", race_path(@race, format: "pdf") %></div>
 
     </div>
 
@@ -34,14 +37,14 @@
 
 
 
-
-                    <div class="fb-like" data-href="<%= official_url(candidate) %>" data-send="false"
-                         data-width="150" data-show-faces="true" data-font="trebuchet ms">
-                    </div>
-
+              <div class="fb-like" data-href="<%= official_url(candidate) %>" data-send="false"
+                   data-width="150" data-show-faces="true" data-font="trebuchet ms">
+              </div>
 
 
-                    <div class="candidate_portrait">
+
+
+              <div class="candidate_portrait">
                         <% if candidate.portrait_url %>
                             <%= image_tag candidate.portrait_url.to_s %>
                         <% else %>
@@ -106,7 +109,7 @@
 
 
         <div id="compare_right_arrow" class="push-1 span-1">
-            <%= link_to image_tag("arrow-right.png"), params.merge(page: @candidates.previous_page) %>
+            <%= link_to image_tag("arrow-right.png"), params.merge(page: @candidates.next_page) %>
         </div>
     </div>
 

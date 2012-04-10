@@ -22,7 +22,7 @@ class ContestPdf < Prawn::Document
 
     font_size 18
     text "www.DurhamVotes.org", :align => :center
-    image "app/assets/images/gp-logo-med.png", :position => :center
+    #image "app/assets/images/gp-logo-med.png", :position => :center
 
     font_size 12
     text Time.now.strftime("Printed on %m/%d/%Y"), :align => :center

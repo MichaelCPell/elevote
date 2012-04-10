@@ -11,6 +11,11 @@ $blue: #012646;
   
   p{
     font-family: 'Yanone Kaffeesatz', sans-serif;
+    margin: 0px;
+  }
+
+  a{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
   }
 }
 
@@ -20,11 +25,8 @@ $blue: #012646;
 
 
   .modal_candidate_name{
-    font-size: 30px;
-  }
-
-  #modal_facebook_like{
-    height: 60px;
+    font-size: 54px;
+    height: 20px;
   }
 
 
@@ -36,20 +38,52 @@ $blue: #012646;
 
       border-bottom: 1px gray solid;
 
-      a{
+      a {
         text-align: left;
         text-decoration: none;
         font-size: 22px;
         color: black;
+        font-family: 'Yanone Kaffeesatz', sans-serif;
       }
+
+
     }
+
+    .final_li{
+      border-bottom: none;
+    }
+
+    .contact_info{
+      font-size: 18px;
+      color: #d3d3d3;
+    }
+
+  }
+
+
+  .modal_candidate_portrait{
+    text-align: center;
   }
 
 }
 
 
-#modal #middle_column{
+#middle_column{
   height:640px;
+
+  .subtitle{
+    height: 90px;
+    font-size: 36px;
+    margin: 0px
+
+  }
+  #div_for_right_line{
+    height:440px;
+    margin-top: 60px;
+
+    border-right: 2px gray solid;
+  }
+
 }
 
 

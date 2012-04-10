@@ -15,12 +15,28 @@ $yellow: #d3a414;
 
 
 
+
+
 /*Races#Show*/
 
 
 #contest_title{
-  padding-top: 10px;
-  height: 30px
+  p{
+    font-size: 36px;
+    margin-bottom: 10px;
+    font-family: 'Lusitana', serif;
+    float: left;
+  }
+
+  #print_button{
+    float: right;
+    margin-top: 50px;
+    font-family: 'Lusitana', serif;
+    a{
+      color: black;
+      text-decoration: none;}
+  }
+
 }
 
 
@@ -69,16 +85,17 @@ $yellow: #d3a414;
 
 
 .candidate_goals {
-  height: 200px;
+  height: 230px;
 }
 
 .candidate_about {
-  height: 200px;
+  height: 230px;
 }
 
 
 .candidate_statement {
   border-bottom: 2px solid #d3d3d3;
+  font-family: 'Lusitana', serif;
 }
 
 .fb-like{

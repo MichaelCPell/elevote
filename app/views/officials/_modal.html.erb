@@ -1,4 +1,6 @@
 
+
+
 <!--Begin Modal-->
 <div id="modal" class="span-26">
 
@@ -9,7 +11,9 @@
     <%= @official.lastname %>
   </p>
 
-  <div id="modal_facebook_like"></div>
+
+  <div class="fb-like" data-href="<%= official_url(@official) %>" data-send="false"
+       data-width="150" data-show-faces="true" data-font="trebuchet ms"></div>
 
 
   <div class="modal_candidate_portrait prepend-1">
@@ -28,11 +32,11 @@
     <li class="span-6"><%= link_to("Achievements", "#achievements",  :class => "modal_content_trigger") %></li>
     <li class="span-6"><%= link_to("Written Endorsements", "#written_endorsements",  :class => "modal_content_trigger") %></li>
     <li class="span-6"><%= link_to("Video Endorsements", "#video_endorsements",  :class => "modal_content_trigger")%></li>
-    <li class="span-6"><%= link_to("Contact", "#contact", :class => "modal_content_trigger") %></li>
+    <li class="span-6 final_li"><%= link_to("Contact", "#contact", :class => "modal_content_trigger") %></li>
   </ul>
   
-  <p class="prepend-1">Website</p>
-  <p class="prepend-1">Email</p>
+  <p class="contact_info prepend-1">Website</p>
+  <p class="contact_info prepend-1">Email</p>
 
   
   
@@ -40,15 +44,24 @@
 
 
 <div id="middle_column" class="span-12 last">
-    <div id="modal_active_window" class="span-20">
-        This is the active window
+
+
+
+    <div id="modal_active_window" class="span-12 last">
+        <p class="subtitle">Welcome!</p>
     </div>
+  <div id="div_for_right_line">
+
+  </div>
+
 
 
 </div>
+
+
+
 <div id="right_column" class="span-7 last">
 
-    This is the right column
 
 
 </div>
@@ -95,27 +108,33 @@
       </div>
 
       <div id="aboutMe">
+        <p class="subtitle">About Me</p>
         <p><%= @official.aboutMe %></p>
       </div>
 
 
       <div id="positions">
+        <p class="subtitle">Positions</p>
         <p><%= @official.positions %></p>
       </div>
 
       <div id="goals">
+        <p class="subtitle">Goals</p>
         <p><%= @official.goals %></p>
       </div>
 
       <div id="achievements">
+        <p class="subtitle">Achievements</p>
         <p><%= @official.achievements %></p>
       </div>
 
       <div id="written_endorsements">
+        <p class="subtitle">Written Endorsements</p>
         <p>Written Endorsements Go Here</p>
       </div>
 
       <div id="video_endorsements">
+        <p class="subtitle">Video Endorsements</p>
         <p>Videos Go Here</p>
       </div>
 
