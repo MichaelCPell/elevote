@@ -10,369 +10,112 @@
 
 
 $red: #800000;
-$yellow: #d2a63d;
+$yellow: #d3a414;
 $gray: #2d2d2c;
 $fontwhite: #f9f9f9;
 $blue: #012646;
 
 
-
-#bodycss {
-    /*background: image_url("background.jpg");*/
-                                         }
-
-
-
-.container{
-    -moz-box-shadow: 0px 15px 30px 30px #888;
-    -webkit-box-shadow: 0px 15px 30px 30px #888;
-    box-shadow: 0px 15px 30px 30px #888;
-   
+body {
+    background-color: #d3d3d3;
 }
 
-#main {
+
+
+#dark_runner{
+    height: 150px;
+    width: 100%;
+    background: $gray;
+    position: absolute;
+    border-bottom: 45px #d2b48c solid;
+    z-index: 1;
+
+}    
+
+
+
+#container {
+
+    margin: 0 auto;
+    top: 0;
+    width: 1150px;
+    position: relative;
+    z-index: 3;
+
+}
+
+
+header {
+  height: 195px; /* This should be dark_runner + dark_runner's bottom border */
+  color: white;
+
+  #header_image{
+    height: 130px; /* This height, including padding, should be the same as the height for dark_runner*/
+    padding-top: 20px;
+  }
+
+  #navigation{
+    height:40px;  /*This height should be the same as the height for dark_runner's bottom border*/
+
+      ul{
+      text-align: middle;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      #electoral_contests_link{
+       background-image: url("electoral-link.png");
+       width: 250px;
+      }
+
+      .navigation_link{
+          width: 210px;
+          margin: 0 auto;
+          height: 49px;
+          text-align: center;
+          padding-top: 10px;
+      }
+
+
+      li {
+          float:left;
+          font-size: 18px;
+
+          a{
+              width: 250px;
+              text-decoration:none;
+              margin: 0 auto;
+              color: white;
+
+
+          }
+
+          a:hover{
+              color:#666666;
+          }
+
+
+      }
+    }
+  }
+  
+}
+
+
+
+
+
+
+
+
+
+
+#content {
+
     float: left;
 }
 
-#header {
-    padding-top: 0;
 
-    /*height: 125px;*/
-    /*background: image_url("images/header.png");*/
-
-    border-bottom: $red solid 5px;
-    height: 130px;
-    float: left;
-
-
-
-}
-
-/* Navigation Stuff */
-
-ul, li{margin:0; border:0; padding:0; list-style:none;}
-#main_navigation{
-    font-size:16px;
-
-
-    font-weight:bold;
-
-    height:30px;
-    padding-top: 10px;
-
-
-
-    .menu li {
-
-        height:30px;
-        float:left;
-        margin-right:10px;
-        width: 240px;
-
-
-        a{
-
-            text-decoration:none;
-
-            height:30px;
-            line-height:30px;
-            display:block;
-
-            padding:0 26px 0 40px;
-
-
-
-        }
-
-        a:hover{
-            color:#666666;
-        }
-
-
-    }
-
-
-    ul .submenu {
-        border:solid 1px $gray;
-        border-top:none;
-        background:#FFFFFF;
-        position:relative;
-
-        padding:0px 0;
-        clear:both;
-        z-index:2;
-        display:none;
-
-
-        li{
-            background:none;
-            display:block;
-            float:none;
-            margin:0 0px;
-            border:0;
-            height:auto;
-            line-height:normal;
-            border-top:solid 1px #DEDEDE;
-            width:240px;
-
-            a{
-                background:none;
-                display:block;
-                float:none;
-                padding:6px 6px;
-                margin:0;
-                border:0;
-                color:#105cbe;
-                line-height:normal;
-
-            }
-
-            a:hover{
-                background:#e3edef;
-
-            }
-
-        }
-
-    }
-
-}
-
-
-
-
-
-
-/*Left Column*/
-#leftColumn{
-    border-bottom: 6px black solid;
-    float: left;
-    font-size: 18px;
-    font-weight: bolder;
-
-
-}
-/*Middle Column*/
-
-#middleColumn {
-    height: 650px;
-    margin-left: 25px;
-}
-
-/*#rightColumn {*/
-    /*height: 600px;*/
-    /*border-left: $gray 4px solid;*/
-    /*padding-left: 4px;*/
-    /*margin-right: -10px;*/
-/*}*/
-
-/*official Show Page*/
-
-
-#officialPortrait{
-    height: 210px;
-    margin-bottom: 10px;
-}
-
-
-#officialSlogan{
-
-    text-align: center;
-
-}
-
-#officialName{
-height: 50px;
-
-}
-
-.officialAnswer{
-    padding-bottom: 10px;
-}
-
-.officialAnswer:hover {
-    background-color: #f0f0f0;
-
-}
-
-.officialQuestion{
-    border-bottom: 1px $red solid;
-}
-
-.newsPost{
-  border: $gray 1px solid;
-  margin-bottom: 2px;
-}
-
-
-/*New Classes*/
-
-.headerbutton {
-
-    text-align: center;
-    font-size: 16px;
-    width: 200px;
-    float: right;
-    font-color: $gray;
-    a {
-        text-align: right;
-        color: white;
-        text-decoration: none;
-    }
-    a:hover{
-      color: $yellow;
-    }
-}
-
-.printbutton {
-
-
-    text-align: center;
-    float: right;
-    width: 250px;
-    height: 40px;
-    padding-top: 10px;
-    margin-top: 50px;
-
-
-
-    a:hover{
-        color: $yellow;
-    }
-}
-
-
-.attention_button {
-    background-color: #0f5a92;
-    border: 5px dotted #de2a17;
-    border-radius: 10px;
-    margin-bottom: 10px;
-    font-size:16px;
-    font-weight:bold;
-
-   a{
-        color: white;
-        text-decoration: none;
-    }
-}
-
-
-
-.button {
-  border-bottom: 2px solid $gray;
-
-  font-size: 14px;
-  text-align: center;
-  /*border-radius: 5px;*/
-  font-color: $gray;
-  float: right;
-  width: 110px;
-}
-
-.button:hover {
-    background-color: $yellow;
-}
-
-.questionsPanel {
-  height: 260px;
-}
-
-
-.center {
-text-align: center;
-}
-
-.navButton {
-height: 600px;
-font-size: 100px;
-font-weight: bolder;
-display: table;
-
- a{
-   display: table-cell;
-    text-decoration: none;
-     vertical-align: middle;
-   color: $yellow;
- }
-
-
-}
-
-
-/*Races Code*/
-
-.candidate {
- border-right: 5px solid $gray;
- height: 600px;
- font-size: 12px;
-
- h5 {
- margin: 0;
- }
-
- &.last{
-    border-right: none;
- }
-}
-
-
-/* Footer*/
-
-#footer {
-    border: $gray 0px solid;
-}
-
-
-/* Pagination */
-.pagination {
-    background: white;
-    cursor: default;
-    height: 22px;
-    a, span, em {
-        padding: 0.2em 0.5em;
-        display: block;
-        float: left;
-        margin-right: 1px;
-    }
-    .disabled {
-        color: #999999;
-        border: 1px solid #dddddd;
-    }
-    .current {
-        font-style: normal;
-        font-weight: bold;
-        background: #2e6ab1;
-        color: white;
-        border: 1px solid #2e6ab1;
-    }
-    a {
-        text-decoration: none;
-        color: #105cb6;
-        border: 1px solid #9aafe5;
-        &:hover, &:focus {
-            color: #000033;
-            border-color: #000033;
-        }
-    }
-    .page_info {
-        background: #2e6ab1;
-        color: white;
-        padding: 0.4em 0.6em;
-        width: 22em;
-        margin-bottom: 0.3em;
-        text-align: center;
-        b {
-            color: #000033;
-            background: #2e6ab1 + 60;
-            padding: 0.1em 0.25em;
-        }
-    }
-}
-
-
-.padding-left-20{
-    margin-left: 20px;
-}
 
 
 
@@ -389,7 +132,7 @@ display: table;
     width: 100%;
     height: 100%;
     background-color:rgba(0,0,0,.75);
-    text-align: center;
+    text-align: right;
 
     a {
      text-align: right;
@@ -405,11 +148,13 @@ display: table;
 
        position: fixed;
        top: 10%;
-       left: 10%;
-       width: 80%;
-       height: 80%;
+       left: 50%;
+       width: 1030px; /* This is equal to span 26 */
+       margin-left: -515px;
+
+
+       height: 650px;
        background: white;
-       text-align: center;
        z-index: 1000;
    }
 

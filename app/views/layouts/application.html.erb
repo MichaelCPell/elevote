@@ -9,6 +9,7 @@
 
 
 <head>
+  <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz' rel='stylesheet' type='text/css'>
 
   <%= stylesheet_link_tag "application" %>
   <%= javascript_include_tag "application" %>
@@ -65,96 +66,49 @@
   
 
 </head>
-<body id="bodycss">
 
 
 
+<body>
+
+<div id="dark_runner">
+
+</div>
 
 
-<div class="container">
+<div id="container">
 
+    <header class="span-29">
 
-  <div id="header"  class="span-29">
-    <div id="logoImage" class="span-22"> <%= link_to image_tag("durhamlogoNOCITYLOGO.png"), root_url %>
-
-      
-
-
-    </div>
+        <div id="header_image" class="prepend-3">
+            <%= image_tag "logo.png" %>
+        </div>
 
 
 
-    <br>
-    <% if @race.nil? %>
+        <div id="navigation" class="prepend-2">
+          <ul>
+            <li><div id="electoral_contests_link" class="navigation_link"><%= link_to "Electoral Contests", race_path(Race.first) %></div></li>
+            <li><div class="navigation_link"><%= link_to "Info for Citizens", "/info/for_citizens" %></div></li>
+            <li><div class="navigation_link"><%= link_to "Info for Candidates", "/info/for_candidates" %></div></li>
+          </ul>
 
-        <div class="fb-like" style="float:right;" data-href="http://www.durhamvotes.org" data-send="false" data-width="150"
-             data-show-faces="true" data-font="trebuchet ms" data-colorscheme="dark"></div>
+        </div>
 
-    <% else %>
-    <div class="attention_button printbutton">
-      <%= link_to "Printable Version", race_path(@race, format: "pdf") %>
-    </div>
-    <% end %>
+
+
+    </header>
   
-  </div>
+  
+  <section id="content">
+      <%= yield :middleColumn %>
+  </section>
 
 
 
-  <div id="leftColumn" class="span-29">
-
-    <div id="main_navigation" style="float: left;">
-
-      <ul class="menu" style= "">
-        <li id="top_level_Contests" class="attention_button">
-          <%= link_to "Electoral Contests", Race.first, :onmouseover => "showlayer('sm_1')", :style => "color: white; " %>
-          <ul class="submenu" id="sm_1" >
-            <% for race in Race.all %>
-                <li><%= link_to race.name, race %></li>
-            <% end %>
-          </ul>
-        </li>
 
 
-        <li id="For Citizens">
-          <%= link_to "Info for Citizens",'/info/for_citizens', :onmouseover => "showlayer('sm_2')" %>
-          <ul class="submenu" id="sm_2" >
 
-          </ul>
-
-
-        </li>
-
-
-        <li id="For Candidates">
-          <%= link_to "Info for Candidates",'/info/for_candidates', :onmouseover => "showlayer('sm_3')" %>
-          <ul class="submenu" id="sm_3" >
-
-          </ul>
-        </li>
-
-
-      </ul>
-
-    </div>
-    
-    <div style="float:right; font-size: 14px; text-align: center;"> Sign-up To Receive A Final E-mail Report <br> One Week Before The Elections!
-        <%= form_for UserEmail.new do |f| %>
-        <%= f.text_field :email, :value => "Enter Email!", :style => "width: 125px" %>
-        <%= f.submit "Submit" %>
-        <% end %>
-    </div>
-    
-    
-  </div>
-
-
-    <div id="middleColumn" class="span-29">
-        <%= yield :middleColumn%>
-    </div>
-
-      <!--<div id="rightColumn" class="span-5 last">-->
-            <!--<#%= yield :rightColumn %>-->
-      <!--</div>-->
 
 
     <div id="footer" class="span-29">

@@ -2,116 +2,124 @@
 <% content_for :middleColumn do %>
 
 
+    <div id="contest_name" class="prepend-2" xmlns="http://www.w3.org/1999/html">
 
-    <h1 class="center"><%= @race.name %></h1>
+        <p><%= @race.name %></p>
 
-          <div class="span-2 navButton">
-
-               <%= link_to "<", params.merge(page: @candidates.previous_page) %>
-
-          </div>
+    </div>
 
 
-          <% for candidate in @candidates %>
+
+    <div id="compare" class="span-27">
+
+        <div id="compare_left_arrow" class="span-1">
+               <%= link_to image_tag("arrow-left.png"), params.merge(page: @candidates.previous_page) %>
+        </div>
+
+
+
+        <div id="candidate box" class="prepend-2">
+
+            <% for candidate in @candidates %>
 
                 <% if candidate == @candidates.last %>
-                    <div class="span-6 candidate last">
+                <div class="candidate last">
                 <% else %>
-                    <div class="span-6 candidate">
+                <div class="candidate">
                 <% end %>
 
  
-               <h3 class="center">
-                  <%= candidate.firstname %>
-                  <%= candidate.lastname %> </h3>
-
-
-        
-                  <h5><%= link_to "#{candidate.full_name}'s Profile", official_path(candidate), :class => "lightbox_trigger", :remote => true %></h5>
-                  <h5><%= link_to "#{candidate.full_name}'s  Website", candidate.website, :target => "_blank" %></h5>
+                    <p class="candidate_name"><%= candidate.firstname %> <%= candidate.lastname %> </p>
+                    <p><%= link_to "View Full Profile", candidate, :class => "candidate_view_full_profile lightbox_trigger", :remote => "true" %></p>
 
 
 
-                    <div class="fb-like" style="float:right; height:80px;" data-href="<%= official_url(candidate) %>" data-send="false"
+
+                    <div class="fb-like" data-href="<%= official_url(candidate) %>" data-send="false"
                          data-width="150" data-show-faces="true" data-font="trebuchet ms">
-                         </div>
+                    </div>
 
 
 
-                  <div class="span-6 center">
-                    <% if candidate.portrait_url %>
-                        <%= image_tag candidate.portrait_url.to_s %>
-                    <% else %>
-                        <%= image_tag 'gp1.png' %>
-                    <% end %>
-                  </div>
+                    <div class="candidate_portrait">
+                        <% if candidate.portrait_url %>
+                            <%= image_tag candidate.portrait_url.to_s %>
+                        <% else %>
+                            <%= image_tag 'gp1.png' %>
+                        <% end %>
+                      </div>
+    
+    
+                    <div class="candidate_goals">
+                      <p class="subheading">
+                          Goals
+                        </p>
+            
+                        <% myCounter = 0 %>
+                          <% if candidate.short_goals.count == 3 %>
+                            <% for goal in candidate.short_goals %>
+                                <% myCounter += 1 %>
+                               <div class="candidate_statement"><%=  myCounter.to_s + ".  " + goal.content %></div>
+                                <br>
+                            <% end %>
+                        <% else %>
+                                  <div class="candidate_statement">1.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse.</div>
+                            <br>
+                                    <div class="candidate_statement">2.  Praesent volutpat mi in massa placerat eget lacinia felis mattis.</div>
+                            <br>
+                                      <div class="candidate_statement"> 3.  Morbi quis nibh purus, eu tincidunt mi. Integer tortor purus, interdum</div>
+                            <br>
+                        <% end %>
+                    </div>
+            
+                    <div class="candidate_about">
+                        <p class="subheading">
+                          About
+                        </p>
+            
+                        <% myCounter = 0 %>
+                        <% if candidate.short_goals.count == 3 %>
+                            <% for goal in candidate.short_achievements %>
+                                <% myCounter += 1 %>
+                              <div class="candidate_statement"><%=  myCounter.to_s + ".  " + goal.content %></div>
+                                <br>
+                            <% end %>
+                        <% else %>
+                                  <div class="candidate_statement">1.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse.</div>
+                                  <br>
+                                  <div class="candidate_statement">2.  Praesent volutpat mi in massa placerat eget lacinia felis mattis.</div>
+                                  <br>
+                                  <div class="candidate_statement"> 3.  Morbi quis nibh purus, eu tincidunt mi. Integer tortor purus, interdum</div>
+                                  <br>
+                        <% end %>
+                    </div>
+                
+                    <div class="candidate_contact">
+                      <p class="subheading">Contact</p>
+                        <p>E-mail Address: <%= candidate.email %></p>
+                    </div>
 
 
-
-        <h2 class="center">
-          Goals
-        </h2>
-
-        <% myCounter = 0 %>
-          <% if candidate.short_goals.count == 3 %>
-            <% for goal in candidate.short_goals %>
-                <% myCounter += 1 %>
-                <%=  myCounter.to_s + ".  " + goal.content %>
-                <br>
+                </div>
             <% end %>
-        <% else %>
-            1.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse.
-            <br>
-            2.  Praesent volutpat mi in massa placerat eget lacinia felis mattis.
-            <br>
-            3.  Morbi quis nibh purus, eu tincidunt mi. Integer tortor purus, interdum
-            <br>
-        <% end %>
-
-        <h2 class="center">
-          About
-        </h2>
-
-        <% myCounter = 0 %>
-        <% if candidate.short_goals.count == 3 %>
-            <% for goal in candidate.short_achievements %>
-                <% myCounter += 1 %>
-                <%=  myCounter.to_s + ".  " + goal.content %>
-                <br>
-            <% end %>
-        <% else %>
-            1.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse.
-            <br>
-            2.  Praesent volutpat mi in massa placerat eget lacinia felis mattis.
-            <br>
-            3.  Morbi quis nibh purus, eu tincidunt mi. Integer tortor purus, interdum
-            <br>
-        <% end %>
-
-        <h5 >Email Address: <%= candidate.email %></h5>
 
 
 
+        <div id="compare_right_arrow" class="push-1 span-1">
+            <%= link_to image_tag("arrow-right.png"), params.merge(page: @candidates.previous_page) %>
         </div>
-
-        <div id="lightbox">
-          <div id="lightbox_background"> 
-          <a href="#" id="lightbox_close">Click Anywhere Outside to Close </a>
-          </div> 
-          <div id="lightbox_box" class="span-24">
-          </div> 
-        </div>
-
-
-
-    <% end %>
-
-
-
-    <div class="span-2 navButton last">
-      <% if @candidates.next_page %>
-          <%= link_to ">", params.merge(page: @candidates.next_page) %>
-      <% end %>
     </div>
+
+          <div id="lightbox">
+            <div id="lightbox_background">
+              <a href="#" id="lightbox_close">Click Anywhere Outside to Close </a>
+            </div>
+            <div id="lightbox_box" class="span-24">
+            </div>
+          </div>
+
+
+
+
 
 <% end %>

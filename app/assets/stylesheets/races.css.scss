@@ -1,3 +1,104 @@
-// Place all the styles related to the Races controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+/*Races#Index*/
+
+$yellow: #d3a414;
+
+#intro_line {
+  padding-top: 20px;
+
+  height: 130px;
+  h1 {
+    font-size: 36px;
+  }
+
+}
+
+
+
+
+/*Races#Show*/
+
+
+#contest_title{
+  padding-top: 10px;
+  height: 30px
+}
+
+
+.candidate {
+  border-top: $yellow 10px solid;
+  height: 900px;
+  background: white;
+  padding-left: 10px;
+  width: 220px;
+  float: left;
+  margin-right: 10px;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 14px;
+
+  P{
+    margin: 0;
+
+  }
+
+}
+
+
+
+
+.candidate_name {
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+
+
+.candidate_view_full_profile{
+
+
+    color: gray;
+    text-decoration: none;
+    margin-bottom: 3px;
+}
+
+
+.candidate_portrait{
+  margin: 0px auto;
+  text-align: center;
+  height: 135px;
+}
+
+
+.candidate_goals {
+  height: 200px;
+}
+
+.candidate_about {
+  height: 200px;
+}
+
+
+.candidate_statement {
+  border-bottom: 2px solid #d3d3d3;
+}
+
+.fb-like{
+  height:60px;
+
+}
+
+.subheading {
+  font-size: 18px;
+}
+
+
+#compare_left_arrow{
+  padding-top: 100px;
+}
+
+#compare_right_arrow{
+  padding-top: 100px;
+}         
+
+
+
+

@@ -1,16 +1,19 @@
-<% content_for :leftColumn do %>
-
-    <% for race in @races %>
-        <div class="span-6 padding-left-20"><%= link_to race.name, race %></div>
-    <% end %>
-
-<% end %>
 
 
 <% content_for :middleColumn do %>
 
-    <div>
-        <%=   image_tag "NewLandingPage.png" %>
+    <div id="intro_line" class="prepend-1">
+
+       <h1>
+         As a Durham Resident, <br>
+         perform your civic duty in three easy steps!
+       </h1>
+
+    </div>
+
+
+    <div id="homepage_steps" class="prepend-1">
+        <%=   image_tag "homepage-steps.png" %>
     </div>
       
 
