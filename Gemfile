@@ -14,7 +14,7 @@ gem 'will_paginate'
 gem 'friendly_id'
 
 gem 'omniauth-facebook'
-gem 'bcrypt-ruby'
+gem 'bcrypt-ruby', :require => "bcrypt"
 
 group :development do
 gem 'sqlite3'

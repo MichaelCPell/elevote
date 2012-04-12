@@ -1,5 +1,19 @@
 
 <% content_for :middleColumn do %>
+
+
+
+    <h1>Facebook Client-side Authentication Example</h1>
+
+      <div id="auth-loggedout">
+        <a href="#" id="auth-loginlink">Login</a>
+      </div>
+
+    
+    
+    <%= request.env['omniauth.auth'] %>
+
+
 <h1>Your Elected Officials</h1>
 
 <table>
