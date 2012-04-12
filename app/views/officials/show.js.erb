@@ -1,7 +1,8 @@
 $("#lightbox_box").html("<%= escape_javascript(render("modal")) %>");
 
 
-//Begin JS for MODAL EXPLORE CONTENT
+//This function controls the navigation in the left column.
+//When the user clicks a link, this function replaces a div called "Active Window" with the html from the div that the user wants
 
 $(document).ready(function(){
     $(".modal_content_trigger").click(function(e) {
@@ -19,10 +20,19 @@ $(document).ready(function(){
 
     $("#lightbox_background").on("click", function(event){
         event.preventDefault();
+        $("#modal_active_window").html(" ");
         $("#lightbox").hide();
     });
 
 
+});
+
+
+//Load the First Active Window
+$(document).ready(function(){
+
+        var newHTML = $('#welcome').html();
+        $("#modal_active_window").html(newHTML);
 });
 
 

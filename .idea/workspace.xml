@@ -7,7 +7,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="01a9f816-fa55-4a7a-9bd6-92e6ceb55c0d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/stylesheets/officials.css.scss" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/answers.js.coffee" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/counties.js.coffee" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/districts.js.coffee" afterPath="" />
@@ -81,81 +80,6 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/states/index.html.erb" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/states/new.html.erb" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/states/show.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-09329e4863606f355260b06b95898486.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-09329e4863606f355260b06b95898486.css.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-0fdb7c3a8379ddaecfbf4bb93183faa0.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-0fdb7c3a8379ddaecfbf4bb93183faa0.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application.css.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/arrow-left-3101a061ae49a954f93297b528875571.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/arrow-left.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/arrow-right-c9a443e02a78727f93a1e948efe15a38.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/arrow-right.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/electoral-link-0e6451e1b663655c5caeabf70c5bec1b.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/electoral-link.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/homepage-steps-fca2e8a5da13bda30f4e50306cdee63f.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/homepage-steps.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/header-7e14aa49a689a587d8c6e6425f3ba750.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/header.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/intellivote-8fee346e667d59c6300260bad33d09ea.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/intellivote.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/ui-bg_diagonal-maze_20_6e4f1c_10x10-eadd023898a3ad17731c8b3dba2f55f4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/ui-bg_diagonal-maze_20_6e4f1c_10x10.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/ui-bg_diagonal-maze_40_000000_10x10-8abfbe0ab6759679a72863aee5350623.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/ui-bg_diagonal-maze_40_000000_10x10.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/ui-bg_diagonals-medium_20_800000_40x40-c9b504e2fb68c4d7ab3256f2fa4fe6c9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/ui-bg_diagonals-medium_20_800000_40x40.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/ui-bg_diagonals-medium_20_d3a63c_40x40-0eb69547a05d8ca2f9c852f17a2c3d71.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/ui-bg_diagonals-medium_20_d3a63c_40x40.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/ui-bg_diagonals-small_20_012646_40x40-59fc1c3899cdfa5e3435309be2f53fa2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/ui-bg_diagonals-small_20_012646_40x40.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/ui-bg_diagonals-small_50_ffffff_40x40-0376a6d04341724ae936bcd7dbba2d88.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/ui-bg_diagonals-small_50_ffffff_40x40.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/ui-bg_diagonals-small_75_d3a63c_40x40-600b90aaa9c3d3e9d700b622a0a26c15.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/ui-bg_diagonals-small_75_d3a63c_40x40.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/ui-bg_dots-small_10_2d2d2c_2x2-311a02dcf7ed0034554f3d9f1e161f72.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/ui-bg_dots-small_10_2d2d2c_2x2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/ui-bg_fine-grain_10_eceadf_60x60-ab1d21ff6b30ff95df14fbe2c6220f53.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/ui-bg_fine-grain_10_eceadf_60x60.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/ui-bg_fine-grain_10_f8f7f6_60x60-8a25cdffbc0388d2738ed3b2e66f98ae.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/ui-bg_fine-grain_10_f8f7f6_60x60.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/ui-bg_fine-grain_15_eceadf_60x60-062fb96939be1466c6bd4984b87af252.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/ui-bg_fine-grain_15_eceadf_60x60.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/ui-bg_fine-grain_15_f7f3de_60x60-fbeca42ed70123359e75dec60c6c7699.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/ui-bg_fine-grain_15_f7f3de_60x60.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/ui-bg_fine-grain_15_ffffff_60x60-6e49114e5f0f44878b1eb66e205fbe4f.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/ui-bg_fine-grain_15_ffffff_60x60.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/ui-bg_fine-grain_65_654b24_60x60-6415b98834137a9774f364fd14dc2602.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/ui-bg_fine-grain_65_654b24_60x60.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/ui-bg_fine-grain_68_b83400_60x60-e031a849c754825e463f29c72cdd0ebf.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/ui-bg_fine-grain_68_b83400_60x60.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/ui-bg_flat_75_ba9217_40x100-909127c33b0019aa7df18774b72ff8aa.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/ui-bg_flat_75_ba9217_40x100.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/ui-bg_flat_75_ffffff_40x100-bb1c0ecbf7eea108034b2ff2a207ed02.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/ui-bg_flat_75_ffffff_40x100.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/ui-bg_white-lines_85_f7f7ba_40x100-31d96740b77ddc1c9cb137fb82e238bd.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/ui-bg_white-lines_85_f7f7ba_40x100.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/ui-icons_222222_256x240-a1d5162e9b3c2ef72b0ef5bbc70019cf.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/ui-icons_222222_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/ui-icons_3572ac_256x240-6a307e30376fcaf6cb3283e9dd2d0dd4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/ui-icons_3572ac_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/ui-icons_454545_256x240-05f848ec342542e941874c74a734e4a5.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/ui-icons_454545_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/ui-icons_8c291d_256x240-9aca7d740bfdb0fb985b83bdb4efa208.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/ui-icons_8c291d_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/ui-icons_b83400_256x240-8616e271fdb330b0fc655a11c743f19b.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/ui-icons_b83400_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/ui-icons_c02669_256x240-370dcd19d6f0538b3c73b569f4b02469.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/ui-icons_c02669_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/ui-icons_d3a63c_256x240-febfc1c419c1c4a8a2afa07467e6c134.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/ui-icons_d3a63c_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/ui-icons_fbdb93_256x240-fbe9172213cabe82807faa94aa738cb5.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/ui-icons_fbdb93_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/logo-73572abb7d0f615dba6afef182b268fb.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/manifest.yml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/test/fixtures/answers.yml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/test/fixtures/counties.yml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/test/fixtures/districts.yml" afterPath="" />
@@ -186,14 +110,8 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/test/unit/question_test.rb" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/test/unit/state_test.rb" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/officials.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/officials.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.css.scss.erb" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.css.scss.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/officials_modal.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/officials_modal.css.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/races.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/races.css.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/officials/_modal.html.erb" afterPath="$PROJECT_DIR$/app/views/officials/_modal.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/officials/show.html.erb" afterPath="$PROJECT_DIR$/app/views/officials/show.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/races/show.html.erb" afterPath="$PROJECT_DIR$/app/views/races/show.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/officials/show.js.erb" afterPath="$PROJECT_DIR$/app/views/officials/show.js.erb" />
     </list>
     <ignored path="Elevote.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -219,10 +137,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="show.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/officials/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="85" column="30" selection-start="2314" selection-end="2314" vertical-scroll-proportion="0.48885077">
+            <state line="85" column="30" selection-start="2314" selection-end="2314" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="42" selection-start="62" selection-end="62" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -255,10 +182,37 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_modal.html.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="_modal.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/officials/_modal.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="84" column="32" selection-start="2144" selection-end="2144" vertical-scroll-proportion="-9.916667">
+            <state line="89" column="95" selection-start="2119" selection-end="2119" vertical-scroll-proportion="0.5390782">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="show.js.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/officials/show.js.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="129" selection-start="261" selection-end="261" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="omniauth.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/initializers/omniauth.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="omniauth.yml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/omniauth.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="54" selection-start="165" selection-end="165" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -277,10 +231,8 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/races/index.js" />
         <option value="$PROJECT_DIR$/app/views/races/show.js.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/screen.css.scss" />
-        <option value="$PROJECT_DIR$/app/views/officials/show.js.erb" />
         <option value="$PROJECT_DIR$/app/pdfs/contest_pdf.rb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js.erb" />
         <option value="$PROJECT_DIR$/app/views/races/index.html.erb" />
@@ -291,8 +243,10 @@
         <option value="$PROJECT_DIR$/app/assets/stylesheets/officials_modal.css.scss" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/officials.js" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/officials.css.scss" />
-        <option value="$PROJECT_DIR$/app/views/officials/_modal.html.erb" />
         <option value="$PROJECT_DIR$/app/views/officials/show.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/officials/show.js.erb" />
+        <option value="$PROJECT_DIR$/config/omniauth.yml" />
+        <option value="$PROJECT_DIR$/app/views/officials/_modal.html.erb" />
       </list>
     </option>
   </component>
@@ -304,9 +258,9 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-5" />
-    <option name="y" value="-1" />
-    <option name="width" value="1930" />
+    <option name="x" value="-1" />
+    <option name="y" value="-5" />
+    <option name="width" value="1922" />
     <option name="height" value="1086" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -373,7 +327,25 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Elevote" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="elevote50" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="initializers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -428,108 +400,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="officials" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Elevote" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="elevote50" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layouts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Elevote" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="elevote50" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pdfs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Elevote" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="elevote50" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stylesheets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Elevote" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="elevote50" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="javascripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Elevote" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="elevote50" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1076,18 +946,18 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-5" y="-1" width="1930" height="1086" extended-state="6" />
+    <frame x="-1" y="-5" width="1922" height="1086" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32994652" sideWeight="0.8404908" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32704404" sideWeight="0.0" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15323012" sideWeight="0.19958635" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33850268" sideWeight="0.6666667" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33850268" sideWeight="0.6677149" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33333334" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3322851" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34486374" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1166,40 +1036,19 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/assets/images/logo.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/screen.css.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="101" column="29" selection-start="4456" selection-end="4456" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/pdfs/contest_pdf.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="4" selection-start="497" selection-end="497" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="3" selection-start="518" selection-end="518" vertical-scroll-proportion="0.25945947">
-          <folding />
-        </state>
+        <state line="16" column="3" selection-start="518" selection-end="518" vertical-scroll-proportion="0.25945947" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/races/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="45" selection-start="257" selection-end="257" vertical-scroll-proportion="0.23307437">
-          <folding />
-        </state>
+        <state line="14" column="45" selection-start="257" selection-end="257" vertical-scroll-proportion="0.23307437" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="123" column="6" selection-start="3299" selection-end="3299" vertical-scroll-proportion="-8.041667">
-          <folding />
-        </state>
+        <state line="123" column="6" selection-start="3299" selection-end="3299" vertical-scroll-proportion="-8.041667" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/races/show.html.erb">
@@ -1211,63 +1060,70 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/officials/edit.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/races.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="81" column="35" selection-start="919" selection-end="919" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css.scss.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="376" selection-end="523" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="81" column="35" selection-start="919" selection-end="919" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/officials.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="0" selection-start="520" selection-end="520" vertical-scroll-proportion="0.0">
+        <state line="23" column="0" selection-start="520" selection-end="520" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/officials/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="85" column="30" selection-start="2314" selection-end="2314" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/officials.css.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="91" column="17" selection-start="1082" selection-end="1082" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css.scss.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="0" selection-start="376" selection-end="523" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/officials_modal.css.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="89" column="23" selection-start="1049" selection-end="1049" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="42" selection-start="62" selection-end="62" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/officials/show.js.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="110" selection-end="630" vertical-scroll-proportion="0.0">
+        <state line="4" column="129" selection-start="261" selection-end="261" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/officials.css.scss">
+    <entry file="file://$PROJECT_DIR$/config/initializers/omniauth.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="91" column="17" selection-start="1082" selection-end="1082" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/officials_modal.css.scss">
+    <entry file="file://$PROJECT_DIR$/config/omniauth.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="89" column="23" selection-start="1049" selection-end="1049" vertical-scroll-proportion="0.0">
+        <state line="6" column="54" selection-start="165" selection-end="165" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/officials/_modal.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="84" column="32" selection-start="2144" selection-end="2144" vertical-scroll-proportion="-9.916667">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/officials/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="85" column="30" selection-start="2314" selection-end="2314" vertical-scroll-proportion="0.48885077">
+        <state line="89" column="95" selection-start="2119" selection-end="2119" vertical-scroll-proportion="0.5390782">
           <folding />
         </state>
       </provider>
