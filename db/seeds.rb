@@ -6,7 +6,7 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-
+  #wahhh
 # Legislation
 Legislation.create(name: "Amendment 1", content: "This is the first amendment!")
 

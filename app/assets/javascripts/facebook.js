@@ -33,18 +33,17 @@ $(document).ready(function(){
                 FB.api('/me', function(response) {
                     alert('Your name is ' + response.name);
                 });
+
+
+                var myName;
+
+                FB.api('/me', function(response) {
+                    myName = response.name;
+                });
+
+                $('#name').html(myName);
             }
         });
     });
 });
 
-
-$(document).ready(function(){
-    var myName = 'dog';
-
-    FB.api('/me', function(response) {
-        myName = response.name;
-    });
-
-    $('#name').html(myName);
-});
