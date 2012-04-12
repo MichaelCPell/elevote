@@ -27,6 +27,7 @@ class Official < ActiveRecord::Base
 
 
     has_many :updates, :class_name => "Comment", :as => :authorable
+    has_many :video_comments, :class_name => "Comment", :as => :commentable
 
     has_many :short_goals
     has_many :short_achievements
