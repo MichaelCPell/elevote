@@ -27,23 +27,27 @@ window.fbAsyncInit = function() {
 
 $(document).ready(function(){
 
-    document.getElementById('auth-loginlink').addEventListener('click', function(){
+    document.getElementById('auth-loginlink').addEventListener('click', function(e){
+        e.preventDefault();
         FB.login(function(response) {
             if (response.authResponse) {
                 FB.api('/me', function(response) {
-                    alert('Your name is ' + response.name);
+                    $("#cat").html(response.name);
                 });
-
-
-                var myName;
-
-                FB.api('/me', function(response) {
-                    myName = response.name;
-                });
-
-                $('#name').html(myName);
             }
-        });
+        }(window.location.href = '/auth/facebook/callback' ));
     });
 });
 
+
+
+//$(document).ready(function(){
+//    $("#cat").click( function(){
+//        alert("blah");
+//
+//       FB.api('/me', function(response){
+//            $("#cat").html(response.name);
+//       })
+//
+//    });
+//});
