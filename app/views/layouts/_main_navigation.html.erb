@@ -2,13 +2,13 @@
   <div class="container">
     <ul class="nav span5">
       <li class="dropdown" id="menu1">
-        <a href="#menu1" data-toggle= "dropdown" class="dropdown-toggle start-button">
-         <%= @nav_status %>
-          <b class="caret" style="float: right"></b>
+        <a data-target="#menu1" data-toggle="dropdown" class="dropdown-toggle start-button">
+            <%= @nav_content %>
+          <b class="caret" style="float: right;"></b>
         </a>
         <ul class="dropdown-menu">
           <% for contest in Race.all %>
-              <li><%= link_to contest.name, contest %></li><br>
+              <li><%= link_to contest.name, contest %></li>
           <% end %>
         </ul>
       </li>

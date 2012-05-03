@@ -12,17 +12,16 @@ class SessionsController < ApplicationController
 
     auth = request.env["omniauth.auth"]
     @auth = auth
+
     if auth
-     constituent = Constituent.find_or_create_by_email(auth["info"]["email"])
+       constituent = Constituent.find_or_create_by_email(auth["info"]["email"])
 
-     constituent.name = auth["info"]["name"]
-     constituent.image_url = auth["info"]["image"]
-     constituent.save
+       constituent.name = auth["info"]["name"]
+       constituent.image_url = auth["info"]["image"]
+       constituent.save
 
-     session[:constituent] = constituent
-
-
-    end
+       session[:constituent] = constituent
+      end
 
 
 

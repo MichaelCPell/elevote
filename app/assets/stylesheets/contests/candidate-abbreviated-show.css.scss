@@ -1,0 +1,67 @@
+$yellow: #d3a414;
+$runner_gray: #2e2e2e;
+
+.candidate {
+  border-top: $yellow 10px solid;
+  height: 900px;
+  background: white;
+  float: left;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 14px;
+  width: 200px;
+  P{
+
+  }
+}
+
+.candidate_view_full_profile{
+
+
+  color: $runner_gray;
+  text-decoration: none;
+  margin-bottom: 3px;
+}
+
+
+.candidate_portrait{
+  margin: 0px auto;
+  height: 135px;
+}
+
+
+.candidate_goals {
+  height: 250px;
+}
+
+.candidate_about {
+  height: 250px;
+}
+
+
+.candidate_statement {
+  border-bottom: 2px solid #d3d3d3;
+  font-family: 'Lusitana', serif;
+  height: 60px;
+}
+
+.fb-like{
+  height:60px;
+
+}
+
+.subheading {
+  font-size: 18px;
+}
+
+
+#compare_left_arrow{
+  padding-top: 100px;
+}
+
+#compare_right_arrow{
+  padding-top: 100px;
+}
+
+
+
+

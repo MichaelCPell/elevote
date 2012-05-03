@@ -16,13 +16,6 @@
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 
-
-
-
-
-
-
-
   <% case %>
   <% when @race %>
       <title><%= @race.name %> Election for Durham, North Carolina</title>
@@ -35,14 +28,6 @@
       <title>Election Information for Durham, North Carolina</title>
       <meta name="description" content="Durham, NC's Candidate Positions, Values, Accomplishments, Goals and Pictures for the Upcoming Election">
    <% end %>
-  
-  
-  
-  
-  
-  
-  
-
 </head>
 
 
@@ -52,83 +37,23 @@
 
 <div id="fb-root"></div>
 
-<!--For Some Reason Loading the Facebook Javascript SDK does not work unless it is within the Body tag-->
+<%= render 'layouts/header' %>
 
-
-
-<script></script>
-<div id="dark_runner">
-
-</div>
-
-
-<div id="container">
-
-    <header class="span-29">
-
-        <div id="header_image" class="prepend-3">
-            <%= link_to image_tag("logo.png"), races_path %>
-        </div>
-
-
-
-        <div id="navigation" class="prepend-2">
-          <ul>
-            <li ><div id="electoral_contests_link" class="navigation_link" onclick="showlayer('submenu')" ><%= link_to "Electoral Contests", "#" %></div>
-                <ul id="submenu">
-                   <% for contest in Race.all %>
-                  <li><%= link_to contest.name, contest %></li><br>
-                   <% end %>
-                </ul>
-
-            </li>
-            <li><div class="navigation_link"><%= link_to "Info for Citizens", "/info/for_citizens" %></div></li>
-            <li><div class="navigation_link"><%= link_to "Info for Candidates", "/info/for_candidates" %></div></li>
-          </ul>
-
-        </div>
-
-
-
-    </header>
-  
-  
-  <section id="content">
-      <%= yield :middleColumn %>
-  </section>
+<%= render 'layouts/main_navigation' %>
 
 
 
 
+  <div class="container">
+      <section id="content">
+          <%= yield :middleColumn %>
+      </section>
 
 
+        <%=   %>
+  </div>
 
 
-    <div id="footer" class="span-29">
-      <a href="#" id="cat" >Hello</a>
-
-      <div id="auth-loggedout">
-        <a href="#" id="auth-loginlink">Login</a>
-      </div>
-
-      <%=  omnihash %>
-
-      <a class="prepend-2" rel="license"
-         href="http://creativecommons.org/licenses/by-nc/3.0/"><img
-      alt="Creative Commons License" style="border-width:0"
-      src="http://i.creativecommons.org/l/by-nc/3.0/88x31.png" /></a>
-      This work is licensed under a
-
-      <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/">Creative Commons Attribution-NonCommercial
-        3.0 Unported License</a>.
-
-      General Politics, LLC.  2012.
-    
-    
-    </div>
-
-
-</div> <!--  container -->
 
 
 

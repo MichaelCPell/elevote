@@ -4,7 +4,10 @@ class RacesController < ApplicationController
    respond_to :html, :js
 
   def index
+    @nav_content = "Click Here To Get Started"
     @races = Race.all
+
+
 
 
   end
@@ -12,10 +15,11 @@ class RacesController < ApplicationController
   # GET /opinions/1
   # GET /opinions/1.json
   def show
+
     @races = Race.all
     @race = Race.find(params[:id])
-
-    @candidates = Official.scoped_by_race_id(@race.id).order('updated_at DESC').page(params[:page]).per_page(4)
+    @nav_content = @race.name
+    @candidates = Official.scoped_by_race_id(@race.id).order('updated_at DESC').page(params[:page]).per_page(3)
 
 
 
