@@ -12,19 +12,15 @@ nav#main-navigation{
 
   .nav{
     margin-top: 5px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     border: 1px $yellow solid;
     background: white;
     padding: 5px;
-
-
-      font-size: 24px;
-      font-family: 'Lusitana', serif;
-
+    font-size: 24px;
+    font-family: 'Lusitana', serif;
 
     a{
       color: $runner_gray;
-
     }
 
     .dropdown-menu {
@@ -37,10 +33,7 @@ nav#main-navigation{
   }
 
   .aux-link{
-    margin-top: 5px;
-    margin-bottom: 5px;
-    border: 1px $yellow solid;
-    background: white;
-    padding: 5px;
+   color: $runner_gray;
+   margin-top: 10px;
   }
 }

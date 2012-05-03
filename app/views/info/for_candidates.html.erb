@@ -4,14 +4,12 @@
       This project's goal is to improve the democratic process in Durham.  The project is owned and operated by
       a Durham resident and your constituent.  For information about how to sign-up and claim your space, please e-mail
       Michael@GeneralPolitics.org.  </h3>
-    
-    <br>
-    
-    <%= link_to "Candidate Log In", "/signin" %>
-    <br>
-    <%= link_to "Candidate Log Out", "/signout" %>
-    <br>
-    <%= link_to "Edit My Info", edit_official_path(session[:official]) %>
 
+    <% if session[:official] %>
+        <%= link_to "Candidate Log Out", "/signout" %>
+        <%= link_to "Edit My Info", edit_official_path(session[:official]) %>
+    <% else %>
+        <%= link_to "Candidate Log In", "/signin" %>
+    <% end %>
 
 <% end %>
