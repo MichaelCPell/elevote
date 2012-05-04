@@ -13,7 +13,20 @@ class ConstituentsController < ApplicationController
   # GET /constituents/1
   # GET /constituents/1.json
   def show
-    @constituent = Constituent.find(params[:id])
+    @constituent = current_constituent
+    session[:official_ids] ||= []
+
+
+
+    @candidates = []
+    session[:official_ids].each do |f|
+      unless f.blank?
+      @candidates << Official.find(f)
+      end
+    end
+    @candidates = @candidates.uniq.group_by(&:race_id)
+
+
 
     respond_to do |format|
       format.html # show.html.erb

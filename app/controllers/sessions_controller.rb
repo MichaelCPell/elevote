@@ -8,8 +8,6 @@ class SessionsController < ApplicationController
 
   def create
 
-
-
     auth = request.env["omniauth.auth"]
     @auth = auth
 
@@ -22,9 +20,6 @@ class SessionsController < ApplicationController
 
        session[:constituent] = constituent
       end
-
-
-
 
     if params[:email]
       official = Official.find_by_email(params[:email])

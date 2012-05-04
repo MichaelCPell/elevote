@@ -28,8 +28,19 @@ class ApplicationController < ActionController::Base
 
 
   def current_constituent
+
     @current_constituent ||= Constituent.find_by_id(session[:constituent])
+    if @current_constituent.blank?
+      Constituent.new(name: "Not Logged In")
+    end
+
   end
+
+  def name_from_id(id)
+    self.find(id).name
+
+  end
+
 
 
 

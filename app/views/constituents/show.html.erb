@@ -2,8 +2,19 @@
 
 <h1><%=  current_constituent.name %></h1>
 <h2><%=  current_constituent.email %></h2>
-<%= image_tag(current_constituent.image_url) %>
+    <h2><%=  current_constituent.id %></h2>
+<% image_tag(current_constituent.image_url) %>
     <%#= debug request.env["omniauth.auth"] %>
 
-    
+ <% @candidates.each do |contest, candidates| %>
+      <%= Race.find(contest).name %>
+        <ul>
+
+          <% candidates.each do |candidate| %>
+            <li><%= candidate.full_name %></li>
+          <% end %>
+        </ul>
+        
+ <% end %>
+
 <% end %>

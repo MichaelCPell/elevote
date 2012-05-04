@@ -1,6 +1,8 @@
 class EndorsementsController < ApplicationController
   # GET /endorsements
   # GET /endorsements.json
+
+  respond_to :html, :json
   def index
     @votes = Endorsement.all
 
@@ -24,12 +26,11 @@ class EndorsementsController < ApplicationController
   # GET /endorsements/new
   # GET /endorsements/new.json
   def new
-    @vote = Endorsement.new
+    session[:official_ids] ||= []
+    session[:official_ids] << params[:official_id]
 
-    respond_to do |format|
-      format.html # new.html.erb
-      format.json { render json: @vote }
-    end
+    redirect_to '/booth'
+
   end
 
   # GET /endorsements/1/edit
@@ -40,17 +41,9 @@ class EndorsementsController < ApplicationController
   # POST /endorsements
   # POST /endorsements.json
   def create
-    @endorsement = Endorsement.new(params[:endorsement])
+    session[:official_ids] ||= []
+    session[:official_ids] << params[:official_id]
 
-    respond_to do |format|
-      if @endorsement.save
-        format.html { redirect_to legislation_path, notice: 'Endorsement was successfully created.' }
-        format.json { render json: @endorsement, status: :created, location: @endorsement }
-      else
-        format.html { render action: "new" }
-        format.json { render json: @endorsement.errors, status: :unprocessable_entity }
-      end
-    end
   end
 
   # PUT /endorsements/1

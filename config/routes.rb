@@ -45,6 +45,8 @@ Elevote::Application.routes.draw do
   match '/info/for_candidates', :to => 'info#for_candidates'
   match '/info/for_citizens', :to => 'info#for_citizens'
 
+  match '/booth', :to => 'constituents#show'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

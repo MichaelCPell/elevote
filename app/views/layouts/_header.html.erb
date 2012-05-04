@@ -2,9 +2,16 @@
   <div class="container">
     <div class="row">
 
-          <div id="header_image" class="span4">
+        <div id="header_image" class="span4">
             <%= link_to image_tag("logo.png"), races_path %>
-          </div>
+        </div>
+
+        <section id="constituent-info" class="span4 offset4">
+          <h5><%= current_constituent.name %></h5>
+          <h5><%= link_to "My Booth", '/booth' %></h5>
+        </section>
+
+
     </div>
   </div>
 
