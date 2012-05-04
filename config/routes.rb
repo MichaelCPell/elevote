@@ -3,8 +3,6 @@ Elevote::Application.routes.draw do
 
   resources :races
 
-  resources :groups
-
   resources :endorsements do
     resources :comments
   end
