@@ -13,6 +13,8 @@ class ConstituentsController < ApplicationController
   # GET /constituents/1
   # GET /constituents/1.json
   def show
+    @nav_content = "Click to See Elections Again"
+
     @constituent = current_constituent
     session[:official_ids] ||= []
 

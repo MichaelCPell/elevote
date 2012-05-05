@@ -4,6 +4,8 @@ class RacesController < ApplicationController
    respond_to :html, :js
 
   def index
+
+
     @nav_content = "Click Here To Get Started"
     @races = Race.all
 

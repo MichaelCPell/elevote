@@ -27,9 +27,17 @@ class EndorsementsController < ApplicationController
   # GET /endorsements/new.json
   def new
     session[:official_ids] ||= []
-    session[:official_ids] << params[:official_id]
 
-    redirect_to '/booth'
+    id_index = session[:official_ids].index(params[:official_id])
+
+    if id_index.blank?
+      session[:official_ids] << params[:official_id]
+    else
+      session[:official_ids].delete(params[:official_id])
+    end
+
+
+    render :nothing => true
 
   end
 
