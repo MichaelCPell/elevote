@@ -1,27 +1,27 @@
 
 <!--This needs to be refactored in a bad way-->
-<div id="candidate" class="span3" style="width: 240px">
+<div id="candidate_column" class="span3" style="width: 240px">
 
-<h2><%= link_to candidate.full_name, candidate, :class => "candidate_view_full_profile lightbox_trigger", :remote => "true" %></h2>
+<h2><%= link_to candidate_column.full_name, candidate_column, :class => "candidate_view_full_profile lightbox_trigger", :remote => "true" %></h2>
 
 
 
-<div class="fb-like" data-href="<%= official_url(candidate) %>" data-send="false"
+<div class="fb-like" data-href="<%= official_url(candidate_column) %>" data-send="false"
      data-width="150" data-show-faces="true" data-font="trebuchet ms">
 </div>
+<<<<<<< HEAD
 
-  <div style="text-align: center"><%= link_to "#{is_in_booth_text(candidate.id)}", new_endorsement_path(:official_id => candidate.id), :remote => true,
+  <div style="text-align: center"><%= link_to "#{is_in_booth_text(candidate_column.id)}", new_endorsement_path(:official_id => candidate_column.id), :remote => true,
 
-                                              :class => "btn #{is_in_booth_class(candidate.id)}
-
-
-
-
+                                              :class => "btn #{is_in_booth_class(candidate_column.id)}
   " %></div>
+=======
+  
+  <%= link_to "Add to Booth", new_endorsement_path(:official_id => candidate_column.id), :remote => true %>
 
 <div class="candidate_portrait">
-  <% if candidate.portrait_url %>
-      <%= image_tag candidate.portrait_url.to_s %>
+  <% if candidate_column.portrait_url %>
+      <%= image_tag candidate_column.portrait_url.to_s %>
   <% else %>
       <%= image_tag 'missing_portrait.png' %>
   <% end %>
@@ -34,8 +34,8 @@
   </p>
 
   <% myCounter = 0 %>
-  <% if candidate.short_goals.count == 3 %>
-      <% for goal in candidate.short_goals %>
+  <% if candidate_column.short_goals.count == 3 %>
+      <% for goal in candidate_column.short_goals %>
           <% myCounter += 1 %>
           <div class="candidate_statement"><%=  myCounter.to_s + ".  " + goal.content %></div>
           <br>
@@ -56,8 +56,8 @@
   </p>
 
   <% myCounter = 0 %>
-  <% if candidate.short_goals.count == 3 %>
-      <% for goal in candidate.short_achievements %>
+  <% if candidate_column.short_goals.count == 3 %>
+      <% for goal in candidate_column.short_achievements %>
           <% myCounter += 1 %>
           <div class="candidate_statement"><%=  myCounter.to_s + ".  " + goal.content %></div>
           <br>
@@ -74,7 +74,7 @@
 
 <div class="candidate_contact">
   <p class="subheading">Contact</p>
-  <p>E-mail Address: <%= candidate.email %></p>
+  <p>E-mail Address: <%= candidate_column.email %></p>
 </div>
 
 
