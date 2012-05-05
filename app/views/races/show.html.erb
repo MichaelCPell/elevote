@@ -1,41 +1,17 @@
+<%= render 'contests_show_header' %>
 
-<% content_for :middleColumn do %>
-    
-    <%= render 'contests_show_header' %>
+<div id="compare" class="row">
 
-    <div id="compare" class="row">
+	<div id="compare_left_arrow" class="span1">
+	 <%= link_to image_tag("arrow-left.png"), params.merge(page: @candidates.previous_page) %>
+	</div>
 
-        <div id="compare_left_arrow" class="span1">
-               <%= link_to image_tag("arrow-left.png"), params.merge(page: @candidates.previous_page) %>
-        </div>
+	<% @candidates.each do |candidate| %>
+		 <%= render :partial => 'races/candidate_abbreviated_show', :locals => { :candidate => candidate} %>
+	<% end %>
 
+	<div id="compare_right_arrow" class="span1">
+		<%= link_to image_tag("arrow-right.png"), params.merge(page: @candidates.next_page) %>
+	</div>
 
-            <% @candidates.each do |candidate| %>
-
-                 <%= render :partial => 'races/candidate_abbreviated_show', :locals => { :candidate => candidate} %>
-                  
-            <% end %>
-
-
-        <div id="compare_right_arrow" class="span1">
-            <%= link_to image_tag("arrow-right.png"), params.merge(page: @candidates.next_page) %>
-        </div>
-
-
-
-    </div>
-
-<div id="lightbox">
-    <div id="lightbox_background">
-      <a href="#" id="lightbox_close">Click Anywhere Outside to Close </a>
-    </div>
-
-    <div id="lightbox_box" class="span-24">
-    </div>
 </div>
-
-
-
-
-
-<% end %>

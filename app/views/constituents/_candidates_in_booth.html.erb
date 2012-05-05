@@ -1,0 +1,11 @@
+<% @candidates.each do |contest, candidates| %>
+
+	<%= Race.find(contest).name %>
+
+	<ul>
+		<% candidates.each do |candidate| %>
+			<li><%= candidate.full_name %></li>
+		<% end %>
+	</ul>
+
+<% end %>
