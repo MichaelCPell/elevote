@@ -1,12 +1,9 @@
-<%= content_for :middleColumn do %>
+<h1><%=  current_constituent.name %></h1>
 
-  <h1><%=  current_constituent.name %></h1>
+<h2><%=  current_constituent.email %></h2>
+<h2><%=  current_constituent.id %></h2>
 
-  <h2><%=  current_constituent.email %></h2>
-  <h2><%=  current_constituent.id %></h2>
+<% image_tag(current_constituent.image_url) %>
 
-  <% image_tag(current_constituent.image_url) %>
+<%= render 'candidates_in_booth' %>
 
-  <%= render 'candidates_in_booth' %>
-
-<% end %>

@@ -1,23 +1,33 @@
 module RacesHelper
 
 
-  def is_in_booth_class(id)
+  def is_in_booth(id)
 
     if session[:official_ids].index(id.to_s)
-      "btn-danger"
+      link_to "Remove from Booth",
+            new_endorsement_path(:official_id => id),
+            :remote => true,
+            :class => "btn btn-danger"
     else
-      "btn-primary"
+        link_to "Add to Booth",
+            new_endorsement_path(:official_id => id),
+            :remote => true,
+            :class => "btn btn-primary"
     end
+
   end
 
-  def is_in_booth_text(id)
-
-    if session[:official_ids].index(id.to_s)
-      "Remove from Booth"
-    else
-      "Add to Booth"
-    end
+  def facebook_like_button(candidate_column)
+    "
+    <div class='fb-like' data-href='#{official_url(candidate_column)} %>' data-send='false'
+     data-width='150' data-show-faces='true' data-font='trebuchet ms'>
+    </div>
+    "
   end
+
+
+
+
 
 
 

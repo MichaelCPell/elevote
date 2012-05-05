@@ -3,18 +3,13 @@
 <div id="compare" class="row">
 
 	<div id="compare_left_arrow" class="span1">
-	 <%= link_to image_tag("arrow-left.png"), params.merge(page: @candidates.previous_page) %>
+		<%= link_to image_tag("arrow-left.png"), params.merge(page: @candidates.previous_page) %>
 	</div>
-
-
 
 	<%= render :partial => 'races/candidate_column', :collection => @candidates %>
 
+	<div id="compare_right_arrow" class="span1">
+		<%= link_to image_tag("arrow-right.png"), params.merge(page: @candidates.next_page) %>
+	</div>
 
-        <div id="compare_right_arrow" class="span1">
-            <%= link_to image_tag("arrow-right.png"), params.merge(page: @candidates.next_page) %>
-        </div>
-
-
-
-    </div>
+</div>
