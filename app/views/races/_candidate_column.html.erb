@@ -9,14 +9,12 @@
 <div class="fb-like" data-href="<%= official_url(candidate_column) %>" data-send="false"
      data-width="150" data-show-faces="true" data-font="trebuchet ms">
 </div>
-<<<<<<< HEAD
 
   <div style="text-align: center"><%= link_to "#{is_in_booth_text(candidate_column.id)}", new_endorsement_path(:official_id => candidate_column.id), :remote => true,
 
                                               :class => "btn #{is_in_booth_class(candidate_column.id)}
   " %></div>
-=======
-  
+
   <%= link_to "Add to Booth", new_endorsement_path(:official_id => candidate_column.id), :remote => true %>
 
 <div class="candidate_portrait">

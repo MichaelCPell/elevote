@@ -6,9 +6,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="01a9f816-fa55-4a7a-9bd6-92e6ceb55c0d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/races/_candidate_abbreviated_show.html.erb" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/races/_candidate_column.html.erb" afterPath="$PROJECT_DIR$/app/views/races/_candidate_column.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/races/show.html.erb" afterPath="$PROJECT_DIR$/app/views/races/show.html.erb" />
@@ -39,10 +36,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="show.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/races/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="10" selection-start="975" selection-end="975" vertical-scroll-proportion="-13.75">
+            <state line="16" column="10" selection-start="467" selection-end="467" vertical-scroll-proportion="0.6052632">
               <folding />
             </state>
           </provider>
@@ -57,10 +54,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_candidate_column.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="_candidate_column.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/races/_candidate_column.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="67" selection-start="1494" selection-end="1494" vertical-scroll-proportion="1.7574931">
+            <state line="11" column="0" selection-start="429" selection-end="429" vertical-scroll-proportion="-6.875">
               <folding />
             </state>
           </provider>
@@ -101,9 +98,9 @@
         <option value="$PROJECT_DIR$/app/views/constituents/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/constituents/_candidates_in_booth.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/races/show.html.erb" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/app/views/races/_candidate_column.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/races/show.html.erb" />
       </list>
     </option>
   </component>
@@ -816,7 +813,7 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32554516" sideWeight="0.0" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15323012" sideWeight="0.19958635" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26291794" sideWeight="0.6744548" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26215807" sideWeight="0.6744548" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -960,13 +957,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/races/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="10" selection-start="975" selection-end="975" vertical-scroll-proportion="-13.75">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="12" selection-start="61" selection-end="61" vertical-scroll-proportion="0.0">
@@ -976,7 +966,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/races/_candidate_column.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="67" selection-start="1494" selection-end="1494" vertical-scroll-proportion="1.7574931">
+        <state line="11" column="0" selection-start="429" selection-end="429" vertical-scroll-proportion="-6.875">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/races/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="10" selection-start="467" selection-end="467" vertical-scroll-proportion="0.6052632">
           <folding />
         </state>
       </provider>
