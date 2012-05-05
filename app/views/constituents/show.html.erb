@@ -7,7 +7,7 @@
     <%#= debug request.env["omniauth.auth"] %>
 
     
-    <%= session[:official_ids] %>
+
  <% @candidates.each do |contest, candidates| %>
       <%= Race.find(contest).name %>
         <ul>
