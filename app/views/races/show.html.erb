@@ -10,11 +10,7 @@
         </div>
 
 
-            <% @candidates.each do |candidate| %>
-
-                 <%= render :partial => 'races/candidate_abbreviated_show', :locals => { :candidate => candidate} %>
-                  
-            <% end %>
+	<%= render :partial => 'races/candidate_column', :collection => @candidates %>
 
 
         <div id="compare_right_arrow" class="span1">
