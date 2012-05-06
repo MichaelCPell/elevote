@@ -29,9 +29,7 @@ class Official < ActiveRecord::Base
     has_many :updates, :class_name => "Comment", :as => :authorable
     has_many :video_comments, :class_name => "Comment", :as => :commentable
 
-    has_many :short_goals
-    has_many :short_achievements
-
+  has_many :statements
 
   #Endorsements Relationships
     has_many :given_endorsements, :class_name => "Endorsement", :as => :endorsementer
@@ -42,7 +40,7 @@ class Official < ActiveRecord::Base
 
   has_many :opinions
 
-  accepts_nested_attributes_for :comments, :short_goals, :short_achievements
+  accepts_nested_attributes_for :comments, :statements
 
   #methods
 

@@ -5,7 +5,6 @@ class ApplicationController < ActionController::Base
   helper_method :current_official, :current_url, :current_constituent, :omnihash
 
 
-
   def current_url
     @current_url = request.url
   end
@@ -16,7 +15,8 @@ class ApplicationController < ActionController::Base
     request.env['omniauth.auth'].to_s
   end
 
- #force_ssl
+
+
 
   private
 

@@ -1,4 +1,4 @@
-<%= semantic_form_for(@official) do |f| %>
+<%= form_for(@official) do |f| %>
   <% if @official.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@official.errors.count, "error") %> prohibited this Official from being saved:</h2>
@@ -11,14 +11,31 @@
     </div>
   <% end %>
 
+	<%= f.label:firstname %>	
+	<%= f.text_field :firstname %>
+	
+	<%= f.label :lastname %>
+	<%= f.text_field :lastname %>
+	
+	<%= f.label :email %>
+	<%= f.text_field :email %>
+	
+	<%= f.label :password %>
+	<%= f.password_field :password %>
+	
+	<%= f.label :password_confirmation %>
+	<%= f.password_field :password_confirmation %>
 
-    <%= f.inputs do %>
-        <%= f.inputs :firstname %>
-        <%= f.inputs :lastname %>
-        <%= f.inputs :email %>
-        <%= f.inputs :password %>
-        <%= f.inputs :password_confirmation %>
-        <%= f.submit %>
+        
+        
+	<% f.fields_for :statements do |builder| %>
+	<%= render 'statement_fields', f: builder %>
+	<% end %>
 
-    <% end %>
- <% end %>
+	<%= link_to_add_fields "Add Statement", f, :statements %>
+
+	<br>
+	<%= f.submit %>
+
+<% end %>
+
