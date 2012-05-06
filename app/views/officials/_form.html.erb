@@ -16,7 +16,10 @@
 	
 	<%= f.label :lastname %>
 	<%= f.text_field :lastname %>
-	
+
+	<%= f.label :contest %>
+	<%= collection_select(:race, :race_id, Race.all, :id, :name ) %>
+
 	<%= f.label :email %>
 	<%= f.text_field :email %>
 	
@@ -26,15 +29,9 @@
 	<%= f.label :password_confirmation %>
 	<%= f.password_field :password_confirmation %>
 
-        
-        
-	<% f.fields_for :statements do |builder| %>
-	<%= render 'statement_fields', f: builder %>
-	<% end %>
 
-	<%= link_to_add_fields "Add Statement", f, :statements %>
 
-	<br>
+
 	<%= f.submit %>
 
 <% end %>
