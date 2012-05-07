@@ -1,15 +1,18 @@
-<%= content_for :middleColumn do %>
-    <br>
-    <h3>
-      This project's goal is to improve the democratic process in Durham.  The project is owned and operated by
-      a Durham resident and your constituent.  For information about how to sign-up and claim your space, please e-mail
-      Michael@GeneralPolitics.org.  </h3>
-
+<div class="row">
+	<section id="candidate-signup" class="span6">
+		<%=  render 'officials/form' %>
+	</section>
+	
+	<section id="candidate-login" class="span6">
     <% if session[:official] %>
         <%= link_to "Candidate Log Out", "/signout" %>
         <%= link_to "Edit My Info", edit_official_path(session[:official]) %>
     <% else %>
-        <%= link_to "Candidate Log In", "/signin" %>
+        <%= render 'officials/login_form' %>
     <% end %>
+	</section>
 
-<% end %>
+</div>
+
+
+<div class="row"></div>

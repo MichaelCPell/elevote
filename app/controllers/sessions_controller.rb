@@ -19,10 +19,16 @@ class SessionsController < ApplicationController
        constituent.save
 
        session[:constituent] = constituent
-      end
+    end
+  end
 
-    if params[:email]
-      official = Official.find_by_email(params[:email])
+  def destroy
+    reset_session
+    redirect_to root_url, :notice => "Logged out!"
+  end
+
+  def candidate_login
+    official = Official.find_by_email(params[:email])
 
       if official && official.authenticate(params[:password])
         session[:official] = official
@@ -30,21 +36,9 @@ class SessionsController < ApplicationController
 
       else
 
-         redirect_to new_session_path, :notice => "Invalid email or password"
+         redirect_to :back, :notice => "Invalid email or password"
       end
 
-
-
-
-
-
-
-    end
-  end
-
-  def destroy
-    reset_session
-    redirect_to root_url, :notice => "Logged out!"
   end
 
 end

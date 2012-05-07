@@ -31,8 +31,8 @@ Elevote::Application.routes.draw do
   end
 
   resources :sessions, :only => [:new, :create, :destroy]
+  match '/candidates/login', :to => 'sessions#candidate_login'
 
-  match '/signin', :to => 'sessions#new'
   match '/signout', :to => 'sessions#destroy'
 
 
