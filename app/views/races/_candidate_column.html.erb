@@ -1,6 +1,6 @@
 <div id="candidate_column" class="span3" style="width: 240px">
 
-<h2><%= link_to candidate_column.full_name, candidate_column, :remote => "true" %></h2>
+<h2><%= link_to candidate_column.full_name, candidate_column, :class => "modal_trigger", :remote => :true %></h2>
 
 <%= raw(facebook_like_button(candidate_column)) %>
 

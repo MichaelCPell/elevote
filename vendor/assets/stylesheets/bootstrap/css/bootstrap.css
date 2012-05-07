@@ -4144,12 +4144,13 @@ input[type="submit"].btn.btn-mini {
 }
 
 .modal {
+  /*MCP:  I have edited this file in order to change candidate modal functionality*/
   position: fixed;
-  top: 50%;
+  top: 15%;
   left: 50%;
   z-index: 1050;
-  width: 560px;
-  margin: -250px 0 0 -280px;
+  /*width: 560px;*/
+  margin: 0 0 0 -400px;
   overflow: auto;
   background-color: #ffffff;
   border: 1px solid #999;
@@ -4176,7 +4177,7 @@ input[type="submit"].btn.btn-mini {
 }
 
 .modal.fade.in {
-  top: 50%;
+  top: 15%;
 }
 
 .modal-header {

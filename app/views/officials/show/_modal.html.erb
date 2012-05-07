@@ -1,0 +1,36 @@
+<% if @official.blank? %>
+	<div class="span10 modal hide fade" id="myModal">
+<% else %>
+		<section id="left_column" class="span3">
+
+			<h1 id="candidate_name">
+				<%= @official.firstname %>
+			<br>
+				<%= @official.lastname %>
+			</h1>
+
+			<%= raw(facebook_like_button(@official)) %>
+			<%= display_portrait(@official) %>
+			<%= render 'officials/show/navigation' %>
+
+		</section>
+
+
+		<section id="middle_column" class="span5">
+			<section id="display_area" class="span5">
+
+				<h2>Welcome!</h2>
+
+			</section>
+		</section>
+
+		<section id="right_column">
+			<a href="#" class="modal_close btn btn-primary span1 pull-right">Close</a>
+		</section>
+
+	<!--Candidate Information is loaded and hidden at render initiation-->
+	<%=  render 'officials/show/hidden_text' %>
+
+<% end %>
+
+	</div>

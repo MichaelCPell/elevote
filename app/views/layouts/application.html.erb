@@ -33,31 +33,23 @@
 
 
 <body>
+	<div id="fb-root"></div>
 
+	<%= render 'layouts/header' %>
 
-<div id="fb-root"></div>
+	<%= render 'layouts/main_navigation' %>
 
-<%= render 'layouts/header' %>
-
-<%= render 'layouts/main_navigation' %>
-
-
-
-
-  <div class="container">
-      <section id="content" class="span12">
-				<% if flash[:notice] %>
+	<div class="container">
+		<section id="content" class="">
+			<% if flash[:notice] %>
 				<%= render 'layouts/notice' %>
-				<% end %>
-						<%= yield %>
-      </section>
+			<% end %>
 
+			<%= yield %>
+		</section>
 
-<%= render 'layouts/footer'   %>
-  </div>
-
-
-
+		<%= render 'layouts/footer'   %>
+	</div>
 
 
 </body>
