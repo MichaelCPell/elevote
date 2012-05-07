@@ -46,7 +46,9 @@
 
   <div class="container">
       <section id="content">
+				<% if flash[:notice] %>
 				<%= render 'layouts/notice' %>
+				<% end %>
 						<%= yield %>
       </section>
 
