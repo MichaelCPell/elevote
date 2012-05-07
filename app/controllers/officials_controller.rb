@@ -73,8 +73,7 @@ class OfficialsController < ApplicationController
 
 
       session[:official] = @official
-      redirect_to @official, :notice => "Logged in!"
-
+      redirect_to @official
 
   end
 

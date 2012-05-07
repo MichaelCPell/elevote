@@ -1,0 +1,58 @@
+<div id="hidden_text" style="display: none">
+    <div id="news">
+      <p class="subtitle">News</p>
+      <% if current_official %>
+          <!--Eventually this line needs to verify which official is signed in-->
+          <%=  form_for Comment.new do |f| %>
+              <%= f.label "New Post" %>
+              <%= f.text_field :content %>
+              <%= f.hidden_field :authorable_id, :value => current_official.id %>
+              <%= f.hidden_field :authorable_type, :value => "Official" %>
+              <%=  f.submit :post %>
+
+          <% end %>
+
+      <% end %>
+
+      <% for update in @updates %>
+
+          <div class="newsPost">
+            <%= update.content %>  <br>
+            Posted at: <%= l update.created_at, :format => :short %>
+          </div>
+
+      <% end %>
+
+    </div>
+
+    <div id="aboutMe">
+      <p class="subtitle">About Me</p>
+      <p><%= @official.aboutMe %></p>
+    </div>
+
+
+    <div id="positions">
+      <p class="subtitle">Positions</p>
+      <p><%= @official.positions %></p>
+    </div>
+
+    <div id="goals">
+      <p class="subtitle">Goals</p>
+      <p><%= @official.goals %></p>
+    </div>
+
+    <div id="achievements">
+      <p class="subtitle">Achievements</p>
+      <p><%= @official.achievements %></p>
+    </div>
+
+    <div id="written_endorsements">
+      <p class="subtitle">Written Endorsements</p>
+      <p>Written Endorsements Go Here</p>
+    </div>
+
+    <div id="video_endorsements">
+      <p class="subtitle">Video Endorsements</p>
+      <p>Videos Go Here</p>
+    </div>
+</div>

@@ -19,15 +19,6 @@ module RacesHelper
 
   end
 
-  def facebook_like_button(candidate_column)
-    "
-    <div class='fb-like' data-href='#{official_url(candidate_column)} %>' data-send='false'
-     data-width='150' data-show-faces='true' data-font='trebuchet ms'>
-    </div>
-    "
-  end
-
-
 
 
 

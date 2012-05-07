@@ -19,6 +19,14 @@ module OfficialsHelper
     full_name = official.firstname + " " + official.lastname
   end
 
+  def display_portrait(candidate)
+    if candidate.portrait_url
+      image_tag candidate.portrait_url.to_s
+    else
+      image_tag 'missing_portrait.png'
+    end
+  end
+
 
 
 
