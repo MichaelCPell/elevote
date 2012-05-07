@@ -1,4 +1,5 @@
 <%= form_for(@official) do |f| %>
+
   <% if @official.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@official.errors.count, "error") %> prohibited this Official from being saved:</h2>
@@ -28,9 +29,6 @@
 	
 	<%= f.label :password_confirmation %>
 	<%= f.password_field :password_confirmation %>
-
-
-
 
 	<%= f.submit %>
 

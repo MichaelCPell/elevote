@@ -1,14 +1,3 @@
-<% content_for :nav_status do %>
-  <p>  Click Here to Begin</p>
-<% end %>
-
-<% content_for :middleColumn do %>
-
-
-    <div id="homepage_steps" class="prepend-2">
-        <%=   image_tag "homepage-steps.png" %>
-    </div>
-      
-
-<% end %>
-
+<div id="homepage_steps">
+  <%= link_to	image_tag("homepage-steps.png"), "#menu1", "data-toggle" => "dropdown" %>
+</div>
