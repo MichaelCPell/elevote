@@ -3,6 +3,8 @@ class RacesController < ApplicationController
   # GET /opinions.json
    respond_to :html, :js
 
+   before_filter :instantiate_booth
+
   def index
 
 
@@ -17,7 +19,6 @@ class RacesController < ApplicationController
   # GET /opinions/1
   # GET /opinions/1.json
   def show
-
     @races = Race.all
     @race = Race.find(params[:id])
     @nav_content = @race.name
@@ -69,6 +70,12 @@ class RacesController < ApplicationController
   def destroy
 
 
+  end
+
+  private
+
+  def instantiate_booth
+    session[:official_ids] ||= []
   end
 
 

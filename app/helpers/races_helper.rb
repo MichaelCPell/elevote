@@ -7,12 +7,14 @@ module RacesHelper
       link_to "Remove from Booth",
             new_endorsement_path(:official_id => id),
             :remote => true,
-            :class => "btn btn-danger"
+            :class => "btn btn-danger",
+            :style => "width: 200px;"
     else
         link_to "Add to Booth",
             new_endorsement_path(:official_id => id),
             :remote => true,
-            :class => "btn btn-primary"
+            :class => "btn btn-primary",
+            :style => "width: 200px;"
     end
 
   end

@@ -4,9 +4,11 @@
 
 <%= raw(facebook_like_button(candidate_column)) %>
 
+<div class="center" style="text-align: center;">
 <%= is_in_booth(candidate_column.id) %>
+</div>
 
-<div class="candidate_portrait">
+<div class="candidate_portrait" style="text-align: center;">
   <% if candidate_column.portrait_url %>
       <%= image_tag candidate_column.portrait_url.to_s %>
   <% else %>
