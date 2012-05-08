@@ -21,7 +21,7 @@
         <%= f.label :website %>
         <%= f.text_field :website %>
 
-        <% if @official.tier == 1 %>
+        <% if @candidate.tier == 1 %>
         <br>
         <%= f.label :portrait %>
         <%= f.file_field :portrait %>
@@ -49,7 +49,7 @@
                 <br>
             <% end %>
 
-      <% if @official.tier == 2 %>
+      <% if @candidate.tier == 2 %>
         <br>
          <%= f.label "About Me" %>
         <%= f.text_area :aboutMe %>

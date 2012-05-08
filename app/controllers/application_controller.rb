@@ -2,7 +2,7 @@ class ApplicationController < ActionController::Base
   protect_from_forgery
   #http_basic_authenticate_with :name => "roll", :password => "tide"
 
-  helper_method :current_official, :current_url, :current_constituent, :omnihash
+  helper_method :current_candidate, :current_url, :current_constituent, :omnihash
 
 
   def current_url
@@ -22,8 +22,8 @@ class ApplicationController < ActionController::Base
 
 
 
-  def current_official
-  @current_official ||= Official.find_by_id(session[:official])
+  def current_candidate
+  @current_candidate ||= candidate.find_by_id(session[:candidate])
   end
 
 

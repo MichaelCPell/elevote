@@ -1,17 +1,17 @@
-<% if @official.blank? %>
+<% if @candidate.blank? %>
 	<div class="span10 modal hide fade" id="myModal">
 <% else %>
 		<section id="left_column" class="span3">
 
 			<h1 id="candidate_name">
-				<%= @official.firstname %>
+				<%= @candidate.firstname %>
 			<br>
-				<%= @official.lastname %>
+				<%= @candidate.lastname %>
 			</h1>
 
-			<%= raw(facebook_like_button(@official)) %>
-			<%= display_portrait(@official) %>
-			<%= render 'officials/show/navigation' %>
+			<%= raw(facebook_like_button(@candidate)) %>
+			<%= display_portrait(@candidate) %>
+			<%= render 'candidates/show/navigation' %>
 
 		</section>
 
@@ -29,7 +29,7 @@
 		</section>
 
 	<!--Candidate Information is loaded and hidden at render initiation-->
-	<%=  render 'officials/show/hidden_text' %>
+	<%=  render 'candidates/show/hidden_text' %>
 
 <% end %>
 

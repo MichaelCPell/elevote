@@ -1,11 +1,11 @@
-<%= form_for(@official) do |f| %>
+<%= form_for(@candidate) do |f| %>
 
-  <% if @official.errors.any? %>
+  <% if @candidate.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@official.errors.count, "error") %> prohibited this Official from being saved:</h2>
+      <h2><%= pluralize(@candidate.errors.count, "error") %> prohibited this Official from being saved:</h2>
 
       <ul>
-      <% @official.errors.full_messages.each do |msg| %>
+      <% @candidate.errors.full_messages.each do |msg| %>
         <li><%= msg %></li>
       <% end %>
       </ul>

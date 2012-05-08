@@ -1,6 +1,6 @@
-class CreateOfficials < ActiveRecord::Migration
+class CreateCandidates < ActiveRecord::Migration
   def change
-    create_table :officials do |t|
+    create_table :candidates do |t|
       t.string :firstname
       t.string :lastname
       t.string :email
@@ -14,16 +14,6 @@ class CreateOfficials < ActiveRecord::Migration
       t.string :office
       t.integer :race_id
       t.string :website
-
-      t.string :state
-      t.string :racename
-      t.integer :office_id
-      t.integer :district_id
-      t.integer :office_question_id
-
-      t.string :image1
-      t.string :image2
-
 
       t.timestamps
     end

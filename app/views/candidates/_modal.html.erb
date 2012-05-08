@@ -7,19 +7,19 @@
 
 <div id="left_column" class="span-7 last">
   <p class="modal_candidate_name prepend-1">
-    <%= @official.firstname %>
+    <%= @candidate.firstname %>
     <br>
-    <%= @official.lastname %>
+    <%= @candidate.lastname %>
   </p>
 
 
-  <div class="fb-like" data-href="<%= official_url(@official) %>" data-send="false"
+  <div class="fb-like" data-href="<%= official_url(@candidate) %>" data-send="false"
        data-width="150" data-show-faces="true" data-font="trebuchet ms"></div>
 
 
   <div class="modal_candidate_portrait prepend-1">
-    <% if @official.portrait_url %>
-        <%= image_tag @official.portrait_url.to_s %>
+    <% if @candidate.portrait_url %>
+        <%= image_tag @candidate.portrait_url.to_s %>
     <% else %>
         <%= image_tag 'missing_portrait.png' %>
     <% end %>
@@ -73,7 +73,7 @@
 
 
     <h3 id="officialSlogan" class="span-8 last">
-      <%= @official.campaignSlogan %>
+      <%= @candidate.campaignSlogan %>
     </h3>
 
 
@@ -102,12 +102,12 @@
       <div id="news">
         <p class="subtitle">News</p>
         <% if current_official %>
-            <!--Eventually this line needs to verify which official is signed in-->
+            <!--Eventually this line needs to verify which candidate is signed in-->
             <%=  form_for Comment.new do |f| %>
                 <%= f.label "New Post" %>
                 <%= f.text_field :content %>
                 <%= f.hidden_field :authorable_id, :value => current_official.id %>
-                <%= f.hidden_field :authorable_type, :value => "Official" %>
+                <%= f.hidden_field :authorable_type, :value => "Candidate" %>
                 <%=  f.submit :post %>
 
             <% end %>
@@ -127,23 +127,23 @@
 
       <div id="aboutMe">
         <p class="subtitle">About Me</p>
-        <p><%= @official.aboutMe %></p>
+        <p><%= @candidate.aboutMe %></p>
       </div>
 
 
       <div id="positions">
         <p class="subtitle">Positions</p>
-        <p><%= @official.positions %></p>
+        <p><%= @candidate.positions %></p>
       </div>
 
       <div id="goals">
         <p class="subtitle">Goals</p>
-        <p><%= @official.goals %></p>
+        <p><%= @candidate.goals %></p>
       </div>
 
       <div id="achievements">
         <p class="subtitle">Achievements</p>
-        <p><%= @official.achievements %></p>
+        <p><%= @candidate.achievements %></p>
       </div>
 
       <div id="written_endorsements">

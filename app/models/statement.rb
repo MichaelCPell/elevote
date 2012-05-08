@@ -1,3 +1,3 @@
 class Statement < ActiveRecord::Base
-  belongs_to :official
+  belongs_to :candidate
 end

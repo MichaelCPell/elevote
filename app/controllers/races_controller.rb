@@ -22,7 +22,7 @@ class RacesController < ApplicationController
     @races = Race.all
     @race = Race.find(params[:id])
     @nav_content = @race.name
-    @candidates = Official.scoped_by_race_id(@race.id).order('updated_at DESC').page(params[:page]).per_page(3)
+    @candidates = Candidate.scoped_by_race_id(@race.id).order('updated_at DESC').page(params[:page]).per_page(3)
 
 
 
@@ -31,7 +31,7 @@ class RacesController < ApplicationController
     respond_to do |format|
       format.html
       format.pdf do
-      pdf = ContestPdf.new(Official.scoped_by_race_id(@race.id), @race)
+      pdf = ContestPdf.new(Candidate.scoped_by_race_id(@race.id), @race)
          send_data pdf.render, type: "application/pdf",
                              disposition: "inline",
                                page_layout: "landscape"

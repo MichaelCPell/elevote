@@ -1,4 +1,4 @@
-module OfficialsHelper
+module CandidatesHelper
 
   # @param question [Object]
   # @param official_id [Object]

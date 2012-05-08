@@ -1,4 +1,4 @@
-class Official < ActiveRecord::Base
+class Candidate < ActiveRecord::Base
   extend FriendlyId
 
   has_secure_password

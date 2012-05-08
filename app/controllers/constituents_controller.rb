@@ -16,14 +16,14 @@ class ConstituentsController < ApplicationController
     @nav_content = "Click to See Elections Again"
 
     @constituent = current_constituent
-    session[:official_ids] ||= []
+    session[:candidate_ids] ||= []
 
 
 
     @candidates = []
-    session[:official_ids].each do |f|
+    session[:candidate_ids].each do |f|
       unless f.blank?
-      @candidates << Official.find(f)
+      @candidates << Candidate.find(f)
       end
     end
     @candidates = @candidates.uniq.group_by(&:race_id)

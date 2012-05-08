@@ -1,13 +1,13 @@
 <section id="left_column" class="span3">
 
 	<h1 id="candidate_name">
-		<%= @official.firstname %>
+		<%= @candidate.firstname %>
 	<br>
-		<%= @official.lastname %>
+		<%= @candidate.lastname %>
 	</h1>
 
-	<%= raw(facebook_like_button(@official)) %>
-	<%= display_portrait(@official) %>
+	<%= raw(facebook_like_button(@candidate)) %>
+	<%= display_portrait(@candidate) %>
 	<%= render 'officials/show/navigation' %>
 
 </section>

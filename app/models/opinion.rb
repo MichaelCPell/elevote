@@ -1,5 +1,5 @@
 class Opinion < ActiveRecord::Base
-  belongs_to :official
+  belongs_to :candidate
   belongs_to :legislation
 
 

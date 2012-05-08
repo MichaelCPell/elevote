@@ -24,7 +24,7 @@ Elevote::Application.routes.draw do
     end
   end
 
-  resources :officials do
+  resources :candidates do
     resources :comments
     resources :short_goals
     resources :short_achievements

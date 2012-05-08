@@ -3,7 +3,7 @@ class Race < ActiveRecord::Base
   friendly_id :name, :use => :slugged
 
 
-  has_many :officials
+  has_many :candidates
 
 
 

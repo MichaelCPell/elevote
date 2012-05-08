@@ -13,6 +13,28 @@
 
 ActiveRecord::Schema.define(:version => 20120505201321) do
 
+  create_table "candidates", :force => true do |t|
+    t.string   "firstname"
+    t.string   "lastname"
+    t.string   "email"
+    t.string   "password_digest"
+    t.string   "portrait"
+    t.string   "campaignSlogan"
+    t.text     "aboutMe"
+    t.text     "positions"
+    t.text     "goals"
+    t.text     "achievements"
+    t.string   "office"
+    t.integer  "race_id"
+    t.string   "website"
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
+    t.integer  "tier"
+    t.string   "slug"
+  end
+
+  add_index "candidates", ["slug"], :name => "index_candidates_on_slug"
+
   create_table "comments", :force => true do |t|
     t.integer  "parent_id"
     t.text     "content"
@@ -52,35 +74,6 @@ ActiveRecord::Schema.define(:version => 20120505201321) do
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
   end
-
-  create_table "officials", :force => true do |t|
-    t.string   "firstname"
-    t.string   "lastname"
-    t.string   "email"
-    t.string   "password_digest"
-    t.string   "portrait"
-    t.string   "campaignSlogan"
-    t.text     "aboutMe"
-    t.text     "positions"
-    t.text     "goals"
-    t.text     "achievements"
-    t.string   "office"
-    t.integer  "race_id"
-    t.string   "website"
-    t.string   "state"
-    t.string   "racename"
-    t.integer  "office_id"
-    t.integer  "district_id"
-    t.integer  "office_question_id"
-    t.string   "image1"
-    t.string   "image2"
-    t.datetime "created_at",         :null => false
-    t.datetime "updated_at",         :null => false
-    t.integer  "tier"
-    t.string   "slug"
-  end
-
-  add_index "officials", ["slug"], :name => "index_officials_on_slug"
 
   create_table "opinions", :force => true do |t|
     t.string   "status"
