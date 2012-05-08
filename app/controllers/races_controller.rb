@@ -75,7 +75,7 @@ class RacesController < ApplicationController
   private
 
   def instantiate_booth
-    session[:official_ids] ||= []
+    session[:candidate_ids] ||= []
   end
 
 

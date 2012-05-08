@@ -6,42 +6,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="01a9f816-fa55-4a7a-9bd6-92e6ceb55c0d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20120402160058_add_slug_to_candidates.rb" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20120329172301_add_tier_to_officials.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20120402160058_add_slug_to_officials.rb" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/assets/javascripts/officials.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/candidates.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/candidates/officials.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/candidates/candidates.css.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/controllers/officials_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/candidates_controller.rb" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/helpers/officials_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/candidates_helper.rb" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/models/official.rb" afterPath="$PROJECT_DIR$/app/models/candidate.rb" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/views/officials/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/candidates/_form.html.erb" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/views/officials/_login_form.html.erb" afterPath="$PROJECT_DIR$/app/views/candidates/_login_form.html.erb" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/views/officials/_modal.html.erb" afterPath="$PROJECT_DIR$/app/views/candidates/_modal.html.erb" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/views/officials/_statement_fields.html.erb" afterPath="$PROJECT_DIR$/app/views/candidates/_statement_fields.html.erb" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/views/officials/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/candidates/edit.html.erb" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/views/officials/index.html.erb" afterPath="$PROJECT_DIR$/app/views/candidates/index.html.erb" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/views/officials/new.html.erb" afterPath="$PROJECT_DIR$/app/views/candidates/new.html.erb" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/views/officials/show.html.erb" afterPath="$PROJECT_DIR$/app/views/candidates/show.html.erb" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/views/officials/show.js.erb" afterPath="$PROJECT_DIR$/app/views/candidates/show.js.erb" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/views/officials/show/_hidden_text.html.erb" afterPath="$PROJECT_DIR$/app/views/candidates/show/_hidden_text.html.erb" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/views/officials/show/_modal.html.erb" afterPath="$PROJECT_DIR$/app/views/candidates/show/_modal.html.erb" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/views/officials/show/_navigation.html.erb" afterPath="$PROJECT_DIR$/app/views/candidates/show/_navigation.html.erb" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/db/migrate/20111017010356_create_officials.rb" afterPath="$PROJECT_DIR$/db/migrate/20111017010356_create_candidates.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/constituents_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/constituents_controller.rb" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/controllers/user_emails_controller.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/helpers/user_emails_helper.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/models/user_email.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/user_emails/_form.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/user_emails/edit.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/user_emails/index.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/user_emails/new.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/user_emails/show.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20120329223933_create_user_emails.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/fixtures/user_emails.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/functional/user_emails_controller_test.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/unit/helpers/user_emails_helper_test.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/unit/user_email_test.rb" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/endorsements_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/endorsements_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/info_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/info_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/races_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/races_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/opinion.rb" afterPath="$PROJECT_DIR$/app/models/opinion.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/race.rb" afterPath="$PROJECT_DIR$/app/models/race.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/statement.rb" afterPath="$PROJECT_DIR$/app/models/statement.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/info/for_candidates.html.erb" afterPath="$PROJECT_DIR$/app/views/info/for_candidates.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/races/show.html.erb" afterPath="$PROJECT_DIR$/app/views/races/show.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/races_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/races_helper.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/seeds.rb" afterPath="$PROJECT_DIR$/db/seeds.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/functional/politicians_controller_test.rb" afterPath="$PROJECT_DIR$/test/functional/politicians_controller_test.rb" />
     </list>
     <ignored path="Elevote.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -67,46 +48,49 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="candidates_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/candidates_controller.rb">
+      <file leaf-file-name="races.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/races.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="3" selection-start="514" selection-end="514" vertical-scroll-proportion="-2.852459">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="endorsements_controller.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="application.js.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding>
+                <marker date="1336444298000" expanded="true" signature="0:484" placeholder="//..." />
+                <marker date="1336444298000" expanded="true" signature="515:557" placeholder="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="races_helper.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/helpers/races_helper.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="46" selection-start="374" selection-end="374" vertical-scroll-proportion="-3.1967213">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="endorsements_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/endorsements_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="52" column="26" selection-start="1097" selection-end="1097" vertical-scroll-proportion="0.84324324">
+            <state line="72" column="53" selection-start="1667" selection-end="1667" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="constituents_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/constituents_controller.rb">
+      <file leaf-file-name="info_helper.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/helpers/info_helper.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="26" selection-start="516" selection-end="516" vertical-scroll-proportion="-5.655738">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_hidden_text.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/candidates/show/_hidden_text.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="23" selection-start="546" selection-end="546" vertical-scroll-proportion="-4.1882353">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="20" selection-start="408" selection-end="408" vertical-scroll-proportion="-6.147541">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -125,7 +109,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/views/info/for_candidates.html.erb" />
         <option value="$PROJECT_DIR$/app/views/candidates/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/candidates/_modal.html.erb" />
@@ -133,13 +116,14 @@
         <option value="$PROJECT_DIR$/app/views/candidates/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/candidates/show.js.erb" />
         <option value="$PROJECT_DIR$/db/seeds.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/races_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/races/show.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/candidates_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/candidates/show/_modal.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/candidates/show/_hidden_text.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/constituents_controller.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/races_controller.rb" />
+        <option value="$PROJECT_DIR$/app/helpers/races_helper.rb" />
         <option value="$PROJECT_DIR$/app/controllers/endorsements_controller.rb" />
       </list>
     </option>
@@ -221,34 +205,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="db" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Elevote" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="elevote" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Elevote" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="elevote" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -267,117 +223,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Elevote" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="elevote" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="races" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Elevote" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="elevote" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="info" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Elevote" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="elevote" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="candidates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Elevote" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="elevote" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="candidates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="show" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Elevote" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="elevote" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
+              <option name="myItemId" value="helpers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -971,7 +817,7 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28825995" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28825995" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34423676" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1049,34 +895,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/candidates/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="31" selection-start="49" selection-end="49" vertical-scroll-proportion="0.092307694">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/candidates/edit.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="22" selection-start="1303" selection-end="1313" vertical-scroll-proportion="0.33274338">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/seeds.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="449" selection-end="449" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/race.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/candidates/_modal.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="27" column="47" selection-start="645" selection-end="645" vertical-scroll-proportion="-16.875">
@@ -1119,23 +937,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/races_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="26" selection-start="413" selection-end="413" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="20" selection-start="408" selection-end="408" vertical-scroll-proportion="-6.147541">
+        <state line="25" column="20" selection-start="408" selection-end="408" vertical-scroll-proportion="0.4340278">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/candidates/show/_hidden_text.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="23" selection-start="546" selection-end="546" vertical-scroll-proportion="-4.1882353">
+        <state line="25" column="23" selection-start="546" selection-end="546" vertical-scroll-proportion="0.44642857">
           <folding />
         </state>
       </provider>
@@ -1149,14 +960,52 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/constituents_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="26" selection-start="516" selection-end="516" vertical-scroll-proportion="-5.655738">
+        <state line="23" column="26" selection-start="516" selection-end="516" vertical-scroll-proportion="0.39930555">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/races_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="41" selection-start="833" selection-end="833" vertical-scroll-proportion="-10.327868">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/races.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding>
+            <marker date="1336444298000" expanded="true" signature="0:484" placeholder="//..." />
+            <marker date="1336444298000" expanded="true" signature="515:557" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/helpers/races_helper.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="46" selection-start="374" selection-end="374" vertical-scroll-proportion="-3.1967213">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/endorsements_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="26" selection-start="1097" selection-end="1097" vertical-scroll-proportion="0.84324324">
+        <state line="72" column="53" selection-start="1667" selection-end="1667" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/helpers/info_helper.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>

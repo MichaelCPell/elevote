@@ -28,12 +28,12 @@ class EndorsementsController < ApplicationController
   def new
     session[:candidate_ids] ||= []
 
-    id_index = session[:candidate_ids].index(params[:official_id])
+    id_index = session[:candidate_ids].index(params[:candidate_id])
 
     if id_index.blank?
-      session[:candidate_ids] << params[:official_id]
+      session[:candidate_ids] << params[:candidate_id]
     else
-      session[:candidate_ids].delete(params[:official_id])
+      session[:candidate_ids].delete(params[:candidate_id])
     end
 
 
@@ -50,7 +50,7 @@ class EndorsementsController < ApplicationController
   # POST /endorsements.json
   def create
     session[:candidate_ids] ||= []
-    session[:candidate_ids] << params[:official_id]
+    session[:candidate_ids] << params[:candidate_id]
 
   end
 
