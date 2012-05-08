@@ -1,11 +1,28 @@
 <% @candidates.each do |contest, candidates| %>
 
-	<%= Race.find(contest).name %>
+	<h1><%= Race.find(contest).name %></h1>
 
-	<ul>
+	<table class="table ">
+
+		<th>Name</th>
+		<th>Picture</th>
+		<th>My Comments</th>
+		
 		<% candidates.each do |candidate| %>
-			<li><%= candidate.full_name %></li>
+			<tr>
+
+				<td>
+					<ul class="booth_list">
+						<li><h3><%= candidate.full_name %></h3></li>
+						<li>Candidate Website</li>
+					</ul>
+				</td>
+
+				<td><%= display_portrait candidate %></td>
+				<td>My Comments</td>
+			</tr>
 		<% end %>
-	</ul>
+
+	</table>
 
 <% end %>

@@ -8,6 +8,7 @@ $(document).ready( function(){
     }else{
     $(this).text("Add to Booth");
     }
+
   })
 });
 
@@ -18,5 +19,6 @@ $(document).ready(function(){
    });
 
 });
+
 
 
