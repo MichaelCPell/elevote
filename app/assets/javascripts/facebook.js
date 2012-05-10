@@ -25,25 +25,33 @@ window.fbAsyncInit = function() {
 
 // listen for and handle auth.statusChange events
 
-//$(document).ready(function(){
-//
-//
-////    The Line Below has been commented out because the auth-loginlink does not exist anymore, and is giving the DOM trouble
-////    document.getElementById('auth-loginlink').addEventListener('click', function(e){
-//        e.preventDefault();
-//        FB.login(function(response) {
+$(document).ready(function(){
+
+
+//    The Line Below has been commented out because the auth-loginlink does not exist anymore, and is giving the DOM trouble
+//    document.getElementById('auth-loginlink').addEventListener('click', function(e){
+
+
+        $("#fb-login-link").click(function(){
+
+
+          FB.login(function(response) {
 //            if (response.authResponse) {
 //                FB.api('/me', function(response) {
+//                  alert(response.name);
 //                });
 //            }
-//        });
-//
-//        $.getJSON('/auth/facebook/callback', function(json) {
-//            $('#results').html(JSON.stringify(json));
-//        });
-//
-//    });
-//});
+
+             window.location.replace("/auth/facebook/callback");
+
+          });
+
+
+
+        });
+
+
+});
 
 
 

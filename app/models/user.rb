@@ -1,4 +1,4 @@
-class Constituent < ActiveRecord::Base
+class User < ActiveRecord::Base
 
   has_many :endorsements, :as => :endorsementer
 

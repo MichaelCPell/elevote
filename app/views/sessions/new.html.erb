@@ -1,9 +1,7 @@
-
-
-<%= content_for :middleColumn do %>
-<h1>
-  Sign In
-</h1>
+<section id="native-login" class="span5">
+  <h1>
+    Log In with User Id
+  </h1>
 
 
    <%= form_tag sessions_path do %>
@@ -21,15 +19,11 @@
 
    <% end  %>
 
-<% end %>
+</section>
 
+<section id="facebook-login" class="span5 offset1">
+<h1>Log In With Facebook</h1>
+  <%= link_to "Facebook Login", "#", :id => "fb-login-link", :class => "btn offset1" %>
+</section>
 
-<%= content_for :rightColumn do %>
-    <p id="notice"><%= notice %></p>
-
-<% end %>
-
-<%= content_for :rightColumn do %>
-
-<% end %>
 

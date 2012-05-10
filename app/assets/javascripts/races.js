@@ -1,6 +1,6 @@
 $(document).ready( function(){
 
-  $('.btn').click( function(){
+  $('.booth-button').click( function(){
     $(this).toggleClass('btn-danger').toggleClass('btn-primary');
     //    Ran into strange errors when trying to do this with a .toggle() function
     if($(this).text() == "Add to Booth"){

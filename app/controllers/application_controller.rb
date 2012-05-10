@@ -2,7 +2,7 @@ class ApplicationController < ActionController::Base
   protect_from_forgery
   #http_basic_authenticate_with :name => "roll", :password => "tide"
 
-  helper_method :current_candidate, :current_url, :current_constituent, :omnihash
+  helper_method :current_candidate, :current_url, :current_user, :omnihash
 
 
   def current_url
@@ -15,23 +15,19 @@ class ApplicationController < ActionController::Base
     request.env['omniauth.auth'].to_s
   end
 
-
-
-
   private
-
-
 
   def current_candidate
   @current_candidate ||= candidate.find_by_id(session[:candidate])
   end
 
 
-  def current_constituent
+  def current_user
 
-    @current_constituent ||= Constituent.find_by_id(session[:constituent])
-    if @current_constituent.blank?
-      Constituent.new(name: "Not Logged In")
+    if session[:user]
+      @current_user ||= User.find_by_id(session[:user])
+    else
+      @current_user = User.new(name: "Not Logged In")
     end
 
   end

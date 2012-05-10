@@ -7,7 +7,7 @@ Elevote::Application.routes.draw do
 
   resources :opinions
 
-  resources :constituents
+  resources :users
 
   resources :comments do
     member do
@@ -31,6 +31,8 @@ Elevote::Application.routes.draw do
   resources :sessions, :only => [:new, :create, :destroy]
   match '/candidates/login', :to => 'sessions#candidate_login'
 
+
+  match '/signin', :to => 'sessions#new'
   match '/signout', :to => 'sessions#destroy'
 
 
@@ -41,7 +43,7 @@ Elevote::Application.routes.draw do
   match '/info/for_candidates', :to => 'info#for_candidates'
   match '/info/for_citizens', :to => 'info#for_citizens'
 
-  match '/booth', :to => 'constituents#show'
+  match '/booth', :to => 'users#show'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

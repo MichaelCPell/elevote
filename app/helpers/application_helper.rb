@@ -13,7 +13,7 @@ module ApplicationHelper
 
   def facebook_like_button(candidate)
     "
-    <div class='fb-like' data-href='#{official_url(candidate)} %>' data-send='false'
+    <div class='fb-like' data-href='#{candidate_url(candidate)}' data-send='false'
      data-width='150' data-show-faces='true' data-font='trebuchet ms'>
     </div>
     "
@@ -24,6 +24,18 @@ module ApplicationHelper
       image_tag(candidate.portrait_url.to_s, :size => "10x10")
     else
       image_tag("missing_portrait.png", :size => "10x10")
+    end
+  end
+
+
+
+#  Layouts Helpers
+
+  def display_user_name(user)
+    if user.id.blank?
+      raw("You are not logged in(#{link_to('Sign-In', '/signin')})")
+    else
+      raw(user.name + link_to("Sign-Out",'/signout'))
     end
   end
 
