@@ -72,6 +72,7 @@ class Candidate < ActiveRecord::Base
       self.build_three_statements(category)
     end
 
+    self.save
   end
 
   def build_three_statements(category)

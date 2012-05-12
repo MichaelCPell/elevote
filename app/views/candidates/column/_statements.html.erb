@@ -1,0 +1,12 @@
+<div class="candidate_<%= category.downcase %>">
+
+  <p class="subheading">
+    <%= category %>
+  </p>
+
+  <% candidate.statements.where(category: category.downcase ).each_with_index do |statement| %>
+    <%=  statement.content %>
+    <br>
+  <% end %>
+
+</div>

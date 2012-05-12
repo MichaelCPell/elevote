@@ -1,0 +1,32 @@
+<div id="candidate" class="span3" style="width: 240px">
+
+  <h2><%= link_to candidate.full_name, candidate, :class => "modal_trigger", :remote => :true %></h2>
+
+  <%= raw(facebook_like_button(candidate)) %>
+
+  <div class="center" style="text-align: center;">
+    <%= is_in_booth(candidate.id) %>
+  </div>
+
+  <div class="candidate_portrait" style="text-align: center;">
+    <% if candidate.portrait_url %>
+      <%= image_tag candidate.portrait_url.to_s %>
+    <% else %>
+      <%= image_tag 'missing_portrait.png' %>
+    <% end %>
+  </div>
+
+
+  <%= render "candidates/column/statements", :candidate => candidate, :category => "Goals" %>
+
+  <%= render "candidates/column/statements", :candidate => candidate, :category => "About" %>
+
+
+
+
+<div class="candidate_contact">
+<p class="subheading">Contact</p>
+<p>E-mail Address: <%= candidate.email %></p>
+</div>
+
+</div>

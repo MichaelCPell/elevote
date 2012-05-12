@@ -21,10 +21,6 @@ class CandidatesController < ApplicationController
   def show
     @candidate = Candidate.find(params[:id])
     @candidate.build_my_statements
-
-
-    @abouts = @candidate.statements.where(category: "about")
-
        respond_to do |format|
       format.html
       format.js
@@ -37,32 +33,11 @@ class CandidatesController < ApplicationController
   def new
     @candidate = Candidate.new
 
-
-    respond_to do |format|
-      format.html # new.html.erb
-      format.json { render json: @candidate }
-    end
   end
 
   # GET /candidates/1/edit
   def edit
     @candidate = Candidate.find(params[:id])
-
-
-    if @candidate.short_goals.count == 0
-      3.times do
-        @candidate.short_goals.build
-
-      end
-    end
-
-    if @candidate.short_achievements.count == 0
-      3.times do
-        @candidate.short_achievements.build
-
-      end
-    end
-
 
   end
 
@@ -70,8 +45,6 @@ class CandidatesController < ApplicationController
   # POST /candidates.json
   def create
     @candidate = Candidate.create(params[:candidate])
-
-
 
       session[:candidate] = @candidate
       redirect_to @candidate

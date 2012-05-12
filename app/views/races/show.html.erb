@@ -6,7 +6,7 @@
 		<%= link_to image_tag("arrow-left.png"), params.merge(page: @candidates.previous_page) %>
 	</div>
 
-	<%= render :partial => 'races/candidate_column', :collection => @candidates %>
+	<%= render :partial => 'candidates/column/candidate', :collection => @candidates %>
 
 	<div id="compare_right_arrow" class="span1">
 		<%= link_to image_tag("arrow-right.png"), params.merge(page: @candidates.next_page) %>
