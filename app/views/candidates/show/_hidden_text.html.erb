@@ -1,38 +1,19 @@
 <div id="hidden_text" style="display: none">
+
     <div id="news">
       <p class="subtitle">News</p>
-
-
     </div>
 
-    <div id="aboutMe">
-      <p class="subtitle">About Me</p>
-      <p><%= @candidate.aboutMe %></p>
-    </div>
+  <%= render "candidates/show/display_statements", :category => "About" %>
 
+  <%= render "candidates/show/display_statements", :category => "Positions" %>
 
-    <div id="positions">
-      <p class="subtitle">Positions</p>
-      <p><%= @candidate.positions %></p>
-    </div>
+  <%= render "candidates/show/display_statements", :category => "Goals" %>
 
-    <div id="goals">
-      <p class="subtitle">Goals</p>
-      <p><%= @candidate.goals %></p>
-    </div>
+  <%= render "candidates/show/display_statements", :category => "Achievements" %>
 
-    <div id="achievements">
-      <p class="subtitle">Achievements</p>
-      <p><%= @candidate.achievements %></p>
-    </div>
+  <%= render "candidates/show/display_statements", :category => "Written Endorsements" %>
 
-    <div id="written_endorsements">
-      <p class="subtitle">Written Endorsements</p>
-      <p>Written Endorsements Go Here</p>
-    </div>
+  <%= render "candidates/show/display_statements", :category => "Video Endorsements" %>
 
-    <div id="video_endorsements">
-      <p class="subtitle">Video Endorsements</p>
-      <p>Videos Go Here</p>
-    </div>
 </div>

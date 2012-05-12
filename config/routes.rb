@@ -1,9 +1,7 @@
 Elevote::Application.routes.draw do
   resources :races
 
-  resources :endorsements do
-    resources :comments
-  end
+  resources :endorsements
 
   resources :opinions
 
@@ -23,10 +21,9 @@ Elevote::Application.routes.draw do
   end
 
   resources :candidates do
-    resources :comments
-    resources :short_goals
-    resources :short_achievements
+    resources :statements
   end
+
 
   resources :sessions, :only => [:new, :create, :destroy]
   match '/candidates/login', :to => 'sessions#candidate_login'

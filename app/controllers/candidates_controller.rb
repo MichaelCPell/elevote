@@ -20,6 +20,10 @@ class CandidatesController < ApplicationController
   # GET /candidates/1.json
   def show
     @candidate = Candidate.find(params[:id])
+    @candidate.build_my_statements
+
+
+    @abouts = @candidate.statements.where(category: "about")
 
        respond_to do |format|
       format.html
@@ -65,11 +69,11 @@ class CandidatesController < ApplicationController
   # POST /candidates
   # POST /candidates.json
   def create
-    @candidate = Candidate.create(params[:Candidate])
+    @candidate = Candidate.create(params[:candidate])
 
 
 
-      session[:Candidate] = @candidate
+      session[:candidate] = @candidate
       redirect_to @candidate
 
   end
@@ -77,20 +81,6 @@ class CandidatesController < ApplicationController
   # PUT /candidates/1
   # PUT /candidates/1.json
   def update
-    @candidate = Candidate.find(params[:id])
-
-
-
-
-    respond_to do |format|
-      if @candidate.update_attributes(params[:Candidate])
-        format.html { redirect_to race_path(@candidate.race_id), notice: 'Candidate was successfully updated.' }
-        format.json { head :ok }
-      else
-        format.html { render action: "edit" }
-        format.json { render json: @candidate.errors, status: :unprocessable_entity }
-      end
-    end
 
 
   end

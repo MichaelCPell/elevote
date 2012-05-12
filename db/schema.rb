@@ -86,19 +86,20 @@ ActiveRecord::Schema.define(:version => 20120505201321) do
   add_index "races", ["slug"], :name => "index_races_on_slug"
 
   create_table "statements", :force => true do |t|
-    t.integer  "official_id"
+    t.integer  "candidate_id"
     t.text     "content"
-    t.string   "type"
-    t.datetime "created_at",  :null => false
-    t.datetime "updated_at",  :null => false
+    t.string   "category"
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
   end
 
   create_table "users", :force => true do |t|
     t.string   "name"
     t.string   "email"
     t.string   "image_url"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.string   "password_digest"
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
   end
 
 end

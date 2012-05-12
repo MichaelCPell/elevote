@@ -1,0 +1,9 @@
+
+<div id="<%= category.downcase %>">
+      <p><%= category %></p>
+      <% @candidate.statements.where(category: category.downcase ).each_with_index do |cjd, index| %>
+      Statement <%= index+1 %>:
+      <%=  best_in_place cjd, :content, :path => [@candidate, cjd] %>
+      <br>
+      <% end %>
+</div>

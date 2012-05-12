@@ -8,7 +8,6 @@
     <h1>Log-In</h1>
     <% if session[:candidate] %>
         <%= link_to "Candidate Log Out", "/signout" %>
-        <%= link_to "Edit My Info", edit_official_path(session[:candidate]) %>
     <% else %>
         <%= render 'candidates/login_form' %>
     <% end %>

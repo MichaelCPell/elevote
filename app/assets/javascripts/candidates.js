@@ -4,6 +4,11 @@ $(document).ready(function(){
     var target = $(this).attr('href');
     var new_text = $(target).html();
       $("#display_area").html(new_text);
-  })
+        $(".best_in_place").best_in_place();
+  });
+
+
+
+
 
 });

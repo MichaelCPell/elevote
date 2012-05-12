@@ -29,15 +29,12 @@ class Candidate < ActiveRecord::Base
     has_many :updates, :class_name => "Comment", :as => :authorable
     has_many :video_comments, :class_name => "Comment", :as => :commentable
 
-  has_many :statements
-
   #Endorsements Relationships
     has_many :given_endorsements, :class_name => "Endorsement", :as => :endorsementer
     has_many :received_endorsements, :class_name => "Endorsement", :as => :endorsementable
 
-
   has_many :questions
-
+  has_many :statements
   has_many :opinions
 
   accepts_nested_attributes_for :comments, :statements
@@ -67,6 +64,24 @@ class Candidate < ActiveRecord::Base
     "#{firstname} #{lastname}"
   end
 
+
+  def build_my_statements
+    categories = %w(about positions goals achievements)
+
+    categories.each do |category|
+      self.build_three_statements(category)
+    end
+
+  end
+
+  def build_three_statements(category)
+    difference = 3 - self.statements.where(category: category).count
+
+    difference.times do
+      self.statements.create(category: category, content: "Click Here to Edit")
+    end
+
+  end
   #validations
 
 

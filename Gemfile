@@ -7,8 +7,9 @@ gem 'rails', '3.2.0'
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 
 gem 'acts_as_tree_rails3'
-gem 'koala'
 gem 'will_paginate'
+gem 'best_in_place'
+
 
 
 gem 'friendly_id'
@@ -22,9 +23,9 @@ end
 
 group :production do
 gem 'pg'
-gem 'pjax_rails'
-
 end
+
+
 
 
 

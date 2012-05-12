@@ -9,8 +9,7 @@ class SessionsController < ApplicationController
   def create
 
     auth = request.env["omniauth.auth"]
-
-    if auth
+    if params[:facebook]
        user = User.find_or_create_by_email(auth["info"]["email"])
 
        user.name = auth["info"]["name"]
@@ -19,6 +18,18 @@ class SessionsController < ApplicationController
 
        session[:user] = user
     end
+
+
+    if params[:commit]
+      user = User.find_or_create_by_email(params[:email])
+        user.name = params[:email]
+
+        user.save
+
+      session[:user] = user
+    end
+
+    redirect_to "/users/show"
   end
 
   def destroy
@@ -27,11 +38,12 @@ class SessionsController < ApplicationController
   end
 
   def candidate_login
-    official = Official.find_by_email(params[:email])
+    candidate = Candidate.find_by_email(params[:email])
 
-      if official && official.authenticate(params[:password])
-        session[:official] = official
-        redirect_to edit_official_path(official.id)
+      if candidate && candidate.authenticate(params[:password])
+        session[:user] = ""
+        session[:candidate] = candidate
+        redirect_to edit_candidate_path(candidate.id)
 
       else
 
@@ -39,5 +51,8 @@ class SessionsController < ApplicationController
       end
 
   end
+
+
+
 
 end
