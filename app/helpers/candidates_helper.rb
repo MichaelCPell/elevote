@@ -1,12 +1,12 @@
 module CandidatesHelper
 
   # @param question [Object]
-  # @param official_id [Object]
-  def find_answer(question, official)
+  # @param candidate_id [Object]
+  def find_answer(question, candidate)
 
 
-   if question.answers.find_by_official_id(official)
-     question.answers.find_by_official_id(official).name
+   if question.answers.find_by_candidate_id(candidate)
+     question.answers.find_by_candidate_id(candidate).name
    else
     "No Answer"
 
@@ -15,8 +15,8 @@ module CandidatesHelper
   end
 
 
-  def officials_full_name(official)
-    full_name = official.firstname + " " + official.lastname
+  def candidate_full_name(candidate)
+   candidate.firstname + " " + candidate.lastname
   end
 
   def display_portrait(candidate)

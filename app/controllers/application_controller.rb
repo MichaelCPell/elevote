@@ -18,7 +18,7 @@ class ApplicationController < ActionController::Base
   private
 
   def current_candidate
-  @current_candidate ||= candidate.find_by_id(session[:candidate])
+  @current_candidate ||= Candidate.find_by_id(session[:candidate])
   end
 
 

@@ -43,7 +43,7 @@ class SessionsController < ApplicationController
       if candidate && candidate.authenticate(params[:password])
         session[:user] = ""
         session[:candidate] = candidate
-        redirect_to edit_candidate_path(candidate.id)
+        redirect_to candidate
 
       else
 
