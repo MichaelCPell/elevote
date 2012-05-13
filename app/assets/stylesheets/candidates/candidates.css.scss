@@ -45,3 +45,13 @@ $blue: #012646;
 
 }
 
+
+.best_in_place{
+  width: 500px;
+
+  input{
+    min-width: 500px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    }
+  }

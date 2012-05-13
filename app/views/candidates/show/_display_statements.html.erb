@@ -1,9 +1,35 @@
 
 <div id="<%= category.downcase %>">
-      <p><%= category %></p>
-      <% @candidate.statements.where(category: category.downcase ).each_with_index do |cjd, index| %>
-      Statement <%= index+1 %>:
-      <%=  best_in_place cjd, :content, :path => [@candidate, cjd] %>
+      <h1><%= category %></h1>
+      <% @candidate.statements.where(category: category.downcase ).each_with_index do |statement, index| %>
+        <%= index+1 %>:
+      
+        <% if @candidate.id == session[:candidate_id] %>
+          <%=  best_in_place statement, :content, :path => [@candidate, statement] %>
+        <% else %>
+          <%= statement.content %>
+        <% end %>
       <br>
       <% end %>
+      <br>
+
+
+
+
+        <% if @candidate.has_attribute?(category.downcase) %>
+          <section id="category-main-text">
+               <%= simple_format(@candidate.send(category.downcase)) %>
+          </section>
+          <% if @candidate.id == session[:candidate_id] %>
+            <%=  form_for @candidate, :remote => true do |f| %>
+            <%= f.label "Change Main Text Below" %>
+            <%= f.text_area category.downcase, :id => "input-main-text", width: "500px;", rows: 10 %>
+            <br>
+            <%= f.submit class: "btn btn-submit", value: "Update Main Text" %>
+            <% end %>
+
+          <% end %>
+        <% end %>
+
+      
 </div>

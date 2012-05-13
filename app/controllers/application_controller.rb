@@ -18,7 +18,7 @@ class ApplicationController < ActionController::Base
   private
 
   def current_candidate
-  @current_candidate ||= Candidate.find_by_id(session[:candidate])
+  @current_candidate ||= Candidate.find_by_id(session[:candidate_id])
   end
 
 
@@ -35,6 +35,10 @@ class ApplicationController < ActionController::Base
   def name_from_id(id)
     self.find(id).name
 
+  end
+
+  def nav_content_show_elections
+    @nav_content = "Click to See Elections Again"
   end
 
 

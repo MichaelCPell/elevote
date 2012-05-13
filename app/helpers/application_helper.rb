@@ -35,7 +35,7 @@ module ApplicationHelper
     if user.id.blank?
       raw("You are not logged in(#{link_to('Sign-In', '/signin')})")
     else
-      raw(user.name + link_to("Sign-Out",'/signout'))
+      raw(user.name)
     end
   end
 

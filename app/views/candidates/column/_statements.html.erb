@@ -4,8 +4,15 @@
     <%= category %>
   </p>
 
+
+ 
   <% candidate.statements.where(category: category.downcase ).each_with_index do |statement| %>
+ 
+    <% if statement.created_at == statement.updated_at %>
+    This statement has not been filled out.
+    <% else %>
     <%=  statement.content %>
+    <% end %>
     <br>
   <% end %>
 

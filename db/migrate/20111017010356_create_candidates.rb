@@ -7,7 +7,7 @@ class CreateCandidates < ActiveRecord::Migration
       t.string :password_digest
       t.string :portrait
       t.string :campaignSlogan
-      t.text :aboutMe
+      t.text :about
       t.text :positions
       t.text :goals
       t.text :achievements

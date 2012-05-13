@@ -2,9 +2,7 @@ class CandidatesController < ApplicationController
   # GET /candidates
   # GET /candidates.json
 
-  before_filter :authenticated?, :only => [:edit, :update]
-  before_filter :correct_candidate, :only => [:edit, :update]
-
+  respond_to :json
 
   def index
     @candidates = Candidate.all
@@ -19,7 +17,9 @@ class CandidatesController < ApplicationController
   # GET /candidates/1
   # GET /candidates/1.json
   def show
+
     @candidate = Candidate.find(params[:id])
+    nav_content_is_my_contest(@candidate)
     @candidate.build_my_statements
        respond_to do |format|
       format.html
@@ -54,8 +54,10 @@ class CandidatesController < ApplicationController
   # PUT /candidates/1
   # PUT /candidates/1.json
   def update
+    @candidate = Candidate.find(params[:id])
+    @candidate.update_attributes(params[:candidate])
 
-
+    respond_with @candidate
   end
 
   # DELETE /candidates/1
@@ -82,6 +84,10 @@ class CandidatesController < ApplicationController
     def correct_candidate
       @candidate = Candidate.find(params[:id])
       redirect_to(root_path) unless current_candidate == @candidate
+    end
+
+    def nav_content_is_my_contest(candidate)
+      @nav_content = Race.find(candidate.race_id).name
     end
 
 
