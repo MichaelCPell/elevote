@@ -6,13 +6,13 @@
             <%= link_to image_tag("logo.png"), races_path %>
         </div>
 
-        <% if current_user %>
+
         <section id="user-info" class="span4 offset4">
           <h5><%= display_user_name(current_user) %></h5>
           <h5><%= link_to "My Booth", '/booth' %></h5>
-          <h5><%= link_to "Sign Out", "/signout" %></h5>
+
+          <h5><%= link_to "Sign Out", "/signout" if !current_user.blank? %></h5>
         </section>
-        <% end %>
 
         <% if current_candidate %>
         <section id="user-info" class="span4 offset4">

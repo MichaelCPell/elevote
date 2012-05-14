@@ -31,10 +31,11 @@ module ApplicationHelper
 
 #  Layouts Helpers
 
-  def display_user_name(user)
-    if user.id.blank?
+  def display_user_name(user_id)
+    if user_id.blank?
       raw("You are not logged in(#{link_to('Sign-In', '/signin')})")
     else
+      user = User.find(user_id)
       raw(user.name)
     end
   end

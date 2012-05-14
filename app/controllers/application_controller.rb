@@ -18,23 +18,22 @@ class ApplicationController < ActionController::Base
   private
 
   def current_candidate
-  @current_candidate ||= Candidate.find_by_id(session[:candidate_id])
+    @current_candidate ||= Candidate.find_by_id(session[:candidate_id])
   end
 
 
   def current_user
 
-    if session[:user]
-      @current_user ||= User.find_by_id(session[:user])
+    if session[:user_id]
+      @current_user ||= User.find_by_id(session[:user_id])
     else
-      @current_user = User.new(name: "Not Logged In")
+      @current_user = nil
     end
 
   end
 
   def name_from_id(id)
     self.find(id).name
-
   end
 
   def nav_content_show_elections

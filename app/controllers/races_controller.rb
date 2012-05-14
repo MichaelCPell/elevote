@@ -1,32 +1,20 @@
 class RacesController < ApplicationController
-  # GET /opinions
-  # GET /opinions.json
+
    respond_to :html, :js
 
    before_filter :instantiate_booth
 
   def index
-
-
     @nav_content = "Click Here To Get Started"
     @races = Race.all
-
-
-
-
   end
 
-  # GET /opinions/1
-  # GET /opinions/1.json
+
   def show
     @races = Race.all
     @race = Race.find(params[:id])
     @nav_content = @race.name
     @candidates = Candidate.scoped_by_race_id(@race.id).order('updated_at DESC').page(params[:page]).per_page(3)
-
-
-
-
 
     respond_to do |format|
       format.html
@@ -36,16 +24,13 @@ class RacesController < ApplicationController
                              disposition: "inline",
                                page_layout: "landscape"
       end
-
-
     end
 
   end
 
-  # GET /opinions/new
-  # GET /opinions/new.json
-  def new
 
+  def new
+    @race = Race.new
   end
 
   # GET /opinions/1/edit
@@ -56,7 +41,8 @@ class RacesController < ApplicationController
   # POST /opinions
   # POST /opinions.json
   def create
-
+    @race = Race.create(params[:race])
+    redirect_to races_path
   end
 
   # PUT /opinions/1
