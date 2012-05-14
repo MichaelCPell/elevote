@@ -16,7 +16,7 @@ class SessionsController < ApplicationController
        user.image_url = auth["info"]["image"]
        user.save
 
-       session[:user] = user
+       session[:user_id] = user.id
     end
 
 
@@ -26,7 +26,7 @@ class SessionsController < ApplicationController
 
         user.save
 
-      session[:user] = user
+      session[:user_id] = user.id
     end
 
     redirect_to "/users/show"
@@ -41,7 +41,7 @@ class SessionsController < ApplicationController
     candidate = Candidate.find_by_email(params[:email])
 
       if candidate && candidate.authenticate(params[:password])
-        session[:user] = ""
+        session[:user_id] = ""
         session[:candidate_id] = candidate.id
         redirect_to candidate
 
