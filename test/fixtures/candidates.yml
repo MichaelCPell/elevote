@@ -1,9 +1,9 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
 
 one:
-  firstname: MyString
-  lastname: MyString
-  office_id: 
+  firstname: Adam
+  lastname: Apple
+
 
 two:
   firstname: MyString

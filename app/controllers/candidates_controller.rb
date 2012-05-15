@@ -17,9 +17,10 @@ class CandidatesController < ApplicationController
   # GET /candidates/1
   # GET /candidates/1.json
   def show
-
     @candidate = Candidate.find(params[:id])
+
     nav_content_is_my_contest(@candidate)
+
     @candidate.build_my_statements
        respond_to do |format|
       format.html
@@ -46,7 +47,7 @@ class CandidatesController < ApplicationController
   def create
     @candidate = Candidate.create(params[:candidate])
 
-      session[:candidate] = @candidate
+      session[:candidate_id] = @candidate.id
       redirect_to @candidate
 
   end

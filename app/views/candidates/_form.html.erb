@@ -20,7 +20,7 @@
 	<%= f.text_field :lastname %>
 
 	<%= f.label :contest %>
-	<%= collection_select(:official, :race_id, Race.all, :id, :name ) %>
+	<%= f.collection_select( :race_id, Race.all, :id, :name ) %>
 
 	<%= f.label :email %>
 	<%= f.text_field :email %>

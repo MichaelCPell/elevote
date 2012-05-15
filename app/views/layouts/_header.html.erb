@@ -6,24 +6,20 @@
             <%= link_to image_tag("logo.png"), races_path %>
         </div>
 
-
-        <section id="user-info" class="span4 offset4">
-          <h5><%= display_user_name(current_user) %></h5>
-          <h5><%= link_to "My Booth", '/booth' %></h5>
-
-          <h5><%= link_to "Sign Out", "/signout" if !current_user.blank? %></h5>
-        </section>
-
         <% if current_candidate %>
-        <section id="user-info" class="span4 offset4">
-          <h5><%= candidate_full_name(current_candidate) %></h5>
-          <h5><%= link_to "My Profile", current_candidate %></h5>
-          <h5><%= link_to "Sign Out", '/signout' %></h5>
+          <section id="user-info" class="span4 offset4">
+            <h5><%= candidate_full_name(current_candidate) %></h5>
+            <h5><%= link_to "My Profile", current_candidate %></h5>
+            <h5><%= link_to "Sign Out", '/signout' %></h5>
+          </section>
           
-        </section>
+        <% else %>
+          <section id="user-info" class="span4 offset4">
+            <h5><%= display_user_name(current_user) %></h5>
+            <h5><%= link_to "My Booth", '/booth' %></h5>
+            <h5><%= link_to "Sign Out", "/signout" if current_user %></h5>
+          </section>
         <% end %>
-
-
     </div>
   </div>
 
