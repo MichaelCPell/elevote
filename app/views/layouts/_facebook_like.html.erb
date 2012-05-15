@@ -1,4 +1,4 @@
-<div class='fb-like' data-href='<%= url_for target, :only_path => false %>' data-send='false'
+<div class='fb-like' data-href='<%= root_url.to_s[0..-2] + url_for(target)%>' data-send='false'
 data-width='150' data-show-faces='true' data-font='trebuchet ms'>
 
 </div>

@@ -6,7 +6,7 @@
 		<%= @candidate.lastname %>
 	</h1>
 
-	<%= raw(facebook_like_button(@candidate)) %>
+	<%= render "layouts/facebook_like", :target => @candidate %>
 	<%= display_portrait(@candidate) %>
 	<%= render 'candidates/show/navigation' %>
 
