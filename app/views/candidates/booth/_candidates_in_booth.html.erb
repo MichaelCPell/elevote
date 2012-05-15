@@ -13,8 +13,8 @@
 
 				<td>
 					<ul class="booth_list">
-						<li><h3><%= candidate.full_name %></h3></li>
-						<li>Candidate Website</li>
+						<li><h3><%= link_to candidate.full_name, candidate, :class => "modal_trigger", :remote => :true %></h3></li>
+						<% if candidate.website %><li>Candidate Website</li><% end %>
 					</ul>
 				</td>
 

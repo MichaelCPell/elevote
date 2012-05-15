@@ -1,5 +1,5 @@
 <div class="row">
-  <h1 class="span4">Your Elevote Booth</h1>
+  <h1 class="span4"><%= @user.name + "'s" if @user %>Elevote Booth</h1>
 
   <% if current_user %>
     <section id="facebook-like" class="span4" >
@@ -14,5 +14,6 @@
   <% end %>
 </div>
 
-<%= render 'candidates/candidates_in_booth' %>
+<%= render 'candidates/booth/candidates_in_booth' %>
+<%= render 'candidates/show/modal' %>
 
