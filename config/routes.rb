@@ -1,7 +1,7 @@
 Elevote::Application.routes.draw do
   resources :races
 
-  resources :endorsements
+  resources :endorsements, :only => :new
 
   resources :opinions
 

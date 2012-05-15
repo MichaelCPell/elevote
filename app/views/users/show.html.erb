@@ -1,18 +1,16 @@
 <div class="row">
-  <h1 class="span6">Your Elevote Booth</h1>
-
-
+  <h1 class="span4">Your Elevote Booth</h1>
 
   <% if current_user %>
-
-    <section id="user-info" class="pull-right">
-    <%=  current_user.name %>
-
-    <%=  current_user.email %>
-
-    <%= image_tag(current_user.image_url) %>
+    <section id="facebook-like" class="span4" >
+        <%= raw(facebook_like_button(current_user)) %>
     </section>
 
+
+    <section id="user-info" class="span4 pull-right">
+    <%=  current_user.name %>
+    <%= image_tag(current_user.image_url) %>
+    </section>
   <% end %>
 </div>
 

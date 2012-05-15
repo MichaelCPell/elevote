@@ -7,11 +7,11 @@ class SessionsController < ApplicationController
 
 
   def create
-
+    user ||= nil
     auth = request.env["omniauth.auth"]
+
     if params[:facebook]
        user = User.find_or_create_by_email(auth["info"]["email"])
-
        user.name = auth["info"]["name"]
        user.image_url = auth["info"]["image"]
        user.save
@@ -19,15 +19,15 @@ class SessionsController < ApplicationController
        session[:user_id] = user.id
     end
 
-
     if params[:commit]
       user = User.find_or_create_by_email(params[:email])
-        user.name = params[:email]
-
-        user.save
+      user.name = params[:email]
+      user.save
 
       session[:user_id] = user.id
     end
+
+    user.endorsements.each{|x| session[:candidate_ids] << x.endorsementable_id.to_s }
 
     redirect_to "/users/show"
   end

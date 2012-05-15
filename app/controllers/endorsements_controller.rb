@@ -1,84 +1,36 @@
 class EndorsementsController < ApplicationController
-  # GET /endorsements
-  # GET /endorsements.json
-
   respond_to :html, :json
-  def index
-    @votes = Endorsement.all
 
-    respond_to do |format|
-      format.html # index.html.erb
-      format.json { render json: @votes }
-    end
-  end
-
-  # GET /endorsements/1
-  # GET /endorsements/1.json
-  def show
-    @vote = Endorsement.find(params[:id])
-
-    respond_to do |format|
-      format.html # show.html.erb
-      format.json { render json: @vote }
-    end
-  end
-
-  # GET /endorsements/new
-  # GET /endorsements/new.json
   def new
     session[:candidate_ids] ||= []
+    current_user ? current_user_id = current_user.id : current_user_id = nil
 
-    id_index = session[:candidate_ids].index(params[:candidate_id])
+    candidate_id = params[:candidate_id]
+    index_of_candidate_id = session[:candidate_ids].index(params[:candidate_id])
 
-    if id_index.blank?
-      session[:candidate_ids] << params[:candidate_id]
+    if index_of_candidate_id.blank?
+      session[:candidate_ids] << candidate_id
+      if current_user_id  #This is extra logic that executes if the user is signed in
+        Endorsement.create(endorsementer_id: current_user_id,
+                           endorsementer_type: "User",
+                           endorsementable_id: candidate_id,
+                           endorsementable_type: "Candidate")
+      end
     else
       session[:candidate_ids].delete(params[:candidate_id])
-    end
-
-
-    render :nothing => true
-
-  end
-
-  # GET /endorsements/1/edit
-  def edit
-    @endorsement = Endorsement.find(params[:id])
-  end
-
-  # POST /endorsements
-  # POST /endorsements.json
-  def create
-    session[:candidate_ids] ||= []
-    session[:candidate_ids] << params[:candidate_id]
-
-  end
-
-  # PUT /endorsements/1
-  # PUT /endorsements/1.json
-  def update
-    @endorsement = Endorsement.find(params[:id])
-
-    respond_to do |format|
-      if @endorsement.update_attributes(params[:endorsement])
-        format.html { redirect_to @endorsement, notice: 'Endorsement was successfully updated.' }
-        format.json { head :ok }
-      else
-        format.html { render action: "edit" }
-        format.json { render json: @endorsement.errors, status: :unprocessable_entity }
+      if current_user_id #This is extra logic that executes if the user is signed in
+        destroy_my_endorsement(current_user_id, candidate_id)
       end
     end
+
+    render :nothing => true
   end
 
-  # DELETE /endorsements/1
-  # DELETE /endorsements/1.json
-  def destroy
-    @endorsement = Endorsement.find(params[:id])
-    @endorsement.destroy
 
-    respond_to do |format|
-      format.html { redirect_to endorsements_url }
-      format.json { head :ok }
-    end
+  private
+
+  def destroy_my_endorsement(endorsementer, endorsementable)
+    @endorsement = Endorsement.where({endorsementable_id: endorsementable, endorsementer_id: endorsementer}).first
+    @endorsement.destroy
   end
 end
