@@ -2,7 +2,7 @@
 
   <h2><%= link_to candidate.full_name, candidate, :class => "modal_trigger", :remote => :true %></h2>
 
-  <%= raw(facebook_like_button(candidate)) %>
+  <%= render "layouts/facebook_like", :target => candidate %>
 
   <div class="center" style="text-align: center;">
     <%= is_in_booth(candidate.id) %>
