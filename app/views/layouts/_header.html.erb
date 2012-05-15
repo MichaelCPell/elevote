@@ -16,7 +16,7 @@
         <% else %>
           <section id="user-info" class="span4 offset4">
             <h5><%= display_user_name(current_user) %></h5>
-            <h5><%= link_to "My Booth", '/booth' %></h5>
+            <h2><%= link_to "My Booth", '/booth' %><%= link_to image_tag("booth.png"), '/booth' %></h2>
             <h5><%= link_to "Sign Out", "/signout" if current_user %></h5>
           </section>
         <% end %>

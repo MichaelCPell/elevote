@@ -1,12 +1,20 @@
-<% if current_user %>
+<div class="row">
+  <h1 class="span6">Your Elevote Booth</h1>
 
-  <h1><%=  current_user.name %></h1>
 
-  <h2><%=  current_user.email %></h2>
 
-  <%= image_tag(current_user.image_url) %>
+  <% if current_user %>
 
-<% end %>
+    <section id="user-info" class="pull-right">
+    <%=  current_user.name %>
+
+    <%=  current_user.email %>
+
+    <%= image_tag(current_user.image_url) %>
+    </section>
+
+  <% end %>
+</div>
 
 <%= render 'candidates/candidates_in_booth' %>
 
