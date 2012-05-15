@@ -18,6 +18,9 @@
 	
 	<%= f.label :lastname %>
 	<%= f.text_field :lastname %>
+	
+	<%= f.label :portrait %>
+	<%= f.file_field :portrait %>
 
 	<%= f.label :contest %>
 	<%= f.collection_select( :race_id, Race.all, :id, :name ) %>
