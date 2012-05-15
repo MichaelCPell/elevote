@@ -3,7 +3,7 @@
 
   <% if current_user %>
     <section id="facebook-like" class="span4" >
-        <%= raw(facebook_like_button(current_user)) %>
+        <%= render "layouts/facebook_like", :target => current_user %>
     </section>
 
 

@@ -11,7 +11,7 @@ module ApplicationHelper
   end
 
 
-  def facebook_like_button(candidate)
+  def facebook_like_button(target)
     "
     <div class='fb-like' data-href='#{candidate_url(candidate)}' data-send='false'
      data-width='150' data-show-faces='true' data-font='trebuchet ms'>
