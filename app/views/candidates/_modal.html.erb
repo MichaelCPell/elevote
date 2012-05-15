@@ -13,8 +13,7 @@
   </p>
 
 
-  <div class="fb-like" data-href="<%= official_url(@candidate) %>" data-send="false"
-       data-width="150" data-show-faces="true" data-font="trebuchet ms"></div>
+  <%= render "layouts/facebook_like", :target => @candidate %>
 
 
   <div class="modal_candidate_portrait prepend-1">
