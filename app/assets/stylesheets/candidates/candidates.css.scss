@@ -60,6 +60,8 @@ $blue: #012646;
 .candidate-column{
   a{
     @include font-titles;
+
+    font-weight: normal;
   }
 
   h3{
@@ -69,5 +71,6 @@ $blue: #012646;
 
   P{
     @include font-body;
+    /*margin: 0px;*/
   }
 }
