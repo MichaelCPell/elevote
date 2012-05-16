@@ -1,8 +1,5 @@
 class CandidatesController < ApplicationController
-  # GET /candidates
-  # GET /candidates.json
-
-  respond_to :json
+  respond_to :json, :html
 
   def index
     @candidates = Candidate.all
@@ -14,46 +11,44 @@ class CandidatesController < ApplicationController
     end
   end
 
-  # GET /candidates/1
-  # GET /candidates/1.json
+
   def show
     @candidate = Candidate.find(params[:id])
 
     nav_content_is_my_contest(@candidate)
 
     @candidate.build_my_statements
-       respond_to do |format|
+
+    respond_to do |format|
       format.html
       format.js
+    end
+  end
+
+
+  def new
+    @candidate = Candidate.new
+  end
+
+
+  def edit
+    @candidate = Candidate.find(params[:id])
+  end
+
+
+  def create
+    @candidate = Candidate.new(params[:candidate])
+
+    if @candidate.save
+      session[:candidate_id] = @candidate.id
+      redirect_to @candidate
+    else
+      render "info/for_candidates"
     end
 
   end
 
-  # GET /candidates/new
-  # GET /candidates/new.json
-  def new
-    @candidate = Candidate.new
 
-  end
-
-  # GET /candidates/1/edit
-  def edit
-    @candidate = Candidate.find(params[:id])
-
-  end
-
-  # POST /candidates
-  # POST /candidates.json
-  def create
-    @candidate = Candidate.create(params[:candidate])
-
-      session[:candidate_id] = @candidate.id
-      redirect_to @candidate
-
-  end
-
-  # PUT /candidates/1
-  # PUT /candidates/1.json
   def update
     @candidate = Candidate.find(params[:id])
     @candidate.update_attributes(params[:candidate])
@@ -61,8 +56,7 @@ class CandidatesController < ApplicationController
     respond_with @candidate
   end
 
-  # DELETE /candidates/1
-  # DELETE /candidates/1.json
+
   def destroy
     @candidate = Candidate.find(params[:id])
     @candidate.destroy
@@ -90,7 +84,4 @@ class CandidatesController < ApplicationController
     def nav_content_is_my_contest(candidate)
       @nav_content = Race.find(candidate.race_id).name
     end
-
-
-
 end

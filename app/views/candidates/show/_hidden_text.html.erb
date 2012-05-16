@@ -2,6 +2,14 @@
 
     <div id="news">
       <p class="subtitle">News</p>
+
+      <% if @candidate.id == session[:candidate_id] %>
+        <%= form_for @candidate do |f| %>
+          <%= f.label :edit_portrait %>
+          <%= f.file_field :portrait %>
+          <%= f.submit "Update Portrait" %>
+        <% end %>
+      <% end %>
     </div>
 
   <%= render "candidates/show/display_statements", :category => "About" %>
