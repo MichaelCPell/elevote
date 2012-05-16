@@ -8,11 +8,11 @@ $runner_cream: #d3d0be;
 $fontwhite: #f9f9f9;
 $blue: #012646;
 
-@mixin font-body{
+@mixin font-titles{
   font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 
-@mixin font-titles{
+@mixin font-body{
     font-family: 'Lusitana', serif;
 }
 
@@ -54,4 +54,20 @@ $blue: #012646;
     overflow-x: hidden;
     overflow-y: hidden;
     }
+}
+
+//Candidate Column Formats
+.candidate-column{
+  a{
+    @include font-titles;
   }
+
+  h3{
+    @include font-titles;
+  }
+
+
+  P{
+    @include font-body;
+  }
+}

@@ -1,17 +1,16 @@
 <div class="candidate_<%= category.downcase %>">
 
-  <p class="subheading">
+  <h3>
     <%= category %>
-  </p>
+  </h3>
 
 
  
   <% candidate.statements.where(category: category.downcase ).each_with_index do |statement| %>
- 
     <% if statement.created_at == statement.updated_at %>
-    This statement has not been filled out.
+      <p>This statement has not been filled out.</p>
     <% else %>
-    <%=  statement.content %>
+      <p><%=  statement.content %></p>
     <% end %>
     <br>
   <% end %>
