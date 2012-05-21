@@ -16,18 +16,8 @@
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 
-  <% case %>
-  <% when @race %>
-      <title><%= @race.name %> Election for Durham, North Carolina</title>
-      <meta name="description" content="Everything you need to know about candidates in the <%= @race.name%> election in Durham, North Carolina.">
-
-  <% when @official %>
-      <title><%= @official.full_name %>'s Candidate Profile</title>
-      <meta name="description" content="<%= @official.full_name %>'s Positions, Values, Accomplishments, Goals and Pictures for the Upcoming Election">
-  <% else %>
-      <title>Election Information for Durham, North Carolina</title>
-      <meta name="description" content="Durham, NC's Candidate Positions, Values, Accomplishments, Goals and Pictures for the Upcoming Election">
-   <% end %>
+  <title>Candidate Positions, Values, Accomplishments, Goals and Pictures for the Upcoming Election</title>
+  <meta name="description" content="Candidate Positions, Values, Accomplishments, Goals and Pictures for the Upcoming Election">
 </head>
 
 
