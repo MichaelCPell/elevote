@@ -1,6 +1,6 @@
 class SitesController < ApplicationController
-  # GET /sites
-  # GET /sites.json
+  layout "home"
+
   def index
     @sites = Site.all
 

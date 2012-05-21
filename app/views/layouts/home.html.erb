@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<% if @official == nil %>
+    <html>
+<% else %>
+    <html xmlns="http://www.w3.org/1999/xhtml"
+          xmlns:og="http://ogp.me/ns#"
+          xmlns:fb="http://www.facebook.com/2008/fbml">
+<% end %>
+
+
+<head>
+  <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Lusitana' rel='stylesheet' type='text/css'>
+
+  <%= stylesheet_link_tag "application" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+
+  <% case %>
+  <% when @race %>
+      <title><%= @race.name %> Election for Durham, North Carolina</title>
+      <meta name="description" content="Everything you need to know about candidates in the <%= @race.name%> election in Durham, North Carolina.">
+
+  <% when @official %>
+      <title><%= @official.full_name %>'s Candidate Profile</title>
+      <meta name="description" content="<%= @official.full_name %>'s Positions, Values, Accomplishments, Goals and Pictures for the Upcoming Election">
+  <% else %>
+      <title>Election Information for Durham, North Carolina</title>
+      <meta name="description" content="Durham, NC's Candidate Positions, Values, Accomplishments, Goals and Pictures for the Upcoming Election">
+   <% end %>
+</head>
+
+
+<body>
+	<div id="fb-root"></div>
+
+	<%= render 'layouts/header' %>
+
+	<div class="container">
+		<section id="content" class="">
+			<% if flash[:notice] %>
+				<%= render 'layouts/notice' %>
+			<% end %>
+
+			<%= yield %>
+		</section>
+
+		<%= render 'layouts/footer'   %>
+	</div>
+
+
+</body>
+</html>
