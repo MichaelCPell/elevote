@@ -2,7 +2,7 @@ class ApplicationController < ActionController::Base
   protect_from_forgery
   #http_basic_authenticate_with :name => "roll", :password => "tide"
 
-  helper_method :current_candidate, :current_url, :current_user, :omnihash
+  helper_method :current_candidate, :current_url, :current_user, :omnihash, :current_site
 
 
   def current_url
@@ -26,6 +26,17 @@ class ApplicationController < ActionController::Base
 
     if session[:user_id]
       @current_user ||= User.find_by_id(session[:user_id])
+    else
+      @current_user = nil
+    end
+
+  end
+
+
+  def current_site
+
+    if session[:site_id]
+      @current_site ||= Site.find_by_id(session[:site_id])
     else
       @current_user = nil
     end

@@ -5,16 +5,19 @@ class RacesController < ApplicationController
    before_filter :instantiate_booth
 
   def index
+    session[:site_id] = params[:site_id] if params[:site_id]
     @nav_content = "Click Here To Get Started"
     @races = Race.all
   end
 
 
   def show
+    @site = current_site
+
     @races = Race.all
     @race = Race.find(params[:id])
     @nav_content = @race.name
-    @candidates = Candidate.scoped_by_race_id(@race.id).order('updated_at DESC').page(params[:page]).per_page(3)
+    @candidates = @site.candidates.scoped_by_race_id(@race.id).order('updated_at DESC').page(params[:page]).per_page(3)
 
     respond_to do |format|
       format.html

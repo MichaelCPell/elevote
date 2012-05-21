@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120505201321) do
+ActiveRecord::Schema.define(:version => 20120521164254) do
 
   create_table "candidates", :force => true do |t|
     t.string   "firstname"
@@ -20,7 +20,7 @@ ActiveRecord::Schema.define(:version => 20120505201321) do
     t.string   "password_digest"
     t.string   "portrait"
     t.string   "campaignSlogan"
-    t.text     "aboutMe"
+    t.text     "about"
     t.text     "positions"
     t.text     "goals"
     t.text     "achievements"
@@ -76,6 +76,13 @@ ActiveRecord::Schema.define(:version => 20120505201321) do
     t.datetime "updated_at",     :null => false
   end
 
+  create_table "presences", :force => true do |t|
+    t.integer  "candidate_id"
+    t.integer  "site_id"
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
+  end
+
   create_table "races", :force => true do |t|
     t.string   "name"
     t.datetime "created_at", :null => false
@@ -84,6 +91,14 @@ ActiveRecord::Schema.define(:version => 20120505201321) do
   end
 
   add_index "races", ["slug"], :name => "index_races_on_slug"
+
+  create_table "sites", :force => true do |t|
+    t.string   "name"
+    t.string   "state"
+    t.string   "county"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
   create_table "statements", :force => true do |t|
     t.integer  "candidate_id"

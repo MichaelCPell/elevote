@@ -1,23 +1,17 @@
 class Candidate < ActiveRecord::Base
   extend FriendlyId
+  mount_uploader :portrait, ImageUploader
+  friendly_id :full_name, :use => :slugged
 
   has_secure_password
   validates_presence_of :password, :on => :create
   validates_presence_of :email
 
-  mount_uploader :portrait, ImageUploader
 
-
-  friendly_id :full_name, :use => :slugged
-
-
-  #Scopes
-
-
-  #Associations
 
   belongs_to :race
-
+  has_many :presences
+  has_many :sites, :through => :presences
 
 
 
@@ -32,6 +26,8 @@ class Candidate < ActiveRecord::Base
   #Endorsements Relationships
     has_many :given_endorsements, :class_name => "Endorsement", :as => :endorsementer
     has_many :received_endorsements, :class_name => "Endorsement", :as => :endorsementable
+
+
 
   has_many :questions
   has_many :statements
