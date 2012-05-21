@@ -1,4 +1,8 @@
 $yellow: #d3a414;
+@mixin font-titles{
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
 
 .elevote {
   font-size: 60px;
