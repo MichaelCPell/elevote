@@ -1,13 +1,7 @@
 <header id="main-layout">
   <div class="container">
     <div class="row">
-        <div id="header_image" class="span4">
-            <% if current_site %>
-            <%= link_to image_tag("logo.png"), races_path %>
-            <% else %>
-            <%= link_to image_tag("logo.png"), sites_path %>
-            <% end %>
-        </div>
+        <%= render "layouts/banner" %>
 
         <% if current_candidate %>
           <section id="user-info" class="span4 offset4">
@@ -17,7 +11,7 @@
           </section>
           
         <% else %>
-          <section id="user-info" class="span4 offset4">
+          <section id="user-info" class="span4">
             <h3><%= display_user_name(current_user) %></h3>
             <h2><%= link_to "My Booth", '/booth' %><%= link_to image_tag("voting-booth-button.png", :size => "45x45", :style => "margin-left: 20px;"), '/booth' %></h2>
             <h5><%= link_to "Sign Out", "/signout" if current_user %></h5>

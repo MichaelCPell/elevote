@@ -1,0 +1,21 @@
+$yellow: #d3a414;
+
+.elevote {
+  font-size: 60px;
+  line-height: 80px;
+  color: white;
+
+  &:hover{
+    color: white;
+    text-decoration: none;
+  }
+
+}
+
+.site-name {
+  font-size: 60px;
+  line-height: 80px;
+  color: $yellow;
+  font-style: italic;
+
+}

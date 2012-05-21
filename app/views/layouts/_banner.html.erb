@@ -1,0 +1,7 @@
+<div id="header_image" class="span8">
+  <% if current_site %>
+  <%= link_to raw("Elevote: <span class='site-name'> #{current_site.name}</span>"), races_path, :class => "elevote" %>
+  <% else %>
+  <%= link_to "Elevote", sites_path, :class => "elevote" %>
+  <% end %>
+</div>
