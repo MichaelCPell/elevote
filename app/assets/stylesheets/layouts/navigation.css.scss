@@ -8,32 +8,26 @@ $blue: #012646;
 
 nav#main-navigation{
   background-color: $runner_cream;
-
+  padding-top:10px;
+  height: 40px;
 
   .nav{
-    margin-top: 5px;
-    margin-bottom: 5px;
     border: 1px $yellow solid;
     background: white;
     padding: 5px;
     font-size: 24px;
-    font-family: 'Lusitana', serif;
 
     a{
       color: $runner_gray;
     }
-
     .dropdown-menu {
       li{
         margin-bottom: 10px;
+        &:last-child{
+          margin-bottom: 0px;
+        }
       }
     }
-
-
   }
 
-  .aux-link{
-   color: $runner_gray;
-   margin-top: 10px;
-  }
 }

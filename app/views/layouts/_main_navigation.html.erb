@@ -1,22 +1,25 @@
 <nav id="main-navigation" >
   <div class="container">
-    <ul class="nav span5">
-      <li class="dropdown" id="menu1">
-        <a data-target="#menu1" data-toggle="dropdown" class="dropdown-toggle start-button">
-            <%= @nav_content %>
-          <b class="caret" style="float: right;"></b>
-        </a>
-        <ul class="dropdown-menu">
-          <% for contest in Race.all %>
-              <li><%= link_to contest.name, contest %></li>
-          <% end %>
-        </ul>
-      </li>
-    </ul>
 
-    <%= link_to "Info for Citizens", "/info/for_citizens", :class => "aux-link span2 offset2"%>
-    <%= link_to "Info for Candidates", "/info/for_candidates", :class => "aux-link span2" %>
+      <ul class="nav span6">
+        <li class="dropdown" id="menu1">
+          <a data-target="#menu1" data-toggle="dropdown" class="dropdown-toggle start-button">
+              <%= @nav_content %>
+            <b class="caret" style="float: right;"></b>
+          </a>
+          <ul class="dropdown-menu">
+            <% for contest in Race.all %>
+                <li><%= link_to contest.name, contest %></li>
+            <% end %>
+          </ul>
+        </li>
+      </ul>
 
+      <section id="extra-links" class="pull-right">
+        <%= link_to "Change County", root_url, :class => "btn" %>
+        <%= link_to "Info for Citizens", "/info/for_citizens", :class => "btn"%>
+        <%= link_to "Info for Candidates", "/info/for_candidates", :class => "btn" %>
+      </section>
 
   </div>
 </nav>
