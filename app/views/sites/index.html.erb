@@ -1,5 +1,5 @@
 <div style="text-align: center;">
-  <h1>Select Your City to Begin</h1>
+  <h1>Select Your County to Begin</h1>
   <%= form_tag(races_path, :method => "get") do  %>
   <%= select_tag "site_id", options_from_collection_for_select(@sites, "id", "name") %>
   <br>

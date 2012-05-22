@@ -105,12 +105,6 @@ Candidate.create(firstname: "Walter",
                 password: "Dalton",
                 race_id: 3).build_my_statements
 
-Candidate.create(firstname: "Bill",
-                lastname: "Faison",
-                email: "Bill",
-                password: "Faison",
-                race_id: 3).build_my_statements
-
 Candidate.create(firstname: "Pat",
                 lastname: "McCrory",
                 email: "Pat",
@@ -126,4 +120,26 @@ Candidate.create(firstname: "Pat",
 Race.create(name:"County Commissioner")
 Race.create(name:"School Board (At Large)")
 Race.create(name:"Governor")
+
+
+# Sites
+Site.create(name:"Durham",
+            state:"North Carolina",
+            county: "Durham")
+
+Site.create(name:"Wake",
+            state:"North Carolina",
+            county: "Wake")
+
+Site.create(name:"Orange",
+            state:"North Carolina",
+            county: "Orange")
+
+
+# Add State Level Candidates to All Sites
+
+
+Site.all.each do |f|
+   f.candidates << Candidate.where(:race_id => "3")
+end
 
