@@ -3,7 +3,7 @@
   <%= form_tag(races_path, :method => "get") do  %>
   <%= select_tag "site_id", options_from_collection_for_select(@sites, "id", "name") %>
   <br>
-  <%= submit_tag "Select This City", :class => "btn" %>
+  <%= submit_tag "Select This County", :class => "btn" %>
   <% end %>
 </div>
 
