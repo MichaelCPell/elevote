@@ -29,41 +29,68 @@ Legislation.create(name: "Amendment 1", content: "This is the first amendment!")
 
 
 #County Commissioner Races
+#
+#Candidate.create(firstname: "Fred",
+#                lastname: "Foster",
+#                email: "Fred",
+#                password: "Foster",
+#                race_id: 1).build_my_statements
+#
+#
+#Candidate.create(firstname: "Brenda", lastname: "Howerton", email: "Brenda",
+#                password: "Howerton", race_id: 1).build_my_statements
+#
+#Candidate.create(firstname: "Wendy", lastname: "Jacobs", email: "Wendy",
+#                password: "Jacobs", race_id: 1).build_my_statements
+#
+#Candidate.create(firstname: "Michael", lastname: "Page", email: "Michael",
+#                password: "Page", race_id: 1).build_my_statements
+#
+#Candidate.create(firstname: "Ellen", lastname: "Reckhow", email: "Ellen",
+#                password: "Reckhow", race_id: 1).build_my_statements
 
-Candidate.create(firstname: "Fred",
-                lastname: "Foster",
-                email: "Fred",
-                password: "Foster",
-                race_id: 1).build_my_statements
+
+Candidate.create(firstname: "Adam",
+                lastname: "One",
+                email: "Adam",
+                password: "One",
+                race_id: 3).build_my_statements
+
+Candidate.create(firstname: "Barbara",
+                lastname: "Two",
+                email: "Barbara",
+                password: "Two",
+                race_id: 3).build_my_statements
+
+Candidate.create(firstname: "Christina",
+                lastname: "Three",
+                email: "Christina",
+                password: "Three",
+                race_id: 3).build_my_statements
+
+Candidate.create(firstname: "David",
+                lastname: "Four",
+                email: "David",
+                password: "Four",
+                race_id: 3).build_my_statements
 
 
-Candidate.create(firstname: "Brenda", lastname: "Howerton", email: "Brenda",
-                password: "Howerton", race_id: 1).build_my_statements
-
-Candidate.create(firstname: "Wendy", lastname: "Jacobs", email: "Wendy",
-                password: "Jacobs", race_id: 1).build_my_statements
-
-Candidate.create(firstname: "Michael", lastname: "Page", email: "Michael",
-                password: "Page", race_id: 1).build_my_statements
-
-Candidate.create(firstname: "Ellen", lastname: "Reckhow", email: "Ellen",
-                password: "Reckhow", race_id: 1).build_my_statements
 
 
 
 
 #Race: School Board
 
-Candidate.create(firstname: "Leigh",
-                lastname: "Bordley",
-                email: "Leigh",
-                password: "Bordley",
+Candidate.create(firstname: "Edward",
+                lastname: "Five",
+                email: "Edward",
+                password: "Five",
                 race_id: 2).build_my_statements
 
-Candidate.create(firstname: "John",
-                lastname: "Tarantino",
-                email: "John",
-                password: "Tarantino",
+Candidate.create(firstname: "Frances",
+                lastname: "Five",
+                email: "Frances",
+                password: "Six",
                 race_id: 2).build_my_statements
 
 #Race: Governor
@@ -71,23 +98,19 @@ Candidate.create(firstname: "Walter",
                 lastname: "Dalton",
                 email: "Walter",
                 password: "Dalton",
-                race_id: 3).build_my_statements
+                race_id: 1).build_my_statements
 
 Candidate.create(firstname: "Pat",
                 lastname: "McCrory",
                 email: "Pat",
                 password: "McCrory",
-                race_id: 3).build_my_statements
-
-
-
-
-
+                race_id: 1).build_my_statements
 
 # Races
-Race.create(name:"County Commissioner")
-Race.create(name:"School Board (At Large)")
+
 Race.create(name:"Governor")
+Race.create(name:"Lieutenant Governor")
+Race.create(name:"County Commissioner")
 
 
 # Sites
@@ -107,7 +130,5 @@ Site.create(name:"Orange",
 # Add State Level Candidates to All Sites
 
 
-Site.all.each do |f|
-   f.candidates << Candidate.where(:race_id => "3")
-end
+Site.all.each {|f| f.candidates << Candidate.all}
 
