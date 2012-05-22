@@ -1,0 +1,12 @@
+<section id="user-area" class="span3 thumbnail pull-right">
+  <div class="row">
+    <section id="booth" class="btn btn-mini" style="text-align: center;">
+      <%= link_to image_tag("voting-booth-button.png", :size => "45x45"), '/booth' %>
+      <h5><%= link_to "My Booth", '/booth' %></h5>
+    </section>
+
+    <section id="user-info" class="span2" style="text-align: center;">
+      <%= display_user_name(current_user) %>
+    </section>
+   </div>
+</section>

@@ -29,17 +29,6 @@ Legislation.create(name: "Amendment 1", content: "This is the first amendment!")
 
 
 #County Commissioner Races
-Candidate.create(firstname: "Larry",
-                lastname: "Dixon",
-                email: "Larry",
-                password: "Dixon",
-                race_id: 1).build_my_statements
-
-Candidate.create(firstname: "Anita",
-                lastname: "Daniels",
-                email: "Anita",
-                password: "Daniels",
-                race_id: 1).build_my_statements
 
 Candidate.create(firstname: "Fred",
                 lastname: "Foster",
@@ -47,26 +36,12 @@ Candidate.create(firstname: "Fred",
                 password: "Foster",
                 race_id: 1).build_my_statements
 
-Candidate.create(firstname: "Stephen",
-                lastname: "Hopkins",
-                email: "Stephen",
-                password: "Hopkins",
-                race_id: 1).build_my_statements
 
 Candidate.create(firstname: "Brenda", lastname: "Howerton", email: "Brenda",
                 password: "Howerton", race_id: 1).build_my_statements
 
-Candidate.create(firstname: "Elaine", lastname: "Hyman", email: "Elaine",
-                password: "Hyman", race_id: 1).build_my_statements
-
-Candidate.create(firstname: "John", lastname: "Owens", email: "John",
-                password: "Owens", race_id: 1).build_my_statements
-
 Candidate.create(firstname: "Wendy", lastname: "Jacobs", email: "Wendy",
                 password: "Jacobs", race_id: 1).build_my_statements
-
-Candidate.create(firstname: "Rickey", lastname: "Padgett", email: "Rickey",
-                password: "Padgett", race_id: 1).build_my_statements
 
 Candidate.create(firstname: "Michael", lastname: "Page", email: "Michael",
                 password: "Page", race_id: 1).build_my_statements
@@ -74,14 +49,7 @@ Candidate.create(firstname: "Michael", lastname: "Page", email: "Michael",
 Candidate.create(firstname: "Ellen", lastname: "Reckhow", email: "Ellen",
                 password: "Reckhow", race_id: 1).build_my_statements
 
-Candidate.create(firstname: "Will", lastname: "Willson", email: "Will",
-                password: "Willson", race_id: 1).build_my_statements
 
-Candidate.create(firstname: "Joe", lastname: "Bowser", email: "Joe",
-                password: "Bowser", race_id: 1).build_my_statements
-
-Candidate.create(firstname: "Dilcy", lastname: "Burton", email: "Dilcy",
-                password: "Burton", race_id: 1).build_my_statements
 
 
 #Race: School Board
