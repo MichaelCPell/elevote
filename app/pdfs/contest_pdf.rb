@@ -17,11 +17,11 @@ class ContestPdf < Prawn::Document
 
   def title_page
     font_size 36
-    text "Durham Votes", :align => :center
+    text "Elevote", :align => :center
     text @contest_name, :align => :center
 
     font_size 18
-    text "www.DurhamVotes.org", :align => :center
+    text "www.Elevote.org", :align => :center
     #image "app/assets/images/gp-logo-med.png", :position => :center
 
     font_size 12
@@ -55,42 +55,44 @@ class ContestPdf < Prawn::Document
      font_size 10
        [candidate.firstname + " " + candidate.lastname,
 
-        if candidate.short_goals[0].nil?
+        if candidate.statements[0].nil?
           "No First Goal"
         else
-          candidate.short_goals[0].content
+          candidate.statements[0].content
         end,
 
-        if candidate.short_goals[1].nil?
+        if candidate.statements[1].nil?
           "No Second Goal"
         else
-          candidate.short_goals[1].content
+          candidate.statements[1].content
         end,
 
-        if candidate.short_goals[2].nil?
+        if candidate.statements[2].nil?
           "No Third Goal"
         else
-          candidate.short_goals[2].content
+          candidate.statements[2].content
         end,
 
-        #Achievements
-        if candidate.short_achievements[0].nil?
-          "No First Achievement"
+
+
+        if candidate.statements[3].nil?
+          "No First Goal"
         else
-          candidate.short_achievements[0].content
+          candidate.statements[3].content
         end,
 
-        if candidate.short_achievements[1].nil?
-          "No Second Achievement"
+        if candidate.statements[4].nil?
+          "No Second Goal"
         else
-          candidate.short_achievements[1].content
+          candidate.statements[4].content
         end,
 
-        if candidate.short_achievements[2].nil?
-          "No Third Achievement"
+        if candidate.statements[5].nil?
+          "No Third Goal"
         else
-          candidate.short_achievements[2].content
-        end,
+          candidate.statements[5].content
+        end
+
         ]
      end
   end

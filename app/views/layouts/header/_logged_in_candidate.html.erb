@@ -1,5 +1,8 @@
-<section id="user-info" class="span4 offset4">
-  <h5><%= candidate_full_name(current_candidate) %></h5>
-  <h5><%= link_to "My Profile", current_candidate %></h5>
-  <h5><%= link_to "Sign Out", '/signout' %></h5>
+<section id="user-info" class="pull-right">
+  <div class="thumbnail">
+    <h5><%= candidate_full_name(current_candidate) %></h5>
+    <h5><%= link_to "My Profile", current_candidate %></h5>
+    <h5><%= link_to "My Account", edit_candidate_path(current_candidate) %></h5>
+    <h5><%= link_to "Sign Out", '/signout' %></h5>
+  </div>
 </section>

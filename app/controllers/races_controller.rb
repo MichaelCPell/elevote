@@ -22,7 +22,7 @@ class RacesController < ApplicationController
     respond_to do |format|
       format.html
       format.pdf do
-      pdf = ContestPdf.new(Candidate.scoped_by_race_id(@race.id), @race)
+      pdf = ContestPdf.new(@candidates, @race)
          send_data pdf.render, type: "application/pdf",
                              disposition: "inline",
                                page_layout: "landscape"
