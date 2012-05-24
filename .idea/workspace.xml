@@ -6,12 +6,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="01a9f816-fa55-4a7a-9bd6-92e6ceb55c0d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/races_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/races_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/pdfs/contest_pdf.rb" afterPath="$PROJECT_DIR$/app/pdfs/contest_pdf.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/_footer.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/_footer.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/_main_navigation.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/_main_navigation.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/header/_logged_in_candidate.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/header/_logged_in_candidate.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/header/_user.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/header/_user.html.erb" />
     </list>
     <ignored path="Elevote.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,15 +32,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="_main_navigation.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/layouts/_main_navigation.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="11" selection-start="865" selection-end="865" vertical-scroll-proportion="-13.75">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="_footer.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/_footer.html.erb">
           <provider selected="true" editor-type-id="text-editor">
@@ -58,7 +44,16 @@
       <file leaf-file-name="_logged_in_candidate.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/header/_logged_in_candidate.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="53" selection-start="242" selection-end="242" vertical-scroll-proportion="-2.5">
+            <state line="5" column="4" selection-start="274" selection-end="320" vertical-scroll-proportion="-3.125">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_user.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/header/_user.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="12" selection-start="523" selection-end="523" vertical-scroll-proportion="0.48">
               <folding />
             </state>
           </provider>
@@ -73,10 +68,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="races_controller.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="races_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/races_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="38" selection-start="608" selection-end="608" vertical-scroll-proportion="0.53367877">
+            <state line="24" column="38" selection-start="608" selection-end="608" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -95,7 +90,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/sites/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/home.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/header/_logged_in_user.html.erb" />
@@ -111,6 +105,7 @@
         <option value="$PROJECT_DIR$/app/views/layouts/header/_logged_in_candidate.html.erb" />
         <option value="$PROJECT_DIR$/app/pdfs/contest_pdf.rb" />
         <option value="$PROJECT_DIR$/app/controllers/races_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/header/_user.html.erb" />
       </list>
     </option>
   </component>
@@ -258,6 +253,32 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="layouts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Elevote" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="elevote" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layouts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="header" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1002,11 +1023,6 @@
         <state line="3" column="39" selection-start="113" selection-end="113" vertical-scroll-proportion="0.074257426" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/header/_user.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="72" selection-start="152" selection-end="152" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/header/_header.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="39" selection-start="310" selection-end="310" vertical-scroll-proportion="0.25773194" />
@@ -1050,13 +1066,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/header/_logged_in_candidate.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="53" selection-start="242" selection-end="242" vertical-scroll-proportion="-2.5">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/pdfs/contest_pdf.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="0" selection-start="73" selection-end="73" vertical-scroll-proportion="-0.4918033">
@@ -1066,7 +1075,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/races_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="38" selection-start="608" selection-end="608" vertical-scroll-proportion="0.53367877">
+        <state line="24" column="38" selection-start="608" selection-end="608" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/header/_logged_in_candidate.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="4" selection-start="274" selection-end="320" vertical-scroll-proportion="-3.125">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/header/_user.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="12" selection-start="523" selection-end="523" vertical-scroll-proportion="0.48">
           <folding />
         </state>
       </provider>

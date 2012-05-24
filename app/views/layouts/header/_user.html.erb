@@ -7,6 +7,10 @@
 
     <section id="user-info" class="span2" style="text-align: center;">
       <%= display_user_name(current_user) %>
+      
+      <% if current_user %>
+      <h5><%= link_to "Sign Out", '/signout' %></h5>
+      <% end %>
     </section>
    </div>
 </section>
