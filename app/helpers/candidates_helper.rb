@@ -30,13 +30,13 @@ module CandidatesHelper
       link_to "Remove from Booth",
             new_endorsement_path(:candidate_id => id),
             :remote => true,
-            :class => "btn btn-danger booth-button",
+            :class => "btn btn-warning booth-button",
             :style => "width: 200px; font-size: 18px;"
     else
       link_to "Add to Booth",
             new_endorsement_path(:candidate_id => id),
             :remote => true,
-            :class => "btn btn-primary booth-button",
+            :class => "btn btn-success booth-button",
             :style => "width: 200px; font-size: 18px;"
     end
 

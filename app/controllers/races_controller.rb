@@ -21,12 +21,14 @@ class RacesController < ApplicationController
 
     respond_to do |format|
       format.html
+      format.js
       format.pdf do
       pdf = ContestPdf.new(@candidates, @race)
          send_data pdf.render, type: "application/pdf",
                              disposition: "inline",
                                page_layout: "landscape"
       end
+
     end
 
   end
