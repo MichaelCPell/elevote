@@ -1,8 +1,14 @@
 <div class="candidate-column span3" style="width: 240px">
 
-  <h2><%= link_to candidate.full_name, candidate, :class => "modal_trigger", :remote => :true %></h2>
+  <h2 style="text-align: center;">
+    <%= link_to raw("#{candidate.full_name}<span class='caret' style='margin-top: 15px;'></span>"), candidate, :class => "modal_trigger btn btn-large",
+          :style => "width: 220px; font-size:24px; padding: 0px;", :remote => :true %>
 
-  <%= render "layouts/facebook_like", :target => candidate %>
+  </h2>
+
+  <div style="margin-left: 10px;">
+    <%= render "layouts/facebook_like", :target => candidate %>
+  </div>
 
   <div class="center" style="text-align: center;">
     <%= is_in_booth(candidate.id) %>

@@ -1,0 +1,94 @@
+<!-- Begin Google Election Center gadget -->
+<!-- Copy this entire block of code into your HTML page -->
+
+<style type="text/css">
+  /* Font */
+  #Poll411Gadget, #Poll411Gadget * { font-family:Arial%2Csans-serif; font-size:16px;  }
+  /* Sizes */
+  #Poll411Gadget, #Poll411Form { width:612px; }
+  #Poll411Frame { width:100%; height:400px; }
+  /* Colors */
+  /*#Poll411Gadget { border:1px solid #AAA; }*/
+  #Poll411Input.example { color:#666; }
+  #Poll411Frame { border-top:1px solid #DDD; }
+  /* Layout */
+  #Poll411Gadget { margin:0; padding:4px 0 4px 2px; }
+  #Poll411SelectState { margin-bottom:4px; }
+  #Poll411Title { padding-bottom:4px; }
+  #Poll411Form { margin:0; padding:0; vertical-align:middle; }
+  #Poll411InputCell { width:99%; padding-right:8px; }
+  #Poll411ButtonCell { width:1%; }
+  #Poll411Input { width:100%; }
+  #Poll411Frame { display:none; margin-top:6px; }
+</style>
+
+<div id="Poll411Gadget">
+  <form id="Poll411Form" action="" onsubmit="return Poll411.submit()">
+
+    <div class="Poll411SearchTitle removehelp">
+      <span>
+        Get your voter info! Enter the <b>full home address</b> where you’re registered to vote, including city and state:
+      </span>
+    </div>
+
+    <table class="Poll411SearchTable" cellpadding="0" cellspacing="0" style="width:100%;">
+      <tr valign="middle">
+        <td id="Poll411InputCell">
+          <input type="text" id="Poll411Input" class="example" onfocus="Poll411.focus()" onblur="Poll411.blur()">
+        </td>
+        <td id="Poll411ButtonCell">
+          <button type="submit" id="Poll411Button"> Search</button>
+        </td>
+      </tr>
+    </table>
+  </form>
+  <div id="Poll411Frame">
+  </div>
+</div>
+
+<script type="text/javascript">
+  (function() {
+    var fontFamily = 'Arial,sans-serif', fontSize = '16', fontUnits = 'px';
+    function e( id ) { return document.getElementById('Poll411'+id); }
+    var label = e('Label'), input = e('Input'), button = e('Button'), frame = e('Frame');
+
+    var example = "Ex: 1600 Pennsylvania Ave, Washington DC";
+    input.value = example;
+
+    Poll411 = {
+
+      focus: function() {
+        if( input.value == example ) {
+          input.className = '';
+          input.value = '';
+        }
+      },
+
+      blur: function() {
+        if( input.value ==  ''  ||  input.value == example ) {
+          input.className = 'example';
+          input.value = example;
+        }
+      },
+
+      select: function() {
+      },
+
+      submit: function() {
+        var addr = input.value;
+        if( addr == example ) addr = addr.replace( /^.*: /, '' );
+        frame.style.display = 'block';
+        frame.innerHTML = [
+          '<iframe ',
+            'src="http://www.gmodules.com/ig/ifr?url=http://election-gadgets.googlecode.com/hg/voter-info/voter-info-gadget.xml&amp;synd=open&amp;up_gadgetType=iframe&amp;up_address=', encodeURIComponent(addr), '&amp;up_fontFamily=', encodeURIComponent(fontFamily), '&amp;up_fontSize=', fontSize, '&amp;up_fontUnits=', fontUnits, '&amp;up_submit=1" ',
+            'style="width:100%; height:100%;" ',
+            'frameborder="0" ',
+            'scrolling="no" ',
+          '/>'
+        ].join('');
+        return false;
+      }
+    };
+  })();
+</script>
+<!-- End Google Election Center gadget -->
