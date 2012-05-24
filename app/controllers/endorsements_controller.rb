@@ -1,5 +1,5 @@
 class EndorsementsController < ApplicationController
-  respond_to :html, :json
+  respond_to :html, :js
 
   def new
     session[:candidate_ids] ||= []
@@ -23,7 +23,8 @@ class EndorsementsController < ApplicationController
       end
     end
 
-    render :nothing => true
+
+    @candidate = Candidate.find(candidate_id)
   end
 
 

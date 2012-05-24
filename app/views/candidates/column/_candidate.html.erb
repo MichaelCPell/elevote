@@ -10,7 +10,7 @@
     <%= render "layouts/facebook_like", :target => candidate %>
   </div>
 
-  <div class="center" style="text-align: center;">
+  <div id="<%= candidate.firstname %>-booth-button" class="center" style="text-align: center;" >
     <%= is_in_booth(candidate.id) %>
   </div>
 
