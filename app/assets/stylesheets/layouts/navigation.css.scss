@@ -16,6 +16,7 @@ nav#main-navigation{
     background: white;
     padding: 5px;
     font-size: 24px;
+    margin-left: 20px;      /*Unclear why I had to add this, it will cause problems later */
 
     a{
       color: $runner_gray;
