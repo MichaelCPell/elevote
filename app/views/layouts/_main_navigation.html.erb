@@ -1,17 +1,26 @@
 <nav id="main-navigation" >
   <div class="container">
     <div class="row">
+       <% if current_site %>
       <ul class="nav span6">
         <li class="dropdown" id="menu1">
+
           <a data-target="#menu1" data-toggle="dropdown" class="dropdown-toggle start-button">
               <%= @nav_content %>
             <b class="caret" style="float: right;"></b>
           </a>
+          
+
           <ul class="dropdown-menu">
             <% for contest in Race.all %>
                 <li><%= link_to contest.name, contest %></li>
             <% end %>
           </ul>
+          <% else %>
+          <%= link_to "Click to Select a County", root_url, :class => "btn btn-primary" %>
+          
+          <% end %>
+          
         </li>
       </ul>
 

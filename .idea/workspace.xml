@@ -6,7 +6,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="01a9f816-fa55-4a7a-9bd6-92e6ceb55c0d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/header/_user.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/header/_user.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/_main_navigation.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/_main_navigation.html.erb" />
     </list>
     <ignored path="Elevote.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,15 +32,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="_footer.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/layouts/_footer.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="8" selection-start="501" selection-end="501" vertical-scroll-proportion="-11.25">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="_logged_in_candidate.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/header/_logged_in_candidate.html.erb">
           <provider selected="true" editor-type-id="text-editor">
@@ -50,10 +41,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_user.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="_user.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/header/_user.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="12" selection-start="523" selection-end="523" vertical-scroll-proportion="0.48">
+            <state line="12" column="12" selection-start="523" selection-end="523" vertical-scroll-proportion="-7.5">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_main_navigation.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/_main_navigation.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="47" selection-start="635" selection-end="635" vertical-scroll-proportion="0.76">
               <folding />
             </state>
           </provider>
@@ -100,12 +100,12 @@
         <option value="$PROJECT_DIR$/app/views/layouts/header/_header.html.erb" />
         <option value="$PROJECT_DIR$/db/seeds.rb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/layouts/navigation.css.scss" />
-        <option value="$PROJECT_DIR$/app/views/layouts/_main_navigation.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/_footer.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/header/_logged_in_candidate.html.erb" />
         <option value="$PROJECT_DIR$/app/pdfs/contest_pdf.rb" />
         <option value="$PROJECT_DIR$/app/controllers/races_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/layouts/header/_user.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/_main_navigation.html.erb" />
       </list>
     </option>
   </component>
@@ -1052,13 +1052,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/_main_navigation.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="11" selection-start="865" selection-end="865" vertical-scroll-proportion="-13.75">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/_footer.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="8" selection-start="501" selection-end="501" vertical-scroll-proportion="-11.25">
@@ -1089,7 +1082,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/header/_user.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="12" selection-start="523" selection-end="523" vertical-scroll-proportion="0.48">
+        <state line="12" column="12" selection-start="523" selection-end="523" vertical-scroll-proportion="-7.5">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/_main_navigation.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="47" selection-start="635" selection-end="635" vertical-scroll-proportion="0.76">
           <folding />
         </state>
       </provider>
